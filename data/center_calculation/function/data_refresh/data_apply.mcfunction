@@ -1,0 +1,1 @@
+$attribute @s luck base set $(luck_trans)

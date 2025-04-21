@@ -1,0 +1,1 @@
+$give @s resin_clump $(resin)

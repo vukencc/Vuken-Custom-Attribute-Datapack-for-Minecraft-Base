@@ -1,0 +1,23 @@
+{
+	"criteria":{
+		"damageRangeTaken":{
+			"trigger":"minecraft:entity_hurt_player",
+			"conditions":{
+				"damage": {
+					"type": {
+						"tags": [
+							{
+							"expected": true,
+							"id": "minecraft:range_det"
+						}
+					],
+					"is_direct": false
+					},
+					"blocked": false
+				}
+			}
+		}
+	},
+	"requirements": [["damageRangeTaken"]] ,
+	"rewards":{"function":"center_calculation:trigger_spe/range_cal_engage"}
+}

@@ -1,0 +1,1 @@
+$attribute @s jump_strength modifier add agility $(agility_trans) add_value

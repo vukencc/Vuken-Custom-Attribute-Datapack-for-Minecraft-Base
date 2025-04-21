@@ -1,0 +1,7 @@
+{
+	"pack":{
+		"pack_format":71,
+		"description":"A datapack for attributes and enchantments improvement."
+	},
+	"filter": {"block": []}
+}

@@ -1,0 +1,121 @@
+{
+	"values":
+	[
+		"air",
+        "light",
+		"oak_sapling",
+		"spruce_sapling",
+		"birch_sapling",
+		"jungle_sapling",
+		"acacia_sapling",
+		"dark_oak_sapling",
+
+		"cobweb",
+
+		"tall_grass",
+		"short_grass",
+		"short_dry_grass",
+		"tall_dry_grass",
+		"fern",
+
+		"dead_bush",
+		"seagrass",
+		
+		"dandelion",
+		"poppy",
+		"blue_orchid",
+		"allium",
+		"azure_bluet",
+		"red_tulip",
+		"orange_tulip",
+		"white_tulip",
+		"pink_tulip",
+		"oxeye_daisy",
+
+		"brown_mushroom",
+		"red_mushroom",
+
+		"torch",
+		
+		"ladder",
+
+		"vine",
+
+		"sunflower",
+		"lilac",
+		"rose_bush",
+		"peony",
+		"tall_grass",
+		"large_fern",
+
+		"tube_coral",
+		"brain_coral",
+		"bubble_coral",
+		"fire_coral",
+		"horn_coral",
+		"tube_coral_fan",
+		"brain_coral_fan",
+		"bubble_coral_fan",
+		"fire_coral_fan",
+		"horn_coral_fan",
+
+		"oak_sign",
+		"spruce_sign",
+		"birch_sign",
+		"jungle_sign",
+		"acacia_sign",
+		"dark_oak_sign",
+
+		"white_banner",
+		"orange_banner",
+		"magenta_banner",
+		"light_blue_banner",
+		"yellow_banner",
+		"lime_banner",
+		"pink_banner",
+		"gray_banner",
+		"light_gray_banner",
+		"cyan_banner",
+		"purple_banner",
+		"blue_banner",
+		"brown_banner",
+		"green_banner",
+		"red_banner",
+		"black_banner",
+
+		"lever",
+
+		"stone_pressure_plate",
+		"oak_pressure_plate",
+		"spruce_pressure_plate",
+		"birch_pressure_plate",
+		"jungle_pressure_plate",
+		"acacia_pressure_plate",
+		"dark_oak_pressure_plate",
+		"light_weighted_pressure_plate",
+		"heavy_weighted_pressure_plate",
+
+		"redstone_torch",
+
+		"stone_button",
+		"oak_button",
+		"spruce_button",
+		"birch_button",
+		"jungle_button",
+		"acacia_button",
+		"dark_oak_button",
+
+		"tripwire_hook",
+
+		"repeater",
+		"comparator",
+		"redstone_wire",
+
+		"powered_rail",
+		"detector_rail",
+		"rail",
+		"activator_rail",
+
+		"water"
+	]
+}

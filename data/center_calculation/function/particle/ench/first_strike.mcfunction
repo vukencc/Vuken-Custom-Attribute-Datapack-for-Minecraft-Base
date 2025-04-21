@@ -1,0 +1,45 @@
+summon marker ~ ~1 ~ {Tags:["aspas1m"]}
+execute as @e[tag=aspas1m,tag=aspas1ms] at @s run tp @s ~ ~1 ~ facing entity @p
+execute as @e[tag=aspas1m] at @s run tp @s ~ ~ ~ ~90 ~45
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^0.4 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^0.8 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^1.2 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^1.6 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^2.0 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^2.4 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^2.8 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^3.2 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^3.6 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^4.0 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-0.4 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-0.8 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-1.2 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-1.6 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-2.0 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-2.4 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-2.8 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-3.2 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-3.6 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-4.0 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run tp @s ~ ~ ~ ~ ~-90
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^0.4 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^0.8 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^1.2 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^1.6 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^2.0 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^2.4 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^2.8 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^3.2 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^3.6 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^4.0 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-0.4 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-0.8 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-1.2 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-1.6 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-2.0 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-2.4 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-2.8 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-3.2 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-3.6 0 0 0 0 1 normal
+execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^-4.0 0 0 0 0 1 normal
+kill @e[tag=aspas1m,type=marker]

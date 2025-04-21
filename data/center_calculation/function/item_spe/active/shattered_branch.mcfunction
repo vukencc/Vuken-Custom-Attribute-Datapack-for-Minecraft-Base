@@ -1,0 +1,19 @@
+scoreboard players set @s shared_active_cd 240
+execute as @s at @s run summon armor_stand ^ ^1.3 ^1 {equipment:{head:{id:soul_sand,count:1}},Pose:{Head:[0.0,-180.0,0.0]},Tags:["shattered_branch","shattered_branch_active","timing_limited","timing_limited_160"],Small:1b,Invisible:1b,attributes:[{id:scale,base:2.5}]}
+execute at @s positioned ^ ^1.3 ^1 run attribute @n[type=armor_stand,tag=shattered_branch] scale base set 1.5
+execute at @s as @n[type=armor_stand,tag=shattered_branch_active] at @s run tp @s ~ ~ ~ facing entity @p eyes
+execute at @s as @n[type=armor_stand,tag=shattered_branch_active] at @s run tp @s ~ ~ ~ ~180 ~
+execute at @s as @n[type=armor_stand,tag=shattered_branch_active] at @s run tp @s ^ ^ ^1
+execute at @s as @n[type=armor_stand,tag=shattered_branch_active] at @s store result score @s entity_x_det run data get entity @s Pos[0]
+execute at @s as @n[type=armor_stand,tag=shattered_branch_active] at @s store result score @s entity_y_det run data get entity @s Pos[1]
+execute at @s as @n[type=armor_stand,tag=shattered_branch_active] at @s store result score @s entity_z_det run data get entity @s Pos[2]
+execute at @s as @n[type=armor_stand,tag=shattered_branch_active] at @s run tp @s ^ ^ ^-1
+execute at @s as @n[type=armor_stand,tag=shattered_branch_active] at @s store result score @s entity_x run data get entity @s Pos[0]
+execute at @s as @n[type=armor_stand,tag=shattered_branch_active] at @s store result score @s entity_y run data get entity @s Pos[1]
+execute at @s as @n[type=armor_stand,tag=shattered_branch_active] at @s store result score @s entity_z run data get entity @s Pos[2]
+execute at @s as @n[type=armor_stand,tag=shattered_branch_active] at @s store result entity @s Motion[0] double 0.45 run scoreboard players operation @s entity_x_det -= @s entity_x
+execute at @s as @n[type=armor_stand,tag=shattered_branch_active] at @s store result entity @s Motion[1] double 0.45 run scoreboard players operation @s entity_y_det -= @s entity_y
+execute at @s as @n[type=armor_stand,tag=shattered_branch_active] at @s store result entity @s Motion[2] double 0.45 run scoreboard players operation @s entity_z_det -= @s entity_z
+tag @n[type=armor_stand,tag=shattered_branch_active] remove shattered_branch_active
+execute at @s run playsound block.cherry_sapling.place hostile @s ~ ~ ~
+scoreboard players set @s shared_active_cd 240
