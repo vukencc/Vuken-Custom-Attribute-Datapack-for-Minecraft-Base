@@ -5,6 +5,7 @@ execute if score @p melee_crit matches 1.. as @s if score @p temp_fall matches .
 scoreboard objectives remove temp_fall
 $damage @s[tag=crit_access] $(crit) starve by @p
 execute if score @p melee_crit matches 1.. if entity @s[tag=crit_access] at @s run particle minecraft:sonic_boom ~ ~1 ~ 1.1 0.6 1.1 0.15 3 normal
+execute if entity @s[tag=crit_access] run function center_calculation:item_spe/passive/titan_shock
 tag @s remove crit_access
 
 execute if score @p melee_current matches 1.. as @s at @p if entity @p[distance=..0.5,nbt={OnGround:1b}] run tag @s add current_access 
