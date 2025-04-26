@@ -1,5 +1,5 @@
-summon marker ~ ~1 ~ {Tags:["aspas1m"]}
-execute as @e[tag=aspas1m,tag=aspas1ms] at @s run tp @s ~ ~1 ~ facing entity @p
+summon marker ~ ~1.5 ~ {Tags:["aspas1m"]}
+execute as @e[tag=aspas1m] at @s run tp @s ~ ~ ~ facing entity @p
 execute as @e[tag=aspas1m] at @s run tp @s ~ ~ ~ ~90 ~45
 execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^0.4 0 0 0 0 1 normal
 execute as @e[tag=aspas1m] at @s run particle dust{color:15348274,scale:1} ^ ^ ^0.8 0 0 0 0 1 normal

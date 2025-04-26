@@ -308,3 +308,4 @@ scoreboard objectives add absorption_shield_cd dummy
 scoreboard players set @a absorption_shield_cd 0
 
 function center_calculation:skill_scoreboard
+function center_calculation:area_enemy_scb

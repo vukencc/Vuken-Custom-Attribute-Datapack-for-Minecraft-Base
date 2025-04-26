@@ -1,0 +1,1 @@
+scoreboard objectives add a4_poison dummy
