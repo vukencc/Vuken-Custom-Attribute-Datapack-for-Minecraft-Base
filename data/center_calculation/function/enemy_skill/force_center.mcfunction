@@ -10,3 +10,4 @@ execute if entity @p[scores={entity_x=-528..28,entity_z=167..674}] run function 
 execute if entity @p[scores={entity_x=-678..-369,entity_z=337..519}] run function center_calculation:enemy_skill/area_3/sum
 #-719 269 206 -531 269 402
 execute if entity @p[scores={entity_x=-719..-531,entity_z=206..402}] run function center_calculation:enemy_skill/area_4/sum
+execute if entity @p[scores={entity_x=-719..-531,entity_z=206..402}] run function center_calculation:enemy_skill/area_3/sum

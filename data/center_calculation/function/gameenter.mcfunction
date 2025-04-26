@@ -9,7 +9,7 @@ scoreboard players set @a std100 100
 scoreboard objectives add std10 dummy
 scoreboard players set @a std10 10
 scoreboard objectives add std750 dummy
-scoreboard players set @a std750 10
+scoreboard players set @a std750 12
 scoreboard objectives add com_damage_timing dummy
 scoreboard players set @a com_damage_timing 0
 scoreboard objectives add range_damage_timing dummy

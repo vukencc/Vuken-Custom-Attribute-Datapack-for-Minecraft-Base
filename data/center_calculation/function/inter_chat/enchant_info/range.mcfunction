@@ -16,6 +16,7 @@ tellraw @s [{"text":"[ Starlit ]",color:"#afffca",bold:true,hover_event:{action:
 tellraw @s [{"text":"[ Ring ]",color:"#afffca",bold:true,hover_event:{action:"show_text",value:[{"text":"Enemies you shoot create a ring, pull all enemies nearby inside.","bold":true}]}}]
 tellraw @s [{"text":"[ Greed ]",color:"#afffca",bold:true,hover_event:{action:"show_text",value:[{"text":"Enemies you shoot is pulled towards you.","bold":true}]}}]
 tellraw @s [{"text":"[ Freeze ]",color:"#afffca",bold:true,hover_event:{action:"show_text",value:[{"text":"Enemies you shoot freeze for (0.5*Level) seconds.","bold":true}]}}]
+tellraw @s [{"text":"[ Transformation ]",color:"#afffca",bold:true,hover_event:{action:"show_text",value:[{"text":"Transform the item you hold into a projectile-consumption item.","bold":true}]}}]
 
 tellraw @p {"text":"",color:"blue",bold:true}
 tellraw @p {"text":"————————————————————————————",color:"blue",bold:true}
