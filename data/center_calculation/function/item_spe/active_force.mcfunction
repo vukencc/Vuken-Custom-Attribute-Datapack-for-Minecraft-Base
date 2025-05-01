@@ -18,3 +18,5 @@ execute as @a if score @s execute_active matches 22 at @s run function center_ca
 execute as @a if score @s execute_active matches 15 at @s run function center_calculation:item_spe/active/delay_effects/execute_attack
 execute as @a if score @s execute_active matches 8 at @s run function center_calculation:item_spe/active/delay_effects/execute_attack
 scoreboard players remove @a[scores={execute_active=1..}] execute_active 1
+
+execute as @e[type=item,tag=shadow_embers] at @s unless block ~ ~-0.5 ~ #minecraft:passable run function center_calculation:item_spe/active/shadow_of_embers_active

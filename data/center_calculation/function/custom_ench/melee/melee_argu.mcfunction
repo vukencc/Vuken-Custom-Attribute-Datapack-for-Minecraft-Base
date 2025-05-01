@@ -56,7 +56,7 @@ execute if score @p melee_curse matches 1.. unless entity @s[tag=melee_cursed] a
 execute if score @p melee_curse matches 1.. unless entity @s[tag=melee_cursed] at @p run playsound entity.wither.shoot hostile @p ~ ~ ~ 1 2 1
 execute if score @p melee_curse matches 1.. unless entity @s[tag=melee_cursed] run tag @s add melee_cursed
 
-execute if score @p melee_thunder_aspect matches 1.. if score @p repeat_10_timing <= @p melee_thunder_aspect at @s run particle scrape ~ ~1 ~ 1.2 2 1.2 0.1 25 normal
+execute if score @p melee_thunder_aspect matches 1.. if score @p repeat_10_timing <= @p melee_thunder_aspect at @s run particle block{block_state:{Name:sandstone}} ~ ~1 ~ 0.8 2 0.8 0.1 25 normal
 execute if score @p melee_thunder_aspect matches 1.. if score @p repeat_10_timing <= @p melee_thunder_aspect at @p run playsound entity.firework_rocket.twinkle hostile @p ~ ~ ~
-execute if score @p melee_thunder_aspect matches 1.. if score @p repeat_10_timing <= @p melee_thunder_aspect as @s run scoreboard players set @s thunder_aspect_timing 20
-execute if score @p melee_thunder_aspect matches 1.. if score @p repeat_10_timing <= @p melee_thunder_aspect as @s run data merge entity @s {NoAI:1b}
+execute if score @p melee_thunder_aspect matches 1.. if score @p repeat_10_timing <= @p melee_thunder_aspect as @s unless entity @s[nbt={NoAI:1b}] run scoreboard players set @s thunder_aspect_timing 20
+execute if score @p melee_thunder_aspect matches 1.. if score @p repeat_10_timing <= @p melee_thunder_aspect as @s unless entity @s[nbt={NoAI:1b}] run data merge entity @s {NoAI:1b}

@@ -21,9 +21,9 @@ tag @s remove ringcenter
 execute store result score @s entity_x run data get entity @s Pos[0] 100
 execute store result score @s entity_y run data get entity @s Pos[1] 100
 execute store result score @s entity_z run data get entity @s Pos[2] 100
-execute store result score @s entity_x_det run data get entity @p[tag=temp_shooter] Pos[0] 100
-execute store result score @s entity_y_det run data get entity @p[tag=temp_shooter] Pos[1] 100
-execute store result score @s entity_z_det run data get entity @p[tag=temp_shooter] Pos[2] 100
+execute store result score @s entity_x_det on attacker as @s run data get entity @s Pos[0] 100
+execute store result score @s entity_y_det on attacker as @s run data get entity @s Pos[1] 100
+execute store result score @s entity_z_det on attacker as @s run data get entity @s Pos[2] 100
 scoreboard players operation @s entity_x_det -= @s entity_x
 scoreboard players operation @s entity_y_det -= @s entity_y
 scoreboard players operation @s entity_z_det -= @s entity_z
@@ -32,8 +32,8 @@ $scoreboard players set @s temp_std $(greed)
 scoreboard players operation @s entity_x_det *= @s temp_std
 scoreboard players operation @s entity_y_det *= @s temp_std
 scoreboard players operation @s entity_z_det *= @s temp_std
-execute if score @s temp_std matches 1.. store result entity @s Motion.[0] double 0.001 run scoreboard players get @s entity_x_det
-execute if score @s temp_std matches 1.. store result entity @s Motion.[1] double 0.001 run scoreboard players get @s entity_y_det
-execute if score @s temp_std matches 1.. store result entity @s Motion.[2] double 0.001 run scoreboard players get @s entity_z_det
+execute if score @s temp_std matches 1.. store result entity @s Motion.[0] double 0.0007 run scoreboard players get @s entity_x_det
+execute if score @s temp_std matches 1.. store result entity @s Motion.[1] double 0.0007 run scoreboard players get @s entity_y_det
+execute if score @s temp_std matches 1.. store result entity @s Motion.[2] double 0.0007 run scoreboard players get @s entity_z_det
 tag @a remove temp_shooter
 scoreboard objectives remove temp_std

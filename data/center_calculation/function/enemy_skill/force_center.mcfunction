@@ -11,3 +11,9 @@ execute if entity @p[scores={entity_x=-678..-369,entity_z=337..519}] run functio
 #-719 269 206 -531 269 402
 execute if entity @p[scores={entity_x=-719..-531,entity_z=206..402}] run function center_calculation:enemy_skill/area_4/sum
 execute if entity @p[scores={entity_x=-719..-531,entity_z=206..402}] run function center_calculation:enemy_skill/area_3/sum
+#-641 269 515 -390 269 886
+execute if entity @p[scores={entity_x=-641..-390,entity_z=515..886}] run function center_calculation:enemy_skill/area_5/sum
+#-1121 269 324 -723 269 701
+execute if entity @p[scores={entity_x=-1121..-723,entity_z=324..701}] run function center_calculation:enemy_skill/area_6/sum
+#void_2
+execute in map_only:void_2 positioned 0 0 0 if entity @p[distance=..1000000] run function center_calculation:enemy_skill/area_7/sum

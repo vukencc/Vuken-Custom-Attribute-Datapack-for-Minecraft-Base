@@ -9,3 +9,9 @@ execute as @a if score @s time_not_taking_damage matches 199.. if items entity @
 
 execute as @a if score @s time_not_killing_entities matches ..201 if items entity @s armor.* #armor[custom_data~{AuraOfCurse:1}] run function center_calculation:item_spe/passive/aura_of_curse
 execute as @a if score @s time_not_killing_entities matches ..201 if items entity @s weapon.* #armor[custom_data~{AuraOfCurse:1}] run function center_calculation:item_spe/passive/aura_of_curse
+
+execute as @a at @s if items entity @s armor.* #armor[custom_data~{TimePool:1}] run function center_calculation:item_spe/passive/time_pool
+execute as @a at @s unless items entity @s armor.* #armor[custom_data~{TimePool:1}] if items entity @s weapon.* #armor[custom_data~{TimePool:1}] run function center_calculation:item_spe/passive/time_pool
+
+execute as @a if score @s time_not_taking_damage matches 239.. if items entity @s armor.* #armor[custom_data~{CelestialCloak:1}] run function center_calculation:item_spe/passive/celestial_cloak
+execute as @a if score @s time_not_taking_damage matches 239.. if items entity @s weapon.* #armor[custom_data~{CelestialCloak:1}] run function center_calculation:item_spe/passive/celestial_cloak

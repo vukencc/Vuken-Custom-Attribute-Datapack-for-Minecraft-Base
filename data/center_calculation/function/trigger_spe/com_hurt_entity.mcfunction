@@ -33,4 +33,6 @@ execute if score @s melee_combo matches 1.. run scoreboard players set @s ench_c
 
 kill @n[type=marker,tag=temp_melee_inner]
 
+function center_calculation:item_spe/passive_trig/hurt_enemy_trig
+
 advancement revoke @s only center_calculation:com_hurt_entity

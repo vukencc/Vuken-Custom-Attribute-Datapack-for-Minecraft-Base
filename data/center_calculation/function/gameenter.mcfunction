@@ -299,6 +299,8 @@ team add red
 team modify red color red
 team add aqua
 team modify aqua color aqua
+team add yellow
+team modify yellow color yellow
 
 #follow scoreboard should be operated when any player first enter the game
 scoreboard objectives add shared_active_cd dummy
@@ -309,3 +311,4 @@ scoreboard players set @a absorption_shield_cd 0
 
 function center_calculation:skill_scoreboard
 function center_calculation:area_enemy_scb
+function operation:base_scb_req
