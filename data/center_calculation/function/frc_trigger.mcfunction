@@ -29,7 +29,6 @@ execute as @a at @s if score @s bow_use_2 matches 1.. run function center_calcul
 scoreboard players set @a bow_use 0
 scoreboard players set @a bow_use_2 0
 kill @e[type=#arrows,nbt={inGround:1b}]
-
 #frenzy energy hasten
 execute as @a if score @s frenzy_timing matches 1.. run scoreboard players remove @s frenzy_timing 1
 execute as @a at @s if score @s frenzy_timing matches 1 run attribute @s attack_damage modifier remove frenzy
@@ -37,24 +36,16 @@ execute as @a at @s if score @s energy_timing matches 1.. run scoreboard players
 execute as @a at @s if score @s energy_timing matches 1 run attribute @s movement_speed modifier remove energy
 execute as @a at @s if score @s hasten_timing matches 1.. run scoreboard players remove @s hasten_timing 1
 execute as @a at @s if score @s hasten_timing matches 1 run attribute @s attack_speed modifier remove hasten
-
 execute as @a if score @s to_clear_regenerate matches 1 run function center_calculation:custom_ench/apply/regenerate/health_reset
 execute as @a if score @s to_clear_regenerate matches 1.. run scoreboard players remove @s to_clear_regenerate 1
-
 execute as @a at @s if score @s repeat_110_timing > @s regeneration_p1 run scoreboard players set @s repeat_110_timing 0
 scoreboard players add @a repeat_110_timing 1
 execute as @a[tag=reg_trans_access] at @s if score @s repeat_110_timing matches 10 run function center_calculation:custom_ench/assistance/regeneration
-
 execute as @a at @s if score @s spawner_break matches 1.. run function center_calculation:custom_ench/assistance/spawner_break
-
 execute as @a at @s if score @s invert_delay matches 1 run advancement revoke @s only center_calculation:effects_changed
 execute as @a if score @s invert_delay matches 1.. run scoreboard players remove @s invert_delay 1
-
-scoreboard objectives add marker dummy
-scoreboard objectives add marker_2 dummy
-
+#--------item_spe--------#
 function center_calculation:item_spe/passive_force
 function center_calculation:item_spe/active_force
 execute as @a if score @s repeat_25_timing matches 10 run function center_calculation:item_spe/passive_trig_low_tick
-
 function center_calculation:enemy_skill/force_center

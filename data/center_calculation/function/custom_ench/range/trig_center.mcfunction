@@ -30,4 +30,3 @@ execute at @s as @e[type=#arrows,nbt=!{pickup:0b},distance=..2.5] store result e
 execute at @s as @e[type=#arrows,nbt=!{pickup:0b},distance=..2.5] store result entity @s item.components."minecraft:potion_contents".custom_effects[3].amplifier float 1.0 run scoreboard players get @p range_freeze
 execute if items entity @s weapon.* *[enchantments~[{enchantments:"center_calculation:range/transformation",levels:1}]] at @s as @e[type=#minecraft:arrows,distance=..2.5,nbt=!{pickup:0b}] run data merge entity @s {Glowing:1b,SoundEvent:"entity.arrow.hit_player"}
 execute if items entity @s weapon.* *[enchantments~[{enchantments:"center_calculation:range/transformation",levels:1}]] at @s as @e[type=#minecraft:arrows,distance=..2.5,nbt=!{pickup:0b}] run team join aqua @s
-tag @s add temp_shooter

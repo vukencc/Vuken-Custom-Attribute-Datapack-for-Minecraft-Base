@@ -35,5 +35,4 @@ scoreboard players operation @s entity_z_det *= @s temp_std
 execute if score @s temp_std matches 1.. store result entity @s Motion.[0] double 0.0007 run scoreboard players get @s entity_x_det
 execute if score @s temp_std matches 1.. store result entity @s Motion.[1] double 0.0007 run scoreboard players get @s entity_y_det
 execute if score @s temp_std matches 1.. store result entity @s Motion.[2] double 0.0007 run scoreboard players get @s entity_z_det
-tag @a remove temp_shooter
 scoreboard objectives remove temp_std
