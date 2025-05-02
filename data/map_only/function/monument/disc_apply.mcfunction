@@ -1,3 +1,4 @@
 execute unless entity @p[tag=CTM_1_collect] if block 31 181 243 jukebox[has_record=true]{RecordItem:{id:"minecraft:music_disc_creator_music_box"}} run function map_only:monument/disc_1
 execute unless entity @p[tag=CTM_2_collect] if block 31 181 243 jukebox[has_record=true]{RecordItem:{id:"minecraft:music_disc_creator"}} run function map_only:monument/disc_2
 execute unless entity @p[tag=CTM_3_collect] if block 31 181 243 jukebox[has_record=true]{RecordItem:{id:"minecraft:music_disc_precipice"}} run function map_only:monument/disc_3
+execute unless entity @p[tag=CTM_4_collect] if block 31 181 243 jukebox[has_record=true]{RecordItem:{id:"minecraft:music_disc_otherside"}} run function map_only:monument/disc_4

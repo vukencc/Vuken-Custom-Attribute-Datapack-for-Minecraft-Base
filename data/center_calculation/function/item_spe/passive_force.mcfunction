@@ -15,3 +15,6 @@ execute as @a at @s unless items entity @s armor.* #armor[custom_data~{TimePool:
 
 execute as @a if score @s time_not_taking_damage matches 239.. if items entity @s armor.* #armor[custom_data~{CelestialCloak:1}] run function center_calculation:item_spe/passive/celestial_cloak
 execute as @a if score @s time_not_taking_damage matches 239.. if items entity @s weapon.* #armor[custom_data~{CelestialCloak:1}] run function center_calculation:item_spe/passive/celestial_cloak
+
+execute as @a if items entity @s armor.* #armor[custom_data~{CorruptionBlessing:1}] at @s run function center_calculation:item_spe/passive/corruption_blessing
+execute as @a unless items entity @s armor.* #armor[custom_data~{CorruptionBlessing:1}] if items entity @s weapon.* #armor[custom_data~{CorruptionBlessing:1}] at @s run function center_calculation:item_spe/passive/corruption_blessing

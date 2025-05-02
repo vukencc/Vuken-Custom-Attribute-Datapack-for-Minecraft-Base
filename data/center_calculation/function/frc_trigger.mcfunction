@@ -12,7 +12,9 @@ execute as @a at @s if score @s data_delay matches 1 run function center_calcula
 execute as @a at @s if score @s data_delay matches 1.. run scoreboard players remove @s data_delay 1
 #repeat scoreboard
 scoreboard players add @a repeat_25_timing 1
-execute as @a if score @s repeat_25_timing matches 26 run scoreboard players set @s repeat_25_timing 1
+execute as @a if score @s repeat_25_timing matches 26.. run scoreboard players set @s repeat_25_timing 1
+scoreboard players add @a repeat_600_timing 1
+execute as @a if score @s repeat_600_timing matches 601.. run scoreboard players set @s repeat_600_timing 1
 execute as @a if score @s com_kill_timing matches 1.. run scoreboard players remove @s com_kill_timing 1
 execute as @a if score @s death_escape_timing matches 1.. run scoreboard players remove @s death_escape_timing 1
 execute as @a at @s if score @s death_escape_timing matches 1 run title @s actionbar {"text":"Death Escape has been refreshed!",color:gold,bold:true,underlined:true}

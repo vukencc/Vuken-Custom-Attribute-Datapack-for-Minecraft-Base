@@ -276,6 +276,8 @@ scoreboard objectives add regeneration_p5 dummy
 scoreboard objectives add regeneration_p6 dummy
 
 scoreboard objectives add repeat_110_timing dummy
+scoreboard objectives add repeat_600_timing dummy
+scoreboard players set @a repeat_600_timing 0
 
 scoreboard objectives add spawner_break minecraft.mined:spawner
 
@@ -303,11 +305,7 @@ team add yellow
 team modify yellow color yellow
 
 #follow scoreboard should be operated when any player first enter the game
-scoreboard objectives add shared_active_cd dummy
-scoreboard players set @a shared_active_cd 0
 
-scoreboard objectives add absorption_shield_cd dummy
-scoreboard players set @a absorption_shield_cd 0
 
 function center_calculation:skill_scoreboard
 function center_calculation:area_enemy_scb
