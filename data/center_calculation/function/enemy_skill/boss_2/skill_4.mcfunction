@@ -1,0 +1,3 @@
+execute as @n[tag=boss_2] at @s run summon skeleton ~4 ~ ~ {Tags:["b2_s4_dummy"],NoAI:1b,Silent:1b,Glowing:1b,Team:"aqua",active_effects:[{id:invisibility,duration:999999,show_particles:0b,amplifier:0}],DeathLootTable:""}
+execute as @n[tag=boss_2] at @s run summon skeleton ~-4 ~ ~ {Tags:["b2_s4_dummy"],NoAI:1b,Silent:1b,Glowing:1b,Team:"aqua",active_effects:[{id:invisibility,duration:999999,show_particles:0b,amplifier:0}],DeathLootTable:""}
+tellraw @a {"text":"Dummies have been summoned!Kill the dummies to stop the tracking attack!",color:red,bold:true}

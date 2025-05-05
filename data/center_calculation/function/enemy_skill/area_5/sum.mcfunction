@@ -46,3 +46,5 @@ execute as @e[tag=a5_e5,scores={enemy_skill=10}] run data merge entity @s {NoAI:
 
 execute as @e[tag=a5_e6,nbt={HurtTime:10s},scores={enemy_skill=1..}] at @s run function center_calculation:enemy_skill/area_5/elite
 execute as @e[tag=a5_e6,scores={enemy_skill=-1}] at @s run function center_calculation:enemy_skill/area_5/elite_trig
+
+execute unless entity @p[tag=a5_c3] if entity @p[tag=a5_c2,tag=a5_c1] run function center_calculation:enemy_skill/area_5/gate_start

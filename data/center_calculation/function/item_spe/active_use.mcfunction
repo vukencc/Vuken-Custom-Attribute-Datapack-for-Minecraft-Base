@@ -1,4 +1,5 @@
-
+execute if score @s shared_active_cd matches 0 if items entity @s armor.* #armor[custom_data~{SpellExtension:1}] run function center_calculation:item_spe/passive/spell_extension
+execute if score @s shared_active_cd matches 0 unless items entity @s armor.* #armor[custom_data~{SpellExtension:1}] if items entity @s weapon.* #armor[custom_data~{SpellExtension:1}] run function center_calculation:item_spe/passive/spell_extension
 execute if score @s shared_active_cd matches 0 if items entity @s weapon.mainhand #melee_weapon[minecraft:custom_data~{WitherLance:1}] run function center_calculation:item_spe/active/wither_lance
 execute if score @s shared_active_cd matches 0 if items entity @s weapon.mainhand #melee_weapon[minecraft:custom_data~{Flameborn:1}] run function center_calculation:item_spe/active/flameborn
 execute if score @s shared_active_cd matches 0 if items entity @s weapon.mainhand #melee_weapon[minecraft:custom_data~{Windroad:1}] run function center_calculation:item_spe/active/windroad

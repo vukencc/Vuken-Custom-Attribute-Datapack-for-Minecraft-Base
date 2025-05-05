@@ -1,0 +1,1 @@
+execute if entity @p[tag=a6_c1,tag=a6_c2,tag=a6_c3,tag=!a6_c4]

@@ -51,3 +51,7 @@ function center_calculation:item_spe/passive_force
 function center_calculation:item_spe/active_force
 execute as @a if score @s repeat_25_timing matches 10 run function center_calculation:item_spe/passive_trig_low_tick
 function center_calculation:enemy_skill/force_center
+scoreboard players add @e[tag=timing_limited] timing_limited 1
+kill @e[tag=timing_limited_160,scores={timing_limited=160..}]
+kill @e[tag=timing_limited_240,scores={timing_limited=240..}]
+kill @e[tag=timing_limited_10,scores={timing_limited=10..}]

@@ -1,0 +1,1 @@
+particle end_rod ~ ~1 ~ 0 0 0 2 0 normal

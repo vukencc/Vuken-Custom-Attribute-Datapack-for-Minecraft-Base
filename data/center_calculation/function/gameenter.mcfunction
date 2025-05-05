@@ -313,3 +313,7 @@ function operation:base_scb_req
 
 scoreboard objectives add marker dummy
 scoreboard objectives add marker_2 dummy
+scoreboard objectives add in_boss dummy
+scoreboard objectives add gamemode.scb dummy
+scoreboard players set @a gamemode.scb 0
+scoreboard players set @a in_boss 0

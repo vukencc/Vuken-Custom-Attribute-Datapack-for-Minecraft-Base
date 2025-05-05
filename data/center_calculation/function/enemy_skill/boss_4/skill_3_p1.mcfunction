@@ -1,0 +1,1 @@
+execute as @e[tag=b4_s2,sort=random,limit=2] at @s run summon vex ~ ~-2 ~ {attributes:[{id:max_health,base:40},{id:"attack_damage",base:15},{id:scale,base:2}],active_effects:[{id:"invisibility",duration:999999,show_particles:0b,amplifier:0}],Tags:["b4_s3_enemy"],Glowing:1b,DeathLootTable:""} 

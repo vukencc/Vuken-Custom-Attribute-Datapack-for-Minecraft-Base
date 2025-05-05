@@ -1,0 +1,18 @@
+tp @a -143.01 84.00 586.04
+spawnpoint @a -144 78 543
+title @a subtitle {text:"Pharaoh of Abandoned Epics",color:white,bold:true}
+title @a title {text:"Menkauhor",color:yellow,bold:true}
+execute at @p run playsound entity.wither.spawn hostile @a ~ ~ ~
+scoreboard players set @a in_boss 1
+scoreboard objectives add boss.temp_deaths deathCount
+scoreboard players set @a boss.temp_deaths 0
+gamerule doImmediateRespawn true
+clone -149 271 576 -138 289 576 -149 83 576
+bossbar add boss_1 {"text":"Menkauhor",color:yellow,bold:true}
+bossbar set boss_1 color red
+bossbar set boss_1 max 500
+bossbar set boss_1 value 500
+bossbar set boss_1 players @a
+bossbar set boss_1 visible true
+scoreboard objectives add boss.skill_timing dummy
+summon zombie -143.0 84.00 619.5 {Tags:["boss_1","Boss"],PersistenceRequired:1b,CustomName:[{text:"Menkauhor",color:yellow,bold:true}],CustomNameVisible:1b,attributes:[{base:0.27,id:movement_speed},{base:500,id:"max_health"},{base:40,id:follow_range}],Health:500,equipment:{mainhand:{id:golden_sword,components:{enchantments:{sharpness:1,fire_aspect:1,knockback:1}},count:1},chest:{components:{"minecraft:attribute_modifiers":[{amount:4.0d,id:"minecraft:armor_chestplate",operation:"add_value",slot:"chest",type:"minecraft:armor"}],"minecraft:custom_name":{bold:0b,color:"#FFBE5D",italic:0b,text:"Fragile Guardian's Clothes"},"minecraft:lore":["",{bold:0b,color:"gray",italic:0b,obfuscated:0b,strikethrough:0b,text:"Common Item",underlined:0b},{color:"white",italic:0b,text:"Only the wall sticks to its destination..."}],"minecraft:tooltip_display":{hidden_components:["minecraft:trim","minecraft:dyed_color"]},"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:dune"}},count:1,id:"minecraft:golden_chestplate"},feet:{components:{"minecraft:attribute_modifiers":[{amount:2.0d,id:"minecraft:armor_feet",operation:"add_value",slot:"feet",type:"minecraft:armor"}],"minecraft:custom_name":{bold:0b,color:"#FFBE5D",italic:0b,text:"Fragile Guardian's Boots"},"minecraft:lore":["",{bold:0b,color:"gray",italic:0b,obfuscated:0b,strikethrough:0b,text:"Common Item",underlined:0b},{color:"white",italic:0b,text:"Only the wall sticks to its destination..."}],"minecraft:tooltip_display":{hidden_components:["minecraft:trim","minecraft:dyed_color"]},"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:dune"}},count:1,id:"minecraft:golden_boots"},head:{components:{"minecraft:custom_name":{extra:[{bold:0b,color:"blue",italic:0b,obfuscated:0b,strikethrough:0b,text:"Husk Pharaoh",underlined:0b}],text:""},"minecraft:profile":{id:[I;67411088,-739686879,-1666252800,-1431816328],name:"HeadDatabase",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWRkNDU3NzkzMGViYTEyMzNhNGE0NDVkN2E3ZmIyMGZlNDU3MDkyZjczZGRkODQ5ZTNkN2IzZDk0YzVmMGMyZSJ9fX0="}]}},count:1,id:"minecraft:player_head"},legs:{components:{"minecraft:attribute_modifiers":[{amount:2.0d,id:"minecraft:armor_legs",operation:"add_value",slot:"legs",type:"minecraft:armor"}],"minecraft:custom_name":{bold:0b,color:"#DCFFB3",italic:0b,text:"Curiosity Leggings"},"minecraft:dyed_color":12433452,"minecraft:lore":["",{bold:0b,color:"gray",italic:0b,obfuscated:0b,strikethrough:0b,text:"Common Item",underlined:0b},{color:"white",italic:0b,text:"Could you really tell me what you believe deep in your soul?"}]},count:1,id:"minecraft:leather_leggings"},offhand:{count:1,id:"minecraft:wither_rose"}},drop_chances:{body:0,chest:0,feet:0,head:0,legs:0,mainhand:0,offhand:0},active_effects:[{id:fire_resistance,duration:999999,amplifier:0,show_particles:0b},{id:resistance,duration:999999,amplifier:1,show_particles:0b}]}

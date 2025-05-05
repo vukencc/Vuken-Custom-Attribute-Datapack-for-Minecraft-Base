@@ -1,0 +1,2 @@
+execute positioned -966.52 154.00 411.47 run particle end_rod ~ ~ ~ 0 2 0 0 4 normal
+execute positioned -966.52 154.00 411.47 as @a[distance=..2] at @s if block ~ ~-1 ~ crying_obsidian in map_only:void_2 run tp @s 149.49 82.00 92.49

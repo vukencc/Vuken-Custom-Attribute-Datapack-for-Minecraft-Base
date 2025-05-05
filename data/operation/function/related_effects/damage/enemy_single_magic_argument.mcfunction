@@ -1,0 +1,1 @@
+$damage @p[distance=..1,nbt={HurtTime:0s}] $(magic_damage) magic

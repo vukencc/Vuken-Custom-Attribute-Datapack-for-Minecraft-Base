@@ -1,0 +1,2 @@
+execute if entity @s[tag=particle.end_rod.above] as @s at @s run function operation:related_effects/performance/particle.end_rod.above
+execute if entity @s[tag=damage.single.magic] as @s at @s run function operation:related_effects/damage/enemy_single_magic_argument with entity @s data
