@@ -317,3 +317,7 @@ scoreboard objectives add in_boss dummy
 scoreboard objectives add gamemode.scb dummy
 scoreboard players set @a gamemode.scb 0
 scoreboard players set @a in_boss 0
+scoreboard objectives add player.HurtTime dummy
+scoreboard players set @a player.HurtTime 0
+scoreboard objectives add player.BypassHurtTime dummy
+scoreboard players set @a player.BypassHurtTime 10

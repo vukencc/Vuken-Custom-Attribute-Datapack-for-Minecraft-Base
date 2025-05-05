@@ -55,3 +55,4 @@ scoreboard players add @e[tag=timing_limited] timing_limited 1
 kill @e[tag=timing_limited_160,scores={timing_limited=160..}]
 kill @e[tag=timing_limited_240,scores={timing_limited=240..}]
 kill @e[tag=timing_limited_10,scores={timing_limited=10..}]
+scoreboard players remove @a[scores={player.HurtTime=1..}] player.HurtTime 1

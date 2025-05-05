@@ -36,3 +36,5 @@ execute positioned -994.47 -58.00 1048.53 as @a[distance=..7] at @s if block ~ ~
 #-636 152 294 -590 205 327
 execute if entity @p[scores={entity_x=-636..-590,entity_z=294..327,entity_y=152..205},gamemode=survival] run setblock -615 270 305 minecraft:redstone_block
 execute if score @p in_boss matches 2 run function center_calculation:enemy_skill/boss_2/sum
+#-1791 269 765 -1350 269 1187
+execute if entity @p[scores={entity_x=-1791..-1350,entity_z=765..1187}] run function center_calculation:enemy_skill/area_10/sum
