@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Hasten",
+        "translate":"name.enchantment.hasten",
         "color": "gray"
     },
     "supported_items": "#minecraft:armor",

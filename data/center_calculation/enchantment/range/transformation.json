@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Transformation",
+        "translate":"name.enchantment.transformation",
         "color": "gray"
     },
     "supported_items": "#range",

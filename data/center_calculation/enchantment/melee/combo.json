@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Combo",
+        "translate":"name.enchantment.combo",
         "color": "gray"
     },
     "supported_items": "#minecraft:weapon",

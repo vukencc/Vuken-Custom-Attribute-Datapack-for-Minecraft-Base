@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "First Strike",
+        "translate":"name.enchantment.first_strike",
         "color": "gray"
     },
     "supported_items": "#minecraft:weapon",

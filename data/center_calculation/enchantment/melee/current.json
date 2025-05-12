@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Current",
+        "translate":"name.enchantment.current",
         "color": "gray"
     },
     "supported_items": "#minecraft:weapon",

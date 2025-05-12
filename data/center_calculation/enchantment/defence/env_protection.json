@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Environment Protection",
+        "translate":"name.enchantment.environment_protection",
         "color": "gray"
     },
     "supported_items": "#minecraft:armor",

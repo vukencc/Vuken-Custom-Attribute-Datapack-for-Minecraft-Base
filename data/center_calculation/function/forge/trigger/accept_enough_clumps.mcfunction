@@ -49,3 +49,5 @@ execute at @n[tag=Forge] run particle enchant ~ ~0.5 ~ 1.2 1.2 1.2 0.25 110 norm
 playsound block.enchantment_table.use hostile @s ~ ~ ~
 
 team join purple @n[tag=forge_show]
+
+scoreboard players set @s resin_clump_cost 0

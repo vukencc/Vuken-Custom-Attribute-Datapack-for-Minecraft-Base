@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Frenzy",
+        "translate":"name.enchantment.frenzy",
         "color": "gray"
     },
     "supported_items": "#minecraft:armor",

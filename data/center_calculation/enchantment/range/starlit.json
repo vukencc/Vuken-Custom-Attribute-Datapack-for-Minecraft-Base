@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Starlit",
+        "translate":"name.enchantment.starlit",
         "color": "gray"
     },
     "supported_items": "#range",

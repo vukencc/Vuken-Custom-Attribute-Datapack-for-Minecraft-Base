@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Absorption",
+        "translate":"name.enchantment.absorption",
         "color": "gray"
     },
     "supported_items": "#minecraft:armor",

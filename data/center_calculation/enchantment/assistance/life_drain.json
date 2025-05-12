@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Life Drain",
+        "translate":"name.enchantment.life_drain",
         "color": "gray"
     },
     "supported_items": "#minecraft:armor",

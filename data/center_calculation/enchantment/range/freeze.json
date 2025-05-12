@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Freeze",
+        "translate":"name.enchantment.freeze",
         "color": "gray"
     },
     "supported_items": "#range",

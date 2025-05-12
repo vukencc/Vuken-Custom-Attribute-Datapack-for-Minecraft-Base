@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Promise",
+        "translate":"name.enchantment.promise",
         "color": "gray"
     },
     "supported_items": "#minecraft:armor",

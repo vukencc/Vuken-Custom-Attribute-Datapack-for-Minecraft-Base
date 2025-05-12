@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Gravity",
+        "translate":"name.enchantment.gravity",
         "color": "gray"
     },
     "supported_items": "#range",

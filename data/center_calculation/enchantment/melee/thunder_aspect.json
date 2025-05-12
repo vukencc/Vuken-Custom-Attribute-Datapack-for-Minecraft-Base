@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Thunder Aspect",
+        "translate":"name.enchantment.thunder_aspect",
         "color": "gray"
     },
     "supported_items": "#minecraft:weapon",

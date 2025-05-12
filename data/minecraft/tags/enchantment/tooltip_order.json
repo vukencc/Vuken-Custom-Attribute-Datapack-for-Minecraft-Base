@@ -52,8 +52,8 @@
     "minecraft:depth_strider",
     "minecraft:thorns",
     "minecraft:loyalty",
-    "minecraft:unbreaking",
     "minecraft:infinity",
-    "minecraft:mending"
+    "minecraft:mending",
+    "minecraft:unbreaking"
   ]
 }

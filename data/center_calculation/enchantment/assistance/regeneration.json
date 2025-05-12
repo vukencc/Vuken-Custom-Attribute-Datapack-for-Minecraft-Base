@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Regeneration",
+        "translate":"name.enchantment.regeneration",
         "color": "gray"
     },
     "supported_items": "#minecraft:armor",

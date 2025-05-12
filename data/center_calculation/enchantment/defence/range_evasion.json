@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Range Evasion",
+        "translate":"name.enchantment.range_evasion",
         "color": "gray"
     },
     "supported_items": "#minecraft:armor",

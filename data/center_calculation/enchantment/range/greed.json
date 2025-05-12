@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Greed",
+        "translate":"name.enchantment.greed",
         "color": "gray"
     },
     "supported_items": "#range",

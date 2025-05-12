@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "Focus",
+        "translate":"name.enchantment.focus",
         "color": "gray"
     },
     "supported_items": "#minecraft:weapon",
