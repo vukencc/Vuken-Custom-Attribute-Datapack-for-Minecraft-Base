@@ -1,1 +1,1 @@
-$give @s resin_clump $(resin)
+$give @s resin_clump[custom_data={ForgeCurrency:1}] $(resin)

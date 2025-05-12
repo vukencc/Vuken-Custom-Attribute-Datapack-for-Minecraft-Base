@@ -54,5 +54,9 @@ function center_calculation:enemy_skill/force_center
 scoreboard players add @e[tag=timing_limited] timing_limited 1
 kill @e[tag=timing_limited_160,scores={timing_limited=160..}]
 kill @e[tag=timing_limited_240,scores={timing_limited=240..}]
+execute as @e[tag=timing_limited_10,scores={timing_limited=10..}] at @s on passengers run ride @s dismount
+execute as @e[tag=timing_limited_10,scores={timing_limited=10..}] at @s run tp @s ~ ~-200 ~
 kill @e[tag=timing_limited_10,scores={timing_limited=10..}]
 scoreboard players remove @a[scores={player.HurtTime=1..}] player.HurtTime 1
+
+execute as @a at @s as @n[tag=spawnpoint,distance=..15] at @s run particle electric_spark ~ ~1 ~ 0.5 1.5 0.5 0.1 3 normal

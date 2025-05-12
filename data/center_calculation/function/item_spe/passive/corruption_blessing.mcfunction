@@ -1,2 +1,0 @@
-execute if score @s repeat_600_timing matches 1 at @s run effect give @e[type=!#bypass,distance=..8] wither 15 1 true
-execute if score @s repeat_600_timing matches 1 at @s run effect give @s wither 15 1 true

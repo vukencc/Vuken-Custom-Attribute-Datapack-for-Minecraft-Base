@@ -1,2 +1,0 @@
-execute if score @s repeat_10_timing matches 1..5 if items entity @s armor.* #armor[custom_data~{ArcaneAtom:1}] run function center_calculation:item_spe/passive/arcane_atom
-execute if score @s repeat_10_timing matches 1..5 unless items entity @s armor.* #armor[custom_data~{ArcaneAtom:1}] if items entity @s weapon.* #armor[custom_data~{ArcaneAtom:1}] run function center_calculation:item_spe/passive/arcane_atom

@@ -1,2 +1,0 @@
-execute at @s on attacker as @s if entity @s[tag=a10_e3] run effect give @p slowness 1 4 true
-execute at @s on attacker as @s if entity @s[tag=a10_e3] run particle block{block_state:{Name:ice}} ~ ~1 ~ 1 1 1 0.1 15 normal

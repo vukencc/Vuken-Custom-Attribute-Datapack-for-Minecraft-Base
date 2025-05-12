@@ -1,0 +1,14 @@
+{
+	"criteria":{
+		"temp_forge":{
+			"trigger":"minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt" : "{Tags:[\"spawnpoint\"]}"
+                }
+            }
+		}
+	},
+	"requirements": [["temp_forge"]] ,
+	"rewards":{"function":"center_calculation:forge/trigger/set_spawn"}
+}

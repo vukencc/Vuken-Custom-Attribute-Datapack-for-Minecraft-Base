@@ -1,2 +1,0 @@
-execute if score @s absorption_shield_cd matches 0 if items entity @s armor.* #armor[custom_data~{AbsorptionShield:1}] run function center_calculation:item_spe/passive/absorption_shield
-execute if score @s absorption_shield_cd matches 0 if items entity @s weapon.* #armor[custom_data~{AbsorptionShield:1}] run function center_calculation:item_spe/passive/absorption_shield

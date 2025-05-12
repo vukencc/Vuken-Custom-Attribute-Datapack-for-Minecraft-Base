@@ -4,3 +4,21 @@ execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{Act
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{ActiveSlot:1}}}}] if items entity @s weapon.mainhand paper run item replace entity @s weapon.mainhand with air
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{ActiveSlot:1}}}}] if items entity @s weapon.mainhand paper run team join gold @n[tag=af_forge_show]
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{ActiveSlot:1}}}}] if items entity @s weapon.mainhand paper run playsound entity.allay.item_given hostile @s ~ ~ ~
+
+data modify entity @n[tag=active_txt_1] text.color set value "#8aeeff"
+data modify entity @n[tag=active_txt_2] text.color set value "#8aeeff"
+data modify entity @n[tag=active_txt_3] text.color set value "#8aeeff"
+data modify entity @n[tag=active_txt_4] text.color set value "#8aeeff"
+data modify entity @n[tag=active_txt_5] text.color set value "#8aeeff"
+
+scoreboard objectives add temp_marker_1 dummy
+
+execute store result score @s temp_marker_1 run data get entity @n[tag=af_forge_show] item.components."minecraft:custom_data".level
+
+execute if score @s temp_marker_1 matches 1.. run data modify entity @n[tag=active_txt_1] text.color set value green
+execute if score @s temp_marker_1 matches 2.. run data modify entity @n[tag=active_txt_2] text.color set value green
+execute if score @s temp_marker_1 matches 3.. run data modify entity @n[tag=active_txt_3] text.color set value green
+execute if score @s temp_marker_1 matches 4.. run data modify entity @n[tag=active_txt_4] text.color set value green
+execute if score @s temp_marker_1 matches 5.. run data modify entity @n[tag=active_txt_5] text.color set value green
+
+scoreboard objectives remove temp_marker_1

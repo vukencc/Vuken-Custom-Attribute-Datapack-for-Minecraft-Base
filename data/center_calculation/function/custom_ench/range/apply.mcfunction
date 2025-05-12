@@ -1,6 +1,6 @@
 $scoreboard players set @s thunder_aspect_timing $(freeze)
 execute if score @s arrow_apply_freeze matches 1.. run data merge entity @s {NoAI:1b}
-$execute as @e[distance=..3.5,type=!#minecraft:bypass] run damage @s $(starlit) starve
+$execute if score @s arrow_apply_starlit matches 1.. as @e[distance=..3.5,type=!#minecraft:bypass] run damage @s $(starlit) starve
 execute as @s store result score @s entity_x run data get entity @s Pos[0] 10
 execute as @s store result score @s entity_y run data get entity @s Pos[1] 10
 execute as @s store result score @s entity_z run data get entity @s Pos[2] 10

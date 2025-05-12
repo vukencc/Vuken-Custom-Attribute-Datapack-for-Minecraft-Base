@@ -13,7 +13,7 @@
         "options": {
           "type": "firework"
         },
-        "probability": 0.002
+        "probability": 0.001
       }
     },
     "spawners": {

@@ -1,2 +1,0 @@
-execute if items entity @p armor.* #armor[custom_data~{TitanShock:1}] run function center_calculation:item_spe/passive/titan_shock
-execute if items entity @p weapon.* #armor[custom_data~{TitanShock:1}] run function center_calculation:item_spe/passive/titan_shock

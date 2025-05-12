@@ -1,3 +1,0 @@
-execute as @e[tag=b4_s2,sort=random,limit=3] at @s run summon slime ~ ~-4 ~ {Invulnerable:1b,attributes:[{id:max_health,base:40},{id:"attack_damage",base:15}],active_effects:[{id:"invisibility",duration:999999,show_particles:0b,amplifier:0}],Tags:["b4_s5_enemy"],Glowing:1b,Team:"aqua",Size:0,DeathLootTable:"",NoAI:1b,NoGravity:1b,Health:40} 
-title @a subtitle {"text":"Use barriers to block the followings!",color:red,bold:true}
-title @a title {text:" "}

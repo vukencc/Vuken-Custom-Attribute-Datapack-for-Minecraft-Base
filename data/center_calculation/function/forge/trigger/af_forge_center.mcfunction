@@ -1,5 +1,5 @@
-advancement revoke @s only center_calculation:af_forge_hurt
-advancement revoke @s only center_calculation:af_forge_inter
+advancement revoke @s only center_calculation:forge_inter/af_forge_hurt
+advancement revoke @s only center_calculation:forge_inter/af_forge_inter
 #Forge af_Forge af_Forge
 scoreboard players set @n[tag=af_Forge] marker 0
 scoreboard players set @n[tag=af_Forge] marker_2 0

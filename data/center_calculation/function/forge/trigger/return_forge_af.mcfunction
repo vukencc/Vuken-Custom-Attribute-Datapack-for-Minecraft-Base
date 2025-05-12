@@ -3,3 +3,9 @@ execute if entity @n[tag=af_forge_show] run data modify entity @n[tag=af_forge_r
 execute if entity @n[tag=af_forge_show] run data modify entity @n[tag=af_forge_return] PickupDelay set value 0
 execute if entity @n[tag=af_forge_show] run playsound entity.allay.item_taken hostile @s ~ ~ ~
 kill @n[tag=af_forge_show]
+
+data modify entity @n[tag=active_txt_1] text.color set value "#8aeeff"
+data modify entity @n[tag=active_txt_2] text.color set value "#8aeeff"
+data modify entity @n[tag=active_txt_3] text.color set value "#8aeeff"
+data modify entity @n[tag=active_txt_4] text.color set value "#8aeeff"
+data modify entity @n[tag=active_txt_5] text.color set value "#8aeeff"
