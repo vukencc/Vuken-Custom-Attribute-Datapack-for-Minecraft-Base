@@ -25,5 +25,5 @@ scoreboard players operation @s evasion_p1 += @s magic_evasion_p5
 scoreboard players operation @s evasion_p1 += @s magic_evasion_p6
 execute if score @s evasion_p1 matches 21.. run scoreboard players set @s evasion_p1 20
 scoreboard players operation @s evasion_p1 *= @s temp_std4
-tellraw @s [{"text":"Magic Evasion Chance : ",color:white,bold:true},{score:{name:"@s",objective:"evasion_p1"},color:"#ade6ff",bold:true},{"text":"%",color:"#ade6ff",bold:true}]
+tellraw @s [{translate:name.magic_evasion.lore,"fallback":"Magic Evasion Chance : ",color:white,bold:true},{score:{name:"@s",objective:"evasion_p1"},color:"#ade6ff",bold:true},{"text":"%",color:"#ade6ff",bold:true}]
 scoreboard objectives remove temp_std4

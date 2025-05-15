@@ -1,33 +1,21 @@
 scoreboard objectives add damageResisted minecraft.custom:damage_resisted
-scoreboard players set @a damageResisted 0
 scoreboard objectives add damageAbsorbed minecraft.custom:damage_absorbed
-scoreboard players set @a damageAbsorbed 0
 scoreboard objectives add std1000 dummy
-scoreboard players set @a std1000 1000
 scoreboard objectives add std100 dummy
-scoreboard players set @a std100 100
 scoreboard objectives add std10 dummy
-scoreboard players set @a std10 10
 scoreboard objectives add std750 dummy
-scoreboard players set @a std750 12
 scoreboard objectives add com_damage_timing dummy
-scoreboard players set @a com_damage_timing 0
 scoreboard objectives add range_damage_timing dummy
-scoreboard players set @p range_damage_timing 0
 scoreboard objectives add magic_damage_timing dummy
-scoreboard players set @p magic_damage_timing 0
 scoreboard objectives add env_damage_timing dummy
-scoreboard players set @p env_damage_timing 0
 scoreboard objectives add health health
 scoreboard objectives add inter_custom_cd dummy
-scoreboard players set @a inter_custom_cd 0
 scoreboard objectives add data_delay dummy
-scoreboard players set @a data_delay 0
+scoreboard objectives add std3 dummy
 #prime
 scoreboard objectives add protection_level dummy
 scoreboard objectives add vanilla_armor dummy
 scoreboard objectives add vanilla_toughness dummy
-give @a nether_star[custom_name=[{"text":"Personal Stats","italic":false,"underlined":true,"color":"blue","bold":true}],lore=["",[{"text":"Right click to view personal stats and dictionary.","italic":false,"color":"white","bold":true}],"",[{"text":"Basic Item","italic":false,"color":"aqua","bold":true}]],enchantable={value:1},enchantment_glint_override=true,food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:999999,animation:none,sound:"entity.experience_orb.pickup",has_consume_particles:0b},use_cooldown={seconds:1},custom_data={"stats_inter":true}]
 #special enchant
 scoreboard objectives add melee_protection dummy
 scoreboard objectives add magic_protection dummy
@@ -115,7 +103,6 @@ scoreboard players set @a std1 1
 
 #enchant
 scoreboard objectives add std20 dummy
-scoreboard players set @a std20 20
 scoreboard objectives add armor_extension dummy
 
 scoreboard objectives add promise_p1 dummy
@@ -286,7 +273,6 @@ scoreboard objectives add invert_delay dummy
 scoreboard objectives add enemy_skill dummy
 
 scoreboard objectives add std_neg dummy
-scoreboard players set @a std_neg -1
 #team color
 team add blue
 team modify blue color blue
@@ -321,3 +307,11 @@ scoreboard objectives add player.HurtTime dummy
 scoreboard players set @a player.HurtTime 0
 scoreboard objectives add player.BypassHurtTime dummy
 scoreboard players set @a player.BypassHurtTime 10
+
+scoreboard objectives add ethereal_p1 dummy
+scoreboard objectives add ethereal_p2 dummy
+scoreboard objectives add ethereal_p3 dummy
+scoreboard objectives add ethereal_p4 dummy
+scoreboard objectives add ethereal_p5 dummy
+scoreboard objectives add ethereal_p6 dummy
+

@@ -20,22 +20,12 @@ execute if entity @s[tag=combo_access] at @s run function center_calculation:par
 execute if entity @s[tag=combo_access] at @p run playsound block.amethyst_block.hit hostile @p ~ ~ ~
 tag @s remove combo_access
 
-execute if score @p melee_water_aspect matches 1.. at @s run particle minecraft:totem_of_undying ~ ~1 ~ 1.3 1 1.3 0 18 normal
-execute as @s if score @p melee_water_aspect matches 1 run effect give @s weakness 5 0 true
-execute as @s if score @p melee_water_aspect matches 2 run effect give @s weakness 5 1 true
-execute as @s if score @p melee_water_aspect matches 3 run effect give @s weakness 5 2 true
-execute as @s if score @p melee_water_aspect matches 4 run effect give @s weakness 5 3 true
-execute as @s if score @p melee_water_aspect matches 5.. run effect give @s weakness 5 4 true
-
-execute if score @p melee_ice_aspect matches 1.. at @s run particle block{block_state:ice} ~ ~1 ~ 1.3 1 1.3 0 5 normal
-execute if score @p melee_ice_aspect matches 1.. at @s run particle block{block_state:blue_ice} ~ ~1 ~ 1.3 1 1.3 0 5 normal
-execute if score @p melee_ice_aspect matches 1.. at @s run particle snowflake ~ ~1 ~ 1.3 1 1.3 0 8 normal
-execute if score @p melee_ice_aspect matches 1.. at @p run playsound entity.player.hurt_freeze hostile @p ~ ~ ~
-execute as @s if score @p melee_ice_aspect matches 1 run effect give @s slowness 5 0 true
-execute as @s if score @p melee_ice_aspect matches 2 run effect give @s slowness 5 1 true
-execute as @s if score @p melee_ice_aspect matches 3 run effect give @s slowness 5 2 true
-execute as @s if score @p melee_ice_aspect matches 4 run effect give @s slowness 5 3 true
-execute as @s if score @p melee_ice_aspect matches 5.. run effect give @s slowness 5 4 true
+execute at @s on attacker as @s if items entity @s weapon.mainhand *[minecraft:enchantments~[{enchantments:"center_calculation:melee/ice_aspect"}]] run tag @n add ice_aspect_ed
+execute at @s[tag=ice_aspect_ed] run particle block{block_state:ice} ~ ~1 ~ 1.3 1 1.3 0 3 normal
+execute at @s[tag=ice_aspect_ed] run particle block{block_state:blue_ice} ~ ~1 ~ 1.3 1 1.3 0 3 normal
+execute at @s[tag=ice_aspect_ed] run particle snowflake ~ ~1 ~ 1.3 1 1.3 0 6 normal
+execute if entity @s[tag=ice_aspect_ed] on attacker as @s at @s run playsound entity.player.hurt_freeze hostile @p ~ ~ ~
+tag @s remove ice_aspect_ed
 
 $execute if entity @s[type=#minecraft:slayer] run damage @s $(slayer) starve by @p
 

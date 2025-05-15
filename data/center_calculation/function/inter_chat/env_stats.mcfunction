@@ -49,7 +49,7 @@ scoreboard players operation @s std_armor /= @s std100
 
 #damage_export
 scoreboard players operation @s temp_100 -= @s std_armor
-tellraw @s [{"text":"Environment Damage Defence : ",color:white,bold:true},{score:{name:"@s",objective:"temp_100"},color:"#ade6ff",bold:true},{"text":"%",color:"#ade6ff",bold:true}]
+tellraw @s [{translate:name.environment_defence.lore,"fallback":"Environment Damage Defence : ",color:white,bold:true},{score:{name:"@s",objective:"temp_100"},color:"#ade6ff",bold:true},{"text":"%",color:"#ade6ff",bold:true}]
 #clear
 scoreboard objectives remove damageDeathDetect
 scoreboard objectives remove base_armor

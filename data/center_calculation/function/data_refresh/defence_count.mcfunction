@@ -2,7 +2,7 @@ attribute @s armor modifier remove vanilla_armor_refuse
 summon marker ~ ~ ~ {Tags:["armor_trans"],data:{luck_trans:0}}
 execute as @s store result score @s vanilla_armor run attribute @s armor get 1
 execute as @s store result score @s vanilla_toughness run attribute @s armor_toughness get 1
-scoreboard players operation @s vanilla_toughness *= @s std2
+scoreboard players operation @s vanilla_toughness *= @s std3
 execute as @s if score @s vanilla_toughness > @s vanilla_armor run scoreboard players operation @s vanilla_toughness = @s vanilla_armor
 scoreboard players operation @s vanilla_armor += @s vanilla_toughness
 execute as @s at @s store result entity @e[tag=armor_trans,type=marker,limit=1,sort=nearest] data.luck_trans int 1 run scoreboard players get @s vanilla_armor
