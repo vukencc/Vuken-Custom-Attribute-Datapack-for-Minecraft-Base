@@ -20,15 +20,19 @@ tag @s remove hunger_invert
 tag @s remove blindness_invert
 tag @s remove darkness_invert
 tag @s remove unluck_invert
-execute if entity @s[nbt={active_effects:[{id:"minecraft:poison"}]}] run tag @s add poison_invert
-execute if entity @s[nbt={active_effects:[{id:"minecraft:wither"}]}] run tag @s add wither_invert
-execute if entity @s[nbt={active_effects:[{id:"minecraft:weakness"}]}] run tag @s add weakness_invert
-execute if entity @s[nbt={active_effects:[{id:"minecraft:slowness"}]}] run tag @s add slowness_invert
-execute if entity @s[nbt={active_effects:[{id:"minecraft:mining_fatigue"}]}] run tag @s add mining_fatigue_invert
-execute if entity @s[nbt={active_effects:[{id:"minecraft:hunger"}]}] run tag @s add hunger_invert
-execute if entity @s[nbt={active_effects:[{id:"minecraft:blindness"}]}] run tag @s add blindness_invert
-execute if entity @s[nbt={active_effects:[{id:"minecraft:darkness"}]}] run tag @s add darkness_invert
-execute if entity @s[nbt={active_effects:[{id:"minecraft:unluck"}]}] run tag @s add unluck_invert
+
+
+execute if data entity @s active_effects[{id:"minecraft:poison"}] run tag @s add poison_invert
+execute if data entity @s active_effects[{id:"minecraft:wither"}] run tag @s add wither_invert
+execute if data entity @s active_effects[{id:"minecraft:weakness"}] run tag @s add weakness_invert
+execute if data entity @s active_effects[{id:"minecraft:slowness"}] run tag @s add slowness_invert
+execute if data entity @s active_effects[{id:"minecraft:mining_fatigue"}] run tag @s add mining_fatigue_invert
+execute if data entity @s active_effects[{id:"minecraft:hunger"}] run tag @s add hunger_invert
+execute if data entity @s active_effects[{id:"minecraft:blindness"}] run tag @s add blindness_invert
+execute if data entity @s active_effects[{id:"minecraft:darkness"}] run tag @s add darkness_invert
+execute if data entity @s active_effects[{id:"minecraft:unluck"}] run tag @s add unluck_invert
+
+
 effect clear @s minecraft:poison
 effect clear @s minecraft:wither
 effect clear @s minecraft:weakness
