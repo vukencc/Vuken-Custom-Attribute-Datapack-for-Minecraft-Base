@@ -44,7 +44,7 @@
   "name.enchantment.focus": "专注",
   "name.enchantment.ice_aspect": "冰霜附加",
   "name.enchantment.quake": "地震",
-  "name.enchantment.slayer": "屠夫",
+  "name.enchantment.slayer": "人形杀手",
   "name.enchantment.thunder_aspect": "雷霆附加",
   "name.enchantment.water_aspect": "水之附加",
   "name.enchantment.power": "力量",
@@ -100,7 +100,7 @@
 "name.enchantment.focus.display": "[ 专注 ]",
 "name.enchantment.ice_aspect.display": "[ 冰霜附加 ]",
 "name.enchantment.quake.display": "[ 地震 ]",
-"name.enchantment.slayer.display": "[ 屠夫 ]",
+"name.enchantment.slayer.display": "[ 人形杀手 ]",
 "name.enchantment.thunder_aspect.display": "[ 雷霆附加 ]",
 "name.enchantment.water_aspect.display": "[ 水之附加 ]",
 "name.enchantment.power.display": "[ 力量 ]",
@@ -173,7 +173,7 @@
   "name.enchantment.death_escape.lore": "使你能够在受到致命攻击时存活，冷却时间为(122-2*等级)秒。",
   "name.enchantment.invade.lore": "击杀敌人后，在接下来的5秒内，每级额外增加20%%防御值。",
   "name.enchantment.promise.lore": "在一定范围内前方没有敌人时，每级额外增加20%%防御值。",
-  "name.enchantment.ethereal.lore": "受到伤害后，你在接下来的2秒内额外获得20%%仿佛。",
+  "name.enchantment.ethereal.lore": "受到伤害后，你在接下来的2秒内额外获得20%%防御值。",
   "name.enchantment.revolve.lore": "生命值低于60%%时，每级额外增加20%%防御值。",
   
   "name.enchantment.sharpness.lore": "每级增加1.25近战伤害。",
@@ -242,6 +242,9 @@
 
   "lore.item.name.essence_of_void":"空之精华",
   "lore.item.intro.essence_of_void":"万物皆虚，万事皆允。",
+
+  "lore.item.name.personal_stats":"旅者笔记",
+  "lore.item.intro.personal_stats":"右键查看个人状态及旅行日志的便捷道具。",
 
   "lore.item.name.wind_longsword":"风之长刃",
   "lore.item.intro.wind_longsword":"人们徘徊不前，驻目远视，祝愿风在你的身后...",

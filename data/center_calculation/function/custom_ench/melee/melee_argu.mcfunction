@@ -27,8 +27,6 @@ execute at @s[tag=ice_aspect_ed] run particle snowflake ~ ~1 ~ 1.3 1 1.3 0 6 nor
 execute if entity @s[tag=ice_aspect_ed] on attacker as @s at @s run playsound entity.player.hurt_freeze hostile @p ~ ~ ~
 tag @s remove ice_aspect_ed
 
-$execute if entity @s[type=#minecraft:slayer] run damage @s $(slayer) starve by @p
-
 execute if score @p melee_focus matches 1.. as @s at @s unless entity @e[type=!#bypass,distance=0.3..3] run particle glow ~ ~ ~ 0 2 0 0 15 normal
 execute if score @p melee_focus matches 1.. as @s at @s unless entity @e[type=!#bypass,distance=0.3..3] run playsound item.trident.hit hostile @a ~ ~ ~
 $execute as @s at @s unless entity @e[type=!#bypass,distance=0.3..3] run damage @s $(focus) starve by @p

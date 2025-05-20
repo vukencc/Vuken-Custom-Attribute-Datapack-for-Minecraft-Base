@@ -315,3 +315,18 @@ scoreboard objectives add ethereal_p4 dummy
 scoreboard objectives add ethereal_p5 dummy
 scoreboard objectives add ethereal_p6 dummy
 
+execute if entity @p[gamemode=creative] run function center_calculation:player_enter
+
+scoreboard objectives add enemy.Taken.Melee dummy
+scoreboard objectives add player.Strength dummy
+
+scoreboard objectives add stdTemp1 dummy
+scoreboard objectives add stdTemp2 dummy
+scoreboard objectives add stdTemp3 dummy
+scoreboard objectives add stdTemp4 dummy
+scoreboard objectives add stdTemp5 dummy
+scoreboard objectives add stdTemp6 dummy
+scoreboard objectives add stdTemp7 dummy
+scoreboard objectives add stdTemp8 dummy
+scoreboard objectives add stdTemp9 dummy
+scoreboard objectives add stdTemp10 dummy

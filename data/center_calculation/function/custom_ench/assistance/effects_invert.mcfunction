@@ -11,3 +11,10 @@ scoreboard players operation @s invert_p1 += @s invert_p5
 scoreboard players operation @s invert_p1 += @s invert_p6
 execute if score @s invert_p1 matches 1.. run function center_calculation:custom_ench/assistance/effects_delay
 scoreboard players set @s invert_delay 2
+
+scoreboard players set @s player.Strength 0
+attribute @s attack_damage modifier remove strength.magic
+attribute @s attack_damage modifier remove strength.melee
+attribute @s attack_damage modifier remove strength.range
+attribute @s attack_damage modifier remove strength.pre
+execute if data entity @s active_effects[{id:"minecraft:strength"}] run function center_calculation:custom_ench/assistance/strength_delay
