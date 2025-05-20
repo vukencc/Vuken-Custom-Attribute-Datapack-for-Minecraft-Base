@@ -169,7 +169,7 @@
   "name.enchantment.range_evasion.lore": "在闪避等级中，提供(8*等级)%%的几率闪避远程伤害，上限为80%%。",
 
   "name.enchantment.absorption.lore": "每1伤害吸收值，每级附魔增加5%%防御值。",
-  "name.enchantment.courage.lore": "生命值低于60%%时，每级额外增加20%%防御值。",
+  "name.enchantment.courage.lore": "生命值高于60%%时，每级额外增加20%%防御值。",
   "name.enchantment.death_escape.lore": "使你能够在受到致命攻击时存活，冷却时间为(122-2*等级)秒。",
   "name.enchantment.invade.lore": "击杀敌人后，在接下来的5秒内，每级额外增加20%%防御值。",
   "name.enchantment.promise.lore": "在一定范围内前方没有敌人时，每级额外增加20%%防御值。",
