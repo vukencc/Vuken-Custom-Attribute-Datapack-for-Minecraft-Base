@@ -4,6 +4,7 @@
   "attribute.name.water_movement_efficiency": "弹射物伤害",
   "attribute.name.armor": "防御值",
   "attribute.name.armor_toughness": "韧性值",
+  "attribute.name.attack_damage": "近战伤害",
   
   "name.enchantment.agility": "敏捷",
   "name.enchantment.chain_break": "连锁破坏",

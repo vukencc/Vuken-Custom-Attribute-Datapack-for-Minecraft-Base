@@ -21,4 +21,4 @@ give @a nether_star[custom_name=[{translate:lore.item.name.personal_stats,"itali
 scoreboard players set @a std20 20
 scoreboard players set @a std_neg -1
 execute as @a run attribute @s movement_efficiency base set 1
-execute as @a run attribute @s water_movement_efficiency base set 1
+execute as @a run attribute @s water_movement_efficiency base set 0

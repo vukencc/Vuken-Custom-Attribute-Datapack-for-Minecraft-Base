@@ -318,6 +318,8 @@ scoreboard objectives add ethereal_p6 dummy
 execute if entity @p[gamemode=creative] run function center_calculation:player_enter
 
 scoreboard objectives add enemy.Taken.Melee dummy
+scoreboard objectives add enemy.Taken.Range dummy
+scoreboard objectives add enemy.Taken.Magic dummy
 scoreboard objectives add player.Strength dummy
 
 scoreboard objectives add stdTemp1 dummy

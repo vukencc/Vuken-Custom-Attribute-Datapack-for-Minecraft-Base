@@ -3,7 +3,7 @@ summon marker ~ ~ ~ {Tags:["temp_effects_transformer"],data:{greed:0.0d,freeze:0
 execute store result entity @n[type=marker,tag=temp_effects_transformer] data.freeze int 10 run data get entity @s active_effects[{id:"minecraft:hunger"}].amplifier 1
 execute store result entity @n[type=marker,tag=temp_effects_transformer] data.greed double 1.0 run data get entity @s active_effects[{id:"minecraft:bad_omen"}].amplifier 1
 execute store result entity @n[type=marker,tag=temp_effects_transformer] data.ring float 1.0 run data get entity @s active_effects[{id:"minecraft:night_vision"}].amplifier -0.015
-execute store result entity @n[type=marker,tag=temp_effects_transformer] data.starlit float 1.0 run data get entity @s active_effects[{id:"minecraft:unluck"}].amplifier 3
+execute store result entity @n[type=marker,tag=temp_effects_transformer] data.starlit float 1.0 run data get entity @s active_effects[{id:"minecraft:unluck"}].amplifier 30
 execute store result score @s arrow_apply_greed run data get entity @s active_effects[{id:"minecraft:bad_omen"}].amplifier
 execute store result score @s arrow_apply_freeze run data get entity @s active_effects[{id:"minecraft:hunger"}].amplifier
 execute store result score @s arrow_apply_ring run data get entity @s active_effects[{id:"minecraft:night_vision"}].amplifier
