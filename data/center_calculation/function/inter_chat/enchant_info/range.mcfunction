@@ -16,6 +16,11 @@ tellraw @s [{translate:name.enchantment.starlit.display,"fallback":"[ Starlit ]"
 tellraw @s [{translate:name.enchantment.ring.display,"fallback":"[ Ring ]",color:"#afffca","bold":true,hover_event:{action:"show_text",value:[{translate:name.enchantment.ring.lore,"fallback":"Enemies you shoot create a ring, pull all enemies nearby inside.","bold":true}]}}]
 tellraw @s [{translate:name.enchantment.greed.display,"fallback":"[ Greed ]",color:"#afffca","bold":true,hover_event:{action:"show_text",value:[{translate:name.enchantment.greed.lore,"fallback":"Enemies you shoot is pulled towards you.","bold":true}]}}]
 tellraw @s [{translate:name.enchantment.freeze.display,"fallback":"[ Freeze ]",color:"#afffca","bold":true,hover_event:{action:"show_text",value:[{translate:name.enchantment.freeze.lore,"fallback":"Enemies you shoot freeze for (0.5*Level) seconds.","bold":true}]}}]
+
+tellraw @s [{translate:name.enchantment.point_blank.display,"fallback":"[ Point Blank ]",color:"#afffca","bold":true,hover_event:{action:"show_text",value:[{translate:name.enchantment.point_blank.lore,"fallback":"Your arrows deal additional (3*Level) range damage to enemies within 4 blocks.","bold":true}]}}]
+
+tellraw @s [{translate:name.enchantment.sniper.display,"fallback":"[ Sniper ]",color:"#afffca","bold":true,hover_event:{action:"show_text",value:[{translate:name.enchantment.sniper.lore,"fallback":"Your arrows deal additional (3*Level) range damage to enemies out of 5 blocks.","bold":true}]}}]
+
 tellraw @s [{translate:name.enchantment.transformation.display,"fallback":"[ Transformation ]",color:"#afffca","bold":true,hover_event:{action:"show_text",value:[{translate:name.enchantment.transformation.lore,"fallback":"Transform the item you hold into a projectile-consumption item.","bold":true}]}}]
 tellraw @p {"text":"",color:"blue",bold:true}
 tellraw @p {"text":"————————————————————————————",color:"blue",bold:true}

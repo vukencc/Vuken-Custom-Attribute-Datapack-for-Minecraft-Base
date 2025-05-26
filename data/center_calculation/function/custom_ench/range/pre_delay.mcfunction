@@ -1,1 +1,1 @@
-execute as @e[nbt={active_effects:[{id:"minecraft:unluck"}]}] at @s run function center_calculation:custom_ench/range/effects_transform
+execute as @e[type=!#bypass,nbt={active_effects:[{id:"minecraft:unluck"}]}] at @s run function center_calculation:custom_ench/range/effects_transform

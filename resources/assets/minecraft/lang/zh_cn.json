@@ -60,6 +60,8 @@
   "name.enchantment.ring": "环形牵引",
   "name.enchantment.greed": "贪婪",
   "name.enchantment.freeze": "冰冻",
+  "name.enchantment.point_blank": "直射",
+  "name.enchantment.sniper": "精准",
   "name.enchantment.transformation": "转换",
 
 "name.enchantment.agility.display": "[ 敏捷 ]",
@@ -119,6 +121,8 @@
 "name.enchantment.transformation.display": "[ 转换 ]",
 "name.enchantment.thorns.display":"[ 荆棘 ]",
 "name.enchantment.unbreaking.display":"[ 耐久 ]",
+  "name.enchantment.point_blank.display": "[ 直射 ]",
+  "name.enchantment.sniper.display": "[ 精准 ]",
 
 "name.return.display": "[ 返回 ]",
 
@@ -201,11 +205,13 @@
   "name.enchantment.punch.lore": "你的箭矢击退敌人，适用于弓和弩。",
   "name.enchantment.infinity.lore": "你射出的普通箭矢不消耗箭，适用于弓和弩。",
   "name.enchantment.gravity.lore": "你的箭矢忽略重力。",
-  "name.enchantment.starlit.lore": "你射击的敌人会对附近所有敌人造成(3*等级)伤害。",
+  "name.enchantment.starlit.lore": "你射击的敌人会对附近所有敌人造成(3*等级)弹射物伤害。",
   "name.enchantment.ring.lore": "你射击的敌人会创建一个环，将附近所有敌人拉入其中。",
   "name.enchantment.greed.lore": "你射击的敌人会被拉向你。",
   "name.enchantment.freeze.lore": "你射击的敌人会被冻结(0.5*等级)秒。",
   "name.enchantment.transformation.lore": "将你持有的物品转换为消耗射弹的物品。",
+  "name.enchantment.point_blank.lore": "当射中的敌人位于4格以内时，额外造成(3*等级)弹射物伤害。",
+  "name.enchantment.sniper.lore": "当射中的敌人位于5格以外时，额外造成(3*等级)弹射物伤害。",
 
   "lore.item.rarity.key":"关键物品",
   "lore.item.rarity.common":"普通物品",
