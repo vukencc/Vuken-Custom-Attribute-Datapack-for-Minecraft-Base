@@ -17,9 +17,9 @@ scoreboard players add @a repeat_600_timing 1
 execute as @a if score @s repeat_600_timing matches 601.. run scoreboard players set @s repeat_600_timing 1
 execute as @a if score @s com_kill_timing matches 1.. run scoreboard players remove @s com_kill_timing 1
 execute as @a if score @s death_escape_timing matches 1.. run scoreboard players remove @s death_escape_timing 1
-execute as @a at @s if score @s death_escape_timing matches 1 run title @s actionbar {"text":"Death Escape has been refreshed!",color:gold,bold:true,underlined:true}
+execute as @a at @s if score @s death_escape_timing matches 1 run title @s actionbar {translate:lore.enchantment.function.death_escape,color:gold,bold:true,underlined:true}
 execute as @a if score @s ench_combo_timing matches 1.. run scoreboard players remove @s ench_combo_timing 1
-execute as @a at @s if score @s ench_combo_timing matches 1 run title @s actionbar {"text":"Melee combo has ended!",color:red,bold:true,underlined:true}
+execute as @a at @s if score @s ench_combo_timing matches 1 run title @s actionbar {translate:lore.enchantment.function.combo,color:red,bold:true,underlined:true}
 scoreboard players add @a repeat_10_timing 1
 execute as @a if score @s repeat_10_timing matches 11 run scoreboard players set @s repeat_10_timing 1
 scoreboard players remove @e[scores={thunder_aspect_timing=1..}] thunder_aspect_timing 1
@@ -58,8 +58,9 @@ execute as @e[tag=timing_limited_10,scores={timing_limited=10..}] at @s on passe
 execute as @e[tag=timing_limited_10,scores={timing_limited=10..}] at @s run tp @s ~ ~-200 ~
 kill @e[tag=timing_limited_10,scores={timing_limited=10..}]
 scoreboard players remove @a[scores={player.HurtTime=1..}] player.HurtTime 1
-
 execute as @a at @s as @n[tag=spawnpoint,distance=..15] at @s run particle electric_spark ~ ~1 ~ 0.5 1.5 0.5 0.1 3 normal
-
 scoreboard players add @a[scores={time_not_killing_entities=..999}] time_not_killing_entities 1
 scoreboard players add @a[scores={time_not_taking_damage=..999}] time_not_taking_damage 1
+
+execute as @a at @s if predicate {condition:"entity_properties",entity:"this",predicate:{flags:{is_sneaking:true}}} run function center_calculation:item_spe/frc_trigger/is_sneaking
+execute as @a at @s if predicate {condition:"entity_properties",entity:"this",predicate:{flags:{is_sneaking:false}}} run function center_calculation:item_spe/frc_trigger/not_sneaking

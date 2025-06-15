@@ -245,7 +245,6 @@ team add yellow
 team modify yellow color yellow
 #follow scoreboard should be operated when any player first enter the game
 function center_calculation:skill_scoreboard
-function center_calculation:area_enemy_scb
 function operation:base_scb_req
 scoreboard objectives add marker dummy
 scoreboard objectives add marker_2 dummy
@@ -281,3 +280,11 @@ scoreboard objectives add stdTemp10 dummy
 
 scoreboard objectives add range_sniper_blank dummy
 scoreboard objectives add arrow_apply_sniper_blank dummy
+
+scoreboard objectives add PotionCharger.cd dummy
+
+scoreboard objectives add cursor.count.A dummy
+scoreboard objectives add cursor.count.B dummy
+
+scoreboard objectives add slot.A dummy
+scoreboard objectives add slot.B dummy

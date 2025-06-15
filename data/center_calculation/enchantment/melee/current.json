@@ -21,5 +21,20 @@
     ],
     "exclusive_set": ["center_calculation:melee/crit"],
     "effects": {
+      "post_attack": [{
+        "affected": "victim",
+        "enchanted": "attacker",
+        "effect": {
+          "type": "run_function",
+          "function": "center_calculation:particle/ench/current"
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "nbt": "{OnGround:1b}"
+          }
+        }
+      }]
     }
 }

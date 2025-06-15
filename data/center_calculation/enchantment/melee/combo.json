@@ -20,5 +20,22 @@
       "mainhand"
     ],
     "effects": {
+      "post_attack": [{
+        "affected": "victim",
+        "enchanted": "attacker",
+        "effect": {
+          "type": "run_function",
+          "function": "center_calculation:particle/ench/combo"
+        },
+        "requirements": {
+          "condition": "entity_scores",
+          "entity": "attacker",
+          "scores": {
+            "ench_combo_timing": {
+              "min": 1
+            }
+          }
+        }
+      }]
     }
 }

@@ -33,6 +33,14 @@ execute if score @s temp_marker_2 matches 5.. run data modify entity @n[tag=forg
 
 data modify entity @n[tag=forge_show] item.components."minecraft:enchantments" merge from entity @n[tag=uf_forge_show] item.components."minecraft:enchantments"
 
+scoreboard players set @p stdTemp1 0
+execute if items entity @n[tag=forge_show] container.0 *[custom_data~{ActiveSlot:1}] run scoreboard players add @p stdTemp1 1
+execute if items entity @n[tag=forge_show] container.0 *[custom_data~{PassiveSlot:1}] run scoreboard players add @p stdTemp1 1
+execute if items entity @n[tag=forge_show] container.0 *[custom_data~{UpgradeSlot:1}] run scoreboard players add @p stdTemp1 1
+execute if score @p stdTemp1 matches 1 run data modify entity @n[tag=forge_show] item.components."minecraft:lore".[1].extra.[1] set value {text:"★☆☆",color:"#2dfd5a",italic:false}
+execute if score @p stdTemp1 matches 2 run data modify entity @n[tag=forge_show] item.components."minecraft:lore".[1].extra.[1] set value {text:"★★☆",color:"#3d31eb",italic:false}
+execute if score @p stdTemp1 matches 3 run data modify entity @n[tag=forge_show] item.components."minecraft:lore".[1].extra.[1] set value {text:"★★★",color:"#781ca3",italic:false}
+
 scoreboard objectives remove temp_marker_1
 scoreboard objectives remove temp_marker_2
 

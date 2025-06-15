@@ -1,0 +1,1 @@
+execute if items entity @s weapon.mainhand *[custom_data~{IsPotionCharger:1b}] run function center_calculation:item_spe/passive/potion_charger/init with entity @s

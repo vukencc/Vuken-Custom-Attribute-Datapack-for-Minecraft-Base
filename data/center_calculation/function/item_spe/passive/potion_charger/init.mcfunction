@@ -1,0 +1,5 @@
+execute if items entity @s weapon.mainhand *[consumable] run item modify entity @s weapon.mainhand {function:"set_components",components:{"!minecraft:consumable":{}}}
+$execute unless entity @n[type=acacia_chest_boat,distance=..10,tag=PotionCharger.Init,nbt={data:{UUID:$(UUID)}}] anchored eyes positioned ^ ^ ^2 run summon acacia_chest_boat ~ ~ ~ {CustomName:"",data:{UUID:$(UUID)},Items:[],Invulnerable:1b,NoGravity:1b,Passengers:[{id:marker,Tags:["pc.placeholder"]}]}
+$execute unless entity @n[type=acacia_chest_boat,distance=..10,tag=PotionCharger.Init,nbt={data:{UUID:$(UUID)}}] anchored eyes positioned ^ ^ ^2 run data modify entity @n[type=acacia_chest_boat] Items set from entity @s SelectedItem.components."minecraft:custom_data".PotionCharger
+$execute unless entity @n[type=acacia_chest_boat,distance=..10,tag=PotionCharger.Init,nbt={data:{UUID:$(UUID)}}] anchored eyes positioned ^ ^ ^2 run tag @n[type=acacia_chest_boat] add PotionCharger.Init
+$execute anchored eyes run tp @n[type=acacia_chest_boat,distance=..10,tag=PotionCharger.Init,nbt={data:{UUID:$(UUID)}}] ^ ^ ^2

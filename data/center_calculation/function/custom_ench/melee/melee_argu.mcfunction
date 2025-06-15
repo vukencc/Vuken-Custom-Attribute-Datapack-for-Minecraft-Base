@@ -3,27 +3,23 @@ scoreboard objectives add temp_fall dummy
 execute as @s at @p if entity @p[distance=..0.5,nbt={OnGround:0b}] store result score @p temp_fall run data get entity @p Motion.[1] 100
 execute if score @p melee_crit matches 1.. as @s if score @p temp_fall matches ..0 run tag @s add crit_access
 $scoreboard players add @s[tag=crit_access] enemy.Taken.Melee $(crit)
-execute if score @p melee_crit matches 1.. if entity @s[tag=crit_access] at @s run particle minecraft:sonic_boom ~ ~1 ~ 1.1 0.6 1.1 0.15 3 normal
+execute if score @p melee_crit matches 1.. if entity @s[tag=crit_access] at @s run function center_calculation:particle/ench/crit
 execute if score @p temp_fall matches ..0 run function center_calculation:item_spe/enemy_center_trig/fall_attack
 scoreboard objectives remove temp_fall
 tag @s remove crit_access
 
 execute if score @p melee_current matches 1.. as @s at @p if entity @p[distance=..0.5,nbt={OnGround:1b}] run tag @s add current_access 
 $scoreboard players add @s[tag=current_access] enemy.Taken.Melee $(current)
-execute if score @p melee_current matches 1.. if entity @s[tag=current_access] at @s run particle minecraft:cloud ~ ~0.8 ~ 1.3 0.3 1.3 0.15 15 normal
 execute if score @p melee_current matches 1.. if entity @s[tag=current_access] run playsound entity.arrow.shoot hostile @p ~ ~ ~
 tag @s remove current_access
 
 execute if score @p ench_combo_timing matches 1.. run tag @s add combo_access 
 $scoreboard players add @s[tag=combo_access] enemy.Taken.Melee $(combo)
-execute if entity @s[tag=combo_access] at @s run function center_calculation:particle/ench/combo
 execute if entity @s[tag=combo_access] at @p run playsound block.amethyst_block.hit hostile @p ~ ~ ~
 tag @s remove combo_access
 
 execute at @s on attacker as @s if items entity @s weapon.mainhand *[minecraft:enchantments~[{enchantments:"center_calculation:melee/ice_aspect"}]] run tag @n add ice_aspect_ed
-execute at @s[tag=ice_aspect_ed] run particle block{block_state:ice} ~ ~1 ~ 1.3 1 1.3 0 3 normal
-execute at @s[tag=ice_aspect_ed] run particle block{block_state:blue_ice} ~ ~1 ~ 1.3 1 1.3 0 3 normal
-execute at @s[tag=ice_aspect_ed] run particle snowflake ~ ~1 ~ 1.3 1 1.3 0 6 normal
+execute at @s[tag=ice_aspect_ed] run function center_calculation:particle/ench/ice_aspect
 execute if entity @s[tag=ice_aspect_ed] on attacker as @s at @s run playsound entity.player.hurt_freeze hostile @p ~ ~ ~
 tag @s remove ice_aspect_ed
 

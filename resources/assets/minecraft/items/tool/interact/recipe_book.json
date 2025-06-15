@@ -1,0 +1,6 @@
+{
+    "model": {
+      "type": "minecraft:model",
+      "model": "tool/interact/recipe_book"
+    }
+  }

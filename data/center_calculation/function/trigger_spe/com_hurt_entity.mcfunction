@@ -21,7 +21,7 @@ execute as @s at @s store result score @s melee_thunder_aspect run data get enti
 execute as @s at @s store result entity @n[type=marker,tag=temp_melee_inner] data.thunder_aspect int 1 run scoreboard players get @s melee_thunder_aspect
 #slayer
 
-execute at @s as @e[type=!#minecraft:bypass,distance=..4,nbt={HurtTime:10s}] run function center_calculation:custom_ench/melee/melee_argu with entity @n[type=marker,tag=temp_melee_inner] data
+execute at @s as @e[type=!#minecraft:bypass,distance=..4.5,nbt={HurtTime:10s}] run function center_calculation:custom_ench/melee/melee_argu with entity @n[type=marker,tag=temp_melee_inner] data
 execute as @p at @s run function center_calculation:custom_ench/melee/melee_trig with entity @n[type=marker,tag=temp_melee_inner] data
 
 execute if score @s melee_combo matches 1.. run scoreboard players set @s ench_combo_timing 30

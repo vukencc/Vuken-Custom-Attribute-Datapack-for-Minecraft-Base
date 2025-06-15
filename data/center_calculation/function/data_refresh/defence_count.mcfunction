@@ -7,7 +7,6 @@ execute as @s if score @s vanilla_toughness > @s vanilla_armor run scoreboard pl
 scoreboard players operation @s vanilla_armor += @s vanilla_toughness
 execute as @s at @s store result entity @e[tag=armor_trans,type=marker,limit=1,sort=nearest] data.luck_trans int 1 run scoreboard players get @s vanilla_armor
 execute as @s at @s run function center_calculation:data_refresh/data_apply with entity @e[limit=1,tag=armor_trans,type=marker,sort=nearest] data
-advancement revoke @s only center_calculation:data_refresh
 execute at @s run kill @e[type=marker,tag=armor_trans,limit=1,sort=nearest]
 attribute @s armor modifier add vanilla_armor_refuse -1.0 add_multiplied_total
 

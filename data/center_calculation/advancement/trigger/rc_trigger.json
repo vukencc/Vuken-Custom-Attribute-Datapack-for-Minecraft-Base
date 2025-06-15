@@ -4,8 +4,17 @@
 			"trigger": "minecraft:using_item",
             "conditions":{
                 "item" : {
-					"items" : "#melee_weapon"
-                }
+					"predicates": {
+						"custom_data": {
+							"Trigger" : true
+						}
+					}
+                },
+				"player": {
+					"flags": {
+						"is_sneaking": false
+					}
+				}
 			}
 		}
 	},

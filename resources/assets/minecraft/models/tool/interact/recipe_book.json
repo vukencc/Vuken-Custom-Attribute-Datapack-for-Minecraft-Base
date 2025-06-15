@@ -1,0 +1,6 @@
+{
+    "parent": "item/book",
+    "textures": {
+        "layer0": "item/tool/interact/recipe_book"
+    }
+}
