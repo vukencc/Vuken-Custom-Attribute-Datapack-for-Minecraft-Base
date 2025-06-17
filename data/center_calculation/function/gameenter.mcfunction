@@ -288,3 +288,5 @@ scoreboard objectives add cursor.count.B dummy
 
 scoreboard objectives add slot.A dummy
 scoreboard objectives add slot.B dummy
+
+scoreboard objectives add ChestModel.cd dummy

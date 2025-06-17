@@ -29,3 +29,4 @@ scoreboard players set @a shared_active_cd 0
 scoreboard players set @a absorption_shield_cd 0
 
 scoreboard players set @a PotionCharger.cd 0
+scoreboard players set @a ChestModel.cd 0

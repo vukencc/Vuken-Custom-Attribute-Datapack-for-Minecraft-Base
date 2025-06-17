@@ -279,6 +279,15 @@
   "lore.item.intro.spring_of_life.4":"源于被遗忘的英灵，其悲伤可使得一时花开。",
   "lore.item.function.spring_of_life.1":"的生命之泉",
   "lore.item.function.spring_of_life.2":"「生命之泉」已冷却完毕！",
-  "lore.item.function.spring_of_life.3":"「生命之泉」中第一位不是可用的药水！"
+  "lore.item.function.spring_of_life.3":"「生命之泉」中第一位不是可用的药水！",
 
+  "lore.item.name.atomic_concrete":"原子聚合",
+  "lore.item.intro.atomic_concrete.1":"潜行且右键时存储物品，右键时，将容器内",
+  "lore.item.intro.atomic_concrete.2":"所有物品收集在一个物品形式的箱子中，冷却15秒。",
+  "lore.item.intro.atomic_concrete.3":"存储完毕后请移动或切换主手槽位以启用此功能。",  
+  "lore.item.intro.atomic_concrete.5":"<请不要将此物品放置于副手>",  
+  "lore.item.intro.atomic_concrete.4":"小小的世界记录着我们所有回忆的细节。",
+  "lore.item.function.atomic_concrete.1":"「原子聚合」已冷却完毕！",
+  "lore.item.function.atomic_concrete.2":"原子结晶",
+  "lore.item.function.atomic_concrete.3":"「原子聚合」中不存在物品！"
 }
