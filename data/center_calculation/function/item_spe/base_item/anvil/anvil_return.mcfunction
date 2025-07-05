@@ -1,0 +1,4 @@
+execute unless items entity @s player.cursor anvil[custom_data~{AnvilFix:1b}] if items entity @s player.cursor * run summon item ~ ~ ~ {Item:{id:"sea_lantern",components:{},count:1},PickupDelay:0s,Tags:["item_return"]}
+item replace entity @n[distance=..2,type=item,tag=item_return] container.0 from entity @s player.cursor
+execute at @s run summon item ~ ~ ~ {Item:{id:sea_lantern,components:{},count:1},PickupDelay:0,Invulnerable:1b,Tags:["anvil_copy_return"]}
+$execute at @s run item replace entity @n[type=item,tag=anvil_copy_return] contents with anvil[item_model=anvil,custom_data={AnvilFix:1b,AnvilUsing:0b},lore=["",[{translate:lore.item.rarity.uncommon,color:gray,italic:false,bold:true}],"",[{translate:lore.item.intro.anvil.1,color:"#96daff",italic:false}],"",[{translate:lore.item.intro.anvil.2,color:white,italic:false}]],custom_name=[{translate:lore.item.name.anvil,color:"#4df363",italic:false,bold:false}]] $(count)

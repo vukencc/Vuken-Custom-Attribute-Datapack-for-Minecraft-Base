@@ -1,0 +1,1 @@
+execute if block ~ ~ ~ minecraft:anvil run return run function operation:ban_anvil/disable_anvil

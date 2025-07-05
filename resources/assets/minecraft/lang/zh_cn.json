@@ -48,7 +48,7 @@
   "name.enchantment.slayer": "人形杀手",
   "name.enchantment.thunder_aspect": "雷霆附加",
   "name.enchantment.water_aspect": "水之附加",
-  "name.enchantment.power": "力量",
+  "name.enchantment.power": "静态射击",
   "name.enchantment.flame": "火矢",
   "name.enchantment.piercing": "穿透",
   "name.enchantment.multishot": "多重射击",
@@ -106,7 +106,7 @@
 "name.enchantment.slayer.display": "[ 人形杀手 ]",
 "name.enchantment.thunder_aspect.display": "[ 雷霆附加 ]",
 "name.enchantment.water_aspect.display": "[ 水之附加 ]",
-"name.enchantment.power.display": "[ 力量 ]",
+"name.enchantment.power.display": "[ 静态射击 ]",
 "name.enchantment.flame.display": "[ 火矢 ]",
 "name.enchantment.piercing.display": "[ 穿透 ]",
 "name.enchantment.multishot.display": "[ 多重射击 ]",
@@ -197,7 +197,7 @@
   "name.enchantment.slayer.lore": "对爬行者、末影人、烈焰人、铁傀儡、类人和村民造成额外(2.5*等级)伤害。",
   "name.enchantment.thunder_aspect.lore": "有(10*等级)%%的几率使敌人昏迷1秒，上限为50%%。",
   "name.enchantment.water_aspect.lore": "近战攻击使敌人虚弱。等级等于附魔等级，时间等于（附魔等级+3）秒。",
-  "name.enchantment.power.lore": "你的箭矢每级造成25%%额外伤害，适用于弓和弩。",
+  "name.enchantment.power.lore": "静止时，你的箭矢每级额外造成25%%伤害，适用于弓和弩。",
   "name.enchantment.flame.lore": "点燃敌人5秒，适用于弓和弩。",
   "name.enchantment.piercing.lore": "你的箭矢穿透(1*等级)个敌人，适用于弓和弩。",
   "name.enchantment.multishot.lore": "每次射击额外射出2支箭矢，适用于弩。",
@@ -289,5 +289,9 @@
   "lore.item.intro.atomic_concrete.4":"小小的世界记录着我们所有回忆的细节。",
   "lore.item.function.atomic_concrete.1":"「原子聚合」已冷却完毕！",
   "lore.item.function.atomic_concrete.2":"原子结晶",
-  "lore.item.function.atomic_concrete.3":"「原子聚合」中不存在物品！"
+  "lore.item.function.atomic_concrete.3":"「原子聚合」中不存在物品！",
+  
+  "lore.item.name.anvil":"托特之盒",
+  "lore.item.intro.anvil.1":"在快捷合成栏中将装备或武器放入其中以修复。",
+  "lore.item.intro.anvil.2":"知识中蕴含着力量与理解。"
 }

@@ -1,3 +1,5 @@
+#-------------common--------------#
+
 #-------------uncommon------------#
 give @p heart_of_the_sea[max_stack_size=1,item_model="minecraft:ender_chest",lore=["",[{translate:lore.item.rarity.uncommon,color:green,italic:false,bold:true}],"",[{translate:lore.item.intro.atomic_concrete.1,color:"#96daff",italic:false}],[{translate:lore.item.intro.atomic_concrete.2,color:"#96daff",italic:false}],[{translate:lore.item.intro.atomic_concrete.3,color:"#96daff",italic:false}],[{translate:lore.item.intro.atomic_concrete.5,color:"#ff5555",italic:false}],"",[{translate:lore.item.intro.atomic_concrete.4,color:white,italic:false}]],consumable={consume_seconds:999999,animation:none,has_consume_particles:0b},custom_name=[{translate:lore.item.name.atomic_concrete,color:"#a341ff",italic:false,bold:true}],\
 custom_data={\

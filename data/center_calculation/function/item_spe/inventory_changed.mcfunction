@@ -1,0 +1,2 @@
+execute if items entity @s container.* anvil[!custom_data] run function center_calculation:item_spe/base_item/anvil/anvil_pickup
+execute if items entity @s container.* *[custom_data~{AnvilUsing:1b}] run function center_calculation:item_spe/base_item/anvil/bundle_reform
