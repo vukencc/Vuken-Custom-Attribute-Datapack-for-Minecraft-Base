@@ -2,7 +2,7 @@ execute as @s at @s run function center_calculation:inter_chat/chatre
 execute at @s run playsound entity.experience_orb.pickup hostile @s ~ ~ ~
 tellraw @p {"text":"————————————————————————————",color:"blue",bold:true}
 tellraw @p {"text":"",color:"blue",bold:true}
-tellraw @s [{translate:name.return.display,"fallback":"[ Return ]",color:"#a2fff7","bold":true,"click_event":{"action":"run_command",command:"/function center_calculation:inter_chat/enchant_info/main"}}]
+tellraw @s [{translate:name.return.display,"fallback":"[ Return ]",color:"#a2fff7",bold:true,"click_event":{action:"run_command",command:"/trigger menu.trigger set 1"}}]
 tellraw @p {"text":"",color:"blue",bold:true}
 tellraw @s [{translate:name.enchantment.power.display,"fallback":"[ Power ]",color:"#afffca","bold":true,hover_event:{action:"show_text",value:[{translate:name.enchantment.power.lore,"fallback":"Your arrow deals 25%% additional damage per level, works for both bow and crossbow. ","bold":true}]}}]
 tellraw @s [{translate:name.enchantment.flame.display,"fallback":"[ Flame ]",color:"#afffca","bold":true,hover_event:{action:"show_text",value:[{translate:name.enchantment.flame.lore,"fallback":"Ignite the enemy for 5 seconds,works for both bow and crossbow. ","bold":true}]}}]

@@ -3,7 +3,8 @@ execute at @s run playsound entity.experience_orb.pickup hostile @s ~ ~ ~
 #agility chain_break energy eruption frenzy hasten invert life_drain regeneration sapper
 tellraw @p {"text":"————————————————————————————",color:"blue",bold:true}
 tellraw @p {"text":"",color:"blue",bold:true}
-tellraw @s [{translate:name.return.display,"fallback":"[ Return ]",color:"#a2fff7",bold:true,"click_event":{action:"run_command",command:"/function center_calculation:inter_chat/enchant_info/main"}}]
+tellraw @s [{translate:name.return.display,"fallback":"[ Return ]",color:"#a2fff7",bold:true,"click_event":{action:"run_command",command:"/trigger menu.trigger set 1"}}]
+#trigger menu.trigger set 1
 tellraw @p {"text":"",color:"blue",bold:true}
 tellraw @s [{translate:name.enchantment.thorns.display,"fallback":"[ Thorns ]",color:"#afffca",bold:true,hover_event:{action:"show_text",value:[{translate:name.enchantment.thorns.lore,"fallback":"Enemies attack you take damage without costing your armor's durability additionally.","bold":true}]}}]
 tellraw @s [{translate:name.enchantment.unbreaking.display,"fallback":"[ Unbreaking ]",color:"#afffca",bold:true,hover_event:{action:"show_text",value:[{translate:name.enchantment.unbreaking.lore,"fallback":"Make your armors and weapons more durable to damage.","bold":true}]}}]

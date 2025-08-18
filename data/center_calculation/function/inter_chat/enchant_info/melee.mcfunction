@@ -2,7 +2,7 @@ execute as @s at @s run function center_calculation:inter_chat/chatre
 execute at @s run playsound entity.experience_orb.pickup hostile @s ~ ~ ~
 tellraw @p {"text":"————————————————————————————",color:"blue",bold:true}
 tellraw @p {"text":"",color:"blue",bold:true}
-tellraw @s [{translate:name.return.display,"fallback":"[ Return ]",color:"#a2fff7",bold:true,"click_event":{action:"run_command",command:"/function center_calculation:inter_chat/enchant_info/main"}}]
+tellraw @s [{translate:name.return.display,"fallback":"[ Return ]",color:"#a2fff7",bold:true,"click_event":{action:"run_command",command:"/trigger menu.trigger set 1"}}]
 tellraw @p {"text":"",color:"blue",bold:true}
 tellraw @s [{translate:name.enchantment.sharpness.display,"fallback":"[ Sharpness ]",color:"#afffca",bold:true,hover_event:{action:"show_text",value:[{translate:name.enchantment.sharpness.lore,"fallback":"Increase your melee damage by 1.25 per level.","bold":true}]}}]
 tellraw @s [{translate:name.enchantment.smite.display,"fallback":"[ Smite ]",color:"#afffca",bold:true,hover_event:{action:"show_text",value:[{translate:name.enchantment.smite.lore,"fallback":"Deal (2.5*Level) additional damage to undead enemies. ","bold":true}]}}]

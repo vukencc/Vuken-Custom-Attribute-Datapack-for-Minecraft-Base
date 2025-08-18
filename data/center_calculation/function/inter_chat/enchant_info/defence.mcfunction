@@ -2,7 +2,7 @@ execute as @s at @s run function center_calculation:inter_chat/chatre
 execute at @s run playsound entity.experience_orb.pickup hostile @s ~ ~ ~
 tellraw @p {"text":"————————————————————————————",color:"blue",bold:true}
 tellraw @p {"text":"",color:"blue",bold:true}
-tellraw @s [{translate:name.return.display,"fallback":"[ Return ]",color:"#a2fff7",bold:true,"click_event":{action:"run_command",command:"/function center_calculation:inter_chat/enchant_info/main"}}]
+tellraw @s [{translate:name.return.display,"fallback":"[ Return ]",color:"#a2fff7",bold:true,"click_event":{action:"run_command",command:"/trigger menu.trigger set 1"}}]
 tellraw @p {"text":"",color:"blue",bold:true}
 tellraw @s [{translate:name.enchantment.protection.display,"fallback":"[ Protection ]",color:"#afffca",bold:true,hover_event:{action:"show_text",value:[{translate:name.enchantment.protection.lore,"fallback":"Offer (4*Level)%% defence to all types of damage in the Protection level,capped at 96%% defence.","bold":true}]}}]
 tellraw @s [{translate:name.enchantment.melee_protection.display,"fallback":"[ Melee Protection ]",color:"#afffca",bold:true,hover_event:{action:"show_text",value:[{translate:name.enchantment.melee_protection.lore,"fallback":"Offer (8*Level)%% defence to melee damage in the Protection level,capped at 96%% defence.","bold":true}]}}]

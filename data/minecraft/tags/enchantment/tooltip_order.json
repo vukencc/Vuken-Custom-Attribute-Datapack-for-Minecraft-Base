@@ -73,5 +73,6 @@
     "minecraft:infinity",
     "minecraft:mending",
     "minecraft:unbreaking"
-  ]
+  ],
+  "replace": true
 }

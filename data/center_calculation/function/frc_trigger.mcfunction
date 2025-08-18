@@ -61,6 +61,10 @@ scoreboard players remove @a[scores={player.HurtTime=1..}] player.HurtTime 1
 execute as @a at @s as @n[tag=spawnpoint,distance=..15] at @s run particle electric_spark ~ ~1 ~ 0.5 1.5 0.5 0.1 3 normal
 scoreboard players add @a[scores={time_not_killing_entities=..999}] time_not_killing_entities 1
 scoreboard players add @a[scores={time_not_taking_damage=..999}] time_not_taking_damage 1
+#-----------trigger-------------#
+scoreboard players enable @a menu.trigger
 
 execute as @a at @s if predicate {condition:"entity_properties",entity:"this",predicate:{flags:{is_sneaking:true}}} run function center_calculation:item_spe/frc_trigger/is_sneaking
 execute as @a at @s if predicate {condition:"entity_properties",entity:"this",predicate:{flags:{is_sneaking:false}}} run function center_calculation:item_spe/frc_trigger/not_sneaking
+
+execute as @a if score @s menu.trigger matches 1.. at @s run function center_calculation:inter_chat/_tick_

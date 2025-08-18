@@ -245,7 +245,7 @@ team add yellow
 team modify yellow color yellow
 #follow scoreboard should be operated when any player first enter the game
 function center_calculation:skill_scoreboard
-function operation:base_scb_req
+function operation:init
 scoreboard objectives add marker dummy
 scoreboard objectives add marker_2 dummy
 scoreboard objectives add in_boss dummy
@@ -290,3 +290,4 @@ scoreboard objectives add slot.A dummy
 scoreboard objectives add slot.B dummy
 
 scoreboard objectives add ChestModel.cd dummy
+scoreboard objectives add menu.trigger trigger
