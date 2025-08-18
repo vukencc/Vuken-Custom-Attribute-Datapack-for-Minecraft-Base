@@ -1,0 +1,90 @@
+{
+  "description": {
+    "translate": "",
+    "color": "white",
+    "bold": true
+  },
+  "slots": ["any"],
+  "anvil_cost": 1000,
+  "supported_items": [],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "effects": {
+    "tick": [
+      {
+        "effect": {
+          "type": "explode",
+          "sound": {
+            "sound_id": "",
+            "range": 0
+          },
+          "knockback_multiplier": {
+            "type": "linear",
+            "base": -1,
+            "per_level_above_first": -1
+          },
+          "radius": {
+            "type": "linear",
+            "base": 2,
+            "per_level_above_first": 2
+          },
+          "create_fire": false,
+          "offset": [0, 0, 0],
+          "block_interaction": "none",
+          "large_particle": {
+            "type": "enchant"
+          },
+          "small_particle": {
+            "type": "enchant"            
+          },
+          "attribute_to_user": false
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "vehicle": {}
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "operation:stats/kill_this"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "vehicle": {}
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "primary_items": []
+}
