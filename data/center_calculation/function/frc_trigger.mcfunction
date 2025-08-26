@@ -25,11 +25,6 @@ execute as @a if score @s repeat_10_timing matches 11 run scoreboard players set
 scoreboard players remove @e[scores={thunder_aspect_timing=1..}] thunder_aspect_timing 1
 execute as @e[scores={thunder_aspect_timing=1}] unless entity @s[type=#bypass] unless entity @s[tag=immune_to_freeze] run data merge entity @s {NoAI:0b}
 #immune to freeze as shared tag
-#bow use detect
-execute as @a at @s if score @s bow_use matches 1.. run function center_calculation:custom_ench/range/trig_center
-execute as @a at @s if score @s bow_use_2 matches 1.. run function center_calculation:custom_ench/range/trig_center
-scoreboard players set @a bow_use 0
-scoreboard players set @a bow_use_2 0
 kill @e[type=#arrows,nbt={inGround:1b}]
 #frenzy energy hasten
 execute as @a if score @s frenzy_timing matches 1.. run scoreboard players remove @s frenzy_timing 1
@@ -52,19 +47,11 @@ function center_calculation:item_spe/active_force
 execute as @a if score @s repeat_25_timing matches 10 run function center_calculation:item_spe/passive_trig_low_tick
 function center_calculation:enemy_skill/force_center
 scoreboard players add @e[tag=timing_limited] timing_limited 1
-kill @e[tag=timing_limited_160,scores={timing_limited=160..}]
-kill @e[tag=timing_limited_240,scores={timing_limited=240..}]
-execute as @e[tag=timing_limited_10,scores={timing_limited=10..}] at @s on passengers run ride @s dismount
-execute as @e[tag=timing_limited_10,scores={timing_limited=10..}] at @s run tp @s ~ ~-200 ~
-kill @e[tag=timing_limited_10,scores={timing_limited=10..}]
 scoreboard players remove @a[scores={player.HurtTime=1..}] player.HurtTime 1
-execute as @a at @s as @n[tag=spawnpoint,distance=..15] at @s run particle electric_spark ~ ~1 ~ 0.5 1.5 0.5 0.1 3 normal
-scoreboard players add @a[scores={time_not_killing_entities=..999}] time_not_killing_entities 1
-scoreboard players add @a[scores={time_not_taking_damage=..999}] time_not_taking_damage 1
+scoreboard players add @a time_not_killing_entities 1
+scoreboard players add @a time_not_taking_damage 1
 #-----------trigger-------------#
 scoreboard players enable @a menu.trigger
-
 execute as @a at @s if predicate {condition:"entity_properties",entity:"this",predicate:{flags:{is_sneaking:true}}} run function center_calculation:item_spe/frc_trigger/is_sneaking
 execute as @a at @s if predicate {condition:"entity_properties",entity:"this",predicate:{flags:{is_sneaking:false}}} run function center_calculation:item_spe/frc_trigger/not_sneaking
-
 execute as @a if score @s menu.trigger matches 1.. at @s run function center_calculation:inter_chat/_tick_

@@ -20,8 +20,6 @@ scoreboard players set @a std3 3
 give @a nether_star[custom_name=[{translate:lore.item.name.personal_stats,"italic":false,"underlined":true,"color":"blue","bold":true}],lore=["",[{translate:lore.item.intro.personal_stats,"fallback":"Right click to view personal stats and dictionary.","italic":false,"color":"white","bold":true}],"",[{translate:"lore.item.rarity.basic","italic":false,"color":"white","bold":false}]],enchantable={value:1},food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:999999,animation:none,sound:"entity.experience_orb.pickup",has_consume_particles:0b},use_cooldown={seconds:1},custom_data={"stats_inter":true},item_model="tool/interact/recipe_book"]
 scoreboard players set @a std20 20
 scoreboard players set @a std_neg -1
-execute as @a run attribute @s movement_efficiency base set 1
-execute as @a run attribute @s water_movement_efficiency base set 0
 
 scoreboard players set @a time_not_taking_damage 0
 scoreboard players set @a time_not_killing_entities 0
@@ -30,3 +28,5 @@ scoreboard players set @a absorption_shield_cd 0
 
 scoreboard players set @a PotionCharger.cd 0
 scoreboard players set @a ChestModel.cd 0
+
+item replace entity @a saddle with saddle[enchantments={"center_calculation:inter/tick_load":1}]

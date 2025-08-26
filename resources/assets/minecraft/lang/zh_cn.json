@@ -63,6 +63,7 @@
   "name.enchantment.point_blank": "直射",
   "name.enchantment.sniper": "精准",
   "name.enchantment.transformation": "转换",
+  "name.enchantment.multicharge":"多重装填",
 
 "name.enchantment.agility.display": "[ 敏捷 ]",
 "name.enchantment.chain_break.display": "[ 连锁破坏 ]",
@@ -123,6 +124,7 @@
 "name.enchantment.unbreaking.display":"[ 耐久 ]",
   "name.enchantment.point_blank.display": "[ 直射 ]",
   "name.enchantment.sniper.display": "[ 精准 ]",
+  "name.enchantment.multicharge.display":"[ 多重装填 ]",
 
 "name.return.display": "[ 返回 ]",
 
@@ -209,9 +211,10 @@
   "name.enchantment.ring.lore": "你射击的敌人会创建一个环，将附近所有敌人拉入其中。",
   "name.enchantment.greed.lore": "你射击的敌人会被拉向你。",
   "name.enchantment.freeze.lore": "你射击的敌人会被冻结(0.5*等级)秒。",
-  "name.enchantment.transformation.lore": "将你持有的物品转换为消耗射弹的物品。",
+  "name.enchantment.transformation.lore": "将你的箭矢以特定的弹射物形式射出，保留伤害的同时赋予其新的机制与效果。",
   "name.enchantment.point_blank.lore": "当射中的敌人位于4格以内时，额外造成(3*等级)弹射物伤害。",
   "name.enchantment.sniper.lore": "当射中的敌人位于5格以外时，额外造成(3*等级)弹射物伤害。",
+  "name.enchantment.multicharge.lore":"装填一次弩时，你可以额外装填(1*等级)箭矢，并连续使用。",
   
   "lore.enchantment.function.combo":"「连击」中断！",
   "lore.enchantment.function.death_escape":"「死亡逃脱」已冷却完毕！",

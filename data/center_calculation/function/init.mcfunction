@@ -172,6 +172,7 @@ scoreboard objectives add arrow_apply_ring dummy
 scoreboard objectives add arrow_apply_greed dummy
 scoreboard objectives add arrow_apply_starlit dummy
 scoreboard objectives add to_clear_regenerate dummy
+scoreboard objectives add range_multicharge dummy
 #frenzy energy hasten
 scoreboard objectives add frenzy_p1 dummy
 scoreboard objectives add frenzy_p2 dummy

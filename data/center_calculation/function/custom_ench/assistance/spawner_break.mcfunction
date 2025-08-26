@@ -1,5 +1,4 @@
 scoreboard players set @s spawner_break 0
-summon experience_orb ^ ^ ^2.2
 scoreboard objectives add temp_hp dummy
 scoreboard players operation @s temp_hp = @s health
 scoreboard objectives add temp_sapper dummy
