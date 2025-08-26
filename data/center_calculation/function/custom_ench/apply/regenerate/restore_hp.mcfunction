@@ -14,12 +14,13 @@ scoreboard players add @s max_health_boost 1
 execute if entity @s[nbt={active_effects:[{id:"minecraft:health_boost"}]}] store result entity @n[type=marker,tag=temp_regeneration] data.health_boost int -4 run scoreboard players get @s max_health_boost
 scoreboard objectives remove max_health_boost
 #adjust to required hp:
-effect give @s instant_health 1 101 true
 # (require argument temp_hp as expected health after reg)
 #clear modifiers:
 $attribute @s max_health base set $(temp_hp)
 function center_calculation:custom_ench/apply/regenerate/hp_fix with entity @n[type=marker,tag=temp_regeneration] data
+
 #apply and delay
+effect give @s instant_health 1 101 true
 #---end---
 kill @n[type=marker,tag=temp_regeneration]
 

@@ -92,7 +92,7 @@ scoreboard players operation @s damageDeathDetect *= @s std100
 scoreboard players operation @s damageDeathDetect *= @s std10
 execute as @s at @s if score @s damageResisted >= @s damageDeathDetect if entity @s[tag=death_totem] run function center_calculation:trigger_spe/death_escape
 #damage_export
-execute as @s at @s store result entity @e[type=marker,sort=nearest,limit=1,tag=cct_det_inter] data.damage_store float 0.01 run scoreboard players get @s damageResisted
+execute as @s at @s store result entity @e[type=marker,sort=nearest,limit=1,tag=cct_det_inter] data.damage_store float 0.001 run scoreboard players get @s damageResisted
 execute as @s at @s run function center_calculation:trigger_spe/damage_trigger with entity @e[type=marker,sort=nearest,limit=1,tag=cct_det_inter] data
 advancement revoke @s only center_calculation:common_taken
 #clear
