@@ -33,7 +33,7 @@ execute as @a at @s if score @s hasten_timing matches 1.. run scoreboard players
 execute as @a at @s if score @s hasten_timing matches 1 run attribute @s attack_speed modifier remove hasten
 execute as @a at @s if score @s repeat_110_timing > @s regeneration_p1 run scoreboard players set @s repeat_110_timing 0
 scoreboard players add @a repeat_110_timing 1
-execute as @a[tag=reg_trans_access] at @s if score @s repeat_110_timing matches 10 run function center_calculation:custom_ench/assistance/regeneration
+execute as @a[tag=reg_trans_access] at @s if score @s repeat_110_timing matches 10 run effect give @s instant_health 1 101 true
 execute as @a at @s if score @s spawner_break matches 1.. run function center_calculation:custom_ench/assistance/spawner_break
 execute as @a at @s if score @s invert_delay matches 1 run advancement revoke @s only center_calculation:effects_changed
 execute as @a if score @s invert_delay matches 1.. run scoreboard players remove @s invert_delay 1

@@ -257,5 +257,7 @@
   "lore.item.intro.essence_of_void":"万物皆虚，万事皆允。",
 
   "lore.item.name.personal_stats":"旅者笔记",
-  "lore.item.intro.personal_stats":"右键查看个人状态及旅行日志的便捷道具。"
+  "lore.item.intro.personal_stats":"右键查看个人状态及旅行日志的便捷道具。",
+
+  "rawtext.system.no_offhand":"不可在副手使用非副手物品。"
 }

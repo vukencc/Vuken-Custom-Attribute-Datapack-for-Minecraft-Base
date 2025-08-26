@@ -1,6 +1,5 @@
-
-effect clear @s instant_health
-
+advancement revoke @s only center_calculation:reg_end
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{instant_health:{}}}} run return run function center_calculation:custom_ench/assistance/regeneration
 #hfp1-6 hfp1p-hfp6p
 attribute @s max_health modifier remove hfp1
 attribute @s max_health modifier remove hfp2
@@ -17,5 +16,3 @@ attribute @s max_health modifier remove hfp6p
 attribute @s max_health modifier remove health_boost
 attribute @s max_health modifier remove temp_hp_pre
 attribute @s max_health base set 20
-
-advancement revoke @s only center_calculation:reg_end
