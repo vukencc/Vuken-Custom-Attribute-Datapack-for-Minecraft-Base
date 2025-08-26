@@ -18,3 +18,4 @@ attribute @s max_health modifier remove health_boost
 attribute @s max_health modifier remove temp_hp_pre
 attribute @s max_health base set 20
 
+advancement revoke @s only center_calculation:reg_end
