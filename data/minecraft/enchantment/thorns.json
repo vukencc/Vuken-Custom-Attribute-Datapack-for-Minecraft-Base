@@ -12,17 +12,9 @@
           "effects": [
             {
               "type": "minecraft:damage_entity",
-              "damage_type": "mob_attack",
-              "min_damage": {
-                "type": "linear",
-                "base": 1,
-                "per_level_above_first": 1
-              },
-              "max_damage": {
-                "type": "linear",
-                "base": 1,
-                "per_level_above_first": 1
-              }
+              "damage_type": "minecraft:thorns",
+              "max_damage": 5.0,
+              "min_damage": 1.0
             },
             {
               "type": "minecraft:change_item_damage",
@@ -30,7 +22,18 @@
             }
           ]
         },
-        "enchanted": "victim"
+        "enchanted": "victim",
+        "requirements": {
+          "chance": {
+            "type": "minecraft:enchantment_level",
+            "amount": {
+              "type": "minecraft:linear",
+              "base": 0,
+              "per_level_above_first": 0
+            }
+          },
+          "condition": "minecraft:random_chance"
+        }
       }
     ]
   },

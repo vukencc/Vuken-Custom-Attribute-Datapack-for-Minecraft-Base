@@ -33,6 +33,8 @@ execute as @a at @s if score @s energy_timing matches 1.. run scoreboard players
 execute as @a at @s if score @s energy_timing matches 1 run attribute @s movement_speed modifier remove energy
 execute as @a at @s if score @s hasten_timing matches 1.. run scoreboard players remove @s hasten_timing 1
 execute as @a at @s if score @s hasten_timing matches 1 run attribute @s attack_speed modifier remove hasten
+execute as @a if score @s to_clear_regenerate matches 1 run function center_calculation:custom_ench/apply/regenerate/health_reset
+execute as @a if score @s to_clear_regenerate matches 1.. run scoreboard players remove @s to_clear_regenerate 1
 execute as @a at @s if score @s repeat_110_timing > @s regeneration_p1 run scoreboard players set @s repeat_110_timing 0
 scoreboard players add @a repeat_110_timing 1
 execute as @a[tag=reg_trans_access] at @s if score @s repeat_110_timing matches 10 run function center_calculation:custom_ench/assistance/regeneration
