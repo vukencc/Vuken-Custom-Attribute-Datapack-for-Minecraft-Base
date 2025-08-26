@@ -23,9 +23,7 @@ execute as @a at @s if score @s ench_combo_timing matches 1 run title @s actionb
 scoreboard players add @a repeat_10_timing 1
 execute as @a if score @s repeat_10_timing matches 11 run scoreboard players set @s repeat_10_timing 1
 scoreboard players remove @e[scores={thunder_aspect_timing=1..}] thunder_aspect_timing 1
-execute as @e[scores={thunder_aspect_timing=1}] unless entity @s[type=#bypass] unless entity @s[tag=immune_to_freeze] run data merge entity @s {NoAI:0b}
-#immune to freeze as shared tag
-kill @e[type=#arrows,nbt={inGround:1b}]
+execute as @e[type=!#minecraft:bypass,scores={thunder_aspect_timing=1}] unless entity @s[tag=immune_to_freeze] run data merge entity @s {NoAI:0b}
 #frenzy energy hasten
 execute as @a if score @s frenzy_timing matches 1.. run scoreboard players remove @s frenzy_timing 1
 execute as @a at @s if score @s frenzy_timing matches 1 run attribute @s attack_damage modifier remove frenzy
