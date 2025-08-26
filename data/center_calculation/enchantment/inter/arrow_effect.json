@@ -1,12 +1,12 @@
 {
     "description": {
-        "translate":"Arrow Effect",
+        "translate":"  ",
         "color": "gray"
     },
     "supported_items": "#range",
     "primary_items": "#range",
     "weight": 10,
-    "max_level": 10,
+    "max_level": 1,
     "max_cost": {
         "base": 13,
         "per_level_above_first": 8

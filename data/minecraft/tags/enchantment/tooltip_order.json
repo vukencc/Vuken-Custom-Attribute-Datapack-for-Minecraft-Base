@@ -16,6 +16,11 @@
     "center_calculation:melee/current",
     "center_calculation:melee/curse",
     "center_calculation:melee/quake",
+    "center_calculation:melee/first_strike",
+    "center_calculation:melee/focus",
+    "center_calculation:melee/ice_aspect",
+    "center_calculation:melee/thunder_aspect",
+    "center_calculation:melee/water_aspect",
     "minecraft:impaling",
     "minecraft:power",
     "center_calculation:range/point_blank",
@@ -25,6 +30,8 @@
     "center_calculation:range/greed",
     "center_calculation:range/ring",
     "center_calculation:range/gravity",
+    "center_calculation:range/multicharge",
+    "center_calculation:range/transformation",
     "minecraft:density",
     "minecraft:breach",
     "minecraft:piercing",
@@ -72,7 +79,8 @@
     "minecraft:loyalty",
     "minecraft:infinity",
     "minecraft:mending",
-    "minecraft:unbreaking"
+    "minecraft:unbreaking",
+    "center_calculation:inter/arrow_effect"
   ],
   "replace": true
 }
