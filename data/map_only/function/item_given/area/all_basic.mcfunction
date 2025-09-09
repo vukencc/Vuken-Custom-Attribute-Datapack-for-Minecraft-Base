@@ -24,10 +24,10 @@ give @s resin_clump[custom_data={ForgeCurrency:1},lore=["",[{translate:lore.item
 
 give @p heart_of_the_sea[max_stack_size=1,item_model="tool/interact/potion_charger",lore=["",[{translate:lore.item.rarity.epic,color:dark_purple,italic:false,bold:true}],"",[{translate:lore.item.intro.spring_of_life.1,color:"#96daff",italic:false}],[{translate:lore.item.intro.spring_of_life.2,color:"#96daff",italic:false}],[{translate:lore.item.intro.spring_of_life.3,color:"#96daff",italic:false}],[{translate:lore.item.intro.spring_of_life.5,color:"#ff5555",italic:false}],"",[{translate:lore.item.intro.spring_of_life.4,color:white,italic:false}]],consumable={consume_seconds:999999,animation:none,has_consume_particles:0b},custom_name=[{translate:lore.item.name.spring_of_life,color:"#50f9c4",italic:false,bold:true}],\
 custom_data={\
-IsPotionCharger:1b,NoOffhand:1b,PotionConsume:1b,Trigger:1b,PotionContainer:[]\
+IsPotionCharger:1b,NoOffhand:1b,PotionConsume:1b,Trigger:1b,Offhand:1b,PotionContainer:[]\
 }]
 
 give @p heart_of_the_sea[max_stack_size=1,item_model="minecraft:ender_chest",lore=["",[{translate:lore.item.rarity.uncommon,color:green,italic:false,bold:true}],"",[{translate:lore.item.intro.atomic_concrete.1,color:"#96daff",italic:false}],[{translate:lore.item.intro.atomic_concrete.2,color:"#96daff",italic:false}],[{translate:lore.item.intro.atomic_concrete.3,color:"#96daff",italic:false}],[{translate:lore.item.intro.atomic_concrete.5,color:"#ff5555",italic:false}],"",[{translate:lore.item.intro.atomic_concrete.4,color:white,italic:false}]],consumable={consume_seconds:999999,animation:none,has_consume_particles:0b},custom_name=[{translate:lore.item.name.atomic_concrete,color:"#a341ff",italic:false,bold:true}],\
 custom_data={\
-IsPotionCharger:1b,NoOffhand:1b,ChestModel:1b,Trigger:1b,PotionContainer:[]\
+IsPotionCharger:1b,NoOffhand:1b,ChestModel:1b,Trigger:1b,Offhand:1b,PotionContainer:[]\
 }]

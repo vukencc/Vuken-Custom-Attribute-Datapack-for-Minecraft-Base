@@ -1,12 +1,12 @@
-scoreboard objectives add damageResisted minecraft.custom:damage_resisted
-scoreboard objectives add damageAbsorbed minecraft.custom:damage_absorbed
+scoreboard objectives remove damageResisted
+scoreboard objectives remove natDamageResisted
+
+scoreboard objectives add damageResisted dummy
+scoreboard objectives add natDamageResisted minecraft.custom:minecraft.damage_resisted
 scoreboard objectives add std1000 dummy
 scoreboard objectives add std100 dummy
 scoreboard objectives add std10 dummy
 scoreboard objectives add std750 dummy
-scoreboard objectives add com_damage_timing dummy
-scoreboard objectives add range_damage_timing dummy
-scoreboard objectives add magic_damage_timing dummy
 scoreboard objectives add env_damage_timing dummy
 scoreboard objectives add health health
 scoreboard objectives add inter_custom_cd dummy

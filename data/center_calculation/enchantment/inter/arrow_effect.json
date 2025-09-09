@@ -1,7 +1,7 @@
 {
     "description": {
-        "translate":"  ",
-        "color": "gray"
+        "translate":"name.item.type.bow_crossbow",
+        "color": "#ff6fe7"
     },
     "supported_items": "#range",
     "primary_items": "#range",

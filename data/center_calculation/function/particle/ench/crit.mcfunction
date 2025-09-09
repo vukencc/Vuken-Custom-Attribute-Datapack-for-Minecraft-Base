@@ -98,3 +98,6 @@ particle flame ~1.958 ~0.200 ~-0.408 0 0 0 0 1 normal
 particle flame ~1.982 ~0.200 ~0.266 0 0 0 0 1 normal
 particle flame ~1.781 ~0.200 ~0.910 0 0 0 0 1 normal
 particle flame ~1.377 ~0.200 ~1.451 0 0 0 0 1 normal
+
+particle flame ~ ~0.2 ~ 2 0 0 0 10 normal
+particle flame ~ ~0.2 ~ 0 0 2 0 10 normal

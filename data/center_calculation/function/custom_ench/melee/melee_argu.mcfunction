@@ -1,11 +1,8 @@
 #functions here require at @s to transform location!
-scoreboard objectives add temp_fall dummy
-execute as @s at @p if entity @p[distance=..0.5,nbt={OnGround:0b}] store result score @p temp_fall run data get entity @p Motion.[1] 100
-execute if score @p melee_crit matches 1.. as @s if score @p temp_fall matches ..0 run tag @s add crit_access
+execute if entity @p[predicate=center_calculation:player/falling] run tag @s add crit_access
 $scoreboard players add @s[tag=crit_access] enemy.Taken.Melee $(crit)
+execute if entity @s[tag=crit_access] run function center_calculation:item_spe/passive/enemy_trigger/take_crit
 execute if score @p melee_crit matches 1.. if entity @s[tag=crit_access] at @s run function center_calculation:particle/ench/crit
-execute if score @p temp_fall matches ..0 run function center_calculation:item_spe/enemy_center_trig/fall_attack
-scoreboard objectives remove temp_fall
 tag @s remove crit_access
 
 execute if score @p melee_current matches 1.. as @s at @p if entity @p[distance=..0.5,nbt={OnGround:1b}] run tag @s add current_access 

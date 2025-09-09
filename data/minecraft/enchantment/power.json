@@ -22,7 +22,7 @@
           }
         },{
           "condition": "minecraft:entity_properties",
-          "entity": "this",
+          "entity": "attacker",
           "predicate": {
             "movement": {
               "speed": {

@@ -1,0 +1,34 @@
+{
+    "temperature": -0.5,
+    "downfall": 0.4,
+    "has_precipitation": true,
+    "effects": {
+      "sky_color": 0,
+      "fog_color": 6316128,
+      "water_color": 10663116,
+      "water_fog_color": 7500441,
+      "grass_color": 6275640,
+      "foliage_color": 12451753,
+      "particle":{
+        "options": {
+          "type": "white_ash"
+        },
+        "probability": 0.05
+      }
+    },
+    "spawners": {
+    },
+    "spawn_costs": {
+      "minecraft:zombie": {
+        "energy_budget": 0.25,
+        "charge": 0.5
+      },
+      "minecraft:skeleton": {
+        "energy_budget": 0.25,
+        "charge": 0.5
+      }
+    },
+    "features": [],
+    "temperature_modifier":"frozen",
+    "carvers": []
+  }

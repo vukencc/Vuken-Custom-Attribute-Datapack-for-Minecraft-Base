@@ -1,15 +1,8 @@
-effect give @a resistance infinite 11 true
-execute as @a at @s if score @s com_damage_timing matches 1 run function center_calculation:trigger_spe/com_cal_trigger
-execute as @a at @s if score @s com_damage_timing matches 1.. run scoreboard players remove @s com_damage_timing 1
-execute as @a at @s if score @s range_damage_timing matches 1 run function center_calculation:trigger_spe/range_cal_trigger
-execute as @a at @s if score @s range_damage_timing matches 1.. run scoreboard players remove @s range_damage_timing 1
-execute as @a at @s if score @s magic_damage_timing matches 1 run function center_calculation:trigger_spe/magic_cal_trigger
-execute as @a at @s if score @s magic_damage_timing matches 1.. run scoreboard players remove @s magic_damage_timing 1
 execute as @a at @s if score @s env_damage_timing matches 1 run function center_calculation:trigger_spe/env_cal_trigger
-execute as @a at @s if score @s env_damage_timing matches 1.. run scoreboard players remove @s env_damage_timing 1
+execute as @a if score @s env_damage_timing matches 1.. run scoreboard players remove @s env_damage_timing 1
 execute as @a at @s if score @s inter_custom_cd matches 1.. run scoreboard players remove @s inter_custom_cd 1
 execute as @a at @s if score @s data_delay matches 1 run function center_calculation:data_refresh/defence_count
-execute as @a at @s if score @s data_delay matches 1.. run scoreboard players remove @s data_delay 1
+execute as @a if score @s data_delay matches 1.. run scoreboard players remove @s data_delay 1
 #repeat scoreboard
 scoreboard players add @a repeat_25_timing 1
 execute as @a if score @s repeat_25_timing matches 26.. run scoreboard players set @s repeat_25_timing 1

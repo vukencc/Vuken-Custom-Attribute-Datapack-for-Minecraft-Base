@@ -57,7 +57,260 @@
                     }
                 }
             ]
-            }
+            },
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "center_calculation:custom_ench/melee/tick_load"
+                },
+                "requirements": [
+                    {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "enchantments": [
+                                            {"enchantments": "center_calculation:inter/sword_effect"}
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "#swords"
+                            }
+                        }
+                    }
+                }
+            ]
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "center_calculation:custom_ench/assistance/wand_tick_load"
+                },
+                "requirements": [
+                    {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "enchantments": [
+                                            {"enchantments": "center_calculation:inter/wand_effect"}
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "predicates": {
+                                    "custom_data": {
+                                        "IsWand": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+            },
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "center_calculation:custom_ench/melee/axe_tick_load"
+                },
+                "requirements": [
+                    {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "enchantments": [
+                                            {"enchantments": "center_calculation:inter/axe_effect"}
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": ["minecraft:diamond_axe","minecraft:stone_axe","minecraft:golden_axe","minecraft:netherite_axe","minecraft:wooden_axe","minecraft:iron_axe","mace"]
+                            }
+                        }
+                    }
+                }
+            ]
+            },
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "center_calculation:custom_ench/melee/scythe_tick_load"
+                },
+                "requirements": [
+                    {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "enchantments": [
+                                            {"enchantments": "center_calculation:inter/scythe_effect"}
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "#hoes"
+                            }
+                        }
+                    }
+                }
+            ]
+            },
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "center_calculation:custom_ench/assistance/pot_tick_load"
+                },
+                "requirements": [
+                    {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "enchantments": [
+                                            {"enchantments": "center_calculation:inter/pot_effect"}
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "predicates": {
+                                    "custom_data": {
+                                        "IsArcanePot": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+            },
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "center_calculation:custom_ench/assistance/magic_book_tick_load"
+                },
+                "requirements": [
+                    {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "enchantments": [
+                                            {"enchantments": "center_calculation:inter/magic_book_effect"}
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "predicates": {
+                                    "custom_data": {
+                                        "IsMagicBook": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+            },
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "center_calculation:data_refresh/_tick_"
+
+                },
+                "requirements": [{
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "effects": {
+                                "resistance": {}
+                            }
+                        }
+                    }
+                }]
+            }                        
         ]
     }
 }

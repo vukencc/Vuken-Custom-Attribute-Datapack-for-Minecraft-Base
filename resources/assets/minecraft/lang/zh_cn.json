@@ -5,6 +5,24 @@
   "attribute.name.armor": "防御值",
   "attribute.name.armor_toughness": "韧性值",
   "attribute.name.attack_damage": "近战伤害",
+
+  "effect.minecraft.luck":"抗性提升",
+  "effect.minecraft.resistance":"魔力",
+  "enchantment.level.11":"XI",
+  "enchantment.level.12":"XII",
+  "enchantment.level.13":"XIII",
+  "enchantment.level.14":"XIV",
+  "enchantment.level.15":"XV",
+  "enchantment.level.16":"XVI",
+  "enchantment.level.17":"XVII",
+  "enchantment.level.18":"XVIII",
+  "enchantment.level.19":"XIX",
+  "enchantment.level.20":"XX",
+  "enchantment.level.21":"XXI",
+  "enchantment.level.22":"XXII",
+  "enchantment.level.23":"XXIII",
+  "enchantment.level.24":"XXIV",
+  "enchantment.level.25":"XXV",
   
   "name.enchantment.agility": "敏捷",
   "name.enchantment.chain_break": "连锁破坏",
@@ -196,7 +214,7 @@
   "name.enchantment.focus.lore": "目标附近3格内没有其他敌人时，造成(2.5*等级)近战伤害。",
   "name.enchantment.ice_aspect.lore": "近战攻击使敌人缓慢。等级等于附魔等级，时间等于（附魔等级+3）秒。",
   "name.enchantment.quake.lore": "攻击一个敌人会对附近所有其他敌人造成(2.5*等级)近战伤害。",
-  "name.enchantment.slayer.lore": "对爬行者、末影人、烈焰人、铁傀儡、类人和村民造成额外(2.5*等级)伤害。",
+  "name.enchantment.slayer.lore": "对爬行者、末影人、烈焰人、铁傀儡、人形生物（包括村民）造成额外(2.5*等级)伤害。",
   "name.enchantment.thunder_aspect.lore": "有(10*等级)%%的几率使敌人昏迷1秒，上限为50%%。",
   "name.enchantment.water_aspect.lore": "近战攻击使敌人虚弱。等级等于附魔等级，时间等于（附魔等级+3）秒。",
   "name.enchantment.power.lore": "静止时，你的箭矢每级额外造成25%%伤害，适用于弓和弩。",
@@ -260,5 +278,13 @@
   "lore.item.intro.personal_stats":"右键查看个人状态及旅行日志的便捷道具。",
 
   
-  "rawtext.system.no_offhand":"不可在副手使用非副手物品。"
+  "rawtext.system.no_offhand":"不可在副手使用非副手物品。",
+
+  "name.item.type.sword":"╀ 近战武器: 剑 ╀",
+  "name.item.type.axe":"🪓 近战武器: 斧 🪓",
+  "name.item.type.scythe":"☽ 近战/魔法武器: 镰刀 ☽",
+  "name.item.type.pot":"♁ 魔法武器: 奥术瓶 ♁",
+  "name.item.type.magic_book":"❄ 魔法武器: 魔法书 ❄",
+  "name.item.type.bow_crossbow":"🏹 远程武器: 弓/弩 🏹",
+  "name.item.type.wand":"⚘ 魔法武器: 法杖 ⚘"
 }

@@ -1,8 +1,6 @@
 execute as @s at @s run summon marker ~ ~ ~ {Tags:["cct_det_inter"],data:{damage_store:0.0}}
 #damage_absorption_modify
 
-#stack
-scoreboard players operation @s damageResisted += @s damageAbsorbed
 #scb_cal
 scoreboard objectives add base_armor dummy
 scoreboard objectives add base_armor_bel dummy
@@ -100,7 +98,5 @@ scoreboard objectives remove base_armor_bel
 scoreboard objectives remove std_armor
 scoreboard objectives remove temp_std100
 scoreboard objectives remove temp_std4
-scoreboard players set @s damageAbsorbed 0
 scoreboard players set @s damageResisted 0
-scoreboard players set @s range_damage_timing 0
 advancement revoke @s only center_calculation:range_taken

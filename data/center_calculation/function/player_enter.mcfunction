@@ -5,14 +5,11 @@ scoreboard players set @a ethereal_p4 0
 scoreboard players set @a ethereal_p5 0
 scoreboard players set @a ethereal_p6 0
 scoreboard players set @a damageResisted 0
-scoreboard players set @a damageAbsorbed 0
+scoreboard players set @a natDamageResisted 0
 scoreboard players set @a std1000 1000
 scoreboard players set @a std100 100
 scoreboard players set @a std10 10
 scoreboard players set @a std750 20
-scoreboard players set @a com_damage_timing 0
-scoreboard players set @p range_damage_timing 0
-scoreboard players set @p magic_damage_timing 0
 scoreboard players set @p env_damage_timing 0
 scoreboard players set @a inter_custom_cd 0
 scoreboard players set @a data_delay 0

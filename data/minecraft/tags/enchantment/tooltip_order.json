@@ -80,7 +80,8 @@
     "minecraft:infinity",
     "minecraft:mending",
     "minecraft:unbreaking",
-    "center_calculation:inter/arrow_effect"
+    "center_calculation:inter/arrow_effect",
+    "center_calculation:inter/melee_effect"
   ],
   "replace": true
 }

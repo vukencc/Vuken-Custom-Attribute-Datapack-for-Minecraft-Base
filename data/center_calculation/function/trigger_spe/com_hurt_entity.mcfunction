@@ -20,14 +20,11 @@ execute as @s at @s store result entity @n[type=marker,tag=temp_melee_inner] dat
 execute as @s at @s store result score @s melee_thunder_aspect run data get entity @s SelectedItem.components."minecraft:enchantments"."center_calculation:melee/thunder_aspect"
 execute as @s at @s store result entity @n[type=marker,tag=temp_melee_inner] data.thunder_aspect int 1 run scoreboard players get @s melee_thunder_aspect
 #slayer
-
-execute at @s as @e[type=!#minecraft:bypass,distance=..4.5,nbt={HurtTime:10s}] run function center_calculation:custom_ench/melee/melee_argu with entity @n[type=marker,tag=temp_melee_inner] data
+execute at @s positioned ^ ^ ^2 as @e[type=!#minecraft:bypass,distance=..3.5,nbt={HurtTime:10s}] run function center_calculation:custom_ench/melee/melee_argu with entity @n[type=marker,tag=temp_melee_inner] data
 execute as @p at @s run function center_calculation:custom_ench/melee/melee_trig with entity @n[type=marker,tag=temp_melee_inner] data
 
 execute if score @s melee_combo matches 1.. run scoreboard players set @s ench_combo_timing 30
 
 kill @n[type=marker,tag=temp_melee_inner]
-
-function center_calculation:item_spe/passive_trig/hurt_enemy_trig
 
 advancement revoke @s only center_calculation:com_hurt_entity
