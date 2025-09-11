@@ -40,3 +40,9 @@ execute if score @s menu.trigger matches 1.. at @s run function center_calculati
 #------------------data_storage------------------#
 
 execute at @s run function center_calculation:data_refresh/data_trail/set with entity @s
+execute store result score @s stdTemp1 run data get entity @s SelectedItem.components."minecraft:enchantments"."center_calculation:range/multicharge"
+execute unless score @s stdTemp1 = @s stdTemp2 run scoreboard players set @s range_multicharge 0
+execute store result score @s stdTemp2 run data get entity @s SelectedItem.components."minecraft:enchantments"."center_calculation:range/multicharge"
+execute store result score @s stdTemp3 run data get entity @s SelectedItem.components."minecraft:enchantments"."minecraft:multishot"
+execute unless score @s stdTemp3 = @s stdTemp4 run scoreboard players set @s range_multicharge 0
+execute store result score @s stdTemp4 run data get entity @s SelectedItem.components."minecraft:enchantments"."minecraft:multishot"
