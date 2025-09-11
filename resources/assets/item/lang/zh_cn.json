@@ -1,16 +1,12 @@
 {
-  "lore.item.name.wind_longsword":"风之长刃",
-  "lore.item.intro.wind_longsword":"人们徘徊不前，驻目远视，祝愿风在你的身后...",
+  "lore.item.intro.update.none":"无升级",
   "lore.item.intro.wind_longsword.af_show.0":"+1 攻击伤害",
   "lore.item.intro.wind_longsword.af_show.1":"+5%% 移动速度 & + 0.1 攻击速度",
-  "lore.item.intro.wind_longsword.af_show.2":"无升级",
-  "lore.item.intro.wind_longsword.af_show.3":"无升级",
-  "lore.item.intro.wind_longsword.af_show.4":"无升级",
   "lore.item.intro.wind_longsword.pf_show.0":"+1 能量",
   "lore.item.intro.wind_longsword.pf_show.1":"+1 连击",
-  "lore.item.intro.wind_longsword.pf_show.2":"无升级",
-  "lore.item.intro.wind_longsword.pf_show.3":"无升级",
-  "lore.item.intro.wind_longsword.pf_show.4":"无升级",
+
+  "lore.item.name.wind_longsword":"风之长刃",
+  "lore.item.intro.wind_longsword":"人们徘徊不前，驻目远视，祝愿风在你的身后...",
 
   "lore.item.name.ruins_of_life_stream":"遗迹生命之流",
 

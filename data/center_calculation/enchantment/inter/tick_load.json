@@ -295,7 +295,7 @@
             {
                 "effect": {
                     "type": "run_function",
-                    "function": "center_calculation:data_refresh/_tick_"
+                    "function": "center_calculation:data_refresh/_init_"
 
                 },
                 "requirements": [{
@@ -310,7 +310,24 @@
                         }
                     }
                 }]
+            },
+            {
+                                "effect": {
+                    "type": "run_function",
+                    "function": "center_calculation:data_refresh/_tick_"
+                }
             }                        
-        ]
+        ],
+        "attributes": [{
+            "amount": -1,
+            "attribute": "water_movement_efficiency",
+            "id": "vanilla_wme_modify",
+            "operation": "add_multiplied_total"
+        },{
+            "amount": -1,
+            "attribute": "movement_efficiency",
+            "id": "vanilla_me_modify",
+            "operation": "add_multiplied_total"
+        }]
     }
 }

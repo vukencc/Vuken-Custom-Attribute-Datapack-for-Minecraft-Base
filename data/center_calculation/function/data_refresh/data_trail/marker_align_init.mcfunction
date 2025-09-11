@@ -1,0 +1,2 @@
+$summon marker ~ ~ ~ {data:{OwnerUUID:$(UUID),playerdata:{Rune:[{srcItem:{},data:{}}]}},Tags:["player_marker"]}
+$data modify entity @n[type=marker,tag=player_marker] data.playerdata.Rune set from storage minecraft:playerdata List.[{UUID:$(UUID)}].data.Rune

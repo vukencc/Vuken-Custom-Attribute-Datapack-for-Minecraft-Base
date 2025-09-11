@@ -3,5 +3,5 @@ execute if items entity @s weapon.mainhand #armor at @n[tag=Forge] run summon it
 execute unless items entity @s weapon.mainhand #melee_weapon run data merge entity @n[type=item_display,tag=forge_show] {transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[0.9999999f,0.9999999f,0.99999994f],translation:[0.0f,0.0f,0.0f]}}
 execute if items entity @s weapon.mainhand #armor run data modify entity @n[type=item_display,tag=forge_show] item set from entity @s SelectedItem
 execute if items entity @s weapon.mainhand #armor run team join gold @n[tag=forge_show]
-execute if items entity @s weapon.mainhand #armor run item replace entity @s weapon.mainhand with air
+execute if items entity @s weapon.mainhand #armor run item modify entity @s weapon.mainhand [{function:"set_count",count:-1,add:true}]
 execute if items entity @s weapon.mainhand #armor run playsound entity.allay.item_given hostile @s ~ ~ ~

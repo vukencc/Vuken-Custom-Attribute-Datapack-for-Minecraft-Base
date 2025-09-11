@@ -1,0 +1,1 @@
+$execute as @n[type=marker,tag=player_marker,nbt={data:{OwnerUUID:$(UUID)}}] rotated as @s run tp @s ~ ~ ~ ~5 ~

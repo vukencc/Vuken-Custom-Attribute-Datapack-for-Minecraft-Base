@@ -1,0 +1,5 @@
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{weakness:{amplifier:0}}}} store result score @p damageResisted run data get entity @s data.damage.magic 9
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{weakness:{amplifier:1}}}} store result score @p damageResisted run data get entity @s data.damage.magic 8
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{weakness:{amplifier:2}}}} store result score @p damageResisted run data get entity @s data.damage.magic 7
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{weakness:{amplifier:3}}}} store result score @p damageResisted run data get entity @s data.damage.magic 6
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{weakness:{amplifier:{min:4}}}}} store result score @p damageResisted run data get entity @s data.damage.magic 5

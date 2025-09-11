@@ -4,7 +4,11 @@
 			"trigger":"minecraft:player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt" : "{Tags:[\"spawnpoint\"]}"
+					"predicates": {
+						"custom_data": {
+							"Spawnpoint": true
+						}
+					}
                 }
             }
 		}

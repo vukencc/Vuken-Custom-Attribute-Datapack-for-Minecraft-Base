@@ -20,9 +20,7 @@ execute at @s[tag=ice_aspect_ed] run function center_calculation:particle/ench/i
 execute if entity @s[tag=ice_aspect_ed] on attacker as @s at @s run playsound entity.player.hurt_freeze hostile @p ~ ~ ~
 tag @s remove ice_aspect_ed
 
-execute if score @p melee_focus matches 1.. as @s at @s unless entity @e[type=!#bypass,distance=0.3..2.5] run particle glow ~ ~ ~ 0 2 0 0 15 normal
-execute if score @p melee_focus matches 1.. as @s at @s unless entity @e[type=!#bypass,distance=0.3..2.5] run playsound item.trident.hit hostile @a ~ ~ ~
-$execute as @s at @s unless entity @e[type=!#bypass,distance=0.3..2.5] run scoreboard players add @s enemy.Taken.Melee $(focus)
+$execute if score @p melee_focus matches 1.. as @s at @s unless entity @e[type=!#bypass,distance=0.3..2.5] run function center_calculation:custom_ench/melee/focus_spe {focus:$(focus)}
 
 $execute if score @p melee_first_strike matches 1.. unless entity @s[tag=first_striked] run scoreboard players add @s enemy.Taken.Melee $(first_strike)
 execute if score @p melee_first_strike matches 1.. unless entity @s[tag=first_striked] at @p run playsound entity.item.break hostile @p ~ ~ ~

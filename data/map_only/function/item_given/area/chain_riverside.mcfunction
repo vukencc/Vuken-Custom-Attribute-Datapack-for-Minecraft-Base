@@ -7,13 +7,13 @@ IsPotionCharger:1b,NoOffhand:1b,ChestModel:1b,Trigger:1b,Offhand:1b,PotionContai
 }]
 
 #-------------rare----------------#
-give @p stone_sword[attribute_modifiers=[{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:4,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.05,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],enchantments={unbreaking:5},lore=[[{translate:lore.item.rarity.rare,color:blue,italic:false,bold:true},{text:" "},{text:"☆☆☆",color:"#81ffcd",italic:false}],"",[{translate:lore.item.intro.wind_longsword,color:white,italic:false}]],custom_name=[{translate:lore.item.name.wind_longsword,color:"#7878ff",italic:false,bold:true}],item_model="weapon/sword/1",\
+give @p stone_sword[attribute_modifiers=[{amount:-2.4,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:3,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.05,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],enchantments={unbreaking:5},lore=[[{translate:lore.item.rarity.rare,color:blue,italic:false,bold:true},{text:" "},{text:"☆☆☆",color:"#81ffcd",italic:false}],"",[{translate:lore.item.intro.wind_longsword,color:white,italic:false}]],custom_name=[{translate:lore.item.name.wind_longsword,color:"#7878ff",italic:false,bold:true}],item_model="weapon/sword/1",\
 custom_data={Trigger:1b,attribute_modifiers:[\
-[{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:5,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.05,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],\
-[{amount:-2.2,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:5,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],\
-[{amount:-2.2,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:5,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],\
-[{amount:-2.2,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:5,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],\
-[{amount:-2.2,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:5,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}]\
+[{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:4,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.05,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],\
+[{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:4,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],\
+[{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:4,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],\
+[{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:4,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],\
+[{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:4,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}]\
 ],enchantments:[\
 {"center_calculation:assistance/energy":1},\
 {"center_calculation:assistance/energy":1,"center_calculation:melee/combo":1},\
@@ -23,16 +23,16 @@ custom_data={Trigger:1b,attribute_modifiers:[\
 ],af_show:[\
 "lore.item.intro.wind_longsword.af_show.0",\
 "lore.item.intro.wind_longsword.af_show.1",\
-"lore.item.intro.wind_longsword.af_show.2",\
-"lore.item.intro.wind_longsword.af_show.3",\
-"lore.item.intro.wind_longsword.af_show.4"\
+"lore.item.intro.update.none",\
+"lore.item.intro.update.none",\
+"lore.item.intro.update.none"\
 \
 ],pf_show:[\
 "lore.item.intro.wind_longsword.pf_show.0",\
 "lore.item.intro.wind_longsword.pf_show.1",\
-"lore.item.intro.wind_longsword.pf_show.2",\
-"lore.item.intro.wind_longsword.pf_show.3",\
-"lore.item.intro.wind_longsword.pf_show.4"\
+"lore.item.intro.update.none",\
+"lore.item.intro.update.none",\
+"lore.item.intro.update.none"\
 ]\
 }]
 

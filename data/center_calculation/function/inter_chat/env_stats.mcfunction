@@ -5,8 +5,8 @@ scoreboard objectives add std_armor dummy
 scoreboard objectives add temp_100 dummy
 #end
 scoreboard players set @s temp_100 100
-execute store result score @s base_armor run attribute @s luck get 100
-execute store result score @s base_armor_bel run attribute @s luck get 1
+execute store result score @s base_armor run attribute @s luck get 50
+execute store result score @s base_armor_bel run attribute @s luck get 0.5
 scoreboard players operation @s base_armor_bel += @s std750
 scoreboard players operation @s base_armor /= @s base_armor_bel
 scoreboard players set @s std_armor 100

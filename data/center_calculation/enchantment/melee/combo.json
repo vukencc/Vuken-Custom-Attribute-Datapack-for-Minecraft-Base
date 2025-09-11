@@ -25,7 +25,7 @@
         "enchanted": "attacker",
         "effect": {
           "type": "run_function",
-          "function": "center_calculation:particle/ench/combo"
+          "function": "center_calculation:particle/ench/combo_init"
         },
         "requirements": {
           "condition": "entity_scores",

@@ -173,6 +173,7 @@ scoreboard objectives add arrow_apply_greed dummy
 scoreboard objectives add arrow_apply_starlit dummy
 scoreboard objectives add to_clear_regenerate dummy
 scoreboard objectives add range_multicharge dummy
+scoreboard objectives add range_multicharge_count dummy
 #frenzy energy hasten
 scoreboard objectives add frenzy_p1 dummy
 scoreboard objectives add frenzy_p2 dummy
@@ -256,14 +257,12 @@ scoreboard players set @a in_boss 0
 scoreboard objectives add player.HurtTime dummy
 scoreboard players set @a player.HurtTime 0
 scoreboard objectives add player.BypassHurtTime dummy
-scoreboard players set @a player.BypassHurtTime 10
 scoreboard objectives add ethereal_p1 dummy
 scoreboard objectives add ethereal_p2 dummy
 scoreboard objectives add ethereal_p3 dummy
 scoreboard objectives add ethereal_p4 dummy
 scoreboard objectives add ethereal_p5 dummy
 scoreboard objectives add ethereal_p6 dummy
-execute if entity @p[gamemode=creative] run function center_calculation:player_enter
 scoreboard objectives add enemy.Taken.Melee dummy
 scoreboard objectives add enemy.Taken.Range dummy
 scoreboard objectives add enemy.Taken.Magic dummy
@@ -292,3 +291,6 @@ scoreboard objectives add slot.B dummy
 
 scoreboard objectives add ChestModel.cd dummy
 scoreboard objectives add menu.trigger trigger
+
+data merge storage playerdata {List:[]} 
+execute if entity @p[gamemode=creative] run function center_calculation:player_enter

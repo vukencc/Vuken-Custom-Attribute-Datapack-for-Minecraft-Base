@@ -1,2 +1,1 @@
-summon interaction ~ ~1 ~ {width:0.6,height:0.8,Tags:["Forge"],Passengers:[{id:armor_stand,NoAI:1b,NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,equipment:{saddle:{id:stone,count:1,components:{enchantments:{"center_calculation:system/forge/particle":1}}}}}]}
-summon block_display ~ ~ ~ {block_state:{Name:"crafter",Properties:{triggered:"true"}},view_range:0.1,Glowing:true,glow_color_override:11086820}
+summon interaction ~ ~ ~ {width:0.6,height:0.8,Tags:["Forge"],Passengers:[{id:armor_stand,NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,equipment:{saddle:{id:stone,count:1,components:{enchantments:{"center_calculation:system/forge/particle":1}}}}}]}

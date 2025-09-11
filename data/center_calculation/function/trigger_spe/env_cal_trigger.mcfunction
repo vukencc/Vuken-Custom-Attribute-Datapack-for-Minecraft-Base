@@ -9,8 +9,8 @@ scoreboard objectives add base_armor_bel dummy
 scoreboard objectives add std_armor dummy
 
 #end
-execute store result score @s base_armor run attribute @s luck get 100
-execute store result score @s base_armor_bel run attribute @s luck get 1
+execute store result score @s base_armor run attribute @s luck get 50
+execute store result score @s base_armor_bel run attribute @s luck get 0.5
 #extension aspect
 execute as @s at @s run function center_calculation:custom_ench/trigger_center
 scoreboard players operation @s base_armor *= @s armor_extension
