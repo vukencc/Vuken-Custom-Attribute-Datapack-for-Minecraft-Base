@@ -179,7 +179,7 @@
   "name.enchantment.eruption.lore": "破坏刷怪笼对附近所有敌人造成5点伤害，并触发近战附魔。",
   "name.enchantment.frenzy.lore": "击杀敌人后，在8秒内每级增加25%%攻击伤害。",
   "name.enchantment.hasten.lore": "击杀敌人后，在8秒内每级增加15%%攻击速度。",
-  "name.enchantment.invert.lore": "将你的debuff转换为buff，持续时间为(1*等级)秒，上限为5级。\n中毒->生命恢复\n凋零->伤害吸收\n虚弱->力量\n缓慢->速度\n挖掘疲劳->急迫\n饥饿->饱和(持续1tick)\n失明->夜视\n黑暗->发光\n厄运->幸运",
+  "name.enchantment.invert.lore": "将你的debuff转换为buff，持续时间为(1*等级)秒，上限为5级。\n中毒->生命恢复\n凋零->抗性提升\n虚弱->力量\n缓慢->速度\n挖掘疲劳->急迫\n饥饿->饱和(持续1tick)\n失明->夜视\n黑暗->发光",
   "name.enchantment.life_drain.lore": "击杀敌人后，每级恢复1点生命值。",
   "name.enchantment.regeneration.lore": "每(5.5-0.5*等级)秒恢复1点生命值，最快每秒恢复1点生命值。",
   "name.enchantment.sapper.lore": "破坏刷怪笼每级恢复1点生命值。",

@@ -10,8 +10,7 @@
 							"expected": true,
 							"id": "minecraft:range_det"
 						}
-					],
-					"is_direct": false
+					]
 					},
 					"blocked": false
 				}

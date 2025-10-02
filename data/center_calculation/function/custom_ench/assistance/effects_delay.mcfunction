@@ -3,14 +3,13 @@ summon marker ~ ~ ~ {Tags:["temp_invert"],data:{invert:0}}
 scoreboard players remove @s invert_p1 1
 execute store result entity @n[tag=temp_invert,type=marker] data.invert int 1 run scoreboard players get @s invert_p1
 #Poison->Absorption 
-#Wither->Resistance 
+#Wither->Resistance
 #Weakness->Strength 
 #Slowness->Speed 
 #Mining Plague->Haste 
 #Hunger->Saturation(For 1 tick instead) 
 #Blindness->Night Vision 
 #Darkness->Glowing 
-#Unluck->Luck
 tag @s remove poison_invert
 tag @s remove wither_invert
 tag @s remove weakness_invert

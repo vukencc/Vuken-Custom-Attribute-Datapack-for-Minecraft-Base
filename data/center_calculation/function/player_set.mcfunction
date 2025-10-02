@@ -1,1 +1,1 @@
-$data modify storage playerdata List append value {UUID:$(UUID),data:{Rune:[{srcItem:{},data:{}}]}}
+$data modify storage playerdata List append value {UUID:$(UUID),data:{}}

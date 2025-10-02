@@ -158,6 +158,11 @@ scoreboard objectives add range_freeze dummy
 scoreboard objectives add range_greed dummy
 scoreboard objectives add range_ring dummy
 scoreboard objectives add range_starlit dummy
+scoreboard objectives add multicharge.temp1 dummy
+scoreboard objectives add multicharge.temp2 dummy
+scoreboard objectives add multicharge.temp3 dummy
+scoreboard objectives add multicharge.temp4 dummy
+scoreboard objectives add multicharge.temp5 dummy
 #std
 scoreboard objectives add entity_x dummy
 scoreboard objectives add entity_y dummy

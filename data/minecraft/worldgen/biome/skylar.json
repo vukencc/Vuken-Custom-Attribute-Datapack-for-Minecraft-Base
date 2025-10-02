@@ -1,0 +1,26 @@
+{
+    "temperature": -0.5,
+    "downfall": 0.4,
+    "has_precipitation": true,
+    "effects": {
+      "sky_color": 16187355,
+      "fog_color": 16381655,
+      "grass_color": 15662335,
+      "water_color": 8963839,
+      "water_fog_color": 14145535,
+      "foliage_color": 14678783,
+      "particle":{
+        "options": {
+          "type": "end_rod"
+        },
+        "probability": 0.001
+      }
+    },
+    "spawners": {
+    },
+    "spawn_costs": {
+    },
+    "carvers": [],
+    "features": [],
+    "temperature_modifier":"frozen"
+}
