@@ -1,1 +1,0 @@
-item modify entity @s weapon.mainhand [{function:"set_enchantments",add:true,enchantments:{"center_calculation:inter/wand_effect":1}}]

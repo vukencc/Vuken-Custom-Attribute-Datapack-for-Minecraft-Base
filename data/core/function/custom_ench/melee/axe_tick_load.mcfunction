@@ -1,0 +1,1 @@
+enchant @s core:inter/axe_effect 1

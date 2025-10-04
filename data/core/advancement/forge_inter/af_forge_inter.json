@@ -1,0 +1,14 @@
+{
+	"criteria":{
+		"temp_forge":{
+			"trigger":"minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "nbt" : "{Tags:[\"af_Forge\"]}"
+                }
+            }
+		}
+	},
+	"requirements": [["temp_forge"]] ,
+	"rewards":{"function":"core:forge/trigger/af_forge_center"}
+}

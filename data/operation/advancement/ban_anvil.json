@@ -19,6 +19,6 @@
 		}
 	},
 	"rewards": {
-		"function": "center_calculation:item_spe/base_item/anvil/ban_open"
+		"function": "core:item_spe/base_item/anvil/ban_open"
 	}
 }

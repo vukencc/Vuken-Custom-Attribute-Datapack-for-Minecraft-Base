@@ -1,1 +1,0 @@
-execute facing entity @p feet rotated ~180 ~ positioned ~ ~1.8 ~ run function center_calculation:particle/ench/combo

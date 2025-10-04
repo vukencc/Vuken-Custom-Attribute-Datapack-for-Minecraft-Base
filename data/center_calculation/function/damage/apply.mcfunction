@@ -1,1 +1,0 @@
-$damage @s $(MeleeTaken) center_calculation:custom_magic by @p[tag=tempApply]

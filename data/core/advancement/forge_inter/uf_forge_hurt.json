@@ -1,0 +1,14 @@
+{
+	"criteria":{
+		"temp_forge":{
+			"trigger":"minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt" : "{Tags:[\"uf_Forge\"]}"
+                }
+            }
+		}
+	},
+	"requirements": [["temp_forge"]] ,
+	"rewards":{"function":"core:forge/trigger/uf_forge_center"}
+}

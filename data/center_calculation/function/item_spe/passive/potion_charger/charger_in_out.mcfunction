@@ -1,1 +1,0 @@
-$execute unless entity @n[type=acacia_chest_boat,distance=..8,tag=PotionCharger.Init,nbt={data:{UUID:$(UUID)}}] run function center_calculation:item_spe/passive/potion_charger/charge_to_mainhand with entity @s
