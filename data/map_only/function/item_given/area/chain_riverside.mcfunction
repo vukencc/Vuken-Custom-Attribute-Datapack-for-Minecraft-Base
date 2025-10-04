@@ -15,8 +15,8 @@ custom_data={Trigger:1b,attribute_modifiers:[\
 [{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:4,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],\
 [{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:4,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}]\
 ],enchantments:[\
-{"core:assistance/energy":1},\
-{"core:assistance/energy":1,"core:melee/combo":1},\
+{"center_calculation:assistance/energy":1},\
+{"center_calculation:assistance/energy":1,"center_calculation:melee/combo":1},\
 {},\
 {},\
 {}\

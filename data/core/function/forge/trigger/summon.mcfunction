@@ -1,1 +1,0 @@
-summon interaction ~ ~ ~ {width:0.6,height:0.8,Tags:["Forge"],Passengers:[{id:armor_stand,NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,equipment:{saddle:{id:stone,count:1,components:{enchantments:{"core:system/forge/particle":1}}}}}]}

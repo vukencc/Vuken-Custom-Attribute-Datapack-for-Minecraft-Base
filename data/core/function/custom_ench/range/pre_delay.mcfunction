@@ -1,1 +1,0 @@
-execute as @e[type=!#bypass] if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{unluck:{}}}} at @s run function core:custom_ench/range/effects_transform

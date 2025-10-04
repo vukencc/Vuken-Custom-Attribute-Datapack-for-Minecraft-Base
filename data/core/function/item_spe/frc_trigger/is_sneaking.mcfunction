@@ -1,1 +1,0 @@
-execute if items entity @s[x_rotation=-90..60] weapon.mainhand *[custom_data~{IsPotionCharger:1b}] run function core:item_spe/passive/potion_charger/init with entity @s

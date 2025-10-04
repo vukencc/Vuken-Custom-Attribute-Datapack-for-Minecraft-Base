@@ -1,1 +1,0 @@
-function core:particle/death_escape/sphere

@@ -1,0 +1,1 @@
+enchant @s center_calculation:inter/arrow_effect
