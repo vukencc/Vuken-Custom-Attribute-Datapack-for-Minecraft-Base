@@ -1,7 +1,5 @@
 {
-	"pack":{
-		"pack_format":81,
-		"description":"A datapack for attributes and enchantments improvement."
-	},
-	"filter": {"block": []}
+	"pack": {
+		"description": "Datapack for CTM Respawn By I_Vuken_I"
+	}
 }
