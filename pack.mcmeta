@@ -1,5 +1,7 @@
-{
-	"pack": {
-		"description": "Datapack for CTM Respawn By I_Vuken_I"
-	}
-}
+   {
+       "pack": {
+           "description": "§6§lA Datapack for CTM Map Adventure!",
+           "min_format": 88,
+           "max_format": 88
+       }
+   }

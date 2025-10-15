@@ -277,14 +277,13 @@
   "lore.item.name.personal_stats":"旅者笔记",
   "lore.item.intro.personal_stats":"右键查看个人状态及旅行日志的便捷道具。",
 
-  
-  "rawtext.system.no_offhand":"不可在副手使用非副手物品。",
-
   "name.item.type.sword":"╀ 近战武器: 剑 ╀",
   "name.item.type.axe":"🪓 近战武器: 斧 🪓",
   "name.item.type.scythe":"☽ 近战/魔法武器: 镰刀 ☽",
   "name.item.type.pot":"♁ 魔法武器: 奥术瓶 ♁",
   "name.item.type.magic_book":"❄ 魔法武器: 魔法书 ❄",
   "name.item.type.bow_crossbow":"🏹 远程武器: 弓/弩 🏹",
-  "name.item.type.wand":"⚘ 魔法武器: 法杖 ⚘"
+  "name.item.type.wand":"⚘ 魔法武器: 法杖 ⚘",
+
+  "rawtext.enter_game":"欢迎来到CTM地图「%s」的冒险世界，请确认您与朋友已经做好了启程的准备，开始今日的幻想之旅! "
 }

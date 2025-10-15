@@ -1,0 +1,1 @@
+execute if entity @s[tag=starlit_as] at @s run function center_calculation:custom_ench/range/starlit/effect with entity @s data

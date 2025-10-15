@@ -1,14 +1,12 @@
-summon marker ~ ~ ~ {Tags:["temp_effects_transformer"],data:{greed:0.0d,freeze:0,ring:0.0f,starlit:0.0f,sniper_blank:0.0f}}
+summon marker ~ ~ ~ {Tags:["temp_effects_transformer"],data:{greed:0.0d,freeze:0,ring:0.0f,sniper_blank:0.0f}}
 #bad_omen.greed slowness.freeze night_vision.ring unluck.starlit
 execute store result entity @n[type=marker,tag=temp_effects_transformer] data.freeze int 10 run data get entity @s active_effects[{id:"minecraft:hunger"}].amplifier 1
 execute store result entity @n[type=marker,tag=temp_effects_transformer] data.greed double 1.0 run data get entity @s active_effects[{id:"minecraft:bad_omen"}].amplifier 1
 execute store result entity @n[type=marker,tag=temp_effects_transformer] data.ring float 0.1 run data get entity @s active_effects[{id:"minecraft:night_vision"}].amplifier -0.015
-execute store result entity @n[type=marker,tag=temp_effects_transformer] data.starlit float 1.0 run data get entity @s active_effects[{id:"minecraft:unluck"}].amplifier 30
 execute store result entity @n[type=marker,tag=temp_effects_transformer] data.sniper_blank float 1.0 run data get entity @s active_effects[{id:"minecraft:hero_of_the_village"}].amplifier 30
 execute store result score @s arrow_apply_greed run data get entity @s active_effects[{id:"minecraft:bad_omen"}].amplifier
 execute store result score @s arrow_apply_freeze run data get entity @s active_effects[{id:"minecraft:hunger"}].amplifier
 execute store result score @s arrow_apply_ring run data get entity @s active_effects[{id:"minecraft:night_vision"}].amplifier
-execute store result score @s arrow_apply_starlit run data get entity @s active_effects[{id:"minecraft:unluck"}].amplifier
 execute store result score @s arrow_apply_sniper_blank run data get entity @s active_effects[{id:"minecraft:hero_of_the_village"}].amplifier
 
 execute if score @s arrow_apply_greed matches 1.. run effect give @s glowing 2 0 true
@@ -16,8 +14,6 @@ execute if score @s arrow_apply_freeze matches 1.. at @s run particle block{bloc
 execute if score @s arrow_apply_freeze matches 1.. at @s run particle block{block_state:"blue_ice"} ~ ~1 ~ 1 1 1 0.1 10 normal
 execute if score @s arrow_apply_freeze matches 1.. at @s run playsound entity.player.hurt_freeze hostile @a ~ ~ ~
 execute if score @s arrow_apply_ring matches 1.. at @s run function center_calculation:particle/ench/ring
-execute if score @s arrow_apply_starlit matches 1.. at @s run function center_calculation:particle/ench/starlit
-execute if score @s arrow_apply_starlit matches 1.. at @s run playsound block.glass.break hostile @a ~ ~ ~
 execute as @n[type=marker,tag=temp_effects_transformer] unless entity @s[nbt={data:{greed:0.0d}}] at @s run playsound entity.elder_guardian.curse hostile @a ~ ~ ~
 execute if score @s arrow_apply_ring matches 1.. at @s run playsound block.enchantment_table.use hostile @a ~ ~ ~
 

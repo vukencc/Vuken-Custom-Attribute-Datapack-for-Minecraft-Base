@@ -1,0 +1,58 @@
+{
+    "description": {
+        "text": ""
+    },
+    "supported_items": "saddle",
+    "primary_items": "saddle",
+    "weight": 10,
+    "max_level": 1,
+    "max_cost": {
+        "base": 13,
+        "per_level_above_first": 8
+      },
+    "min_cost": {
+        "base": 5,
+        "per_level_above_first": 8
+      },
+    "anvil_cost": 1,
+    "slots": [
+        "any"
+    ],
+    "effects": {
+        "tick": [
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "operation:stats/kill_this"
+                },
+                "requirements": [{
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "vehicle": {
+                            "movement": {
+                                "speed": 0
+                            }
+                        }
+                    }
+                }]
+            },
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "operation:stats/kill_this"
+                },
+                "requirements": {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "vehicle": {}
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

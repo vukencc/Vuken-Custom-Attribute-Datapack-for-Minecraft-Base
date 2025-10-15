@@ -43,3 +43,4 @@ execute if score @s menu.trigger matches 1.. at @s run function center_calculati
 
 #------------------data_storage------------------#
 execute if items entity @s weapon.mainhand crossbow if score @s repeat_10_timing matches 5 run function center_calculation:custom_ench/range/multicharge/charges_refresh
+execute if score @s repeat_25_timing matches 10 run function center_calculation:item_spe/passive_trig_low_tick with entity @s

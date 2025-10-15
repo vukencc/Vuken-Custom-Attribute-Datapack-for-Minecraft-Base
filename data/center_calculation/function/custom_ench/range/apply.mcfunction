@@ -1,7 +1,6 @@
 $scoreboard players set @s thunder_aspect_timing $(freeze)
 execute if score @s arrow_apply_freeze matches 1.. run data merge entity @s {NoAI:1b}
 #$execute if score @s arrow_apply_starlit matches 1.. as @e[distance=..3.5,type=!#minecraft:bypass] run damage @s $(starlit) starve
-$execute if score @s arrow_apply_starlit matches 1.. as @e[distance=..3.5,type=!#minecraft:bypass] run scoreboard players add @s enemy.Taken.Range $(starlit)
 $scoreboard players add @s[tag=tempDistance] enemy.Taken.Range $(sniper_blank)
 execute on attacker as @s run tag @s add tempApply
 execute as @e[distance=..3.5,type=!#minecraft:bypass] run function center_calculation:damage/range/direct_apply
