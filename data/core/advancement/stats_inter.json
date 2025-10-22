@@ -1,0 +1,19 @@
+{
+	"criteria":{
+		"stats_inter":{
+			"trigger":"minecraft:using_item",
+			"conditions":{
+                "item": {
+					"items": ["nether_star"],
+					"components": {
+						"minecraft:custom_data": {
+							"stats_inter" : true
+						}
+					}
+                }
+			}
+		}
+	},
+	"requirements": [["stats_inter"]] ,
+	"rewards":{"function":"core:inter_chat/main_delay"}
+}

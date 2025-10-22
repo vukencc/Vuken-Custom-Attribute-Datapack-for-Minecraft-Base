@@ -1,0 +1,1 @@
+enchant @s core:inter/scythe_effect

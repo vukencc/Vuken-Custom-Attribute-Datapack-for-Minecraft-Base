@@ -1,1 +1,0 @@
-function center_calculation:particle/death_escape/sphere

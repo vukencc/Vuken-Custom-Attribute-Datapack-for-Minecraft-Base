@@ -1,1 +1,0 @@
-enchant @s center_calculation:inter/sword_effect

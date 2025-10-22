@@ -1,1 +1,0 @@
-$execute as @e[type=armor_stand,nbt={data:{UUID:$(UUID)}}] if predicate {condition:entity_properties,entity:"this",predicate:{vehicle:{}}} at @s run function center_calculation:custom_ench/range/arrow_as_center

@@ -1,0 +1,1 @@
+enchant @s core:inter/arrow_effect

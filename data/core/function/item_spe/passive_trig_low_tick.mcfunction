@@ -1,0 +1,2 @@
+kill @e[type=#minecraft:arrows,nbt={inGround:1b}]
+$execute unless entity @n[type=marker,nbt={data:{OwnerUUID:$(UUID)}},tag=player_marker] run function core:data_refresh/data_trail/marker_align_init with entity @s

@@ -1,4 +1,0 @@
-execute run function center_calculation:item_spe/passive/potion_charger/charger_in_out with entity @s
-execute if items entity @s player.crafting.* anvil[custom_data~{AnvilFix:1b}] run function center_calculation:item_spe/base_item/anvil/prime
-execute if items entity @s player.crafting.* bundle[bundle_contents~{items:{count:[{count:1,test:{items:"#armor"}}]}}] run function center_calculation:item_spe/base_item/anvil/bundle_prime
-execute if items entity @s player.crafting.* bundle[custom_data~{AnvilFix:1b}] unless items entity @s player.crafting.* bundle[bundle_contents~{items:{count:[{count:1,test:{items:"#armor"}}]}}] run function center_calculation:item_spe/base_item/anvil/bundle_refuse
