@@ -1,4 +1,5 @@
+execute unless block ~ ~ ~ #ban_inter run return fail
 execute if block ~ ~ ~ minecraft:anvil run return run function operation:ban_anvil/disable_anvil
-execute if block ~ ~ ~ damaged_anvil run return run setblock ~ ~ ~ moving_piston
-execute if block ~ ~ ~ chipped_anvil run return run setblock ~ ~ ~ moving_piston
-execute if block ~ ~ ~ grindstone run return run setblock ~ ~ ~ moving_piston
+playsound block.iron_door.close hostile @s ~ ~ ~
+particle block_marker{block_state:{Name:"barrier"}} ~ ~ ~ 0 0 0 2 0 normal
+setblock ~ ~ ~ tinted_glass

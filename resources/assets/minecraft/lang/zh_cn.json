@@ -7,6 +7,7 @@
   "attribute.name.attack_damage": "近战伤害",
 
   "effect.minecraft.luck":"抗性提升",
+  "effect.minecraft.unluck":"脆弱",
   "effect.minecraft.resistance":"魔力",
   "enchantment.level.11":"XI",
   "enchantment.level.12":"XII",
@@ -87,7 +88,7 @@
 
   "name.return.display": "[ 返回 ]",
 
-  "name.defence.lore": "在此地图中，每韧性值可转化为三倍防御值，韧性值转化而来的防御值不可超过护甲本身提供的防御值，防御值对环境伤害仅50%%部分生效。以下防御计算结果包括防御值，药水效果，保护附魔，不包括二级附魔。",
+  "name.defence.lore": "在此地图中，每韧性值可转化为三倍防御值，韧性值转化而来的防御值不可超过护甲本身提供的防御值，防御值对环境伤害仅50%%部分生效。以下防御计算结果仅计算基本防御值与保护附魔。",
   "name.total_defence.display": "总防御值 : ",
   "name.defence_calculation.display":"[ 防御计算 ]",
   "name.evasion_calculation.display":"[ 闪避计算 ]",

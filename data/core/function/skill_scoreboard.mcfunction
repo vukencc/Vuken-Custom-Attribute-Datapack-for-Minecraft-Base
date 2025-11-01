@@ -1,6 +1,0 @@
-scoreboard objectives add time_not_taking_damage dummy
-scoreboard objectives add time_not_killing_entities dummy
-scoreboard objectives add timing_limited dummy
-scoreboard objectives add execute_active dummy
-scoreboard objectives add shared_active_cd dummy
-scoreboard objectives add absorption_shield_cd dummy

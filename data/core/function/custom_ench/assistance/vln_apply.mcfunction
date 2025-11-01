@@ -1,0 +1,1 @@
+$attribute @s luck modifier add vln.pre $(a) add_value

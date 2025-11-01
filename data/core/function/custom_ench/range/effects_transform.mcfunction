@@ -1,10 +1,10 @@
 summon marker ~ ~ ~ {Tags:["temp_effects_transformer"],data:{greed:0.0d,freeze:0,ring:0.0f,sniper_blank:0.0f}}
-#bad_omen.greed slowness.freeze night_vision.ring
+#saturation.greed hunger.freeze night_vision.ring hero.sniper_blank
 execute store result entity @n[type=marker,tag=temp_effects_transformer] data.freeze int 10 run data get entity @s active_effects[{id:"minecraft:hunger"}].amplifier 1
-execute store result entity @n[type=marker,tag=temp_effects_transformer] data.greed double 1.0 run data get entity @s active_effects[{id:"minecraft:bad_omen"}].amplifier 1
+execute store result entity @n[type=marker,tag=temp_effects_transformer] data.greed double 1.0 run data get entity @s active_effects[{id:"minecraft:saturation"}].amplifier 1
 execute store result entity @n[type=marker,tag=temp_effects_transformer] data.ring float 0.1 run data get entity @s active_effects[{id:"minecraft:night_vision"}].amplifier -0.015
 execute store result entity @n[type=marker,tag=temp_effects_transformer] data.sniper_blank float 1.0 run data get entity @s active_effects[{id:"minecraft:hero_of_the_village"}].amplifier 30
-execute store result score @s arrow_apply_greed run data get entity @s active_effects[{id:"minecraft:bad_omen"}].amplifier
+execute store result score @s arrow_apply_greed run data get entity @s active_effects[{id:"minecraft:saturation"}].amplifier
 execute store result score @s arrow_apply_freeze run data get entity @s active_effects[{id:"minecraft:hunger"}].amplifier
 execute store result score @s arrow_apply_ring run data get entity @s active_effects[{id:"minecraft:night_vision"}].amplifier
 execute store result score @s arrow_apply_sniper_blank run data get entity @s active_effects[{id:"minecraft:hero_of_the_village"}].amplifier
@@ -27,8 +27,6 @@ kill @n[type=marker,tag=temp_effects_transformer]
 tag @s remove tempDistance
 
 effect clear @s night_vision
-effect clear @s bad_omen
+effect clear @s saturation
 effect clear @s hunger
 effect clear @s hero_of_the_village
-
-stopsound @a * event.mob_effect.bad_omen

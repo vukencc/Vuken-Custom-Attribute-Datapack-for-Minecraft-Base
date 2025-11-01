@@ -1,4 +1,4 @@
-$function operation:stats/stunned/init {duration:$(freeze)}
+$execute if score @s arrow_apply_freeze matches 1.. run function operation:stats/stunned/init {duration:$(freeze)}
 
 $scoreboard players add @s[tag=tempDistance] enemy.Taken.Range $(sniper_blank)
 execute on attacker as @s run tag @s add tempApply

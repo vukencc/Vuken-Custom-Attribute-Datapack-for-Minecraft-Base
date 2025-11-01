@@ -1,1 +1,1 @@
-$damage @s $(MeleeTaken) core:custom_magic by @p[tag=tempApply]
+$damage @s $(BaseTaken) core:custom_magic by @p[tag=tempApply]

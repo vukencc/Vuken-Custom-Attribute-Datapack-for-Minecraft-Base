@@ -15,3 +15,5 @@ scoreboard players set @s stdTemp7 100
 scoreboard players operation @s stdTemp7 += @s player.Strength
 
 scoreboard players operation @s stdTemp1 *= @s stdTemp7
+
+return run scoreboard players get @s stdTemp1

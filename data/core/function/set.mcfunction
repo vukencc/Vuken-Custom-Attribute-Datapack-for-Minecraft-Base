@@ -298,3 +298,14 @@ scoreboard objectives add ench.invert.cd custom:play_time
 
 data merge storage s_temp_list {a:1, b:2, c:3, d:4, e:5, f:6, g:7, h:8, i:9, j:10} 
 execute if entity @p[gamemode=creative] run function core:p_set
+
+scoreboard objectives add player.Resistance dummy
+scoreboard objectives add player.Vulnerable dummy
+scoreboard objectives add class dummy
+
+scoreboard objectives add time_not_taking_damage dummy
+scoreboard objectives add time_not_killing_entities dummy
+scoreboard objectives add timing_limited dummy
+scoreboard objectives add execute_active dummy
+scoreboard objectives add shared_active_cd dummy
+scoreboard objectives add absorption_shield_cd dummy
