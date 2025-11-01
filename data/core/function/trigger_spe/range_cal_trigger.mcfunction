@@ -1,3 +1,4 @@
+execute unless entity @s[tag=bypassHurtTime] if score @s player.HurtTime matches 1.. run return fail
 execute as @s at @s run summon marker ~ ~ ~ {Tags:["cct_det_inter"],data:{damage_store:0.0}}
 #damage_absorption_modify
 
@@ -90,7 +91,6 @@ execute as @s at @s if score @s damageResisted >= @s damageDeathDetect if entity
 #damage_export
 execute as @s at @s store result entity @e[type=marker,sort=nearest,limit=1,tag=cct_det_inter] data.damage_store float 0.001 run scoreboard players get @s damageResisted
 execute as @s at @s run function core:trigger_spe/damage_trigger with entity @e[type=marker,sort=nearest,limit=1,tag=cct_det_inter] data
-advancement revoke @s only core:common_taken
 #clear
 scoreboard objectives remove damageDeathDetect
 scoreboard objectives remove base_armor
@@ -99,4 +99,3 @@ scoreboard objectives remove std_armor
 scoreboard objectives remove temp_std100
 scoreboard objectives remove temp_std4
 scoreboard players set @s damageResisted 0
-advancement revoke @s only core:range_taken

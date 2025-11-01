@@ -1,26 +1,19 @@
-$scoreboard players set @s thunder_aspect_timing $(freeze)
-execute if score @s arrow_apply_freeze matches 1.. run data merge entity @s {NoAI:1b}
-#$execute if score @s arrow_apply_starlit matches 1.. as @e[distance=..3.5,type=!#minecraft:bypass] run damage @s $(starlit) starve
+$function operation:stats/stunned/init {duration:$(freeze)}
+
 $scoreboard players add @s[tag=tempDistance] enemy.Taken.Range $(sniper_blank)
 execute on attacker as @s run tag @s add tempApply
-execute as @e[distance=..3.5,type=!#minecraft:bypass] run function core:damage/range/direct_apply
+execute as @s run function core:damage/range/direct_apply
 tag @a remove tempApply
 execute as @s store result score @s entity_x run data get entity @s Pos[0] 10
 execute as @s store result score @s entity_y run data get entity @s Pos[1] 10
 execute as @s store result score @s entity_z run data get entity @s Pos[2] 10
-tag @s add ringcenter
-execute at @s run tag @e[type=!marker,type=!item,type=!arrow,type=!armor_stand,nbt=!{NoAI:1b},distance=..5,tag=!ringcenter] add ring
-execute at @s as @e[tag=ring] store result score @s entity_x run data get entity @s Pos[0] 10
-execute at @s as @e[tag=ring] store result score @s entity_y run data get entity @s Pos[1] 10
-execute at @s as @e[tag=ring] store result score @s entity_z run data get entity @s Pos[2] 10
-execute as @e[tag=ring] run scoreboard players operation @s entity_x -= @e[tag=ringcenter,sort=nearest,limit=1] entity_x
-execute as @e[tag=ring] run scoreboard players operation @s entity_y -= @e[tag=ringcenter,sort=nearest,limit=1] entity_y
-execute as @e[tag=ring] run scoreboard players operation @s entity_z -= @e[tag=ringcenter,sort=nearest,limit=1] entity_z
-$execute as @e[tag=ring] store result entity @s Motion.[0] double $(ring) run scoreboard players get @s entity_x
-$execute as @e[tag=ring] store result entity @s Motion.[1] double $(ring) run scoreboard players get @s entity_y
-$execute as @e[tag=ring] store result entity @s Motion.[2] double $(ring) run scoreboard players get @s entity_z
-tag @e remove ring
-tag @s remove ringcenter
+
+$execute if score @s arrow_apply_ring matches 1.. run function core:custom_ench/range/ring/effect {ring:$(ring)}
+
+execute unless score @s arrow_apply_greed matches 1.. run return fail
+#greed effect :
+scoreboard objectives add temp_std dummy
+$scoreboard players set @s temp_std $(greed)
 
 execute store result score @s entity_x run data get entity @s Pos[0] 100
 execute store result score @s entity_y run data get entity @s Pos[1] 100
@@ -31,12 +24,11 @@ execute store result score @s entity_z_det on attacker as @s run data get entity
 scoreboard players operation @s entity_x_det -= @s entity_x
 scoreboard players operation @s entity_y_det -= @s entity_y
 scoreboard players operation @s entity_z_det -= @s entity_z
-scoreboard objectives add temp_std dummy
-$scoreboard players set @s temp_std $(greed)
+
 scoreboard players operation @s entity_x_det *= @s temp_std
 scoreboard players operation @s entity_y_det *= @s temp_std
 scoreboard players operation @s entity_z_det *= @s temp_std
-execute if score @s temp_std matches 1.. store result entity @s Motion.[0] double 0.0007 run scoreboard players get @s entity_x_det
-execute if score @s temp_std matches 1.. store result entity @s Motion.[1] double 0.0007 run scoreboard players get @s entity_y_det
-execute if score @s temp_std matches 1.. store result entity @s Motion.[2] double 0.0007 run scoreboard players get @s entity_z_det
+execute store result entity @s Motion.[0] double 0.0005 run scoreboard players get @s entity_x_det
+execute store result entity @s Motion.[1] double 0.0005 run scoreboard players get @s entity_y_det
+execute store result entity @s Motion.[2] double 0.0005 run scoreboard players get @s entity_z_det
 scoreboard objectives remove temp_std

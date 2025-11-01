@@ -19,5 +19,5 @@
 		}
 	},
 	"requirements": [["active_use"]] ,
-	"rewards":{"function":"core:item_spe/active_use"}
+	"rewards":{"function":"core:item_spe/rc_trigger"}
 }

@@ -1,5 +1,5 @@
 summon marker ~ ~ ~ {Tags:["temp_effects_transformer"],data:{greed:0.0d,freeze:0,ring:0.0f,sniper_blank:0.0f}}
-#bad_omen.greed slowness.freeze night_vision.ring unluck.starlit
+#bad_omen.greed slowness.freeze night_vision.ring
 execute store result entity @n[type=marker,tag=temp_effects_transformer] data.freeze int 10 run data get entity @s active_effects[{id:"minecraft:hunger"}].amplifier 1
 execute store result entity @n[type=marker,tag=temp_effects_transformer] data.greed double 1.0 run data get entity @s active_effects[{id:"minecraft:bad_omen"}].amplifier 1
 execute store result entity @n[type=marker,tag=temp_effects_transformer] data.ring float 0.1 run data get entity @s active_effects[{id:"minecraft:night_vision"}].amplifier -0.015
@@ -26,9 +26,9 @@ kill @n[type=marker,tag=temp_effects_transformer]
 
 tag @s remove tempDistance
 
-effect clear @s unluck
 effect clear @s night_vision
 effect clear @s bad_omen
 effect clear @s hunger
 effect clear @s hero_of_the_village
 
+stopsound @a * event.mob_effect.bad_omen

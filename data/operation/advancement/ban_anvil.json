@@ -9,7 +9,10 @@
 						"predicate": {
 							"block": {
 								"blocks": [
-									"minecraft:anvil"
+									"minecraft:anvil",
+									"grindstone",
+									"chipped_anvil",
+									"damaged_anvil"
 								]
 							}
 						}

@@ -44,3 +44,5 @@ effect clear @s minecraft:unluck
 function core:custom_ench/assistance/apply_invert with entity @n[type=marker,tag=temp_invert] data
 execute at @s run particle cherry_leaves ~ ~1 ~ 1.3 1.3 1.3 0.1 7 normal
 kill @n[tag=temp_invert,type=marker]
+
+scoreboard players set @s ench.invert.cd -100

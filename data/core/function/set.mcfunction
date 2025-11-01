@@ -228,7 +228,6 @@ scoreboard objectives add regeneration_p5 dummy
 scoreboard objectives add regeneration_p6 dummy
 scoreboard objectives add repeat_110_timing dummy
 scoreboard objectives add repeat_600_timing dummy
-scoreboard players set @a repeat_600_timing 0
 scoreboard objectives add spawner_break minecraft.mined:spawner
 scoreboard objectives add invert_delay dummy
 scoreboard objectives add enemy_skill dummy
@@ -251,7 +250,6 @@ team add yellow
 team modify yellow color yellow
 #follow scoreboard should be operated when any player first enter the game
 function core:skill_scoreboard
-function operation:init
 scoreboard objectives add marker dummy
 scoreboard objectives add marker_2 dummy
 scoreboard objectives add in_boss dummy
@@ -296,5 +294,7 @@ scoreboard objectives add slot.B dummy
 scoreboard objectives add ChestModel.cd dummy
 scoreboard objectives add menu.trigger trigger
 
-data merge storage playerdata {List:[]} 
-execute if entity @p[gamemode=creative] run function core:player_enter
+scoreboard objectives add ench.invert.cd custom:play_time
+
+data merge storage s_temp_list {a:1, b:2, c:3, d:4, e:5, f:6, g:7, h:8, i:9, j:10} 
+execute if entity @p[gamemode=creative] run function core:p_set
