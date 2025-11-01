@@ -249,7 +249,6 @@ team modify aqua color aqua
 team add yellow
 team modify yellow color yellow
 #follow scoreboard should be operated when any player first enter the game
-function core:skill_scoreboard
 scoreboard objectives add marker dummy
 scoreboard objectives add marker_2 dummy
 scoreboard objectives add in_boss dummy
@@ -269,6 +268,7 @@ scoreboard objectives add enemy.Taken.Melee dummy
 scoreboard objectives add enemy.Taken.Range dummy
 scoreboard objectives add enemy.Taken.Magic dummy
 scoreboard objectives add player.Strength dummy
+scoreboard objectives add player.Weakness dummy
 scoreboard objectives add stdTemp1 dummy
 scoreboard objectives add stdTemp2 dummy
 scoreboard objectives add stdTemp3 dummy
