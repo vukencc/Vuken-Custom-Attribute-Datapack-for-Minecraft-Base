@@ -15,6 +15,8 @@ execute if predicate {condition:"entity_properties",entity:"this",predicate:{eff
 execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{luck:{}}}} run function core:custom_ench/assistance/res_delay
 execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{unluck:{}}}} run function core:custom_ench/assistance/vln_delay
 
+advancement revoke @s only core:effects_changed
+
 execute if score @s ench.invert.cd matches ..0 run return fail
 execute store result score @s invert_p1 run data get entity @s equipment.head.components."minecraft:enchantments"."core:assistance/invert"
 execute store result score @s invert_p2 run data get entity @s equipment.chest.components."minecraft:enchantments"."core:assistance/invert"

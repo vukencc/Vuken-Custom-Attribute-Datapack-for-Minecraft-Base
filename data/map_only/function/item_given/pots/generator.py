@@ -20,8 +20,8 @@ class EffectType(Enum):
 class EffectRule:
     """
     定义一个药水效果在lore中应如何展示。
-    - type: 效果类型 (POSITIVE, NEGATIVE, 或 NEUTRAL)。
-    - color: (仅NEUTRAL) lore中效果名称的颜色。
+    - type: 效果类型 (POSITIVE, NEGATIVE, 或 NEUTRAL)
+    - color: (可选) 自定义lore中效果名称的颜色。若不指定，POSITIVE为blue, NEGATIVE为red, NEUTRAL为gray。
     - lore_key: (非NEUTRAL) 在lore中使用的翻译键。
     - value_per_level: (非NEUTRAL) 效果每级对应的数值变化。
     - value_format: (非NEUTRAL) 值的格式化字符串, 使用 {value} 作为占位符。
@@ -30,7 +30,7 @@ class EffectRule:
     lore_key: Optional[str] = None
     value_per_level: Optional[float] = None
     value_format: Optional[str] = None
-    color: Optional[str] = None # 仅用于 NEUTRAL 类型
+    color: Optional[str] = None # 所有类型均可使用
 
 
 # ==============================================================================
@@ -51,7 +51,8 @@ EFFECT_RULES: dict[str, EffectRule] = {
         type=EffectType.NEGATIVE,
         lore_key="lore.effect.unluck",
         value_per_level=-10,
-        value_format="{value}%" # 负数不需要手动加号
+        value_format="{value}%",
+        color="red"
     ),
     "minecraft:luck": EffectRule(
         type=EffectType.POSITIVE,
@@ -61,8 +62,9 @@ EFFECT_RULES: dict[str, EffectRule] = {
     ),
     "minecraft:weakness": EffectRule(
         type=EffectType.NEGATIVE,
-        lore_key="lore.effect.strength", # 虚弱也影响攻击伤害
-        value_per_level=-15, # 假设每级-15%
+        lore_key="lore.effect.strength",
+        value_per_level=-20,
+        color="red",
         value_format="{value}%"
     ),
     # --- 在此添加您自己的新效果规则 ---
@@ -70,22 +72,47 @@ EFFECT_RULES: dict[str, EffectRule] = {
     "minecraft:haste": EffectRule(
         type=EffectType.POSITIVE,
         lore_key="lore.effect.haste", # 假设您在zh_cn.json中定义了此键
-        value_per_level=20,
+        value_per_level=10,
         value_format="+{value}%"
     ),
     # 示例 2: 添加一个自定义的“生命恢复”效果 (固定数值)
     "minecraft:regeneration": EffectRule(
-         type=EffectType.POSITIVE,
-         lore_key="lore.effect.regeneration", # 假设的翻译键
-         value_per_level=2,
-         value_format="+{value}" # 每级+2生命恢复
+         type=EffectType.NEUTRAL,
+         color="light_purple"
     ),
     # 示例 3: 添加一个“夜视”效果 (中性)
     "minecraft:night_vision": EffectRule(
         type=EffectType.NEUTRAL,
-        color="yellow" # 夜视效果将以黄色显示
+        color="yellow"
+    ),
+    "minecraft:health_boost": EffectRule(
+        type=EffectType.POSITIVE,
+        lore_key="lore.effect.health_boost", # 假设您在zh_cn.json中定义了此键
+        value_per_level=4,
+        value_format="+{value}",
+         color="light_purple"
+    ),
+    "minecraft:speed": EffectRule(
+        type=EffectType.POSITIVE,
+        lore_key="lore.effect.speed", # 假设您在zh_cn.json中定义了此键
+        value_per_level=20,
+        value_format="+{value}%"
     )
 }
+
+def to_roman(n: int) -> str:
+    """Converts an integer to its Roman numeral representation for common levels."""
+    if n <= 0:
+        return ""
+    # Using a map for simplicity, as Minecraft levels rarely go extremely high in lore.
+    roman_map = {
+        1: "I", 2: "II", 3: "III", 4: "IV", 5: "V",
+        6: "VI", 7: "VII", 8: "VIII", 9: "IX", 10: "X"
+    }
+    # For levels above 10, we can just use the number, or extend the map.
+    # Minecraft's own translation keys (e.g., enchantment.level.11) handle higher levels,
+    # but for this custom string, a simple map is robust.
+    return roman_map.get(n, str(n))
 
 def generate_potion_command(
     potion_name: str,
@@ -127,18 +154,24 @@ def generate_potion_command(
             continue
         
         if rule.type == EffectType.POSITIVE:
-            color = "blue"
+            color = rule.color or "blue"
         elif rule.type == EffectType.NEGATIVE:
-            color = "red"
+            color = rule.color or "red"
         else: # NEUTRAL
-            color = rule.color or "gray" # 如果未指定颜色，默认为灰色
+            color = rule.color or "gray"
 
         minutes, seconds = divmod(duration_ticks // 20, 60)
         duration_str = f"({minutes:02d}:{seconds:02d})"
+
+        level_display_str = ""
+        if level > 1:
+            level_display_str = f"{to_roman(level)} "
+        
+        full_duration_str = f" {level_display_str}{duration_str}"
         
         lore_effects_list.append([
             {"translate": f"effect.{effect_id.replace(':', '.')}", "italic": False, "color": color},
-            {"text": f" {duration_str}", "italic": False, "color": color}
+            {"text": full_duration_str, "italic": False, "color": color}
         ])
 
         # 3. 构建 lore 的自定义属性描述部分 (仅对非中性效果)
@@ -190,57 +223,22 @@ def generate_potion_command(
             
     nbt_full_str = ",".join(nbt_str_parts)
 
-    command = f"give @s splash_potion[{nbt_full_str}]"
+    command = f"give @p splash_potion[{nbt_full_str}]"
     return command
 
 # ==============================================================================
 #  4. 主程序入口: 在这里配置并生成你的命令
 # ==============================================================================
 if __name__ == "__main__":
-    # --- 配置你的药水 ---
-    
-    # 药水1: "苍白之血" (来自你的例子)
-    # 效果: 脆弱 I (Unluck), 力量 I
-    # 持续时间: 3分钟 (3 * 60 * 20 = 3600 ticks)
+
     pale_blood_command = generate_potion_command(
-        potion_name="Pale Blood",
-        potion_name_color="#b37575",
-        potion_liquid_color=10963787,
+        potion_name="Decayed Pond",
+        potion_name_color="#b6fc96",
+        potion_liquid_color=8369846,
         effects=[
-            ("minecraft:unluck", 1, 3600),
-            ("minecraft:strength", 1, 3600)
+            ("minecraft:regeneration", 1, 300),
+            ("minecraft:luck", 1, 6000)
         ]
     )
-    print("--- 苍白之血 (Pale Blood) ---")
     print(pale_blood_command)
     print("\n" + "="*50 + "\n")
-
-    # 药水2: "野兽狂怒" (一个新例子)
-    # 效果: 力量 II, 虚弱 I
-    # 持续时间: 1分30秒 (90 * 20 = 1800 ticks)
-    beast_fury_command = generate_potion_command(
-        potion_name="野兽狂怒",
-        potion_name_color="#8B0000", # 深红色
-        potion_liquid_color=9109504,
-        effects=[
-            ("minecraft:strength", 2, 1800),
-            ("minecraft:weakness", 1, 1800)
-        ]
-    )
-    print("--- 野兽狂怒 (Beast Fury) ---")
-    print(beast_fury_command)
-    print("\n" + "="*50 + "\n")
-
-    # 药水3: "洞察药水" (仅中性效果)
-    # 效果: 夜视 I
-    # 持续时间: 8分钟 (8 * 60 * 20 = 9600 ticks)
-    insight_potion_command = generate_potion_command(
-        potion_name="洞察药水",
-        potion_name_color="#FFFF55", # 亮黄色
-        potion_liquid_color=16777045,
-        effects=[
-            ("minecraft:night_vision", 1, 9600)
-        ]
-    )
-    print("--- 洞察药水 (Potion of Insight) ---")
-    print(insight_potion_command)
