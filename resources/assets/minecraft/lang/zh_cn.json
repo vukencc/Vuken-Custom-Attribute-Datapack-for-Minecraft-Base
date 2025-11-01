@@ -6,6 +6,15 @@
   "attribute.name.armor_toughness": "韧性值",
   "attribute.name.attack_damage": "近战伤害",
 
+  "lore.effect.apply":"当生效后：",
+  "lore.effect.resistance":"%s 受伤减免",
+  "lore.effect.strength":"%s 攻击伤害",
+  "lore.effect.luck":"%s 受伤减免",
+  "lore.effect.unluck":"%s 受伤减免",
+  "lore.effect.speed":"%s 移动速度",
+  "lore.effect.haste":"%s 攻击速度",
+  "lore.effect.max_health":"%s 最大生命值",
+
   "effect.minecraft.luck":"抗性提升",
   "effect.minecraft.unluck":"脆弱",
   "effect.minecraft.resistance":"魔力",

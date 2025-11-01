@@ -1,10 +1,12 @@
 scoreboard players set @s invert_delay 2
 
 scoreboard players set @s player.Strength 0
+scoreboard players set @s player.Resistance 0
+scoreboard players set @s player.Vulnerable 0
 attribute @s attack_damage modifier remove strength.melee
-attribute @s attack_damage modifier remove strength.pre
-attribute @s luck modifier remove res.pre
-attribute @s luck modifier remove vln.pre
+attribute @s attack_damage modifier remove minecraft:effect.strength
+attribute @s luck modifier remove minecraft:effect.luck
+attribute @s luck modifier remove minecraft:effect.unluck
 execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{strength:{}}}} run function core:custom_ench/assistance/strength_delay
 execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{luck:{}}}} run function core:custom_ench/assistance/res_delay
 execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{unluck:{}}}} run function core:custom_ench/assistance/vln_delay
