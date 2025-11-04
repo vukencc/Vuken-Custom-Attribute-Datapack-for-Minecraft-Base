@@ -1,36 +1,12 @@
 {
-  "lore.item.intro.update.none":"无升级",
-  "lore.item.intro.wind_longsword.af_show.0":"+1 攻击伤害",
-  "lore.item.intro.wind_longsword.af_show.1":"+5%% 移动速度 & + 0.1 攻击速度",
-  "lore.item.intro.wind_longsword.pf_show.0":"+1 能量",
-  "lore.item.intro.wind_longsword.pf_show.1":"+1 连击",
+  "lore.item.name.ashy_helmet":"灰烬皮帽",
+  "lore.item.name.ashy_chestplate":"灰烬皮衣",
+  "lore.item.name.ashy_leggings":"灰烬皮裤",
+  "lore.item.name.ashy_boots":"灰烬皮靴",
+  "lore.item.name.ashy_wooden_sword":"灰烬木剑",
+  "lore.item.name.ashy_feather":"灰烬羽毛",
+  "lore.item.intro.ashy_feather.1":"布满灰尘的羽毛，",
+  "lore.item.intro.ashy_feather.2":"像是浴火重生的前奏。",
 
-  "lore.item.name.wind_longsword":"风之长刃",
-  "lore.item.intro.wind_longsword":"人们徘徊不前，驻目远视，祝愿风在你的身后...",
-
-  "lore.item.name.ruins_of_life_stream":"遗迹生命之流",
-
-  "lore.item.name.spring_of_life":"生命之泉",
-  "lore.item.intro.spring_of_life.1":"潜行且右键时存储药水，右键使用第一位药水。",
-  "lore.item.intro.spring_of_life.2":"非投掷药水冷却时间为10秒，投掷药水为3秒。",
-  "lore.item.intro.spring_of_life.3":"存储完毕后请移动或切换主手槽位以启用此功能。",  
-  "lore.item.intro.spring_of_life.5":"<请不要将此物品放置于副手>",  
-  "lore.item.intro.spring_of_life.4":"源于被遗忘的英灵，其悲伤可使得一时花开。",
-  "lore.item.function.spring_of_life.1":"的生命之泉",
-  "lore.item.function.spring_of_life.2":"「生命之泉」已冷却完毕！",
-  "lore.item.function.spring_of_life.3":"「生命之泉」中第一位不是可用的药水！",
-
-  "lore.item.name.atomic_concrete":"原子聚合",
-  "lore.item.intro.atomic_concrete.1":"潜行且右键时存储物品，右键时，将容器内",
-  "lore.item.intro.atomic_concrete.2":"所有物品收集在一个物品形式的箱子中，冷却15秒。",
-  "lore.item.intro.atomic_concrete.3":"存储完毕后请移动或切换主手槽位以启用此功能。",  
-  "lore.item.intro.atomic_concrete.5":"<请不要将此物品放置于副手>",  
-  "lore.item.intro.atomic_concrete.4":"小小的世界记录着我们所有回忆的细节。",
-  "lore.item.function.atomic_concrete.1":"「原子聚合」已冷却完毕！",
-  "lore.item.function.atomic_concrete.2":"原子结晶",
-  "lore.item.function.atomic_concrete.3":"「原子聚合」中不存在物品！",
-  
-  "lore.item.name.anvil":"托特之盒",
-  "lore.item.intro.anvil.1":"在快捷合成栏中将装备或武器放入其中以修复。",
-  "lore.item.intro.anvil.2":"知识中蕴含着力量与理解。"
+  "illusion_end":"end"
 }

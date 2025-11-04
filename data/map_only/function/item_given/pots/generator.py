@@ -97,6 +97,16 @@ EFFECT_RULES: dict[str, EffectRule] = {
         lore_key="lore.effect.speed", # 假设您在zh_cn.json中定义了此键
         value_per_level=20,
         value_format="+{value}%"
+    ),
+    "minecraft:instant_health": EffectRule(
+        type=EffectType.NEUTRAL,
+        color="light_purple"
+    ),
+    "minecraft:mining_fatigue": EffectRule(
+        type=EffectType.NEGATIVE,
+        lore_key="lore.effect.mining_fatigue",
+        value_per_level=-10,
+        value_format="{value}%"
     )
 }
 
@@ -117,18 +127,27 @@ def to_roman(n: int) -> str:
 def generate_potion_command(
     potion_name: str,
     potion_name_color: str,
-    potion_liquid_color: int,
-    effects: List[Tuple[str, int, int]]
+    potion_liquid_color: str,
+    effects: List[Tuple[str, int, int]],
+    potion_name_translate_key: Optional[str] = None
 ) -> str:
     """
     生成自定义药水的 give 命令。
 
     :param potion_name: 药水显示名称。
     :param potion_name_color: 药水名称的十六进制颜色。
-    :param potion_liquid_color: 药水液体的十进制颜色。
+    :param potion_liquid_color: 药水液体的十六进制颜色 (例如 "#FF0000")。
     :param effects: 效果列表，每个元素是一个元组 (效果ID, 等级, 持续时间tick)。
+    :param potion_name_translate_key: (可选) 药水名称的翻译键。如果为None或"NULL"，将根据potion_name自动生成。
     :return: 生成的单行 Minecraft 命令。
     """
+    # 如果未提供翻译键，则根据药水名称自动生成
+    final_translate_key = potion_name_translate_key
+    if not final_translate_key or final_translate_key == "NULL":
+        processed_name = potion_name.lower().replace(' ', '_')
+        final_translate_key = f"lore.item.name.{processed_name}"
+
+    liquid_color_int = int(potion_liquid_color.lstrip('#'), 16)
     
     custom_effects_list = []
     lore_effects_list = []
@@ -160,15 +179,23 @@ def generate_potion_command(
         else: # NEUTRAL
             color = rule.color or "gray"
 
-        minutes, seconds = divmod(duration_ticks // 20, 60)
-        duration_str = f"({minutes:02d}:{seconds:02d})"
+        # 仅当持续时间 > 1 tick 时才生成时间字符串
+        duration_str = ""
+        if duration_ticks > 1:
+            minutes, seconds = divmod(duration_ticks // 20, 60)
+            duration_str = f"({minutes:02d}:{seconds:02d})"
 
+        # 仅当等级 > 1 时才生成罗马数字
         level_display_str = ""
         if level > 1:
-            level_display_str = f"{to_roman(level)} "
+            level_display_str = to_roman(level)
         
-        full_duration_str = f" {level_display_str}{duration_str}"
-        
+        # 智能拼接等级和时间
+        if level_display_str and duration_str:
+            full_duration_str = f" {level_display_str} {duration_str}"
+        else:
+            full_duration_str = f" {level_display_str or duration_str}"
+
         lore_effects_list.append([
             {"translate": f"effect.{effect_id.replace(':', '.')}", "italic": False, "color": color},
             {"text": full_duration_str, "italic": False, "color": color}
@@ -200,10 +227,10 @@ def generate_potion_command(
 
     # 构建最终的 NBT 数据
     nbt_data = {
-        "custom_name": json.dumps([{"text": potion_name, "color": potion_name_color, "italic": False}]),
+        "custom_name": json.dumps([{"translate": final_translate_key,"fallback": potion_name, "color": potion_name_color, "italic": False}]),
         "tooltip_display": {"hidden_components": ["minecraft:potion_contents"]},
         "potion_contents": {
-            "custom_color": potion_liquid_color,
+            "custom_color": liquid_color_int,
             "custom_effects": custom_effects_list
         },
         "lore": [json.dumps(line) for line in full_lore]
@@ -223,7 +250,7 @@ def generate_potion_command(
             
     nbt_full_str = ",".join(nbt_str_parts)
 
-    command = f"give @p splash_potion[{nbt_full_str}]"
+    command = f"give @s splash_potion[{nbt_full_str}]"
     return command
 
 # ==============================================================================
@@ -232,12 +259,12 @@ def generate_potion_command(
 if __name__ == "__main__":
 
     pale_blood_command = generate_potion_command(
-        potion_name="Decayed Pond",
-        potion_name_color="#b6fc96",
-        potion_liquid_color=8369846,
+        potion_name="Branch of Life River",
+        potion_name_color="#fdc5ff",
+        potion_liquid_color="#fdd0ff", # 与名称颜色相近的液体颜色
         effects=[
-            ("minecraft:regeneration", 1, 300),
-            ("minecraft:luck", 1, 6000)
+            ("minecraft:regeneration", 1, 800),
+            ("minecraft:weakness", 1, 1200)
         ]
     )
     print(pale_blood_command)

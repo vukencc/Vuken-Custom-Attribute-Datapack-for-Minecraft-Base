@@ -309,3 +309,5 @@ scoreboard objectives add timing_limited dummy
 scoreboard objectives add execute_active dummy
 scoreboard objectives add shared_active_cd dummy
 scoreboard objectives add absorption_shield_cd dummy
+
+scoreboard objectives add drop_trigger minecraft.custom:drop
