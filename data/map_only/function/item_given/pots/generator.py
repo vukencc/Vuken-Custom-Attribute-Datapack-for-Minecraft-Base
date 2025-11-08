@@ -107,6 +107,18 @@ EFFECT_RULES: dict[str, EffectRule] = {
         lore_key="lore.effect.mining_fatigue",
         value_per_level=-10,
         value_format="{value}%"
+    ),
+    "minecraft:jump_boost": EffectRule(
+        type=EffectType.NEUTRAL,
+        color="green"
+    ),
+    "minecraft:fire_resistance": EffectRule(
+        type=EffectType.NEUTRAL,
+        color="orange"
+    ),
+    "minecraft:saturation": EffectRule(
+        type=EffectType.NEUTRAL,
+        color="gold"
     )
 }
 
@@ -250,7 +262,7 @@ def generate_potion_command(
             
     nbt_full_str = ",".join(nbt_str_parts)
 
-    command = f"give @s splash_potion[{nbt_full_str}]"
+    command = f"give @p splash_potion[{nbt_full_str}]\n"
     return command
 
 # ==============================================================================
@@ -258,14 +270,153 @@ def generate_potion_command(
 # ==============================================================================
 if __name__ == "__main__":
 
-    pale_blood_command = generate_potion_command(
-        potion_name="Branch of Life River",
-        potion_name_color="#fdc5ff",
-        potion_liquid_color="#fdd0ff", # 与名称颜色相近的液体颜色
-        effects=[
-            ("minecraft:regeneration", 1, 800),
-            ("minecraft:weakness", 1, 1200)
-        ]
-    )
-    print(pale_blood_command)
-    print("\n" + "="*50 + "\n")
+    # res_1_1 = generate_potion_command(
+    #     potion_name="Basic Resistance Potion",
+    #     potion_name_color="#86cca9",
+    #     potion_liquid_color="#86cca9", # 与名称颜色相近的液体颜色
+    #     effects=[
+    #         ("minecraft:luck", 1, 3600)
+    #     ]
+    # )
+    # res_1_2 = generate_potion_command(
+    #     potion_name="Extended Resistance Potion",
+    #     potion_name_color="#6ba789",
+    #     potion_liquid_color="#74af92", # 与名称颜色相近的液体颜色
+    #     effects=[
+    #         ("minecraft:luck", 1, 9600)
+    #     ]
+    # )
+    # res_2_1 = generate_potion_command(
+    #     potion_name="Advanced Resistance Potion",
+    #     potion_name_color="#86cca9",
+    #     potion_liquid_color="#86cca9", # 与名称颜色相近的液体颜色
+    #     effects=[
+    #         ("minecraft:luck", 2, 3600)
+    #     ]
+    # )
+    # res_2_2 = generate_potion_command(
+    #     potion_name="Extended Advanced Resistance Potion",
+    #     potion_name_color="#6ba789",
+    #     potion_liquid_color="#74af92", # 与名称颜色相近的液体颜色
+    #     effects=[
+    #         ("minecraft:luck", 2, 8400)
+    #     ]
+    # )
+    # res_3_1 = generate_potion_command(
+    #     potion_name="Enchanted Resistance Potion",
+    #     potion_name_color="#86cca9",
+    #     potion_liquid_color="#86cca9", # 与名称颜色相近的液体颜色
+    #     effects=[
+    #         ("minecraft:luck", 3, 3600)
+    #     ]
+    # )
+    # res_3_2 = generate_potion_command(
+    #     potion_name="Extended Enchanted Resistance Potion",
+    #     potion_name_color="#6ba789",
+    #     potion_liquid_color="#74af92", # 与名称颜色相近的液体颜色
+    #     effects=[
+    #         ("minecraft:luck", 3, 7200)
+    #     ]
+    # )
+
+    # spd_1_1 = generate_potion_command(
+    #     potion_name="Basic Speed Potion",
+    #     potion_name_color="#A4DFF8",
+    #     potion_liquid_color="#A4DFF8",
+    #     effects=[
+    #         ("minecraft:speed", 1, 3600)
+    #     ]
+    # )
+    # spd_1_2 = generate_potion_command(
+    #     potion_name="Extended Speed Potion",
+    #     potion_name_color="#5F9EA0",
+    #     potion_liquid_color="#5F9EA0",
+    #     effects=[
+    #         ("minecraft:speed", 1, 9600)
+    #     ]
+    # )
+    # spd_2_1 = generate_potion_command(
+    #     potion_name="Advanced Speed Potion",
+    #     potion_name_color="#A4DFF8",
+    #     potion_liquid_color="#A4DFF8",
+    #     effects=[
+    #         ("minecraft:speed", 2, 3600)
+    #     ]
+    # )
+    # spd_2_2 = generate_potion_command(
+    #     potion_name="Extended Advanced Speed Potion",
+    #     potion_name_color="#5F9EA0",
+    #     potion_liquid_color="#5F9EA0",
+    #     effects=[
+    #         ("minecraft:speed", 2, 8400)
+    #     ]
+    # )
+    # spd_3_1 = generate_potion_command(
+    #     potion_name="Enchanted Speed Potion",
+    #     potion_name_color="#A4DFF8",
+    #     potion_liquid_color="#A4DFF8",
+    #     effects=[
+    #         ("minecraft:speed", 3, 3600)
+    #     ]
+    # )
+    # spd_3_2 = generate_potion_command(
+    #     potion_name="Extended Enchanted Speed Potion",
+    #     potion_name_color="#5F9EA0",
+    #     potion_liquid_color="#5F9EA0",
+    #     effects=[
+    #         ("minecraft:speed", 3, 7200)
+    #     ]
+    # )
+
+    # str_1_1 = generate_potion_command(
+    #     potion_name="Basic Strength Potion",
+    #     potion_name_color="#DC143C",
+    #     potion_liquid_color="#DC143C",
+    #     effects=[
+    #         ("minecraft:strength", 1, 3600)
+    #     ]
+    # )
+    # str_1_2 = generate_potion_command(
+    #     potion_name="Extended Strength Potion",
+    #     potion_name_color="#8B0000",
+    #     potion_liquid_color="#8B0000",
+    #     effects=[
+    #         ("minecraft:strength", 1, 9600)
+    #     ]
+    # )
+    # str_2_1 = generate_potion_command(
+    #     potion_name="Advanced Strength Potion",
+    #     potion_name_color="#DC143C",
+    #     potion_liquid_color="#DC143C",
+    #     effects=[
+    #         ("minecraft:strength", 2, 3600)
+    #     ]
+    # )
+    # str_2_2 = generate_potion_command(
+    #     potion_name="Extended Advanced Strength Potion",
+    #     potion_name_color="#8B0000",
+    #     potion_liquid_color="#8B0000",
+    #     effects=[
+    #         ("minecraft:strength", 2, 8400)
+    #     ]
+    # )
+    # str_3_1 = generate_potion_command(
+    #     potion_name="Enchanted Strength Potion",
+    #     potion_name_color="#DC143C",
+    #     potion_liquid_color="#DC143C",
+    #     effects=[
+    #         ("minecraft:strength", 3, 3600)
+    #     ]
+    # )
+    # str_3_2 = generate_potion_command(
+    #     potion_name="Extended Enchanted Strength Potion",
+    #     potion_name_color="#8B0000",
+    #     potion_liquid_color="#8B0000",
+    #     effects=[
+    #         ("minecraft:strength", 3, 7200)
+    #     ]
+    # )
+
+    #print(str_1_1,str_1_2,str_2_1,str_2_2,str_3_1,str_3_2)
+    
+    print("\n" + "#"*20 + "\n")

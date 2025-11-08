@@ -1,0 +1,1 @@
+execute if items entity @s weapon.mainhand wooden_sword run function core:forge/basic/weapon/sword/wooden_sword

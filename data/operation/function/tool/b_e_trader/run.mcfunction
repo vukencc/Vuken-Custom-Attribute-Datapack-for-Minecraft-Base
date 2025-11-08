@@ -1,0 +1,2 @@
+execute at @s as @n[type=villager] at @s if block ~ ~ ~ chest positioned ~ ~1 ~ run function operation:tool/b_e_trader/init
+execute at @s as @n[type=villager] at @s if block ~ ~-1 ~ chest positioned ~ ~ ~ run function operation:tool/b_e_trader/init

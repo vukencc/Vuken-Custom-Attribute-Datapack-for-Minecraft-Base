@@ -1,3 +1,4 @@
+function core:item_spe/passive/potion_charger/end_b with entity @s
 scoreboard players set @s PotionCharger.cd 10
 item modify entity @s weapon.mainhand [{function:"set_components",components:{"!minecraft:consumable":{}}},{function:"set_components",components:{item_model:"tool/interact/potion_charger_empty"}}]
 

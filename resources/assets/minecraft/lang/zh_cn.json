@@ -180,15 +180,15 @@
   "lore.enchantment.function.combo":"「连击」中断！",
   "lore.enchantment.function.death_escape":"「死亡逃脱」已冷却完毕！",
   
-  "lore.item.rarity.key":"关键物品",
-  "lore.item.rarity.common":"普通物品",
-  "lore.item.rarity.uncommon":"不凡物品",
-  "lore.item.rarity.rare":"稀有物品",
-  "lore.item.rarity.epic":"史诗物品",
-  "lore.item.rarity.currency":"交易物品",
-  "lore.item.rarity.basic":"基础物品",
-  "lore.item.rarity.essence":"精华物品",
-  "lore.item.rarity.secret":"秘密物品",
+  "lore.item.rarity.key":"「关键物品」",
+  "lore.item.rarity.common":"「普通物品」",
+  "lore.item.rarity.uncommon":"「不凡物品」",
+  "lore.item.rarity.rare":"「稀有物品」",
+  "lore.item.rarity.epic":"「史诗物品」",
+  "lore.item.rarity.currency":"「交易物品」",
+  "lore.item.rarity.basic":"「基础物品」",
+  "lore.item.rarity.essence":"「精华物品」",
+  "lore.item.rarity.secret":"「秘密物品」",
   "lore.item.name.basic_blessing":"初级保佑",
   "lore.item.name.belief_blessing":"信仰保佑",
   "lore.item.name.celestial_blessing":"神圣保佑",
@@ -267,5 +267,13 @@
   
   "lore.item.name.anvil":"托特之盒",
   "lore.item.intro.anvil.1":"在快捷合成栏中将装备或武器放入其中以修复。",
-  "lore.item.intro.anvil.2":"知识中蕴含着力量与理解。"
+  "lore.item.intro.anvil.2":"知识中蕴含着力量与理解。",
+
+  "lore.item.intro.wooden_sword.af_show.0":"+0.1 攻击速度",
+  "lore.item.intro.wooden_sword.af_show.1":"+1 攻击伤害",
+  "lore.item.intro.wooden_sword.pf_show.0":"+1 击退 +1 耐久",
+  "lore.item.intro.wooden_sword.pf_show.1":"+1 人形杀手",
+  "lore.item.name.wooden_sword":"基础木剑",
+
+  "fin":"fin"
 }
