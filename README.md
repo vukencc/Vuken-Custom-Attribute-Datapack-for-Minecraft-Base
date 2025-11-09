@@ -12,7 +12,7 @@ Including:
 - Keybind Trigger
 - Custom Defence & Damage System
 - Vanilla Item Modify
-- Custom Tools.
+- Custom Tools
 - More in coming...
 
 ## To Translator
@@ -36,4 +36,4 @@ You may choose the following options and tell the players what they refer to in 
     - HP -> Max Health
     ...
 
-Keep in mind that the referrence should be clear enough for players to understand, and it's highly recommended to show what they refer to in the map.
+Remember that the referrence should be clear enough for players to understand, and it's highly recommended to show what they refer to in the map.
