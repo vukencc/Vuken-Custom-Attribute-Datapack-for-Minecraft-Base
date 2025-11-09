@@ -1,5 +1,5 @@
 execute at @s as @n[type=marker,tag=player_marker] rotated as @s run tp @s ~ ~ ~ ~5 ~
-execute if items entity @s weapon.mainhand #vanilla_armor[!custom_name,!lore,!attribute_modifiers] run function core:forge/basic/tick
+execute if items entity @s weapon.mainhand #vanilla_armor[!custom_name] run function core:forge/basic/tick
 
 #-------soectator_above--------#
 

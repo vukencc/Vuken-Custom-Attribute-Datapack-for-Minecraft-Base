@@ -7,7 +7,7 @@ custom_data:{s_trigger:1b,attribute_modifiers:[\
 [{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:4,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"}]\
 ],enchantments:[\
 {knockback:1,unbreaking:1},\
-{"core:melee/slayer:1":1},\
+{"core:melee/slayer":1},\
 {},\
 {},\
 {}\
@@ -28,8 +28,8 @@ custom_data:{s_trigger:1b,attribute_modifiers:[\
 }}}]
 
 
-#a_p_fshow#   "lore.item.intro.wooden_sword.af_show.0":"+0.1 攻击速度",
-#a_p_fshow#   "lore.item.intro.wooden_sword.af_show.1":"+1 攻击伤害",
-#a_p_fshow#   "lore.item.intro.wooden_sword.pf_show.0":"+1 击退 +1 耐久",
-#a_p_fshow#   "lore.item.intro.wooden_sword.pf_show.1":"+1 人形杀手",
-#a_p_fshow#   "lore.item.name.wooden_sword":"基础木剑",
+###   "lore.item.intro.wooden_sword.af_show.0":"+0.1 攻击速度",
+###   "lore.item.intro.wooden_sword.af_show.1":"+1 攻击伤害",
+###   "lore.item.intro.wooden_sword.pf_show.0":"+1 击退 +1 耐久",
+###   "lore.item.intro.wooden_sword.pf_show.1":"+1 人形杀手",
+###   "lore.item.name.wooden_sword":"源始木剑",

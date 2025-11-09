@@ -236,7 +236,7 @@
 
   "example.illustration":"### 以下为物品翻译键格式范例 ###",
 
-  "lore.item.intro.wind_longsword.af_show.0":"+1 攻击伤害",
+  "lore.item.intro.wind_longsword.af_show.0":"+1 近战伤害",
   "lore.item.intro.wind_longsword.af_show.1":"+5%% 移动速度 & + 0.1 攻击速度",
   "lore.item.intro.wind_longsword.pf_show.0":"+1 能量",
   "lore.item.intro.wind_longsword.pf_show.1":"+1 连击",
@@ -273,7 +273,15 @@
   "lore.item.intro.wooden_sword.af_show.1":"+1 攻击伤害",
   "lore.item.intro.wooden_sword.pf_show.0":"+1 击退 +1 耐久",
   "lore.item.intro.wooden_sword.pf_show.1":"+1 人形杀手",
-  "lore.item.name.wooden_sword":"基础木剑",
+  "lore.item.name.wooden_sword":"源始木剑",
+
+  "lore.item.intro.copper_sword.af_show.0":"+1 近战伤害",
+  "lore.item.intro.copper_sword.af_show.1":"+0.1 攻击速度",
+  "lore.item.intro.copper_sword.af_show.2":"+1 近战伤害 & +1 防御值",
+  "lore.item.intro.copper_sword.pf_show.0":"+3 耐久",
+  "lore.item.intro.copper_sword.pf_show.1":"+1 火焰附加",
+  "lore.item.intro.copper_sword.pf_show.2":"+1 亡灵杀手",
+  "lore.item.name.copper_sword":"源始铜剑",
 
   "fin":"fin"
 }
