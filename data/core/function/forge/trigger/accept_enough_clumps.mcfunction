@@ -47,6 +47,8 @@ scoreboard objectives remove temp_marker_2
 kill @n[tag=af_forge_show]
 kill @n[tag=pf_forge_show]
 
+kill @n[tag=clump_cost_display_txt]
+
 function core:forge/trigger/return_forge_uf
 
 kill @n[tag=af_Forge]
