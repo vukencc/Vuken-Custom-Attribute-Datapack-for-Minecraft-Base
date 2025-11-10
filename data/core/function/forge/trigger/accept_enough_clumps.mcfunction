@@ -25,11 +25,11 @@ execute if score @s temp_marker_1 matches 4.. run data modify entity @n[tag=forg
 
 execute if score @s temp_marker_1 matches 5.. run data modify entity @n[tag=forge_show] item.components."minecraft:attribute_modifiers" set from entity @n[tag=forge_show] item.components."minecraft:custom_data".attribute_modifiers.[4]
 
-execute if score @s temp_marker_2 matches 5.. run data modify entity @n[tag=forge_show] item.components."minecraft:enchantments" merge from entity @n[tag=forge_show] item.components."minecraft:custom_data".enchantments.[4]
-execute if score @s temp_marker_2 matches 4.. run data modify entity @n[tag=forge_show] item.components."minecraft:enchantments" merge from entity @n[tag=forge_show] item.components."minecraft:custom_data".enchantments.[3]
-execute if score @s temp_marker_2 matches 3.. run data modify entity @n[tag=forge_show] item.components."minecraft:enchantments" merge from entity @n[tag=forge_show] item.components."minecraft:custom_data".enchantments.[2]
-execute if score @s temp_marker_2 matches 2.. run data modify entity @n[tag=forge_show] item.components."minecraft:enchantments" merge from entity @n[tag=forge_show] item.components."minecraft:custom_data".enchantments.[1]
 execute if score @s temp_marker_2 matches 1.. run data modify entity @n[tag=forge_show] item.components."minecraft:enchantments" merge from entity @n[tag=forge_show] item.components."minecraft:custom_data".enchantments.[0]
+execute if score @s temp_marker_2 matches 2.. run data modify entity @n[tag=forge_show] item.components."minecraft:enchantments" merge from entity @n[tag=forge_show] item.components."minecraft:custom_data".enchantments.[1]
+execute if score @s temp_marker_2 matches 3.. run data modify entity @n[tag=forge_show] item.components."minecraft:enchantments" merge from entity @n[tag=forge_show] item.components."minecraft:custom_data".enchantments.[2]
+execute if score @s temp_marker_2 matches 4.. run data modify entity @n[tag=forge_show] item.components."minecraft:enchantments" merge from entity @n[tag=forge_show] item.components."minecraft:custom_data".enchantments.[3]
+execute if score @s temp_marker_2 matches 5.. run data modify entity @n[tag=forge_show] item.components."minecraft:enchantments" merge from entity @n[tag=forge_show] item.components."minecraft:custom_data".enchantments.[4]
 
 data modify entity @n[tag=forge_show] item.components."minecraft:enchantments" merge from entity @n[tag=uf_forge_show] item.components."minecraft:enchantments"
 
