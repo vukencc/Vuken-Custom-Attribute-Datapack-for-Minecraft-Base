@@ -1,5 +1,5 @@
 execute as @s at @s run function core:inter_chat/chatre
-execute at @s run playsound entity.experience_orb.pickup hostile @s ~ ~ ~
+execute at @s run playsound item.book.page_turn hostile @s ~ ~ ~
 #agility chain_break energy eruption frenzy hasten invert life_drain regeneration sapper
 tellraw @p {"text":"————————————————————————————",color:"blue",bold:true}
 tellraw @p {"text":"",color:"blue",bold:true}
