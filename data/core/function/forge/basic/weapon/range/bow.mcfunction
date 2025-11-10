@@ -6,7 +6,7 @@ custom_data:{s_trigger:1b,attribute_modifiers:[\
 [{type:"water_movement_efficiency",amount:10,id:"pd_main",operation:"add_value",slot:"mainhand"},{amount:0.20,id:spd_main,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],\
 [{type:"water_movement_efficiency",amount:14,id:"pd_main",operation:"add_value",slot:"mainhand"},{amount:0.20,id:spd_main,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}]\
 ],enchantments:[\
-{unbreaking:3},{flame:1,punch:1},{"core:range/freeze":1},{punch:1,starlit:1},{infinity:1}\
+{"minecraft:unbreaking":3},{flame:1,"minecraft:punch":1},{"core:range/freeze":1},{"minecraft:punch":1,starlit:1},{infinity:1}\
 ],af_show:[\
 "lore.item.intro.bow.af_show.0",\
 "lore.item.intro.bow.af_show.1",\

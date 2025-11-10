@@ -6,7 +6,7 @@ custom_data:{s_trigger:1b,attribute_modifiers:[\
 [{amount:-3.0,id:"base_attack_speed",operation:"add_value",type:"attack_speed",slot:"mainhand"},{amount:11.0,id:"base_attack_damage",operation:"add_value",type:"attack_damage",slot:"mainhand"},{amount:0.15,id:"mainhand_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"mainhand"}],\
 [{amount:-3.0,id:"base_attack_speed",operation:"add_value",type:"attack_speed",slot:"mainhand"},{amount:11.0,id:"base_attack_damage",operation:"add_value",type:"attack_damage",slot:"mainhand"},{amount:0.15,id:"mainhand_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"mainhand"}]\
 ],enchantments:[\
-{unbreaking:3,knockback:1},{unbreaking:3,knockback:1,"core:melee/ice_aspect":1},{unbreaking:3,knockback:1,"core:melee/ice_aspect":1,"core:melee/slayer":1},{unbreaking:3,knockback:1,"core:melee/ice_aspect":1,"core:melee/slayer":1,"core:melee/water_aspect":1},{}\
+{"minecraft:unbreaking":3,"minecraft:knockback":1},{"minecraft:unbreaking":3,"minecraft:knockback":1,"core:melee/ice_aspect":1},{"minecraft:unbreaking":3,"minecraft:knockback":1,"core:melee/ice_aspect":1,"core:melee/slayer":1},{"minecraft:unbreaking":3,"minecraft:knockback":1,"core:melee/ice_aspect":1,"core:melee/slayer":1,"core:melee/water_aspect":1},{}\
 ],af_show:[\
 "lore.item.intro.iron_axe.af_show.0",\
 "lore.item.intro.iron_axe.af_show.1",\

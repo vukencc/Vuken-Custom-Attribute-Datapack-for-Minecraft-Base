@@ -6,7 +6,7 @@ custom_data:{s_trigger:1b,attribute_modifiers:[\
 [{amount:-2.2,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:5,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"}],\
 [{amount:-2.2,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:8,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"}]\
 ],enchantments:[\
-{fire_aspect:1}, \
+{"minecraft:fire_aspect":1}, \
 {"core:melee/thunder_aspect":1}, \
 {"core:melee/ice_aspect":1}, \
 {"core:melee/thunder_aspect":2}, \

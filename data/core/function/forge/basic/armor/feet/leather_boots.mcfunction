@@ -6,7 +6,7 @@ custom_data:{s_pas:1b,attribute_modifiers:[\
 [{amount:2.0,id:"feet_armor",operation:"add_value",type:"armor",slot:"feet"},{amount:0.1,id:"feet_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"feet"}],\
 [{amount:2.0,id:"feet_armor",operation:"add_value",type:"armor",slot:"feet"},{amount:0.1,id:"feet_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"feet"}]\
 ],enchantments:[\
-{unbreaking:1},{unbreaking:1,"core:defence/env_protection":1},{},{},{}\
+{"minecraft:unbreaking":1},{"minecraft:unbreaking":1,"core:defence/env_protection":1},{},{},{}\
 ],af_show:[\
 "lore.item.intro.leather_boots.af_show.0",\
 "lore.item.intro.leather_boots.af_show.1",\

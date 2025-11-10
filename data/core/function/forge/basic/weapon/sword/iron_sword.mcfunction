@@ -6,7 +6,7 @@ custom_data:{s_trigger:1b,attribute_modifiers:[\
 [{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:8,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:spd_main,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],\
 [{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:8,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:spd_main,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}]\
 ],enchantments:[\
-{unbreaking:3}, \
+{"minecraft:unbreaking":3}, \
 {"core:melee/ice_aspect":1}, \
 {sweeping_edge:3}, \
 {"core:melee/slayer":2}, \

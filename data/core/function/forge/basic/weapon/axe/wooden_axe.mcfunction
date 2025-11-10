@@ -6,7 +6,7 @@ custom_data:{s_trigger:1b,attribute_modifiers:[\
 [{amount:-3.2,id:"base_attack_speed",operation:"add_value",type:"attack_speed",slot:"mainhand"},{amount:7.0,id:"base_attack_damage",operation:"add_value",type:"attack_damage",slot:"mainhand"},{amount:1.0,id:"mainhand_armor",operation:"add_value",type:"armor",slot:"mainhand"}],\
 [{amount:-3.2,id:"base_attack_speed",operation:"add_value",type:"attack_speed",slot:"mainhand"},{amount:7.0,id:"base_attack_damage",operation:"add_value",type:"attack_damage",slot:"mainhand"},{amount:1.0,id:"mainhand_armor",operation:"add_value",type:"armor",slot:"mainhand"}]\
 ],enchantments:[\
-{unbreaking:3},{unbreaking:3,smite:1},{},{},{}\
+{"minecraft:unbreaking":3},{"minecraft:unbreaking":3,"minecraft:smite":1},{},{},{}\
 ],af_show:[\
 "lore.item.intro.wooden_axe.af_show.0",\
 "lore.item.intro.wooden_axe.af_show.1",\

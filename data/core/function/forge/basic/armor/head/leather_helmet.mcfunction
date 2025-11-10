@@ -6,7 +6,7 @@ custom_data:{s_pas:1b,attribute_modifiers:[\
 [{amount:1,id:"head_armor",operation:"add_value",type:"armor",slot:"head"},{amount:0.15,id:"head_atk_dmg",operation:"add_multiplied_base",type:"attack_damage",slot:"head"},{amount:0.05,id:"head_atk_speed",operation:"add_value",type:"attack_speed",slot:"head"}],\
 [{amount:1,id:"head_armor",operation:"add_value",type:"armor",slot:"head"},{amount:0.15,id:"head_atk_dmg",operation:"add_multiplied_base",type:"attack_damage",slot:"head"},{amount:0.05,id:"head_atk_speed",operation:"add_value",type:"attack_speed",slot:"head"}]\
 ],enchantments:[\
-{unbreaking:2,"core:defence/evasion":1}, \
+{"minecraft:unbreaking":2,"core:defence/evasion":1}, \
 {"core:defence/melee_protection":1}, \
 {}, \
 {}, \

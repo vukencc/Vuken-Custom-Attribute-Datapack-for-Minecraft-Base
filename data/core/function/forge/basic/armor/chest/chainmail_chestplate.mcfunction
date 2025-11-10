@@ -6,7 +6,7 @@ custom_data:{s_pas:1b,attribute_modifiers:[\
 [{amount:5.0,id:"chest_armor",operation:"add_value",type:"armor",slot:"chest"},{amount:4.0,id:"chest_max_health",operation:"add_value",type:"max_health",slot:"chest"},{amount:0.1,id:"chest_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"chest"}],\
 [{amount:5.0,id:"chest_armor",operation:"add_value",type:"armor",slot:"chest"},{amount:4.0,id:"chest_max_health",operation:"add_value",type:"max_health",slot:"chest"},{amount:0.1,id:"chest_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"chest"}]\
 ],enchantments:[\
-{protection:1,unbreaking:2},{protection:2,unbreaking:2,"core:defence/magic_protection":1},{protection:2,unbreaking:2,"core:defence/magic_protection":1,"core:assistance/regeneration":1},{},{}\
+{"minecraft:protection":1,"minecraft:unbreaking":2},{"minecraft:protection":2,"minecraft:unbreaking":2,"core:defence/magic_protection":1},{"minecraft:protection":2,"minecraft:unbreaking":2,"core:defence/magic_protection":1,"core:assistance/regeneration":1},{},{}\
 ],af_show:[\
 "lore.item.intro.chainmail_chestplate.af_show.0",\
 "lore.item.intro.chainmail_chestplate.af_show.1",\

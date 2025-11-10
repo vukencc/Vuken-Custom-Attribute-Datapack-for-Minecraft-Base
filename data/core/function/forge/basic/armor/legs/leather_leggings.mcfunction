@@ -6,7 +6,7 @@ custom_data:{s_pas:1b,attribute_modifiers:[\
 [{amount:2.0,id:"legs_armor",operation:"add_value",type:"armor",slot:"legs"},{amount:0.1,id:"legs_knockback_resistance",operation:"add_value",type:"knockback_resistance",slot:"legs"},{amount:0.1,id:"legs_water_movement_efficiency",operation:"add_multiplied_base",type:"water_movement_efficiency",slot:"legs"}],\
 [{amount:2.0,id:"legs_armor",operation:"add_value",type:"armor",slot:"legs"},{amount:0.1,id:"legs_knockback_resistance",operation:"add_value",type:"knockback_resistance",slot:"legs"},{amount:0.1,id:"legs_water_movement_efficiency",operation:"add_multiplied_base",type:"water_movement_efficiency",slot:"legs"}]\
 ],enchantments:[\
-{"core:defence/evasion":1,unbreaking:1},{"core:defence/env_protection":1,"core:defence/evasion":1,unbreaking:1},{},{},{}\
+{"core:defence/evasion":1,"minecraft:unbreaking":1},{"core:defence/env_protection":1,"core:defence/evasion":1,"minecraft:unbreaking":1},{},{},{}\
 ],af_show:[\
 "lore.item.intro.leather_leggings.af_show.0",\
 "lore.item.intro.leather_leggings.af_show.1",\

@@ -6,7 +6,7 @@ custom_data:{s_trigger:1b,attribute_modifiers:[\
 [{amount:-1.6,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:2,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:spd_main,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],\
 [{amount:-1.6,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:2,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:spd_main,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}]\
 ],enchantments:[\
-{unbreaking:2,knockback:1},{"core:melee/water_aspect":1},{},{},{}\
+{"minecraft:unbreaking":2,"minecraft:knockback":1},{"core:melee/water_aspect":1},{},{},{}\
 ],af_show:[\
 "lore.item.intro.copper_hoe.af_show.0",\
 "lore.item.intro.copper_hoe.af_show.1",\

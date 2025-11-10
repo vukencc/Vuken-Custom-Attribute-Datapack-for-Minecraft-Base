@@ -6,7 +6,7 @@ custom_data:{s_pas:1b,attribute_modifiers:[\
 [{amount:3.0,id:"legs_armor",operation:"add_value",type:"armor",slot:"legs"},{amount:0.1,id:"legs_movement_efficiency",operation:"add_multiplied_base",type:"movement_efficiency",slot:"legs"},{amount:0.15,id:"legs_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"legs"}],\
 [{amount:3.0,id:"legs_armor",operation:"add_value",type:"armor",slot:"legs"},{amount:0.1,id:"legs_movement_efficiency",operation:"add_multiplied_base",type:"movement_efficiency",slot:"legs"},{amount:0.15,id:"legs_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"legs"}]\
 ],enchantments:[\
-{"core:defence/evasion":1,unbreaking:3},{"core:defence/melee_evasion":1,"core:defence/evasion":2,unbreaking:3},{},{},{}\
+{"core:defence/evasion":1,"minecraft:unbreaking":3},{"core:defence/melee_evasion":1,"core:defence/evasion":2,"minecraft:unbreaking":3},{},{},{}\
 ],af_show:[\
 "lore.item.intro.golden_leggings.af_show.0",\
 "lore.item.intro.golden_leggings.af_show.1",\

@@ -6,7 +6,7 @@ custom_data:{s_pas:1b,attribute_modifiers:[\
 [{amount:4.0,id:"legs_armor",operation:"add_value",type:"armor",slot:"legs"},{amount:4.0,id:"legs_max_health",operation:"add_value",type:"max_health",slot:"legs"},{amount:1.0,id:"legs_armor_toughness",operation:"add_value",type:"armor_toughness",slot:"legs"}],\
 [{amount:4.0,id:"legs_armor",operation:"add_value",type:"armor",slot:"legs"},{amount:4.0,id:"legs_max_health",operation:"add_value",type:"max_health",slot:"legs"},{amount:1.0,id:"legs_armor_toughness",operation:"add_value",type:"armor_toughness",slot:"legs"}]\
 ],enchantments:[\
-{"core:defence/magic_protection":1,protection:1,unbreaking:3},{"core:defence/magic_protection":2,protection:1,unbreaking:3},{"core:defence/magic_protection":2,"minecraft:projectile_protection":1,protection:1,unbreaking:3},{"core:defence/env_protection":2,"core:defence/magic_protection":2,"minecraft:projectile_protection":1,protection:1,unbreaking:3},{}\
+{"core:defence/magic_protection":1,"minecraft:protection":1,"minecraft:unbreaking":3},{"core:defence/magic_protection":2,"minecraft:protection":1,"minecraft:unbreaking":3},{"core:defence/magic_protection":2,"minecraft:projectile_protection":1,"minecraft:protection":1,"minecraft:unbreaking":3},{"core:defence/env_protection":2,"core:defence/magic_protection":2,"minecraft:projectile_protection":1,"minecraft:protection":1,"minecraft:unbreaking":3},{}\
 ],af_show:[\
 "lore.item.intro.iron_leggings.af_show.0",\
 "lore.item.intro.iron_leggings.af_show.1",\

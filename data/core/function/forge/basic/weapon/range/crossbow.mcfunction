@@ -6,7 +6,7 @@ custom_data:{s_trigger:1b,attribute_modifiers:[\
 [{type:"water_movement_efficiency",amount:10,id:"pd_main",operation:"add_value",slot:"mainhand"},{amount:0.5,id:base_kbr,operation:"add_value",type:knockback_resistance,slot:"mainhand"},{amount:0.10,id:spd_main,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],\
 [{type:"water_movement_efficiency",amount:12,id:"pd_main",operation:"add_value",slot:"mainhand"},{amount:0.5,id:base_kbr,operation:"add_value",type:knockback_resistance,slot:"mainhand"},{amount:0.10,id:spd_main,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}]\
 ],enchantments:[\
-{unbreaking:3,quick_charge:1},{flame:1,punch:1},{quick_charge:2},{multishot:1},{infinity:1}\
+{"minecraft:unbreaking":3,"minecraft:quick_charge":1},{flame:1,"minecraft:punch":1},{"minecraft:quick_charge":2},{multishot:1},{infinity:1}\
 ],af_show:[\
 "lore.item.intro.crossbow.af_show.0",\
 "lore.item.intro.crossbow.af_show.1",\

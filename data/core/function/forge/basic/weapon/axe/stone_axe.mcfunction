@@ -6,7 +6,7 @@ custom_data:{s_trigger:1b,attribute_modifiers:[\
 [{amount:-3.0,id:"base_attack_speed",operation:"add_value",type:"attack_speed",slot:"mainhand"},{amount:9.0,id:"base_attack_damage",operation:"add_value",type:"attack_damage",slot:"mainhand"},{amount:0.1,id:"mainhand_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"mainhand"}],\
 [{amount:-3.0,id:"base_attack_speed",operation:"add_value",type:"attack_speed",slot:"mainhand"},{amount:9.0,id:"base_attack_damage",operation:"add_value",type:"attack_damage",slot:"mainhand"},{amount:0.1,id:"mainhand_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"mainhand"}]\
 ],enchantments:[\
-{unbreaking:4,smite:1},{unbreaking:4,smite:1,fire_aspect:1},{unbreaking:4,smite:2,fire_aspect:1},{},{}\
+{"minecraft:unbreaking":4,"minecraft:smite":1},{"minecraft:unbreaking":4,"minecraft:smite":1,"minecraft:fire_aspect":1},{"minecraft:unbreaking":4,"minecraft:smite":2,"minecraft:fire_aspect":1},{},{}\
 ],af_show:[\
 "lore.item.intro.stone_axe.af_show.0",\
 "lore.item.intro.stone_axe.af_show.1",\

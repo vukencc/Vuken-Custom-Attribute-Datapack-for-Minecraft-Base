@@ -6,7 +6,7 @@ custom_data:{s_pas:1b,attribute_modifiers:[\
 [{amount:2,id:"head_armor",operation:"add_value",type:"armor",slot:"head"},{amount:0.1,id:"head_atk_speed",operation:"add_multiplied_base",type:"attack_speed",slot:"head"},{amount:0.1,id:"head_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"head"}],\
 [{amount:2,id:"head_armor",operation:"add_value",type:"armor",slot:"head"},{amount:0.1,id:"head_atk_speed",operation:"add_multiplied_base",type:"attack_speed",slot:"head"},{amount:0.1,id:"head_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"head"}]\
 ],enchantments:[\
-{unbreaking:2},{protection:1,"core:defence/magic_protection":1},{},{},{}\
+{"minecraft:unbreaking":2},{"minecraft:protection":1,"core:defence/magic_protection":1},{},{},{}\
 ],af_show:[\
 "lore.item.intro.golden_helmet.af_show.0",\
 "lore.item.intro.golden_helmet.af_show.1",\

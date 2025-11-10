@@ -6,9 +6,9 @@ custom_data:{s_trigger:1b,attribute_modifiers:[\
 [{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:5,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:1,id:armor_main,operation:"add_value",type:luck,slot:"mainhand"}],\
 [{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:5,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:1,id:armor_main,operation:"add_value",type:luck,slot:"mainhand"}]\
 ],enchantments:[\
-{unbreaking:3},\
+{"minecraft:unbreaking":3},\
 {"fire_aspect":1},\
-{smite:1},\
+{"minecraft:smite":1},\
 {},\
 {}\
 ],af_show:[\

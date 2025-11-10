@@ -6,7 +6,7 @@ custom_data:{s_trigger:1b,attribute_modifiers:[\
 [{amount:-2.0,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:1,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.2,id:spd_main,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"},{amount:2,id:armor_main,operation:"add_value",type:luck,slot:"mainhand"}],\
 [{amount:1020,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:1,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.2,id:spd_main,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"},{amount:2,id:armor_main,operation:"add_value",type:luck,slot:"mainhand"}]\
 ],enchantments:[\
-{fire_aspect:1},{knockback:1},{unbreaking:3},{"core:melee/thunder_aspect":1},{mending:1}\
+{"minecraft:fire_aspect":1},{"minecraft:knockback":1},{"minecraft:unbreaking":3},{"core:melee/thunder_aspect":1},{mending:1}\
 ],af_show:[\
 "lore.item.intro.golden_hoe.af_show.0",\
 "lore.item.intro.golden_hoe.af_show.1",\

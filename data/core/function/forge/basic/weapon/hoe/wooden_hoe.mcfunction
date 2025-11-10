@@ -6,7 +6,7 @@ custom_data:{s_trigger:1b,attribute_modifiers:[\
 [{amount:-2.0,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:1.5,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:spd_main,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],\
 [{amount:-2.0,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:1.5,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:spd_main,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}]\
 ],enchantments:[\
-{unbreaking:2},{bane_of_arthropods:1},{},{},{}\
+{"minecraft:unbreaking":2},{"minecraft:bane_of_arthropods":1},{},{},{}\
 ],af_show:[\
 "lore.item.intro.wooden_hoe.af_show.0",\
 "lore.item.intro.wooden_hoe.af_show.1",\

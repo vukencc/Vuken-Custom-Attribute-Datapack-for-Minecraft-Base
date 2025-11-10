@@ -6,7 +6,7 @@ custom_data:{s_pas:1b,attribute_modifiers:[\
 [{amount:3,id:"head_armor",operation:"add_value",type:"armor",slot:"head"},{amount:0.40,id:"head_atk_dmg",operation:"add_multiplied_base",type:"attack_damage",slot:"head"},{amount:-0.15,id:"head_atk_speed",operation:"add_multiplied_base",type:"attack_speed",slot:"head"}],\
 [{amount:3,id:"head_armor",operation:"add_value",type:"armor",slot:"head"},{amount:0.40,id:"head_atk_dmg",operation:"add_multiplied_base",type:"attack_damage",slot:"head"},{amount:-0.15,id:"head_atk_speed",operation:"add_multiplied_base",type:"attack_speed",slot:"head"}]\
 ],enchantments:[\
-{protection:1,unbreaking:1},{"core:defence/melee_protection":1,"core:defence/evasion":1},{unbreaking:2,"core:defence/evasion":2},{protection:2,"core:defence/melee_evasion":1},{}\
+{"minecraft:protection":1,"minecraft:unbreaking":1},{"core:defence/melee_protection":1,"core:defence/evasion":1},{"minecraft:unbreaking":2,"core:defence/evasion":2},{"minecraft:protection":2,"core:defence/melee_evasion":1},{}\
 ],af_show:[\
 "lore.item.intro.iron_helmet.af_show.0",\
 "lore.item.intro.iron_helmet.af_show.1",\

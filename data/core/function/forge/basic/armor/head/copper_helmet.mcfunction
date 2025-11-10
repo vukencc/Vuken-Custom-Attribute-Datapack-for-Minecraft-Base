@@ -6,7 +6,7 @@ custom_data:{s_pas:1b,attribute_modifiers:[\
 [{amount:2,id:"head_armor",operation:"add_value",type:"armor",slot:"head"},{amount:0.20,id:"head_atk_dmg",operation:"add_multiplied_base",type:"attack_damage",slot:"head"},{amount:-0.1,id:"head_atk_speed",operation:"add_value",type:"attack_speed",slot:"head"},{type:"water_movement_efficiency",amount:0.1,id:"pd_head",operation:"add_multiplied_base",slot:"head"}],\
 [{amount:2,id:"head_armor",operation:"add_value",type:"armor",slot:"head"},{amount:0.20,id:"head_atk_dmg",operation:"add_multiplied_base",type:"attack_damage",slot:"head"},{amount:-0.1,id:"head_atk_speed",operation:"add_value",type:"attack_speed",slot:"head"},{type:"water_movement_efficiency",amount:0.1,id:"pd_head",operation:"add_multiplied_base",slot:"head"}]\
 ],enchantments:[\
-{protection:1,unbreaking:1},{"core:defence/melee_evasion":1},{thorns:1},{},{}\
+{"minecraft:protection":1,"minecraft:unbreaking":1},{"core:defence/melee_evasion":1},{"minecraft:thorns":1},{},{}\
 ],af_show:[\
 "lore.item.intro.copper_helmet.af_show.0",\
 "lore.item.intro.copper_helmet.af_show.1",\

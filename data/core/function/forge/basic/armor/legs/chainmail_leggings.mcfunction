@@ -6,7 +6,7 @@ custom_data:{s_pas:1b,attribute_modifiers:[\
 [{amount:6.0,id:"legs_armor",operation:"add_value",type:"armor",slot:"legs"},{amount:0.15,id:"legs_water_movement_efficiency",operation:"add_multiplied_base",type:"water_movement_efficiency",slot:"legs"},{amount:0.3,id:"legs_knockback_resistance",operation:"add_value",type:"knockback_resistance",slot:"legs"}],\
 [{amount:6.0,id:"legs_armor",operation:"add_value",type:"armor",slot:"legs"},{amount:0.15,id:"legs_water_movement_efficiency",operation:"add_multiplied_base",type:"water_movement_efficiency",slot:"legs"},{amount:0.3,id:"legs_knockback_resistance",operation:"add_value",type:"knockback_resistance",slot:"legs"}]\
 ],enchantments:[\
-{"core:defence/evasion":1,unbreaking:5,thorns:2},{"core:defence/evasion":2,unbreaking:5,thorns:2},{"core:defence/evasion":4,unbreaking:5,thorns:2},{},{}\
+{"core:defence/evasion":1,"minecraft:unbreaking":5,"minecraft:thorns":2},{"core:defence/evasion":2,"minecraft:unbreaking":5,"minecraft:thorns":2},{"core:defence/evasion":4,"minecraft:unbreaking":5,"minecraft:thorns":2},{},{}\
 ],af_show:[\
 "lore.item.intro.chainmail_leggings.af_show.0",\
 "lore.item.intro.chainmail_leggings.af_show.1",\

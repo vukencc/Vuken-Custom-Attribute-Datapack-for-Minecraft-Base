@@ -6,7 +6,7 @@ custom_data:{s_pas:1b,attribute_modifiers:[\
 [{amount:2.0,id:"feet_armor",operation:"add_value",type:"armor",slot:"feet"},{amount:0.0,id:"feet_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"feet"},{amount:0.1,id:"feet_attack_damage",operation:"add_multiplied_base",type:"attack_damage",slot:"feet"}],\
 [{amount:2.0,id:"feet_armor",operation:"add_value",type:"armor",slot:"feet"},{amount:0.0,id:"feet_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"feet"},{amount:0.1,id:"feet_attack_damage",operation:"add_multiplied_base",type:"attack_damage",slot:"feet"}]\
 ],enchantments:[\
-{"core:assistance/agility":1,unbreaking:2},{protection:1,"core:assistance/agility":1,unbreaking:2},{protection:2,"core:defence/env_protection":1,"core:assistance/agility":1,unbreaking:2},{},{}\
+{"core:assistance/agility":1,"minecraft:unbreaking":2},{"minecraft:protection":1,"core:assistance/agility":1,"minecraft:unbreaking":2},{"minecraft:protection":2,"core:defence/env_protection":1,"core:assistance/agility":1,"minecraft:unbreaking":2},{},{}\
 ],af_show:[\
 "lore.item.intro.chainmail_boots.af_show.0",\
 "lore.item.intro.chainmail_boots.af_show.1",\

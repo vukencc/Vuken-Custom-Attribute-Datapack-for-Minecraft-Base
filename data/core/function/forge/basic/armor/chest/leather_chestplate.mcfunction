@@ -6,7 +6,7 @@ custom_data:{s_pas:1b,attribute_modifiers:[\
 [{amount:3.0,id:"chest_armor",operation:"add_value",type:"armor",slot:"chest"},{amount:1.0,id:"chest_max_health",operation:"add_value",type:"max_health",slot:"chest"},{amount:0.2,id:"chest_knockback_resistance",operation:"add_value",type:"knockback_resistance",slot:"chest"}],\
 [{amount:3.0,id:"chest_armor",operation:"add_value",type:"armor",slot:"chest"},{amount:1.0,id:"chest_max_health",operation:"add_value",type:"max_health",slot:"chest"},{amount:0.2,id:"chest_knockback_resistance",operation:"add_value",type:"knockback_resistance",slot:"chest"}]\
 ],enchantments:[\
-{unbreaking:3,protection:1},{"core:defence/env_protection":1,unbreaking:3,protection:1},{},{},{}\
+{"minecraft:unbreaking":3,"minecraft:protection":1},{"core:defence/env_protection":1,"minecraft:unbreaking":3,"minecraft:protection":1},{},{},{}\
 ],af_show:[\
 "lore.item.intro.leather_chestplate.af_show.0",\
 "lore.item.intro.leather_chestplate.af_show.1",\

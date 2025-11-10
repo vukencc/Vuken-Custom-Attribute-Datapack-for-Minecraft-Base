@@ -6,7 +6,7 @@ custom_data:{s_trigger:1b,attribute_modifiers:[\
 [{amount:-0.4,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:5.5,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{type:"movement_efficiency",amount:0.25,id:"mgd_main",operation:"add_multiplied_base",slot:"mainhand"}],\
 [{amount:-0.4,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:5.5,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{type:"movement_efficiency",amount:0.25,id:"mgd_main",operation:"add_multiplied_base",slot:"mainhand"},{amount:0.25,id:atk_ran,operation:"add_value",type:entity_interaction_range,slot:"mainhand"}]\
 ],enchantments:[\
-{fire_aspect:1},{"core:melee/slayer":1},{"core:melee/thunder_aspect":1},{fire_aspect:2},{"core:melee/thunder_aspect":2}\
+{"minecraft:fire_aspect":1},{"core:melee/slayer":1},{"core:melee/thunder_aspect":1},{"minecraft:fire_aspect":2},{"core:melee/thunder_aspect":2}\
 ],af_show:[\
 "lore.item.intro.netherite_hoe.af_show.0",\
 "lore.item.intro.netherite_hoe.af_show.1",\

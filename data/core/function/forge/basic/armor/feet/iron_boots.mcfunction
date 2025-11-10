@@ -6,7 +6,7 @@ custom_data:{s_pas:1b,attribute_modifiers:[\
 [{amount:3.0,id:"feet_armor",operation:"add_value",type:"armor",slot:"feet"},{amount:0.1,id:"feet_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"feet"},{amount:2.0,id:"feet_max_health",operation:"add_value",type:"max_health",slot:"feet"},{amount:0.1,id:"feet_attack_speed",operation:"add_multiplied_base",type:"attack_speed",slot:"feet"}],\
 [{amount:3.0,id:"feet_armor",operation:"add_value",type:"armor",slot:"feet"},{amount:0.1,id:"feet_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"feet"},{amount:2.0,id:"feet_max_health",operation:"add_value",type:"max_health",slot:"feet"},{amount:0.1,id:"feet_attack_speed",operation:"add_multiplied_base",type:"attack_speed",slot:"feet"}]\
 ],enchantments:[\
-{"core:assistance/agility":1,unbreaking:3},{protection:1,"core:defence/evasion":1,"core:assistance/agility":1,unbreaking:3},{protection:2,"core:defence/evasion":1,"core:assistance/agility":2,unbreaking:3},{protection:2,"core:defence/env_protection":1,"core:defence/evasion":1,"core:assistance/agility":2,unbreaking:3},{}\
+{"core:assistance/agility":1,"minecraft:unbreaking":3},{"minecraft:protection":1,"core:defence/evasion":1,"core:assistance/agility":1,"minecraft:unbreaking":3},{"minecraft:protection":2,"core:defence/evasion":1,"core:assistance/agility":2,"minecraft:unbreaking":3},{"minecraft:protection":2,"core:defence/env_protection":1,"core:defence/evasion":1,"core:assistance/agility":2,"minecraft:unbreaking":3},{}\
 ],af_show:[\
 "lore.item.intro.iron_boots.af_show.0",\
 "lore.item.intro.iron_boots.af_show.1",\

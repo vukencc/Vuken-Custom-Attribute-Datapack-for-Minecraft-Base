@@ -6,7 +6,7 @@ custom_data:{s_trigger:1b,attribute_modifiers:[\
 [{amount:-3.2,id:"base_attack_speed",operation:"add_value",type:"attack_speed",slot:"mainhand"},{amount:9.0,id:"base_attack_damage",operation:"add_value",type:"attack_damage",slot:"mainhand"},{amount:1.0,id:"mainhand_armor",operation:"add_value",type:"armor",slot:"mainhand"},{amount:0.3,id:"mainhand_knockback_resistance",operation:"add_value",type:"knockback_resistance",slot:"mainhand"}],\
 [{amount:-3.2,id:"base_attack_speed",operation:"add_value",type:"attack_speed",slot:"mainhand"},{amount:9.0,id:"base_attack_damage",operation:"add_value",type:"attack_damage",slot:"mainhand"},{amount:1.0,id:"mainhand_armor",operation:"add_value",type:"armor",slot:"mainhand"},{amount:0.3,id:"mainhand_knockback_resistance",operation:"add_value",type:"knockback_resistance",slot:"mainhand"}]\
 ],enchantments:[\
-{unbreaking:3,knockback:1},{unbreaking:3,knockback:1,bane_of_arthropods:1},{unbreaking:3,knockback:1,bane_of_arthropods:1,"core:melee/slayer":1},{},{}\
+{"minecraft:unbreaking":3,"minecraft:knockback":1},{"minecraft:unbreaking":3,"minecraft:knockback":1,"minecraft:bane_of_arthropods":1},{"minecraft:unbreaking":3,"minecraft:knockback":1,"minecraft:bane_of_arthropods":1,"core:melee/slayer":1},{},{}\
 ],af_show:[\
 "lore.item.intro.copper_axe.af_show.0",\
 "lore.item.intro.copper_axe.af_show.1",\

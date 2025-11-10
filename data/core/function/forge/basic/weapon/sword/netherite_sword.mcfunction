@@ -6,11 +6,11 @@ custom_data:{s_trigger:1b,attribute_modifiers:[\
 [{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:9,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:1,id:armor_main,operation:"add_value",type:luck,slot:"mainhand"}],\
 [{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:12,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:1,id:armor_main,operation:"add_value",type:luck,slot:"mainhand"}]\
 ],enchantments:[\
-{knockback:1,unbreaking:1}, \
-{fire_aspect:2}, \
+{"minecraft:knockback":1,"minecraft:unbreaking":1}, \
+{"minecraft:fire_aspect":2}, \
 {"core:melee/slayer":3}, \
 {"core:melee/thunder_aspect":2}, \
-{smite:2}\
+{"minecraft:smite":2}\
 ],af_show:[\
 "lore.item.intro.netherite_sword.af_show.0",\
 "lore.item.intro.netherite_sword.af_show.1",\

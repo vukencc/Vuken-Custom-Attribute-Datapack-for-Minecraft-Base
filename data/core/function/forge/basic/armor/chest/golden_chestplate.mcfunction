@@ -6,7 +6,7 @@ custom_data:{s_pas:1b,attribute_modifiers:[\
 [{amount:4.0,id:"chest_armor",operation:"add_value",type:"armor",slot:"chest"},{amount:-3.0,id:"chest_max_health",operation:"add_value",type:"max_health",slot:"chest"},{amount:2.0,id:"chest_armor_toughness",operation:"add_value",type:"armor_toughness",slot:"chest"}],\
 [{amount:4.0,id:"chest_armor",operation:"add_value",type:"armor",slot:"chest"},{amount:-3.0,id:"chest_max_health",operation:"add_value",type:"max_health",slot:"chest"},{amount:2.0,id:"chest_armor_toughness",operation:"add_value",type:"armor_toughness",slot:"chest"}]\
 ],enchantments:[\
-{unbreaking:5,protection:1},{"core:defence/range_evasion":2,unbreaking:5,protection:1},{},{},{}\
+{"minecraft:unbreaking":5,"minecraft:protection":1},{"core:defence/range_evasion":2,"minecraft:unbreaking":5,"minecraft:protection":1},{},{},{}\
 ],af_show:[\
 "lore.item.intro.golden_chestplate.af_show.0",\
 "lore.item.intro.golden_chestplate.af_show.1",\
