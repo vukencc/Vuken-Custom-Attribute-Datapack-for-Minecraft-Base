@@ -1,1 +1,0 @@
-$data modify storage playerdata List append value {UUID:$(UUID),data:{}}

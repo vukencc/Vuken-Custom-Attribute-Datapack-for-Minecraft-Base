@@ -27,7 +27,6 @@ scoreboard players set @a PotionCharger.cd 0
 scoreboard players set @a ChestModel.cd 0
 scoreboard players set @a ench.invert.cd 0
 #init
-execute as @a run function core:player_set with entity @s
 item replace entity @a saddle with saddle[enchantments={"core:inter/tick_load":1}]
 #static virtual scb set
 scoreboard players set $s_vir repeat_10_timing 0
