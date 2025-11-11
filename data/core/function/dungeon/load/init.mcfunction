@@ -15,25 +15,25 @@ scoreboard players operation $s_vir dungeon_zp = $s_vir dungeon_z1
 #dx dy dz
 scoreboard players set $s_vir dungeon_is_loading 1
 #chunk calculation
-scoreboard players set $s_vir stdTemp2 20
+scoreboard players set $s_vir stdTemp2 25
 #x->y->z *
 scoreboard players set $s_vir dungeon_sum_chunk 1
 
 scoreboard players operation $s_vir stdTemp1 = $s_vir dungeon_x2
 scoreboard players operation $s_vir stdTemp1 -= $s_vir dungeon_x1
-scoreboard players add $s_vir stdTemp1 20
+scoreboard players add $s_vir stdTemp1 25
 scoreboard players operation $s_vir stdTemp1 /= $s_vir stdTemp2
 scoreboard players operation $s_vir dungeon_sum_chunk *= $s_vir stdTemp1
 
 scoreboard players operation $s_vir stdTemp1 = $s_vir dungeon_y2
 scoreboard players operation $s_vir stdTemp1 -= $s_vir dungeon_y1
-scoreboard players add $s_vir stdTemp1 20
+scoreboard players add $s_vir stdTemp1 25
 scoreboard players operation $s_vir stdTemp1 /= $s_vir stdTemp2
 scoreboard players operation $s_vir dungeon_sum_chunk *= $s_vir stdTemp1
 
 scoreboard players operation $s_vir stdTemp1 = $s_vir dungeon_z2
 scoreboard players operation $s_vir stdTemp1 -= $s_vir dungeon_z1
-scoreboard players add $s_vir stdTemp1 20
+scoreboard players add $s_vir stdTemp1 25
 scoreboard players operation $s_vir stdTemp1 /= $s_vir stdTemp2
 scoreboard players operation $s_vir dungeon_sum_chunk *= $s_vir stdTemp1
 
