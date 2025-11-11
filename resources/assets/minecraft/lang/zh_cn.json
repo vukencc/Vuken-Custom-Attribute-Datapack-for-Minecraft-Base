@@ -231,6 +231,8 @@
   "rawtext.blank.japan":"「 %s 」",
   "rawtext.blank.english":"[ %s ]",
   "rawtext.enter_game":"欢迎来到CTM地图「%s」的冒险世界，请确认您与朋友已经做好了启程的准备，开始今日的幻想之旅! ",
+  "rawtext.dungeon.not_loaded":"<区域未加载，请稍等或调大渲染距离>",
+  "rawtext.dungeon.loaded":"已加载",
 
   "lore.item.intro.update.none":"无升级",
 

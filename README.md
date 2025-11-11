@@ -13,6 +13,7 @@ Including:
 - Custom Defence & Damage System
 - Vanilla Item Modify
 - Custom Tools
+- Re-Dungeon System
 - More in coming...
 
 ## To Translator

@@ -311,3 +311,11 @@ scoreboard objectives add shared_active_cd dummy
 scoreboard objectives add absorption_shield_cd dummy
 
 scoreboard objectives add drop_trigger minecraft.custom:drop
+scoreboard objectives add hook_use_trigger minecraft.used:fishing_rod
+
+function core:dungeon/__init__
+
+scoreboard objectives add map.version dummy
+
+scoreboard players set $s_vir map.version 1
+tellraw @a {text:"A new version of datapack has been applied.",color:white,bold:true,underlined:true}
