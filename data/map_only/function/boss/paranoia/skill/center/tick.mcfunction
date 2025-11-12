@@ -40,7 +40,7 @@ execute if score $s_vir boss_timing matches 1140 positioned -637.00 5.00 249.00 
 execute if score $s_vir boss_timing matches 1200 positioned -637.00 5.00 249.00 run function map_only:boss/paranoia/skill/s3/e2/summon_2
 execute if score $s_vir boss_timing matches 1260 positioned -637.00 5.00 249.00 run function map_only:boss/paranoia/skill/s3/e2/summon_3
 execute if score $s_vir boss_timing matches 1320 positioned -637.00 5.00 249.00 run function map_only:boss/paranoia/skill/s3/e2/summon_4
-execute store result score @a stdTemp1 if entity @e[type=skeleton,tag=2]
+execute store result score @a stdTemp1 if entity @e[type=skeleton,tag=Boss_1_s3_2]
 effect give @a[scores={stdTemp1=2..}] weakness 1 0 true
 effect give @a[scores={stdTemp1=4..}] weakness 1 1 true
 
