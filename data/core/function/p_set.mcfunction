@@ -32,3 +32,9 @@ item replace entity @a saddle with saddle[enchantments={"core:inter/tick_load":1
 scoreboard players set $s_vir repeat_10_timing 0
 scoreboard players set $s_vir repeat_25_timing 0
 scoreboard players set $s_vir repeat_600_timing 0
+scoreboard players set @a operation.motion.delay 0
+scoreboard players set @a music_timing 0
+scoreboard players set @a gamemode.scb 0
+scoreboard players set @a in_boss 0
+scoreboard players set @a player.HurtTime 0
+scoreboard players set @a in_area 0

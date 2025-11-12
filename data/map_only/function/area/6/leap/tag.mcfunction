@@ -1,0 +1,1 @@
+$tag @n[type=marker,tag=leaping_stage,nbt={data:{ID:$(a),stage:$(b)}}] add motion.launch.target

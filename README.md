@@ -1,5 +1,7 @@
 # Vuken-Custom-Attribute-Datapack-for-Minecraft-Base
 
+## Introduction
+
 A datapack supports colorful minecraft vanilla maps. Updating.
 Support version 1.21.9 now.
 
@@ -14,7 +16,8 @@ Including:
 - Vanilla Item Modify
 - Custom Tools
 - Re-Dungeon System
-- More in coming...
+- Boss&Event Frame
+- More Special Mechanics!
 
 ## To Translator
 

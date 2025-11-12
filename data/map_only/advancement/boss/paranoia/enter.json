@@ -1,0 +1,31 @@
+{
+    "criteria": {
+        "enter":{
+            "trigger": "tick",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "max": -602,
+                                "min": -673
+                            },
+                            "y": {
+                                "max": 35
+                            },
+                            "z": {
+                                "max": 284,
+                                "min": 213
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [["enter"]],
+    "rewards": {
+        "function": "map_only:boss/paranoia/system/enter"
+    }
+}

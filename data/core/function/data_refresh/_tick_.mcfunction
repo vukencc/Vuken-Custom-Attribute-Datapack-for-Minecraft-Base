@@ -1,5 +1,10 @@
 execute at @s as @n[type=marker,tag=player_marker] rotated as @s run tp @s ~ ~ ~ ~5 ~
 execute if items entity @s weapon.mainhand #vanilla_armor[!custom_name] run function core:forge/basic/tick
+execute if score @s repeat_25_timing matches 10 run function core:data_refresh/_low_tick_ with entity @s
+execute at @s run function core:data_refresh/void/_tick_
+scoreboard players remove @s[scores={music_timing=1..}] music_timing 1
+execute if entity @s[tag=music_on] if score @s in_boss matches 1.. if score @s music_timing matches 0 run function core:music/boss_reset
+execute if entity @s[tag=music_on] if score @s in_boss matches 0 if score @s music_timing matches 0 run function core:music/area_reset
 
 #-------soectator_above--------#
 
@@ -59,4 +64,3 @@ execute as @s[gamemode=adventure] if score @s gamemode.scb matches ..2 run gamem
 
 #------------------data_storage------------------#
 execute if items entity @s weapon.mainhand crossbow if score @s repeat_10_timing matches 5 run function core:custom_ench/range/multicharge/charges_refresh
-execute if score @s repeat_25_timing matches 10 run function core:data_refresh/_low_tick_ with entity @s

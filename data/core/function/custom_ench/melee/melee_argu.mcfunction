@@ -18,7 +18,7 @@ tag @s remove combo_access
 #ice aspect trigger
 execute at @s on attacker as @s if items entity @s weapon.mainhand *[minecraft:enchantments~[{enchantments:"core:melee/ice_aspect"}]] at @n run function core:particle/ench/ice_aspect
 #focus trigger
-$execute if score @p melee_focus matches 1.. as @s at @s unless entity @e[type=!#bypass,distance=0.3..2.5] run function core:custom_ench/melee/focus_spe {focus:$(focus)}
+$execute if score @p melee_focus matches 1.. as @s at @s unless entity @e[type=!#bypass,distance=0.3..2.5,tag=!BossPas] run function core:custom_ench/melee/focus_spe {focus:$(focus)}
 #first strike trigger
 $execute if score @p melee_first_strike matches 1.. unless entity @s[tag=first_striked] run scoreboard players add @s enemy.Taken.Melee $(first_strike)
 execute if score @p melee_first_strike matches 1.. unless entity @s[tag=first_striked] at @p run playsound entity.item.break hostile @p ~ ~ ~

@@ -253,10 +253,7 @@ scoreboard objectives add marker dummy
 scoreboard objectives add marker_2 dummy
 scoreboard objectives add in_boss dummy
 scoreboard objectives add gamemode.scb dummy
-scoreboard players set @a gamemode.scb 0
-scoreboard players set @a in_boss 0
 scoreboard objectives add player.HurtTime dummy
-scoreboard players set @a player.HurtTime 0
 scoreboard objectives add player.BypassHurtTime dummy
 scoreboard objectives add ethereal_p1 dummy
 scoreboard objectives add ethereal_p2 dummy
@@ -316,6 +313,12 @@ scoreboard objectives add hook_use_trigger minecraft.used:fishing_rod
 function core:dungeon/__init__
 
 scoreboard objectives add map.version dummy
+scoreboard objectives add music_timing dummy
+scoreboard objectives add in_area dummy
+
+scoreboard objectives add operation.motion.delay dummy
 
 scoreboard players set $s_vir map.version 1
-tellraw @a {text:"A new version of datapack has been applied.",color:white,bold:true,underlined:true}
+scoreboard objectives add map.difficulty dummy
+scoreboard players set $s_vir map.difficulty 2
+tellraw @a {text:"A new version of DATAPACK has been installed.\nWelcome!",color:white,bold:true,underlined:true}

@@ -1,0 +1,31 @@
+{
+  "description": {
+    "translate": "",
+    "color": "white",
+    "bold": true
+  },
+  "slots": ["any"],
+  "anvil_cost": 1000,
+  "supported_items": [],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "effects": {
+    "tick": [
+        {
+            "effect": {
+                "type": "run_function",
+                "function": "map_only:boss/s_basic/pas_data"
+            }
+        }
+    ]
+  },
+  "primary_items": []
+}

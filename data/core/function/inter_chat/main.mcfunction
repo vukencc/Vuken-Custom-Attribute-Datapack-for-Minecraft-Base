@@ -11,5 +11,8 @@ tellraw @p {"text":"",color:"blue",bold:true}
 tellraw @s [{translate:name.dictionary.display,"fallback":"[ Dictionary ]",color:"#a2fff7",bold:true,"click_event":{action:"run_command",command:"/trigger menu.trigger set 5"}}]
 #trigger menu.trigger set 5
 tellraw @p {"text":"",color:"blue",bold:true}
+tellraw @s [{translate:name.option.display,"fallback":"[ Setting ]",color:"#a2fff7",bold:true,"click_event":{action:"run_command",command:"/trigger menu.trigger set 11"}}]
+#trigger menu.trigger set 5
+tellraw @p {"text":"",color:"blue",bold:true}
 tellraw @p {"text":"————————————————————————————",color:"blue",bold:true}
 scoreboard players set @s inter_custom_cd 5

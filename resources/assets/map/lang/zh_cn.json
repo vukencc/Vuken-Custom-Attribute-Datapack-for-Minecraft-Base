@@ -32,6 +32,13 @@
   "lore.item.name.wolf_dream":"狼之梦",
   "lore.item.intro.wolf_dream.1":"环顾四周，仿佛他们的目光仍在此处，",
   "lore.item.intro.wolf_dream.2":"尽管你确认他们已经安眠...",
+  
+  "boss.paranoia.lore":"未审判的精灵",
+  "boss.paranoia.mini.1":"魔术学者",
+  "boss.paranoia.mini.1.lore":"魔术学者达到一定数量时会诅咒你予脆弱，数量越多等级越高。",
+  "boss.paranoia.mini.2":"奥术学者",
+  "boss.paranoia.mini.2.lore":"奥术学者达到一定数量时会诅咒你予虚弱，数量越多等级越高。",
+  "boss.paranoia.s4.lore":"及时跟随Paranoia相关武器颜色，使其在相应的区域上被攻击。",
 
   "illusion_end":"end"
 }
