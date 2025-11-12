@@ -10,3 +10,4 @@ gamerule doImmediateRespawn false
 function map_only:boss/paranoia/skill/s1/end
 function map_only:boss/paranoia/skill/s2/end
 function map_only:boss/paranoia/skill/s3/end
+kill @e[type=skeleton,tag=Boss_1_s5_1]

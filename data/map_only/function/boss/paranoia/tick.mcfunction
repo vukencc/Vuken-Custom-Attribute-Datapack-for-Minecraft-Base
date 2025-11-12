@@ -8,7 +8,7 @@ execute if score $s_vir boss_hp matches ..0 run function map_only:boss/paranoia/
 ### Boss Skill Circle:
 
 scoreboard players add $s_vir boss_timing 1
-execute if score $s_vir boss_timing matches 2200.. run scoreboard players set $s_vir boss_timing 0
+execute if score $s_vir boss_timing matches 2550.. run scoreboard players set $s_vir boss_timing 0
 
 ### Special Boss Requirements:
 
