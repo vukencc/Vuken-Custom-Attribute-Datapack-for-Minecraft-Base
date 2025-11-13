@@ -42,9 +42,7 @@ You may choose the following options and tell the players what they refer to in 
 
 Remember that the referrence should be clear enough for players to understand, and it's highly recommended to show what they refer to in the map.
 
-## How Do I Use The Datapack?
-
-### Init
+## Init
 
 1. Run /function core:set while using the datapack for the first time :
 
@@ -56,7 +54,7 @@ Remember that the referrence should be clear enough for players to understand, a
 
 3. Applied the corresponding resource pack to the player's client.
 
-### Forge System
+## Forge System
 
 1. Run /function core:forge/trigger/summon to summon a new forge where you are.
 
@@ -115,7 +113,7 @@ Upgrade to the third level will first apply Sharpness I, then Unbreaking I, then
 Only the corresponding level of attribute difference should be written.
 5. The necessary first element of lore, which includes the rarity translation key and a ☆☆☆ string.
 
-### Potion Generator
+## Potion Generator
 
 1. A generator.py can be found in data/map_only/function/item_given/pots.
 2. The following effects have been modified:
