@@ -48,11 +48,11 @@ Remember that the referrence should be clear enough for players to understand, a
 
 1. Run /function core:set while using the datapack for the first time :
 
-    - /function core:set
+    > /function core:set
 
 2. Run /function core:p_set if a new player has entered the game :
 
-    - /function core:p_set
+    > /function core:p_set
 
 3. Applied the corresponding resource pack to the player's client.
 
@@ -60,40 +60,40 @@ Remember that the referrence should be clear enough for players to understand, a
 
 1. Run /function core:forge/trigger/summon to summon a new forge where you are.
 
-    - /function core:forge/trigger/summon
+    > /function core:forge/trigger/summon
 
 2. Right Click the forge to initialize it.
 3. Vanilla Items will be automatically modified to a FORGED&UPGRADE item with the corresponding attribute.
 4. To create an item that can be upgraded as you wish, the following is a standard function:
 
-- give @p player_head[attribute_modifiers=[{amount:0.15,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:-2,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],lore=[[{translate:lore.item.rarity.rare,color:blue,italic:false,bold:true},{text:" "},{text:"☆☆☆",color:"#81ffcd",italic:false}],[{translate:lore.item.intro.wolf_dream.1,color:white,italic:false}],[{translate:lore.item.intro.wolf_dream.2,color:white,italic:false}]],custom_name=[{translate:lore.item.name.wolf_dream,color:"#6cffc2",italic:false,bold:true}],\
-custom_data={attribute_modifiers:[\
-[{amount:0.2,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:-2,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
-[{amount:0.2,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.2,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:-2,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
-[{amount:0.15,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:0,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
-[{amount:0.15,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:0,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
-[{amount:0.15,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:0,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
-],enchantments:[\
-{"projectile_protection":1},\
-{"projectile_protection":1,"core:defence/env_protection":1},\
-{},\
-{},\
-{}\
-],af_show:[\
-"lore.item.intro.wolf_dream.af_show.0",\
-"lore.item.intro.wolf_dream.af_show.1",\
-"lore.item.intro.wolf_dream.af_show.2",\
-"lore.item.intro.update.none",\
-"lore.item.intro.update.none"\
-\
-],pf_show:[\
-"lore.item.intro.wolf_dream.pf_show.0",\
-"lore.item.intro.wolf_dream.pf_show.1",\
-"lore.item.intro.update.none",\
-"lore.item.intro.update.none",\
-"lore.item.intro.update.none"\
-]\
-}]
+    > give @p player_head[attribute_modifiers=[{amount:0.15,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:-2,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],lore=[[{translate:lore.item.rarity.rare,color:blue,italic:false,bold:true},{text:" "},{text:"☆☆☆",color:"#81ffcd",italic:false}],[{translate:lore.item.intro.wolf_dream.1,color:white,italic:false}],[{translate:lore.item.intro.wolf_dream.2,color:white,italic:false}]],custom_name=[{translate:lore.item.name.wolf_dream,color:"#6cffc2",italic:false,bold:true}],\
+    > custom_data={attribute_modifiers:[\
+    > [{amount:0.2,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:-2,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
+    > [{amount:0.2,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.2,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:-2,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
+    > [{amount:0.15,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:0,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
+    > [{amount:0.15,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:0,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
+    > [{amount:0.15,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:0,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
+    > ],enchantments:[\
+    > {"projectile_protection":1},\
+    > {"projectile_protection":1,"core:defence/env_protection":1},\
+    > {},\
+    > {},\
+    > {}\
+    > ],af_show:[\
+    > "lore.item.intro.wolf_dream.af_show.0",\
+    > "lore.item.intro.wolf_dream.af_show.1",\
+    > "lore.item.intro.wolf_dream.af_show.2",\
+    > "lore.item.intro.update.none",\
+    > "lore.item.intro.update.none"\
+    > \
+    > ],pf_show:[\
+    > "lore.item.intro.wolf_dream.pf_show.0",\
+    > "lore.item.intro.wolf_dream.pf_show.1",\
+    > "lore.item.intro.update.none",\
+    > "lore.item.intro.update.none",\
+    > "lore.item.intro.update.none"\
+    > ]\
+    > }]
 
 To comprise a custom data component to enable the upgrade system, you need to write the following four parts:
 
