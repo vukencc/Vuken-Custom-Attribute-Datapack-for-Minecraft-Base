@@ -47,9 +47,13 @@ Remember that the referrence should be clear enough for players to understand, a
 ### Init
 
 1. Run /function core:set while using the datapack for the first time :
+
     > /function core:set
+
 2. Run /function core:p_set if a new player has entered the game :
+
     > /function core:p_set
+    
 3. Applied the corresponding resource pack to the player's client.
 
 ### Forge System
@@ -95,11 +99,17 @@ Only the corresponding level of attribute will be applied to the item when you c
 2. af_show: This is a list of teanslate keys that will be displayed in the attribute upgrade display to describe how it is upgraded.
 Only the corresponding level of attribute difference should be written.
 3. enchantments: This is a list of enchantments that will be applied to the item when it is forged. ALL enchantments will be applied through the upgrade, e.g. :
+
     > [0] Sharpness I
+
     > [1] Unbreaking I
+
     > [2] Sharpness II knockback I
+
 Upgrade to the third level will first apply Sharpness I, then Unbreaking I, then Sharpness II knockback I. The Sharpness II will replace the Sharpness I, so the final enchantments will be :
+
     > Sharpness II knockback I Unbreaking I
+
 4. pf_show: This is a list of translate keys that will be displayed in the enchantment upgrade display to describe how it is upgraded.
 Only the corresponding level of attribute difference should be written.
 5. The necessary first element of lore, which includes the rarity translation key and a ☆☆☆ string.
@@ -110,7 +120,11 @@ Only the corresponding level of attribute difference should be written.
 2. The following effects have been modified:
 
     > Resistance -> Disabled
+
     > Luck -> Resistance (Effects: +10% Damage Resisted)
+
     > Unluck -> Vulnerable (Effects: -10% Damage Resisted)
+
     > Strength -> Strength (Effects: +30% Damage Dealt for ALL kinds of damage)
+
     > Weakness -> Weakness (Effects: -20% Damage Dealt for ALL kinds of damage)
