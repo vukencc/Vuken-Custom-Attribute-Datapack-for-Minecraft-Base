@@ -1,5 +1,6 @@
 {
     "pack": {
-        "description": "Resource Pack for 1.21.9 CTM"
+        "description": "Resource Pack for 1.21.9 CTM",
+        "pack_format": 69
     }
 }

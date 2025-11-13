@@ -220,6 +220,14 @@
   "lore.item.intro.upgrade_star":"可于锻造台将特定附魔或能力添加至装备或武器上。",
   "lore.item.intro.essence_of_void_cost":"空之精华消耗数量：",
   "lore.item.intro.upgradable":"可升级",
+  
+  "lore.item.intro.fit_for":"适用于：%s",
+  "lore.item.intro.fit_for_head":"头盔",
+  "lore.item.intro.fit_for_chest":"胸甲",
+  "lore.item.intro.fit_for_legs":"护腿",
+  "lore.item.intro.fit_for_feet":"靴子",
+  "lore.item.intro.fit_for_mainhand":"主手",
+  "lore.item.intro.fit_for_offhand":"副手",
 
   "lore.item.name.essence_of_void":"空之精华",
   "lore.item.intro.essence_of_void":"万物皆虚，万事皆允。",
