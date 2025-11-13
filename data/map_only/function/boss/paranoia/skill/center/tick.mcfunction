@@ -51,9 +51,11 @@ execute if score $s_vir boss_timing matches 1760 run function map_only:boss/para
 execute if score $s_vir boss_timing matches 1890 run function map_only:boss/paranoia/skill/s4/random
 execute if score $s_vir boss_timing matches 2030 run function map_only:boss/paranoia/skill/s4/execute
 
-execute if score $s_vir boss_timing matches 2150 run title @a subtitle {translate:boss.paranoia.s5.lore,color:aqua,bold:true}
-execute if score $s_vir boss_timing matches 2150 run title @a title {text:" ",color:aqua,bold:true}
+execute if score $s_vir boss_timing matches 2170 run title @a subtitle {translate:boss.paranoia.s5.lore,color:aqua,bold:true}
+execute if score $s_vir boss_timing matches 2170 run title @a title {text:" ",color:aqua,bold:true}
 execute if score $s_vir boss_timing matches 2250..2450 as @a at @s run function map_only:boss/paranoia/skill/s5/in_detect
 execute if score $s_vir boss_timing matches 2250..2450 if score $s_vir repeat_25_timing matches 10 run function map_only:boss/paranoia/skill/s5/summon
+execute if score $s_vir boss_timing matches 2450 run title @a subtitle {translate:boss.paranoia.s5.lore.end,color:aqua,bold:true}
+execute if score $s_vir boss_timing matches 2450 run title @a title {text:" ",color:aqua,bold:true}
 
 execute as @n[type=skeleton,tag=BossPas] at @s if block ~ ~ ~ water run tp @s -637.01 5.00 249.011

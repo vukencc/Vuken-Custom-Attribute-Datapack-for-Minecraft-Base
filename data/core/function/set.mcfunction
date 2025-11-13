@@ -294,7 +294,6 @@ scoreboard objectives add menu.trigger trigger
 scoreboard objectives add ench.invert.cd custom:play_time
 
 data merge storage s_temp_list {a:1, b:2, c:3, d:4, e:5, f:6, g:7, h:8, i:9, j:10} 
-execute if entity @p[gamemode=creative] run function core:p_set
 
 scoreboard objectives add player.Resistance dummy
 scoreboard objectives add player.Vulnerable dummy
@@ -320,5 +319,8 @@ scoreboard objectives add operation.motion.delay dummy
 
 scoreboard players set $s_vir map.version 1
 scoreboard objectives add map.difficulty dummy
-scoreboard players set $s_vir map.difficulty 2
+scoreboard players set $s_vir map.difficulty 3
+
+function core:p_set
 tellraw @a {text:"A new version of DATAPACK has been installed.\nWelcome!",color:white,bold:true,underlined:true}
+tellraw @a {text:"Current version: 1.0.3 for 1.21.9",color:aqua,bold:true,underlined:true}

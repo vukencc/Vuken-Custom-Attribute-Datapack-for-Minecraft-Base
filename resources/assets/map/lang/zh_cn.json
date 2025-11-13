@@ -39,7 +39,8 @@
   "boss.paranoia.mini.2":"奥术学者",
   "boss.paranoia.mini.2.lore":"\n奥术学者达到一定数量时会诅咒你予虚弱，数量越多等级越高。\n",
   "boss.paranoia.s4.lore":"\n及时跟随Paranoia相关武器颜色，使其在相应的区域上被攻击。\n",
-  "boss.paranoia.s5.lore":"停留在黄色区域以保护自己。",
+  "boss.paranoia.s5.lore":"< 停留在黄色区域以保护自己 >",
+  "boss.paranoia.s5.lore.end":"< 火焰熄灭 >",
 
   "illusion_end":"end"
 }
