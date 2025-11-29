@@ -137,6 +137,4 @@ translate:lore.item.intro.fit_for_head displays the suitable slot for the item.
     > Strength -> Strength (Effects: +30% Damage Dealt for ALL kinds of damage)
     > Weakness -> Weakness (Effects: -20% Damage Dealt for ALL kinds of damage)
 
-## Area System
-
-To run a system that works only for and only in one area, make a tick-detect if any player is in the area, then run /function map_only:area/6/tick
+3. Modified effects with special attribute modifiers DO NOT work for the enemies in the same way.

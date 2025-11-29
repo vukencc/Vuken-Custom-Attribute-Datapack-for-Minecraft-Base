@@ -46,9 +46,3 @@ custom_data={s_trigger:1b,attribute_modifiers:[\
 ]\
 }]
 
-#-----------------EPIC-------------------#
-give @p heart_of_the_sea[max_stack_size=1,item_model="tool/interact/potion_charger",lore=["",[{translate:lore.item.rarity.epic,color:dark_purple,italic:false,bold:true}],"",[{translate:lore.item.intro.spring_of_life.1,color:"#96daff",italic:false}],[{translate:lore.item.intro.spring_of_life.2,color:"#96daff",italic:false}],[{translate:lore.item.intro.spring_of_life.3,color:"#96daff",italic:false}],[{translate:lore.item.intro.spring_of_life.5,color:"#ff5555",italic:false}],"",[{translate:lore.item.intro.spring_of_life.4,color:white,italic:false}]],consumable={consume_seconds:999999,animation:none,has_consume_particles:0b},custom_name=[{translate:lore.item.name.spring_of_life,color:"#50f9c4",italic:false,bold:true}],\
-custom_data={\
-IsPotionCharger:1b,PotionConsume:1b,Trigger:1b,PotionContainer:[]\
-}]
-

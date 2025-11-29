@@ -317,10 +317,120 @@ scoreboard objectives add in_area dummy
 
 scoreboard objectives add operation.motion.delay dummy
 
-scoreboard players set $s_vir map.version 1
 scoreboard objectives add map.difficulty dummy
-scoreboard players set $s_vir map.difficulty 3
+scoreboard players set $s_vir map.difficulty 2
 
+# rc src lc slc swap sswap drop sdrop
+# melee magic_book range pot wand scythe
+scoreboard objectives add melee.rc dummy
+scoreboard objectives add magic_book.rc dummy
+scoreboard objectives add wand.rc dummy
+scoreboard objectives add scythe.rc dummy
+
+scoreboard objectives add magic_book.lc dummy
+scoreboard objectives add range.lc dummy
+scoreboard objectives add pot.lc dummy
+scoreboard objectives add wand.lc dummy
+
+scoreboard objectives add melee.slc dummy
+scoreboard objectives add magic_book.slc dummy
+scoreboard objectives add range.slc dummy
+scoreboard objectives add pot.slc dummy
+scoreboard objectives add wand.slc dummy
+scoreboard objectives add scythe.slc dummy
+
+scoreboard objectives add melee.swap dummy
+scoreboard objectives add magic_book.swap dummy
+scoreboard objectives add range.swap dummy
+scoreboard objectives add pot.swap dummy
+scoreboard objectives add wand.swap dummy
+scoreboard objectives add scythe.swap dummy
+
+scoreboard objectives add melee.sswap dummy
+scoreboard objectives add magic_book.sswap dummy
+scoreboard objectives add range.sswap dummy
+scoreboard objectives add pot.sswap dummy
+scoreboard objectives add wand.sswap dummy
+scoreboard objectives add scythe.sswap dummy
+
+scoreboard objectives add melee.drop dummy
+scoreboard objectives add magic_book.drop dummy
+scoreboard objectives add range.drop dummy
+scoreboard objectives add pot.drop dummy
+scoreboard objectives add wand.drop dummy
+scoreboard objectives add scythe.drop dummy
+
+scoreboard objectives add melee.sdrop dummy
+scoreboard objectives add magic_book.sdrop dummy
+scoreboard objectives add range.sdrop dummy
+scoreboard objectives add pot.sdrop dummy
+scoreboard objectives add wand.sdrop dummy
+scoreboard objectives add scythe.sdrop dummy
+
+scoreboard objectives add melee.src dummy
+scoreboard objectives add magic_book.src dummy
+scoreboard objectives add range.src dummy
+scoreboard objectives add pot.src dummy
+scoreboard objectives add wand.src dummy
+scoreboard objectives add scythe.src dummy
+
+scoreboard objectives add melee.rc.cd dummy
+scoreboard objectives add magic_book.rc.cd dummy
+scoreboard objectives add wand.rc.cd dummy
+scoreboard objectives add scythe.rc.cd dummy
+
+scoreboard objectives add magic_book.lc.cd dummy
+scoreboard objectives add range.lc.cd dummy
+scoreboard objectives add pot.lc.cd dummy
+scoreboard objectives add wand.lc.cd dummy
+
+scoreboard objectives add melee.slc.cd dummy
+scoreboard objectives add magic_book.slc.cd dummy
+scoreboard objectives add range.slc.cd dummy
+scoreboard objectives add pot.slc.cd dummy
+scoreboard objectives add wand.slc.cd dummy
+scoreboard objectives add scythe.slc.cd dummy
+
+scoreboard objectives add melee.swap.cd dummy
+scoreboard objectives add magic_book.swap.cd dummy
+scoreboard objectives add range.swap.cd dummy
+scoreboard objectives add pot.swap.cd dummy
+scoreboard objectives add wand.swap.cd dummy
+scoreboard objectives add scythe.swap.cd dummy
+
+scoreboard objectives add melee.sswap.cd dummy
+scoreboard objectives add magic_book.sswap.cd dummy
+scoreboard objectives add range.sswap.cd dummy
+scoreboard objectives add pot.sswap.cd dummy
+scoreboard objectives add wand.sswap.cd dummy
+scoreboard objectives add scythe.sswap.cd dummy
+
+scoreboard objectives add melee.drop.cd dummy
+scoreboard objectives add magic_book.drop.cd dummy
+scoreboard objectives add range.drop.cd dummy
+scoreboard objectives add pot.drop.cd dummy
+scoreboard objectives add wand.drop.cd dummy
+scoreboard objectives add scythe.drop.cd dummy
+
+scoreboard objectives add melee.sdrop.cd dummy
+scoreboard objectives add magic_book.sdrop.cd dummy
+scoreboard objectives add range.sdrop.cd dummy
+scoreboard objectives add pot.sdrop.cd dummy
+scoreboard objectives add wand.sdrop.cd dummy
+scoreboard objectives add scythe.sdrop.cd dummy
+
+scoreboard objectives add melee.src.cd dummy
+scoreboard objectives add magic_book.src.cd dummy
+scoreboard objectives add range.src.cd dummy
+scoreboard objectives add pot.src.cd dummy
+scoreboard objectives add wand.src.cd dummy
+scoreboard objectives add scythe.src.cd dummy
+
+#---end
 function core:p_set
+
+scoreboard players set $s_vir map.version 4
 tellraw @a {text:"A new version of DATAPACK has been installed.\nWelcome!",color:white,bold:true,underlined:true}
 tellraw @a {text:"Current version: 1.0.3 for 1.21.9",color:aqua,bold:true,underlined:true}
+
+scoreboard objectives add pot.holding.delay custom:play_time

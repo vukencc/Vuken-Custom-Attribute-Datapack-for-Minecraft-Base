@@ -47,17 +47,20 @@ scoreboard players add @s time_not_taking_damage 1
 execute if score @s drop_trigger matches 1.. if predicate operation:stats/sneaking unless items entity @s weapon.mainhand * at @s run function operation:trigger/sdrop
 execute if score @s drop_trigger matches 1.. unless predicate operation:stats/sneaking unless items entity @s weapon.mainhand * at @s run function operation:trigger/drop
 scoreboard players set @s drop_trigger 0
+execute if items entity @s weapon.mainhand *[enchantments~[{enchantments:"#weapon_id"}]] run function core:data_refresh/trigger_tick
 #--------trigger_spe--------#
 execute if score @s PotionCharger.cd matches 1.. run scoreboard players remove @s PotionCharger.cd 1
 execute if score @s PotionCharger.cd matches 0 if items entity @s hotbar.* *[item_model="tool/interact/potion_charger_empty"] at @s run function core:item_spe/active/potion_charger/refresh
 execute if score @s ChestModel.cd matches 1.. run scoreboard players remove @s ChestModel.cd 1
 execute if score @s ChestModel.cd matches 0 if items entity @s hotbar.* *[item_model="minecraft:chest",custom_data~{ChestModel:1b}] at @s run function core:item_spe/active/chest_model/refresh
+
 #--------inter_chat--------#
 scoreboard players enable @s menu.trigger
 execute if predicate {condition:"entity_properties",entity:"this",predicate:{flags:{is_sneaking:true}}} at @s run function core:item_spe/frc_trigger/is_sneaking
 execute if predicate {condition:"entity_properties",entity:"this",predicate:{flags:{is_sneaking:false}}} at @s run function core:item_spe/frc_trigger/not_sneaking
 execute if score @s menu.trigger matches 1.. at @s run function core:inter_chat/_tick_
 
+#--------gmd--------#
 execute if score @s gamemode.scb matches 1.. run scoreboard players remove @s gamemode.scb 1
 execute as @s[gamemode=survival] if score @s gamemode.scb matches 3.. run gamemode adventure @s
 execute as @s[gamemode=adventure] if score @s gamemode.scb matches ..2 run gamemode survival @s

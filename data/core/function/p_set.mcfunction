@@ -38,3 +38,108 @@ scoreboard players set @a gamemode.scb 0
 scoreboard players set @a in_boss 0
 scoreboard players set @a player.HurtTime 0
 scoreboard players set @a in_area 0
+execute as @a unless entity @s[tag=music_off] unless entity @s[tag=music_on] run tag @s add music_on
+
+scoreboard players set @a melee.rc 0
+scoreboard players set @a magic_book.rc 0
+scoreboard players set @a wand.rc 0
+scoreboard players set @a scythe.rc 0
+
+scoreboard players set @a magic_book.lc 0
+scoreboard players set @a range.lc 0
+scoreboard players set @a pot.lc 0
+scoreboard players set @a wand.lc 0
+
+scoreboard players set @a melee.slc 0
+scoreboard players set @a magic_book.slc 0
+scoreboard players set @a range.slc 0
+scoreboard players set @a pot.slc 0
+scoreboard players set @a wand.slc 0
+scoreboard players set @a scythe.slc 0
+
+scoreboard players set @a melee.swap 0
+scoreboard players set @a magic_book.swap 0
+scoreboard players set @a range.swap 0
+scoreboard players set @a pot.swap 0
+scoreboard players set @a wand.swap 0
+scoreboard players set @a scythe.swap 0
+
+scoreboard players set @a melee.sswap 0
+scoreboard players set @a magic_book.sswap 0
+scoreboard players set @a range.sswap 0
+scoreboard players set @a pot.sswap 0
+scoreboard players set @a wand.sswap 0
+scoreboard players set @a scythe.sswap 0
+
+scoreboard players set @a melee.drop 0
+scoreboard players set @a magic_book.drop 0
+scoreboard players set @a range.drop 0
+scoreboard players set @a pot.drop 0
+scoreboard players set @a wand.drop 0
+scoreboard players set @a scythe.drop 0
+
+scoreboard players set @a melee.sdrop 0
+scoreboard players set @a magic_book.sdrop 0
+scoreboard players set @a range.sdrop 0
+scoreboard players set @a pot.sdrop 0
+scoreboard players set @a wand.sdrop 0
+scoreboard players set @a scythe.sdrop 0
+
+scoreboard players set @a melee.src 0
+scoreboard players set @a magic_book.src 0
+scoreboard players set @a range.src 0
+scoreboard players set @a pot.src 0
+scoreboard players set @a wand.src 0
+scoreboard players set @a scythe.src 0
+
+scoreboard players set @a melee.rc.cd 0
+scoreboard players set @a magic_book.rc.cd 0
+scoreboard players set @a wand.rc.cd 0
+scoreboard players set @a scythe.rc.cd 0
+
+scoreboard players set @a magic_book.lc.cd 0
+scoreboard players set @a range.lc.cd 0
+scoreboard players set @a pot.lc.cd 0
+scoreboard players set @a wand.lc.cd 0
+
+scoreboard players set @a melee.slc.cd 0
+scoreboard players set @a magic_book.slc.cd 0
+scoreboard players set @a range.slc.cd 0
+scoreboard players set @a pot.slc.cd 0
+scoreboard players set @a wand.slc.cd 0
+scoreboard players set @a scythe.slc.cd 0
+
+scoreboard players set @a melee.swap.cd 0
+scoreboard players set @a magic_book.swap.cd 0
+scoreboard players set @a range.swap.cd 0
+scoreboard players set @a pot.swap.cd 0
+scoreboard players set @a wand.swap.cd 0
+scoreboard players set @a scythe.swap.cd 0
+
+scoreboard players set @a melee.sswap.cd 0
+scoreboard players set @a magic_book.sswap.cd 0
+scoreboard players set @a range.sswap.cd 0
+scoreboard players set @a pot.sswap.cd 0
+scoreboard players set @a wand.sswap.cd 0
+scoreboard players set @a scythe.sswap.cd 0
+
+scoreboard players set @a melee.drop.cd 0
+scoreboard players set @a magic_book.drop.cd 0
+scoreboard players set @a range.drop.cd 0
+scoreboard players set @a pot.drop.cd 0
+scoreboard players set @a wand.drop.cd 0
+scoreboard players set @a scythe.drop.cd 0
+
+scoreboard players set @a melee.sdrop.cd 0
+scoreboard players set @a magic_book.sdrop.cd 0
+scoreboard players set @a range.sdrop.cd 0
+scoreboard players set @a pot.sdrop.cd 0
+scoreboard players set @a wand.sdrop.cd 0
+scoreboard players set @a scythe.sdrop.cd 0
+
+scoreboard players set @a melee.src.cd 0
+scoreboard players set @a magic_book.src.cd 0
+scoreboard players set @a range.src.cd 0
+scoreboard players set @a pot.src.cd 0
+scoreboard players set @a wand.src.cd 0
+scoreboard players set @a scythe.src.cd 0
