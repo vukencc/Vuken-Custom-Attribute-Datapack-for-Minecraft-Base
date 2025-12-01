@@ -6,8 +6,7 @@ scoreboard players remove @s[scores={music_timing=1..}] music_timing 1
 execute if entity @s[tag=music_on] if score @s in_boss matches 1.. if score @s music_timing matches 0 run function core:music/boss_reset
 execute if entity @s[tag=music_on] if score @s in_boss matches 0 if score @s music_timing matches 0 run function core:music/area_reset
 
-#-------soectator_above--------#
-
+#-------spectator_above--------#
 execute if entity @s[gamemode=spectator] run return fail
 
 execute if score @s env_damage_timing matches 1 at @s run function core:trigger_spe/env_cal_trigger
@@ -38,7 +37,6 @@ execute if score @s repeat_110_timing > @s regeneration_p1 at @s run scoreboard 
 scoreboard players add @s repeat_110_timing 1
 execute as @s[tag=reg_trans_access] at @s if score @s repeat_110_timing matches 10 run function core:custom_ench/assistance/regeneration
 execute if score @s spawner_break matches 1.. at @s run function core:custom_ench/assistance/spawner_break
-execute if score @s invert_delay matches 1 at @s run advancement revoke @s only core:effects_changed
 execute if score @s invert_delay matches 1.. run scoreboard players remove @s invert_delay 1
 scoreboard players remove @s[scores={player.HurtTime=1..}] player.HurtTime 1
 scoreboard players add @s time_not_killing_entities 1

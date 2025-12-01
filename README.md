@@ -115,10 +115,11 @@ Only the corresponding level of attribute difference should be written.
 
     > give @s nether_star[custom_data={UpgradeSlot:1,resin_cost:3,Slot:head},enchantments={"core:assistance/regeneration":1},custom_name=[{translate:lore.item.name.ruins_of_life_stream,color:"#ff87f3",bold:true,italic:false}],lore=["",[{translate:lore.item.rarity.rare,color:blue,italic:false}],"",[{translate:lore.item.intro.essence_of_void_cost,color:"#b6baff",italic:false},{text:" 3★",color:"#b6baff",italic:false}],{translate:"lore.item.intro.upgrade_star",italic:false,color:white},{translate:"lore.item.intro.fit_for",italic:false,color:"#ffffff",with:[{translate:lore.item.intro.fit_for_head,color:blue}]}],item_model="honey_bottle"]
 
-UpgradeSlot:1 enables the item to be a "3rd-upgrade material".
-Slot:head marks what the item can be applied to.
-resin_cost:3 sets the cost of the essence required to upgrade the item.
-translate:lore.item.intro.fit_for_head displays the suitable slot for the item.
+    > UpgradeSlot:1 enables the item to be a "3rd-upgrade material".
+    > Slot:head marks what the item can be applied to.
+    > resin_cost:3 sets the cost of the essence required to upgrade the item.
+    > translate:lore.item.intro.fit_for_head displays the suitable slot for the item.
+
 6. The necessary first element of lore, which includes the rarity translation key and a ☆☆☆ string.
 7. run /function map_only:item_given/area/all_basic to get all basic items in the map.
 

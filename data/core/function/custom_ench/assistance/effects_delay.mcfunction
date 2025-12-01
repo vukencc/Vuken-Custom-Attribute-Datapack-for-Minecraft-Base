@@ -1,7 +1,5 @@
 execute if score @s invert_p1 matches 6.. run scoreboard players set @s invert_p1 5
-summon marker ~ ~ ~ {Tags:["temp_invert"],data:{invert:0}}
-scoreboard players remove @s invert_p1 1
-execute store result entity @n[tag=temp_invert,type=marker] data.invert int 1 run scoreboard players get @s invert_p1
+execute store result storage s_temp_list a int 5 run scoreboard players get @s invert_p1
 #Poison->Absorption 
 #Wither->Resistance
 #Weakness->Strength 
@@ -21,15 +19,15 @@ tag @s remove darkness_invert
 tag @s remove unluck_invert
 
 
-execute if data entity @s active_effects[{id:"minecraft:poison"}] run tag @s add poison_invert
-execute if data entity @s active_effects[{id:"minecraft:wither"}] run tag @s add wither_invert
-execute if data entity @s active_effects[{id:"minecraft:weakness"}] run tag @s add weakness_invert
-execute if data entity @s active_effects[{id:"minecraft:slowness"}] run tag @s add slowness_invert
-execute if data entity @s active_effects[{id:"minecraft:mining_fatigue"}] run tag @s add mining_fatigue_invert
-execute if data entity @s active_effects[{id:"minecraft:hunger"}] run tag @s add hunger_invert
-execute if data entity @s active_effects[{id:"minecraft:blindness"}] run tag @s add blindness_invert
-execute if data entity @s active_effects[{id:"minecraft:darkness"}] run tag @s add darkness_invert
-execute if data entity @s active_effects[{id:"minecraft:unluck"}] run tag @s add unluck_invert
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{poison:{}}}} run tag @s add poison_invert
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{wither:{}}}} run tag @s add wither_invert
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{weakness:{}}}} run tag @s add weakness_invert
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{slowness:{}}}} run tag @s add slowness_invert
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{mining_fatigue:{}}}} run tag @s add mining_fatigue_invert
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{hunger:{}}}} run tag @s add hunger_invert
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{blindness:{}}}} run tag @s add blindness_invert
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{darkness:{}}}} run tag @s add darkness_invert
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{unluck:{}}}} run tag @s add unluck_invert
 
 
 effect clear @s minecraft:poison
@@ -41,8 +39,7 @@ effect clear @s minecraft:hunger
 effect clear @s minecraft:blindness
 effect clear @s minecraft:darkness
 effect clear @s minecraft:unluck
-function core:custom_ench/assistance/apply_invert with entity @n[type=marker,tag=temp_invert] data
+function core:custom_ench/assistance/apply_invert with storage s_temp_list
 execute at @s run particle cherry_leaves ~ ~1 ~ 1.3 1.3 1.3 0.1 7 normal
-kill @n[tag=temp_invert,type=marker]
 
 scoreboard players set @s ench.invert.cd -100
