@@ -9,5 +9,5 @@ scoreboard objectives remove boss_hp
 scoreboard objectives remove boss_timing
 bossbar remove boss_hp
 scoreboard players set @a in_boss 0
-gamerule doImmediateRespawn false
+gamerule immediate_respawn false
 scoreboard players set @a music_timing 10

@@ -5,7 +5,7 @@ execute as @e[tag=Boss] run tp @s ~ ~-100 ~
 item replace entity @e[tag=Boss] saddle with air
 kill @e[tag=Boss]
 
-gamerule doImmediateRespawn false
+gamerule immediate_respawn false
 
 function map_only:boss/paranoia/skill/s1/end
 function map_only:boss/paranoia/skill/s2/end

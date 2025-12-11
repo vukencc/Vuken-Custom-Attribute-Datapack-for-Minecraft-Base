@@ -5,6 +5,7 @@
   "attribute.name.armor": "防御值",
   "attribute.name.armor_toughness": "韧性值",
   "attribute.name.attack_damage": "近战伤害",
+  "attribute.name.entity_interaction_range":"攻击范围",
 
   "lore.effect.apply":"当生效后：",
   "lore.effect.resistance":"%s 受伤减免",
@@ -166,7 +167,7 @@
   "name.enchantment.ice_aspect.lore": "近战攻击使敌人缓慢。等级等于附魔等级，时间等于（附魔等级+3）秒。",
   "name.enchantment.quake.lore": "攻击一个敌人会对附近所有其他敌人造成(2.5*等级)近战伤害。",
   "name.enchantment.slayer.lore": "对爬行者、末影人、烈焰人、铁傀儡、人形生物（包括村民）造成额外(2.5*等级)伤害。",
-  "name.enchantment.thunder_aspect.lore": "有(10*等级)%%的几率使敌人昏迷1秒，上限为50%%。",
+  "name.enchantment.thunder_aspect.lore": "有(10*等级)%%的几率使敌人昏迷1秒，上限为50%%，期间为<眩晕>状态，对于精英怪，其效果替换为3秒缓慢V，对于Boss，其效果替换为3秒缓慢3。",
   "name.enchantment.water_aspect.lore": "近战攻击使敌人造成的近战与弹射物伤害减少(15*等级)%%，魔法伤害减少(10*等级)%%，最高五级，时间等于（附魔等级+3）秒。",
   "name.enchantment.power.lore": "静止时，你的箭矢每级额外造成25%%伤害，适用于弓和弩。",
   "name.enchantment.flame.lore": "点燃敌人5秒，适用于弓和弩。",
@@ -179,7 +180,7 @@
   "name.enchantment.starlit.lore": "你射击的敌人会对附近所有敌人造成(3*等级)弹射物伤害。",
   "name.enchantment.ring.lore": "你射击的敌人会创建一个环，将附近所有敌人拉入其中。",
   "name.enchantment.greed.lore": "你射击的敌人会被拉向你。",
-  "name.enchantment.freeze.lore": "你射击的敌人会被冻结(0.5*等级)秒。",
+  "name.enchantment.freeze.lore": "你射击的敌人会被冻结(0.5*等级)秒，期间为<冰冻>状态，对于精英怪，其效果替换为3秒缓慢V，对于Boss，其效果替换为3秒缓慢3。",
   "name.enchantment.transformation.lore": "将你的箭矢以特定的弹射物形式射出，保留伤害的同时赋予其新的机制与效果。",
   "name.enchantment.point_blank.lore": "当射中的敌人位于4格以内时，额外造成(3*等级)弹射物伤害。",
   "name.enchantment.sniper.lore": "当射中的敌人位于5格以外时，额外造成(3*等级)弹射物伤害。",
@@ -250,6 +251,7 @@
   "rawtext.dungeon.loaded":"已加载",
   "rawtext.boss.defeated":"-= 战败 =-",
   "rawtext.boss.victory":"-= 胜利 =-",
+  "rawtext.ability.cdoff":" 冷却完毕！",
 
   "lore.item.intro.update.none":"无升级",
 

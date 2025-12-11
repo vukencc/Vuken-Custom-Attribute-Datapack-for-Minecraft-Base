@@ -11,7 +11,7 @@ effect give @a luck 10 9 true
 execute as @e[tag=Boss] run tp @s ~ ~-100 ~
 item replace entity @e[tag=Boss] saddle with air
 kill @e[tag=Boss]
-gamerule doImmediateRespawn false
+gamerule immediate_respawn false
 scoreboard players set @a in_boss 0
 scoreboard players set @a music_timing 10
 

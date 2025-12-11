@@ -3,18 +3,9 @@
     "downfall": 0.4,
     "has_precipitation": true,
     "effects": {
-      "sky_color": 16187355,
-      "fog_color": 16381655,
       "grass_color": 15662335,
       "water_color": 8224250,
-      "water_fog_color": 14145535,
-      "foliage_color": 14678783,
-      "particle":{
-        "options": {
-          "type": "snowflake"
-        },
-        "probability": 0.003
-      }
+      "foliage_color": 14678783
     },
     "spawners": {
       "misc": [
@@ -44,5 +35,23 @@
     },
     "carvers": [],
     "features": [],
-    "temperature_modifier":"frozen"
+    "temperature_modifier":"frozen",
+    "attributes": {
+      "visual/cloud_height": {
+        "argument": 1000000,
+        "modifier": "add"
+      },
+      "visual/sky_color":  16187355,
+      "visual/fog_color": 16381655,
+      "visual/water_fog_color": 14145535,
+      "visual/ambient_particles": {
+        "argument": [{
+          "particle": {
+            "type": "snowflake"
+          },
+          "probability": 0.003
+        }],
+        "modifier": "override"
+      }      
+    }
 }

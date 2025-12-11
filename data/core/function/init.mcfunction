@@ -3,4 +3,4 @@ execute as @a at @s run playsound entity.player.levelup hostile @s ~ ~ ~
 
 ###IMPORTANT:
 #Update the map version both in core:init and core:set (end of file) 
-execute unless score $s_vir map.version matches 4 run function core:set
+execute unless score $s_vir map.version matches 5 run function core:set

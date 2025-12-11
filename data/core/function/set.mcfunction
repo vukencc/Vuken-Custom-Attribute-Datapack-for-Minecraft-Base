@@ -1,3 +1,6 @@
+
+
+### SCB
 scoreboard objectives remove damageResisted
 scoreboard objectives remove natDamageResisted
 
@@ -132,7 +135,7 @@ scoreboard objectives add std2 dummy
 scoreboard players set @a std2 2
 scoreboard objectives add death_escape_timing dummy
 scoreboard players set @a death_escape_timing 0
-gamerule showDeathMessages false
+gamerule show_death_messages false
 scoreboard objectives add temp_max_hp dummy
 #melee enchant
 #bleed combo crit current curse first_strike focus ice_aspect quake slayer thunder_aspect water_aspect
@@ -150,7 +153,6 @@ scoreboard objectives add melee_thunder_aspect dummy
 scoreboard objectives add melee_water_aspect dummy
 scoreboard objectives add enemy_max_hp dummy
 scoreboard objectives add enemy_current_hp dummy
-scoreboard objectives add thunder_aspect_timing dummy
 scoreboard objectives add ench_combo_timing dummy
 #range enchant
 scoreboard objectives add range_power dummy
@@ -379,11 +381,13 @@ scoreboard objectives add magic_book.rc.cd dummy
 scoreboard objectives add wand.rc.cd dummy
 scoreboard objectives add scythe.rc.cd dummy
 
+#LC: (limited) 
 scoreboard objectives add magic_book.lc.cd dummy
 scoreboard objectives add range.lc.cd dummy
 scoreboard objectives add pot.lc.cd dummy
 scoreboard objectives add wand.lc.cd dummy
 
+#SLC: (limited) 
 scoreboard objectives add melee.slc.cd dummy
 scoreboard objectives add magic_book.slc.cd dummy
 scoreboard objectives add range.slc.cd dummy
@@ -427,10 +431,14 @@ scoreboard objectives add wand.src.cd dummy
 scoreboard objectives add scythe.src.cd dummy
 
 #---end
+
+#-------operation.stats-------#
+function operation:set
+
 function core:p_set
 
-scoreboard players set $s_vir map.version 4
-tellraw @a {text:"A new version of DATAPACK has been installed.\nWelcome!",color:white,bold:true,underlined:true}
-tellraw @a {text:"Current version: 1.0.3 for 1.21.9",color:aqua,bold:true,underlined:true}
+scoreboard players set $s_vir map.version 5
+tellraw @a {text:"A new version of DATAPACK has been installed!",color:white,bold:true,underlined:true}
+tellraw @a {text:"Current Version: 1.0.4 for 1.21.11",color:aqua,bold:true,underlined:true}
 
 scoreboard objectives add pot.holding.delay custom:play_time

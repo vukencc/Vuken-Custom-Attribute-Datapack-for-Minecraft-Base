@@ -1,7 +1,5 @@
    {
        "pack": {
-           "description": "§6§lA Datapack for CTM Map Adventure!",
-           "min_format": 88,
-           "max_format": 88
+           "description": "A Datapack for Respawn II Gameplay."
        }
    }

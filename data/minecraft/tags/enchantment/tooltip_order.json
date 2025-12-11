@@ -80,7 +80,8 @@
     "minecraft:infinity",
     "minecraft:mending",
     "minecraft:unbreaking",
-    "core:inter/arrow_effect"
+    "operation:trigger/no_lc_blank",
+    "operation:trigger/lc"
   ],
   "replace": true
 }
