@@ -1,0 +1,82 @@
+{
+    "description": {
+        "translate":"name.enchantment.water_aspect",
+        "color": "gray"
+    },
+    "supported_items": "#minecraft:weapon",
+    "primary_items": "#minecraft:weapon",
+    "weight": 10,
+    "max_level": 5,
+    "max_cost": {
+        "base": 13,
+        "per_level_above_first": 8
+      },
+    "min_cost": {
+        "base": 5,
+        "per_level_above_first": 8
+      },
+    "anvil_cost": 1,
+    "slots": [
+      "mainhand"
+    ],
+    "effects": {
+      "post_attack": [
+        {
+          "effect": {
+            "type": "apply_mob_effect",
+            "to_apply": "weakness",
+            "min_duration": {
+              "type": "linear",
+              "base": 4,
+              "per_level_above_first": 1
+            },            
+            "max_duration": {
+              "type": "linear",
+              "base": 4,
+              "per_level_above_first": 1
+            },
+            "min_amplifier": {
+              "type": "linear",
+              "base": 0,
+              "per_level_above_first": 1
+            },
+            "max_amplifier": {
+              "type": "linear",
+              "base": 0,
+              "per_level_above_first": 1
+            }
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "effect": {
+            "type": "apply_mob_effect",
+            "to_apply": "strength",
+            "min_duration": {
+              "type": "linear",
+              "base": 4,
+              "per_level_above_first": 1
+            },            
+            "max_duration": {
+              "type": "linear",
+              "base": 4,
+              "per_level_above_first": 1
+            },
+            "min_amplifier": {
+              "type": "linear",
+              "base": 0,
+              "per_level_above_first": 1
+            },
+            "max_amplifier": {
+              "type": "linear",
+              "base": 0,
+              "per_level_above_first": 1
+            }
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        }
+      ]
+    }
+}

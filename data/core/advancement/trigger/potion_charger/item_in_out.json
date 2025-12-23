@@ -1,0 +1,22 @@
+{
+	"criteria":{
+		"data_set":{
+			"trigger":"minecraft:inventory_changed",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "custom_data": {
+                                    "IsPotionCharger" : true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+		}
+	},
+	"requirements": [["data_set"]] ,
+	"rewards":{"function":"core:trigger/passive/potion_charger/inv_in_out"}
+}

@@ -1,0 +1,2 @@
+execute as @e[tag=Boss_1_s1_pos] at @s facing entity @p feet rotated ~ 0 positioned ~ ~1 ~ run function map_only:boss/paranoia/skill/s1/summon
+execute as @e[type=item_display,tag=Boss_1_s1_mark,limit=15] at @s run function map_only:boss/paranoia/skill/s1/pre_tick

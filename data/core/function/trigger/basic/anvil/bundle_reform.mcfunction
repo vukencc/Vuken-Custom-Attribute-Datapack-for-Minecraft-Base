@@ -1,0 +1,2 @@
+clear @s bundle[custom_data~{AnvilFix:1b}] 1
+give @s anvil[item_model=anvil,custom_data={AnvilFix:1b,AnvilUsing:0b},lore=["",[{translate:lore.item.rarity.uncommon,color:gray,italic:false,bold:true}],"",[{translate:lore.item.intro.anvil.1,color:"#96daff",italic:false}],"",[{translate:lore.item.intro.anvil.2,color:white,italic:false}]],custom_name=[{translate:lore.item.name.anvil,color:"#4df363",italic:false,bold:false}]] 1

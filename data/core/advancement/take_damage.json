@@ -1,0 +1,14 @@
+{
+	"criteria":{
+		"comTakeDamage":{
+			"trigger":"minecraft:entity_hurt_player",
+			"conditions":{
+				"damage": {
+					"blocked": false
+				}
+			}
+		}
+	},
+	"requirements": [["comTakeDamage"]] ,
+	"rewards":{"function":"core:defence/shared_take_damage"}
+}

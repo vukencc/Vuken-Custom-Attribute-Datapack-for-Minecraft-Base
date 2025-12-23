@@ -1,0 +1,1 @@
+$give @s resin_clump[custom_data={ForgeCurrency:1},lore=["",[{translate:lore.item.rarity.currency,color:"#ffff94",italic:false}],"",[{translate:lore.item.intro.essence_of_void,color:white,italic:false}]],custom_name=[{translate:lore.item.name.essence_of_void,color:"#7878ff",italic:false,bold:true}],item_model="nether_star"] $(resin)

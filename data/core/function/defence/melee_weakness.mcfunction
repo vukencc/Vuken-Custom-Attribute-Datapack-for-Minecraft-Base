@@ -1,0 +1,5 @@
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{weakness:{amplifier:0}}}} store result score @p damageResisted run data get entity @s data.damage.melee 8.5
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{weakness:{amplifier:1}}}} store result score @p damageResisted run data get entity @s data.damage.melee 7
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{weakness:{amplifier:2}}}} store result score @p damageResisted run data get entity @s data.damage.melee 5.5
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{weakness:{amplifier:3}}}} store result score @p damageResisted run data get entity @s data.damage.melee 4
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{effects:{weakness:{amplifier:{min:4}}}}} store result score @p damageResisted run data get entity @s data.damage.melee 2.5

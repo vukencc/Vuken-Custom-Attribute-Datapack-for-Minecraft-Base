@@ -1,0 +1,19 @@
+{
+	"criteria":{
+		"arrowHurtEntity":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions":{
+                "damage": {
+                    "type": {
+                        "is_direct": false,
+                        "direct_entity": {
+                            "type": "#arrows"
+                        }
+                    }
+                }
+			}
+		}
+	},
+	"requirements": [["arrowHurtEntity"]] ,
+	"rewards":{"function":"core:custom_ench/range/effects_transform_pre"}
+}

@@ -1,0 +1,31 @@
+{
+    "parent": "item/iron_sword",
+    "textures": {
+        "layer0" : "item/weapon/sword/8"
+    }
+,
+    "display": {
+		"firstperson_righthand": {
+			"rotation": [1, -82, 35],
+			"translation": [5.25, 4.75, -3],
+			"scale": [1.1, 1.1, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [1, 91, -35],
+			"translation": [6.25, 4.75, -3],
+			"scale": [1.1, 1.1, 1]
+		},
+		"ground": {
+			"translation": [0, 2, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"head": {
+			"rotation": [173, -90, -28],
+			"translation": [-0.5, 9, 2],
+			"scale": [2.7, 2.7, 1]
+		},
+		"fixed": {
+			"scale": [1.1, 1.1, 1]
+		}
+    }
+}

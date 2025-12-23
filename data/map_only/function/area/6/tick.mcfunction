@@ -1,0 +1,2 @@
+execute as @a if predicate {condition:"entity_properties",entity:"this",predicate:{movement:{y:0}}} if score @s operation.motion.delay matches ..0 at @s if entity @n[type=marker,tag=leaping_stage,tag=!leaping_end,distance=..3] run function map_only:area/6/leap/pre with entity @n[type=marker,tag=leaping_stage] data
+scoreboard players remove @a[scores={operation.motion.delay=1..}] operation.motion.delay 1

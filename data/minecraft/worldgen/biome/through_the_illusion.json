@@ -1,0 +1,25 @@
+{
+    "temperature": -0.5,
+    "downfall": 0.4,
+    "has_precipitation": true,
+    "effects": {
+      "grass_color": 14967039,
+      "water_color": 8963839,
+      "foliage_color": 7486564
+    },
+    "spawners": {
+    },
+    "spawn_costs": {
+    },
+    "carvers": [],
+    "features": [],
+    "attributes": {
+      "visual/cloud_height": {
+        "argument": 1000000,
+        "modifier": "add"
+      },
+      "visual/sky_color":  13760767,
+      "visual/fog_color": 16748790,
+      "visual/water_fog_color": 14145535
+    }
+}

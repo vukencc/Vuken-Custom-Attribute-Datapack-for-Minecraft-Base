@@ -1,0 +1,1 @@
+item modify entity @s saddle [{function:"set_enchantments",enchantments:{"operation:stats/vulnerable":0}}]

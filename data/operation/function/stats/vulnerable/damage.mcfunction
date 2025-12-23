@@ -1,0 +1,1 @@
+$damage @s $(a) out_of_world

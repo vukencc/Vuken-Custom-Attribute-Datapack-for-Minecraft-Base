@@ -1,0 +1,2 @@
+execute if predicate operation:stats/sneaking run return run function operation:trigger/lc_refresh/s_scythe
+execute if items entity @s weapon.mainhand *[piercing_weapon] run item modify entity @s weapon.mainhand {function:"set_components",components:{"!minecraft:piercing_weapon":{},"!attack_range":{}}}

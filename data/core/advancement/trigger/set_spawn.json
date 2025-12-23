@@ -1,0 +1,18 @@
+{
+	"criteria":{
+		"temp_forge":{
+			"trigger":"minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+					"predicates": {
+						"custom_data": {
+							"Spawnpoint": true
+						}
+					}
+                }
+            }
+		}
+	},
+	"requirements": [["temp_forge"]] ,
+	"rewards":{"function":"core:forge/trigger/set_spawn"}
+}

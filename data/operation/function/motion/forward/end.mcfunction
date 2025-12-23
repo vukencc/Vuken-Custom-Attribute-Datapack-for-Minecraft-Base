@@ -1,0 +1,1 @@
+item modify entity @s saddle {function:"set_enchantments",enchantments:{"operation:motion/forward":0}}

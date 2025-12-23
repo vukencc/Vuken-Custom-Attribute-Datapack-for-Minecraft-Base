@@ -1,0 +1,2 @@
+enchant @s core:inter/arrow_effect
+execute unless items entity @s weapon.mainhand *[attribute_modifiers~{modifiers:{contains:[{attribute:water_movement_efficiency}]}}] run item modify entity @s weapon.mainhand [{function:"set_attributes",modifiers:[{attribute:"water_movement_efficiency",amount:6,id:"pd_main",operation:"add_value",slot:"mainhand"}]}]

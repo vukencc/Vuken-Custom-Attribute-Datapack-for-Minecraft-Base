@@ -1,0 +1,32 @@
+{
+	"criteria":{
+		"trigger":{
+			"trigger": "minecraft:using_item",
+            "conditions":{
+                "item" : {
+					"predicates": {
+						"custom_data": {
+							"s_trigger" : true
+						}
+					}
+                },
+				"player": {
+					"flags": {
+						"is_sneaking": true
+					},
+					"equipment": {
+						"mainhand": {
+							"predicates": {
+								"enchantments": [{
+									"enchantments": "#rc_access"
+								}]
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [["trigger"]] ,
+	"rewards":{"function":"operation:trigger/src"}
+}

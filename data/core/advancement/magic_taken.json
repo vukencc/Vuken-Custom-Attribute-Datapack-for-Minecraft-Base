@@ -1,0 +1,22 @@
+{
+	"criteria":{
+		"damageMagicTaken":{
+			"trigger":"minecraft:entity_hurt_player",
+			"conditions":{
+				"damage": {
+					"type": {
+						"tags": [
+							{
+							"expected": true,
+							"id": "minecraft:magic_det"
+						}
+					]
+					},
+					"blocked": false
+				}
+			}
+		}
+	},
+	"requirements": [["damageMagicTaken"]] ,
+	"rewards":{"function":"core:defence/magic_cal_engage"}
+}

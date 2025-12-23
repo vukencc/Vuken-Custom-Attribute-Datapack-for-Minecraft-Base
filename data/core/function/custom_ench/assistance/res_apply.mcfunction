@@ -1,0 +1,1 @@
+$attribute @s luck modifier add res.pre $(a) add_value

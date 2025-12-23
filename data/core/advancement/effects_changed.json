@@ -1,0 +1,11 @@
+{
+	"criteria":{
+		"effects_set":{
+			"trigger":"minecraft:effects_changed",
+			"conditions": {
+			}
+		}
+	},
+	"requirements": [["effects_set"]] ,
+	"rewards":{"function":"core:custom_ench/assistance/effects_invert"}
+}

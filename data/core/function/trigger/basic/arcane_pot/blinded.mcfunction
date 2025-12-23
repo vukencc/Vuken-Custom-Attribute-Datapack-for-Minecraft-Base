@@ -1,0 +1,1 @@
+$execute as @e[type=!#bypass,tag=tmp] run function operation:stats/blinded/init {duration:$(duration)}

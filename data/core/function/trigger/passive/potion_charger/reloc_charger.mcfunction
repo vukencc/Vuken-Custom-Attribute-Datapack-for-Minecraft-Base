@@ -1,0 +1,4 @@
+execute if items entity @n[type=acacia_chest_boat,tag=PotionCharger.Init] container.* *[custom_data~{IsPotionCharger:1b}] run function core:trigger/passive/potion_charger/charger_inside_return with entity @n[type=acacia_chest_boat,tag=PotionCharger.Init] Items.[{components:{"minecraft:custom_data":{IsPotionCharger:1b}}}]
+execute unless entity @s[tag=stdTemp5] if items entity @s player.cursor *[custom_data~{IsPotionCharger:1b}] run function core:trigger/passive/potion_charger/cursor_return
+execute unless entity @s[tag=stdTemp5] at @s if entity @n[distance=..5,type=item,nbt={Item:{components:{"minecraft:custom_data":{IsPotionCharger:1b}}}}] run function core:trigger/passive/potion_charger/drop_return
+tag @s remove stdTemp5

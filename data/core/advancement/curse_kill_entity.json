@@ -1,0 +1,14 @@
+{
+	"criteria":{
+		"curseKillEntity":{
+			"trigger":"minecraft:player_killed_entity",
+			"conditions":{
+                "entity": {
+                    "nbt" : "{Tags:[\"melee_cursed\"]}"
+                }
+			}
+		}
+	},
+	"requirements": [["curseKillEntity"]] ,
+	"rewards":{"function":"core:custom_ench/melee/curse_spe"}
+}

@@ -1,0 +1,4 @@
+execute if predicate operation:stats/sneaking run return run function operation:trigger/lc_refresh/s_wand
+execute unless score @s wand.lc matches 1.. run return run execute if items entity @s weapon.mainhand *[piercing_weapon] run item modify entity @s weapon.mainhand {function:"set_components",components:{"!minecraft:piercing_weapon":{},"!attack_range":{}}}
+execute if score @s wand.lc.cd matches 1.. if items entity @s weapon.mainhand *[piercing_weapon] run return run item modify entity @s weapon.mainhand {function:"set_components",components:{"!minecraft:piercing_weapon":{},"!attack_range":{}}}
+execute unless items entity @s weapon.mainhand *[piercing_weapon] run item modify entity @s weapon.mainhand {function:"set_components",components:{piercing_weapon:{deals_knockback:false,dismounts:false},attack_range:{min_reach:0,max_reach:0,hitbox_margin:0,max_creative_reach:0,min_creative_reach:0,mob_factor:0}}}

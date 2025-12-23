@@ -1,0 +1,35 @@
+item modify entity @s weapon.mainhand [{function:set_components,components:{attribute_modifiers:[{amount:8,id:"chest_armor",operation:"add_value",type:"armor",slot:"chest"},{amount:3,id:"chest_armor_toughness",operation:"add_value",type:"armor_toughness",slot:"chest"},{amount:0.1,id:"chest_knockback_resistance",operation:"add_value",type:"knockback_resistance",slot:"chest"}],lore:[[{translate:lore.item.rarity.uncommon,color:green,italic:false,bold:false},{text:" "},{text:"☆☆☆",color:"#81ffcd",italic:false}]],custom_name:[{translate:lore.item.name.netherite_chestplate,color:"#a8ebcf",italic:false,bold:true}],\
+custom_data:{s_pas:1b,attribute_modifiers:[\
+[{amount:8.0,id:"chest_armor",operation:"add_value",type:"armor",slot:"chest"},{amount:3.0,id:"chest_armor_toughness",operation:"add_value",type:"armor_toughness",slot:"chest"},{amount:0.1,id:"chest_knockback_resistance",operation:"add_value",type:"knockback_resistance",slot:"chest"},{amount:0.15,id:"chest_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"chest"}],\
+[{amount:8.0,id:"chest_armor",operation:"add_value",type:"armor",slot:"chest"},{amount:3.0,id:"chest_armor_toughness",operation:"add_value",type:"armor_toughness",slot:"chest"},{amount:0.5,id:"chest_knockback_resistance",operation:"add_value",type:"knockback_resistance",slot:"chest"},{amount:0.15,id:"chest_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"chest"}],\
+[{amount:8.0,id:"chest_armor",operation:"add_value",type:"armor",slot:"chest"},{amount:3.0,id:"chest_armor_toughness",operation:"add_value",type:"armor_toughness",slot:"chest"},{amount:0.5,id:"chest_knockback_resistance",operation:"add_value",type:"knockback_resistance",slot:"chest"},{amount:0.15,id:"chest_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"chest"},{amount:4.0,id:"chest_max_health",operation:"add_value",type:"max_health",slot:"chest"}],\
+[{amount:11.0,id:"chest_armor",operation:"add_value",type:"armor",slot:"chest"},{amount:2.0,id:"chest_armor_toughness",operation:"add_value",type:"armor_toughness",slot:"chest"},{amount:0.5,id:"chest_knockback_resistance",operation:"add_value",type:"knockback_resistance",slot:"chest"},{amount:0.15,id:"chest_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"chest"},{amount:4.0,id:"chest_max_health",operation:"add_value",type:"max_health",slot:"chest"}],\
+[{amount:14.0,id:"chest_armor",operation:"add_value",type:"armor",slot:"chest"},{amount:2.0,id:"chest_armor_toughness",operation:"add_value",type:"armor_toughness",slot:"chest"},{amount:0.5,id:"chest_knockback_resistance",operation:"add_value",type:"knockback_resistance",slot:"chest"},{amount:0.15,id:"chest_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"chest"},{amount:4.0,id:"chest_max_health",operation:"add_value",type:"max_health",slot:"chest"}]\
+],enchantments:[\
+{"core:defence/evasion":1,"minecraft:protection":1,"minecraft:unbreaking":3},{"core:defence/evasion":2,"core:defence/magic_evasion":1,"minecraft:protection":1,"minecraft:unbreaking":3},{"minecraft:thorns":2,"minecraft:protection":2,"core:defence/evasion":2,"core:defence/magic_evasion":1,"minecraft:unbreaking":3},{"minecraft:thorns":2,"minecraft:protection":3,"core:defence/evasion":3,"core:defence/magic_evasion":1,"minecraft:unbreaking":3},{"core:assistance/regeneration":2,"minecraft:thorns":2,"minecraft:protection":3,"core:defence/evasion":3,"core:defence/magic_evasion":1,"minecraft:unbreaking":3}\
+],af_show:[\
+"lore.item.intro.netherite_chestplate.af_show.0",\
+"lore.item.intro.netherite_chestplate.af_show.1",\
+"lore.item.intro.netherite_chestplate.af_show.2",\
+"lore.item.intro.netherite_chestplate.af_show.3",\
+"lore.item.intro.netherite_chestplate.af_show.4"\
+],pf_show:[\
+"lore.item.intro.netherite_chestplate.pf_show.0",\
+"lore.item.intro.netherite_chestplate.pf_show.1",\
+"lore.item.intro.netherite_chestplate.pf_show.2",\
+"lore.item.intro.netherite_chestplate.pf_show.3",\
+"lore.item.intro.netherite_chestplate.pf_show.4"\
+]\
+}}}]
+
+###   "lore.item.intro.netherite_chestplate.af_show.0":"+15% 移动速度",
+###   "lore.item.intro.netherite_chestplate.af_show.1":"+4 击退抗性",
+###   "lore.item.intro.netherite_chestplate.af_show.2":"+4 最大生命值",
+###   "lore.item.intro.netherite_chestplate.af_show.3":"-1 韧性值 +3 防御值",
+###   "lore.item.intro.netherite_chestplate.af_show.4":"+3 防御值",
+###   "lore.item.intro.netherite_chestplate.pf_show.0":"+1 保护 +1 闪避 +3 耐久",
+###   "lore.item.intro.netherite_chestplate.pf_show.1":"+1 魔法闪避 +1 闪避",
+###   "lore.item.intro.netherite_chestplate.pf_show.2":"+2 荆棘 +1 保护",
+###   "lore.item.intro.netherite_chestplate.pf_show.3":"+1 闪避 +1 保护",
+###   "lore.item.intro.netherite_chestplate.pf_show.4":"+2 生命恢复",
+###   "lore.item.name.netherite_chestplate":"源始下界合金胸甲",

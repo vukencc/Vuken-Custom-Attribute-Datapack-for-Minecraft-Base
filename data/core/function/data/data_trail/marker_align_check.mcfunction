@@ -1,0 +1,1 @@
+$execute unless entity @n[type=marker,nbt={data:{OwnerUUID:$(UUID)}},tag=player_marker] run function core:data/data_trail/marker_align_init {UUID:$(UUID)}

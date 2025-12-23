@@ -1,0 +1,4 @@
+{
+    "can_you_hear_us":{"sounds":[{"name":"map:can_you_hear_us","volume":1.0,"stream":true}],"replace": true},
+    "entity.player.levelup_fix":{"sounds": [{"name":"map:levelup"}],"replace": true}
+}

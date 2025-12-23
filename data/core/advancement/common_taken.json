@@ -1,0 +1,23 @@
+{
+	"criteria":{
+		"damageSharedTaken":{
+			"trigger":"minecraft:entity_hurt_player",
+			"conditions":{
+				"damage": {
+					"type": {
+						"tags": [
+							{
+							"expected": true,
+							"id": "minecraft:common_det"
+						}
+					],
+					"is_direct": true
+					},
+					"blocked": false
+				}
+			}
+		}
+	},
+	"requirements": [["damageSharedTaken"]] ,
+	"rewards":{"function":"core:defence/com_cal_engage"}
+}

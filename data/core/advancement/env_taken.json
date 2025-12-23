@@ -1,0 +1,22 @@
+{
+	"criteria":{
+		"damageEnvTaken":{
+			"trigger":"minecraft:entity_hurt_player",
+			"conditions":{
+				"damage": {
+					"type": {
+						"tags": [
+							{
+							"expected": true,
+							"id": "minecraft:envir_det"
+						}
+					]
+					},
+					"blocked": false
+				}
+			}
+		}
+	},
+	"requirements": [["damageEnvTaken"]] ,
+	"rewards":{"function":"core:defence/env_cal_engage"}
+}

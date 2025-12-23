@@ -1,0 +1,23 @@
+{
+	"criteria":{
+		"active_use":{
+			"trigger": "minecraft:using_item",
+            "conditions":{
+                "item" : {
+					"predicates": {
+						"custom_data": {
+							"Trigger" : true
+						}
+					}
+                },
+				"player": {
+					"flags": {
+						"is_sneaking": false
+					}
+				}
+			}
+		}
+	},
+	"requirements": [["active_use"]] ,
+	"rewards":{"function":"core:trigger/rc_trigger"}
+}

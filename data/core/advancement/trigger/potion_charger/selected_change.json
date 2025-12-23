@@ -1,0 +1,19 @@
+{
+	"criteria":{
+		"data_set":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"movement": {
+						"speed": {
+						"max": 0,
+						"min": 0						
+					}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [["data_set"]] ,
+	"rewards":{"function":"core:trigger/passive/potion_charger/detect_selected_item"}
+}

@@ -1,0 +1,1 @@
+execute unless score $s_vir dungeon_is_loading matches 0 run function core:dungeon/mech/tick_reset

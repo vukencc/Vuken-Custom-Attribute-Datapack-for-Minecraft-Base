@@ -1,0 +1,9 @@
+$effect give @s[tag=poison_invert] regeneration $(a) 0 true
+$effect give @s[tag=wither_invert] absorption $(a) 0 true
+$effect give @s[tag=weakness_invert] strength $(a) 0 true
+$effect give @s[tag=slowness_invert] speed $(a) 0 true
+$effect give @s[tag=mining_plague_invert] haste $(a) 0 true
+effect give @s[tag=hunger_invert] saturation 1 0 true
+$effect give @s[tag=blindness_invert] night_vision $(a) 0 true
+$effect give @s[tag=darkness_invert] glowing $(a) 0 true
+$effect give @s[tag=unluck_invert] luck $(a) 0 true

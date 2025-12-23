@@ -1,0 +1,11 @@
+{
+	"criteria":{
+		"comKillEntity":{
+			"trigger":"minecraft:player_killed_entity",
+			"conditions":{
+			}
+		}
+	},
+	"requirements": [["comKillEntity"]] ,
+	"rewards":{"function":"core:defence/com_kill_entity"}
+}

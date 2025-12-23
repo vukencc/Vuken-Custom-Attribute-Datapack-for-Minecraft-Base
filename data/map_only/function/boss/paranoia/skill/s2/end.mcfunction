@@ -1,0 +1,1 @@
+kill @e[type=marker,tag=Boss_1_s2_mark]

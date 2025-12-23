@@ -1,0 +1,1 @@
+kill @e[type=#arrows,predicate=operation:stats/static]

@@ -1,0 +1,1 @@
+execute facing entity @p feet rotated ~180 ~ positioned ~ ~1.8 ~ run function core:particle/ench/combo

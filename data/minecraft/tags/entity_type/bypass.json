@@ -1,0 +1,26 @@
+{
+	"values": [
+		"armor_stand",
+		"marker",
+		"#minecraft:boat",
+		"item",
+		"item_display",
+		"block_display",
+		"text_display",
+		"#minecraft:impact_projectiles",
+		"player",
+		"villager",
+		"fox",
+		"sheep",
+		"cow",
+		"evoker_fangs",
+		"experience_orb",
+		"experience_bottle",
+		"area_effect_cloud",
+		"painting",
+		"item_frame",
+		"glow_item_frame",
+		"experience_bottle",
+		"experience_orb"
+	]
+}

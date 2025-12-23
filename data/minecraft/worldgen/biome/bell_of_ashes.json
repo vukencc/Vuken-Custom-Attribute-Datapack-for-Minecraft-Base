@@ -1,0 +1,43 @@
+{
+    "temperature": -0.5,
+    "downfall": 0.4,
+    "has_precipitation": true,
+    "effects": {
+      "water_color": 10663116,
+      "grass_color": 6275640,
+      "foliage_color": 12451753
+    },
+    "spawners": {
+    },
+    "spawn_costs": {
+      "minecraft:zombie": {
+        "energy_budget": 0.25,
+        "charge": 0.5
+      },
+      "minecraft:skeleton": {
+        "energy_budget": 0.25,
+        "charge": 0.5
+      }
+    },
+    "features": [],
+    "temperature_modifier":"frozen",
+    "carvers": [],
+    "attributes": {
+      "visual/cloud_height": {
+        "argument": 1000000,
+        "modifier": "add"
+      },
+      "visual/sky_color":  0,
+      "visual/fog_color": 6316128,
+      "visual/water_fog_color": 7500441,
+      "visual/ambient_particles": {
+        "argument": [{
+          "particle": {
+            "type": "white_ash"
+          },
+          "probability": 0.003
+        }],
+        "modifier": "override"
+      }      
+    }
+  }

@@ -1,0 +1,9 @@
+{
+	"criteria":{
+		"data_set":{
+			"trigger":"minecraft:inventory_changed"
+		}
+	},
+	"requirements": [["data_set"]] ,
+	"rewards":{"function":"core:data/count_delay"}
+}

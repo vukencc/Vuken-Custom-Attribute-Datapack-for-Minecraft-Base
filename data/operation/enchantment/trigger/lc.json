@@ -1,0 +1,49 @@
+{
+    "description": " ",
+    "supported_items": "saddle",
+    "weight": 1,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 1,
+        "per_level_above_first": 1
+    },
+    "max_level": 10,
+    "anvil_cost": 1,
+    "slots": ["any"],
+    "effects": {
+        "post_piercing_attack": [
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "operation:trigger/lc"
+                },
+                "requirements": {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_sneaking": false
+                        }
+                    }
+                }
+            },{
+                "effect": {
+                    "type": "run_function",
+                    "function": "operation:trigger/slc"
+                },
+                "requirements": {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_sneaking": true
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

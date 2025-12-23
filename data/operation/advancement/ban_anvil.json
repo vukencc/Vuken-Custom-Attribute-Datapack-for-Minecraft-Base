@@ -1,0 +1,27 @@
+{
+	"criteria": {
+		"a": {
+			"trigger": "minecraft:default_block_use",
+			"conditions": {
+				"location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"blocks": [
+									"minecraft:anvil",
+									"grindstone",
+									"chipped_anvil",
+									"damaged_anvil"
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "core:trigger/basic/anvil/ban_open"
+	}
+}

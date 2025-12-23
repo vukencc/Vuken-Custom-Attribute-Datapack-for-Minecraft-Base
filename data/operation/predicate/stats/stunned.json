@@ -1,0 +1,16 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "saddle": {
+                "predicates": {
+                    "enchantments": [{
+                        "enchantments": "operation:stats/stunned",
+                        "levels": 1
+                    }]
+                }
+            }
+        }
+    }
+}

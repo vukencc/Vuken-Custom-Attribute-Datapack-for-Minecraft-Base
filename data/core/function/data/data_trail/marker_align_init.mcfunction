@@ -1,0 +1,2 @@
+$summon marker ~ ~ ~ {data:{OwnerUUID:$(UUID)},Tags:["player_marker"]}
+execute unless entity @n[type=marker,tag=player_marker,tag=player_marker_center] run tag @n[type=marker,tag=player_marker] add player_marker_center

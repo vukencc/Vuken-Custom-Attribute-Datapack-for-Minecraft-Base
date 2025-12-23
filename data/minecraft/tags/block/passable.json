@@ -1,0 +1,79 @@
+{
+	"values":
+	[
+		"#air",
+        "light",
+		"oak_sapling",
+		"spruce_sapling",
+		"birch_sapling",
+		"jungle_sapling",
+		"acacia_sapling",
+		"dark_oak_sapling",
+
+		"cobweb",
+
+		"tall_grass",
+		"short_grass",
+		"short_dry_grass",
+		"tall_dry_grass",
+		"fern",
+		"large_fern",
+		"dead_bush",
+		"seagrass",
+		"brown_mushroom",
+		"red_mushroom",
+		"#flowers",
+		
+		"#pressure_plates",
+		
+		"torch",
+		"soul_torch",
+		"wall_torch",
+		"copper_torch",
+		"redstone_torch",
+		
+		"ladder",
+
+		"vine",
+		"twisting_vines",
+		"twisting_vines_plant",
+		"weeping_vines",
+		"weeping_vines_plant",
+
+		"tube_coral",
+		"brain_coral",
+		"bubble_coral",
+		"fire_coral",
+		"horn_coral",
+		"tube_coral_fan",
+		"brain_coral_fan",
+		"bubble_coral_fan",
+		"fire_coral_fan",
+		"horn_coral_fan",
+		
+
+		"oak_sign",
+		"spruce_sign",
+		"birch_sign",
+		"jungle_sign",
+		"acacia_sign",
+		"dark_oak_sign",
+		"pale_oak_sign",
+
+		"#banners",
+
+		"lever",
+		"#buttons",
+		"tripwire_hook",
+		"repeater",
+		"comparator",
+		"redstone_wire",
+		"powered_rail",
+		"detector_rail",
+		"rail",
+		"activator_rail",
+
+		"water",
+		"lava"
+	]
+}

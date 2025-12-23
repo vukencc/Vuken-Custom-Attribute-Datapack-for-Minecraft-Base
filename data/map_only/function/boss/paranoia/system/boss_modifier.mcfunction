@@ -1,0 +1,2 @@
+data merge entity @s {drop_chances:{mainhand:0,saddle:0,offhand:0,body:0,chest:0,feet:0,head:0,legs:0}}
+item replace entity @s saddle with saddle[enchantments={"core:system/boss/pas_marker":1},equippable={slot:"saddle",equip_sound:{sound_id:"",range:0}}]

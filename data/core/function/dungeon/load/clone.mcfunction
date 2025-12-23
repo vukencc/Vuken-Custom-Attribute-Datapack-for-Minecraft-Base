@@ -1,0 +1,1 @@
+$execute positioned $(o_x) $(o_y) $(o_z) run clone ~ ~ ~ ~24 ~24 ~24 ~ ~$(dy) ~ strict

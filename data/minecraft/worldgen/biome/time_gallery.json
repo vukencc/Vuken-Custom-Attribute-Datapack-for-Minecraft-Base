@@ -1,0 +1,29 @@
+{
+    "temperature": -0.5,
+    "downfall": 0.4,
+    "has_precipitation": true,
+    "effects": {
+      "grass_color": 11402495,
+      "water_color": 8963839,
+      "foliage_color": 14678783
+
+    },
+    "spawners": {
+    },
+    "spawn_costs": {
+    },
+    "carvers": [],
+    "features": [],
+    "temperature_modifier":"frozen",
+    "attributes": {
+      "visual/cloud_height": {
+        "argument": 1000000,
+        "modifier": "add"
+      },
+      "visual/sky_color":  12582911,
+      "visual/fog_color": 12058111,
+      "visual/water_fog_color": 12582906,
+      "visual/star_brightness": 1,
+      "visual/moon_phase": "full_moon"
+    }
+}

@@ -1,0 +1,2 @@
+$summon marker ~ ~ ~ {Tags:["leaping_stage"],data:{ID:$(id),stage:0}}
+$execute store result entity @n[type=marker,tag=leaping_stage] data.stage int 1 if entity @e[type=marker,tag=leaping_stage,nbt={data:{ID:$(id)}}]

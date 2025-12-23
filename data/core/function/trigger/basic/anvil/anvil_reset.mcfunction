@@ -1,0 +1,1 @@
+item modify entity @s player.cursor [{function:set_item,item:anvil},{function:set_custom_data,tag:{AnvilFix:1b,AnvilUsing:0b}}]

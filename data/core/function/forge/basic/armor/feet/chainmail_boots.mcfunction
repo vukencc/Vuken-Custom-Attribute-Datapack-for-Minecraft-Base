@@ -1,0 +1,31 @@
+item modify entity @s weapon.mainhand [{function:set_components,components:{attribute_modifiers:[{amount:1,id:"feet_armor",operation:"add_value",type:"armor",slot:"feet"}],lore:[[{translate:lore.item.rarity.common,color:gray,italic:false,bold:false},{text:" "},{text:"☆☆☆",color:"#81ffcd",italic:false}]],custom_name:[{translate:lore.item.name.chainmail_boots,color:"#a8ebcf",italic:false,bold:true}],\
+custom_data:{s_pas:1b,attribute_modifiers:[\
+[{amount:2.0,id:"feet_armor",operation:"add_value",type:"armor",slot:"feet"},{amount:-0.1,id:"feet_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"feet"}],\
+[{amount:2.0,id:"feet_armor",operation:"add_value",type:"armor",slot:"feet"},{amount:-0.1,id:"feet_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"feet"},{amount:0.1,id:"feet_attack_damage",operation:"add_multiplied_base",type:"attack_damage",slot:"feet"}],\
+[{amount:2.0,id:"feet_armor",operation:"add_value",type:"armor",slot:"feet"},{amount:0.0,id:"feet_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"feet"},{amount:0.1,id:"feet_attack_damage",operation:"add_multiplied_base",type:"attack_damage",slot:"feet"}],\
+[{amount:2.0,id:"feet_armor",operation:"add_value",type:"armor",slot:"feet"},{amount:0.0,id:"feet_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"feet"},{amount:0.1,id:"feet_attack_damage",operation:"add_multiplied_base",type:"attack_damage",slot:"feet"}],\
+[{amount:2.0,id:"feet_armor",operation:"add_value",type:"armor",slot:"feet"},{amount:0.0,id:"feet_movement_speed",operation:"add_multiplied_base",type:"movement_speed",slot:"feet"},{amount:0.1,id:"feet_attack_damage",operation:"add_multiplied_base",type:"attack_damage",slot:"feet"}]\
+],enchantments:[\
+{"core:assistance/agility":1,"minecraft:unbreaking":2},{"minecraft:protection":1,"core:assistance/agility":1,"minecraft:unbreaking":2},{"minecraft:protection":2,"core:defence/env_protection":1,"core:assistance/agility":1,"minecraft:unbreaking":2},{},{}\
+],af_show:[\
+"lore.item.intro.chainmail_boots.af_show.0",\
+"lore.item.intro.chainmail_boots.af_show.1",\
+"lore.item.intro.chainmail_boots.af_show.2",\
+"lore.item.intro.update.none",\
+"lore.item.intro.update.none"\
+],pf_show:[\
+"lore.item.intro.chainmail_boots.pf_show.0",\
+"lore.item.intro.chainmail_boots.pf_show.1",\
+"lore.item.intro.chainmail_boots.pf_show.2",\
+"lore.item.intro.update.none",\
+"lore.item.intro.update.none"\
+]\
+}}}]
+
+###   "lore.item.intro.chainmail_boots.af_show.0":"-10% 移动速度 +1 防御值",
+###   "lore.item.intro.chainmail_boots.af_show.1":"+10% 近战伤害",
+###   "lore.item.intro.chainmail_boots.af_show.2":"+10% 移动速度",
+###   "lore.item.intro.chainmail_boots.pf_show.0":"+1 敏捷 +2 耐久",
+###   "lore.item.intro.chainmail_boots.pf_show.1":"+1 保护",
+###   "lore.item.intro.chainmail_boots.pf_show.2":"+1 保护 +1 环境保护",
+###   "lore.item.name.chainmail_boots":"源始锁链靴子",

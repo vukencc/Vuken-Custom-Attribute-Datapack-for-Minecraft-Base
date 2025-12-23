@@ -1,0 +1,2 @@
+execute if items entity @s container.* anvil[!custom_data] run function core:trigger/basic/anvil/anvil_pickup
+execute if items entity @s container.* *[custom_data~{AnvilUsing:1b}] run function core:trigger/basic/anvil/bundle_reform

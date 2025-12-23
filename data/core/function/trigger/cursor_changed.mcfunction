@@ -1,0 +1,4 @@
+execute run function core:trigger/passive/potion_charger/charger_in_out with entity @s
+execute if items entity @s player.crafting.* anvil[custom_data~{AnvilFix:1b}] run function core:trigger/basic/anvil/prime
+execute if items entity @s player.crafting.* bundle[bundle_contents~{items:{count:[{count:1,test:{items:"#armor"}}]}}] run function core:trigger/basic/anvil/bundle_prime
+execute if items entity @s player.crafting.* bundle[custom_data~{AnvilFix:1b}] unless items entity @s player.crafting.* bundle[bundle_contents~{items:{count:[{count:1,test:{items:"#armor"}}]}}] run function core:trigger/basic/anvil/bundle_refuse

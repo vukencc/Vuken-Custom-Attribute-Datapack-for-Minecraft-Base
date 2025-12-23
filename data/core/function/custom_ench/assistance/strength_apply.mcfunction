@@ -1,0 +1,1 @@
+$attribute @s attack_damage modifier add strength.melee $(Strength) add_multiplied_total
