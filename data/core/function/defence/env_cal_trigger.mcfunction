@@ -23,19 +23,19 @@ scoreboard players set @s std_armor 100
 scoreboard players operation @s std_armor -= @s base_armor
 scoreboard players operation @s damageResisted *= @s std_armor
 #enchant aspect detect (individual)
-execute store result score @s env_protection_p1 run data get entity @s equipment.head.components."minecraft:enchantments"."core:defence/env_protection" 2
-execute store result score @s env_protection_p2 run data get entity @s equipment.chest.components."minecraft:enchantments"."core:defence/env_protection" 2
-execute store result score @s env_protection_p3 run data get entity @s equipment.legs.components."minecraft:enchantments"."core:defence/env_protection" 2
-execute store result score @s env_protection_p4 run data get entity @s equipment.feet.components."minecraft:enchantments"."core:defence/env_protection" 2
-execute store result score @s env_protection_p5 run data get entity @s equipment.offhand.components."minecraft:enchantments"."core:defence/env_protection" 2
-execute store result score @s env_protection_p6 run data get entity @s SelectedItem.components."minecraft:enchantments"."core:defence/env_protection" 2
+execute store result score @s env_protection_p1 run data get entity @s equipment.head.components."minecraft:enchantments"."core:defence/env_protection" 6
+execute store result score @s env_protection_p2 run data get entity @s equipment.chest.components."minecraft:enchantments"."core:defence/env_protection" 6
+execute store result score @s env_protection_p3 run data get entity @s equipment.legs.components."minecraft:enchantments"."core:defence/env_protection" 6
+execute store result score @s env_protection_p4 run data get entity @s equipment.feet.components."minecraft:enchantments"."core:defence/env_protection" 6
+execute store result score @s env_protection_p5 run data get entity @s equipment.offhand.components."minecraft:enchantments"."core:defence/env_protection" 6
+execute store result score @s env_protection_p6 run data get entity @s SelectedItem.components."minecraft:enchantments"."core:defence/env_protection" 6
 
-execute store result score @s protection_p1 run data get entity @s equipment.head.components."minecraft:enchantments"."minecraft:protection" 1
-execute store result score @s protection_p2 run data get entity @s equipment.chest.components."minecraft:enchantments"."minecraft:protection" 1
-execute store result score @s protection_p3 run data get entity @s equipment.legs.components."minecraft:enchantments"."minecraft:protection" 1
-execute store result score @s protection_p4 run data get entity @s equipment.feet.components."minecraft:enchantments"."minecraft:protection" 1
-execute store result score @s protection_p5 run data get entity @s equipment.offhand.components."minecraft:enchantments"."minecraft:protection" 1
-execute store result score @s protection_p6 run data get entity @s SelectedItem.components."minecraft:enchantments"."minecraft:protection" 1
+execute store result score @s protection_p1 run data get entity @s equipment.head.components."minecraft:enchantments"."minecraft:protection" 4
+execute store result score @s protection_p2 run data get entity @s equipment.chest.components."minecraft:enchantments"."minecraft:protection" 4
+execute store result score @s protection_p3 run data get entity @s equipment.legs.components."minecraft:enchantments"."minecraft:protection" 4
+execute store result score @s protection_p4 run data get entity @s equipment.feet.components."minecraft:enchantments"."minecraft:protection" 4
+execute store result score @s protection_p5 run data get entity @s equipment.offhand.components."minecraft:enchantments"."minecraft:protection" 4
+execute store result score @s protection_p6 run data get entity @s SelectedItem.components."minecraft:enchantments"."minecraft:protection" 4
 scoreboard players operation @s env_protection_p1 += @s env_protection_p2
 scoreboard players operation @s env_protection_p1 += @s env_protection_p3
 scoreboard players operation @s env_protection_p1 += @s env_protection_p4
@@ -47,12 +47,9 @@ scoreboard players operation @s env_protection_p1 += @s protection_p3
 scoreboard players operation @s env_protection_p1 += @s protection_p4
 scoreboard players operation @s env_protection_p1 += @s protection_p5
 scoreboard players operation @s env_protection_p1 += @s protection_p6
-execute if score @s env_protection_p1 matches 25.. run scoreboard players set @s env_protection_p1 24
-scoreboard objectives add temp_std4 dummy
-scoreboard players set @s temp_std4 4
+execute if score @s env_protection_p1 matches 90.. run scoreboard players set @s env_protection_p1 90
 scoreboard objectives add temp_std100 dummy
 scoreboard players set @s temp_std100 100
-scoreboard players operation @s env_protection_p1 *= @s temp_std4
 scoreboard players operation @s temp_std100 -= @s env_protection_p1
 scoreboard players operation @s damageResisted *= @s temp_std100
 scoreboard players operation @s damageResisted /= @s std100
@@ -82,12 +79,6 @@ execute as @s at @s store result entity @e[type=marker,sort=nearest,limit=1,tag=
 execute as @s at @s run function core:defence/damage_trigger with entity @e[type=marker,sort=nearest,limit=1,tag=cct_det_inter] data
 advancement revoke @s only core:common_taken
 #clear
-scoreboard objectives remove damageDeathDetect
-scoreboard objectives remove base_armor
-scoreboard objectives remove base_armor_bel
-scoreboard objectives remove std_armor
-scoreboard objectives remove temp_std4
-scoreboard objectives remove temp_std100
 stopsound @s player
 
 scoreboard players set @s natDamageResisted 0

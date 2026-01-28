@@ -1,19 +1,13 @@
-
-
 ### SCB
 scoreboard objectives remove damageResisted
 scoreboard objectives remove natDamageResisted
-
 scoreboard objectives add damageResisted dummy
 scoreboard objectives add natDamageResisted minecraft.custom:minecraft.damage_resisted
-
 scoreboard objectives add std1000 dummy
 scoreboard objectives add std100 dummy
 scoreboard objectives add std10 dummy
 scoreboard objectives add std750 dummy
-
 scoreboard players set $s_vir std10 10
-
 scoreboard objectives add env_damage_timing dummy
 scoreboard objectives add health health
 scoreboard objectives add inter_custom_cd dummy
@@ -27,15 +21,9 @@ scoreboard objectives add vanilla_toughness dummy
 scoreboard objectives add melee_protection dummy
 scoreboard objectives add magic_protection dummy
 scoreboard objectives add env_protection dummy
-scoreboard players set @a melee_protection 0
-scoreboard players set @a magic_protection 0
-scoreboard players set @a env_protection 0
 scoreboard objectives add evasion dummy
 scoreboard objectives add melee_evasion dummy
 scoreboard objectives add magic_evasion dummy
-scoreboard players set @a evasion 0
-scoreboard players set @a melee_evasion 0
-scoreboard players set @a magic_evasion 0
 scoreboard objectives add melee_protection_p1 dummy
 scoreboard objectives add melee_protection_p2 dummy
 scoreboard objectives add melee_protection_p3 dummy
@@ -94,7 +82,6 @@ scoreboard objectives add range_evasion_p6 dummy
 scoreboard objectives add repeat_25_timing dummy
 scoreboard objectives add repeat_10_timing dummy
 scoreboard objectives add std1 dummy
-scoreboard players set @a std1 1
 #enchant
 scoreboard objectives add std20 dummy
 scoreboard objectives add armor_extension dummy
@@ -136,9 +123,7 @@ scoreboard objectives add revolve_p5 dummy
 scoreboard objectives add revolve_p6 dummy
 scoreboard objectives add com_kill_timing dummy
 scoreboard objectives add std2 dummy
-scoreboard players set @a std2 2
 scoreboard objectives add death_escape_timing dummy
-scoreboard players set @a death_escape_timing 0
 gamerule show_death_messages false
 scoreboard objectives add temp_max_hp dummy
 #melee enchant
@@ -182,7 +167,6 @@ scoreboard objectives add arrow_apply_freeze dummy
 scoreboard objectives add arrow_apply_ring dummy
 scoreboard objectives add arrow_apply_greed dummy
 scoreboard objectives add arrow_apply_starlit dummy
-scoreboard objectives add to_clear_regenerate dummy
 scoreboard objectives add range_multicharge dummy
 #frenzy energy hasten
 scoreboard objectives add frenzy_p1 dummy
@@ -259,7 +243,6 @@ team modify yellow color yellow
 #follow scoreboard should be operated when any player first enter the game
 scoreboard objectives add marker dummy
 scoreboard objectives add marker_2 dummy
-scoreboard objectives add in_boss dummy
 scoreboard objectives add gamemode.scb dummy
 scoreboard objectives add player.HurtTime dummy
 scoreboard objectives add player.BypassHurtTime dummy
@@ -302,7 +285,6 @@ scoreboard objectives add menu.trigger trigger
 
 scoreboard objectives add ench.invert.cd custom:play_time
 
-data merge storage s_temp_list {a:1, b:2, c:3, d:4, e:5, f:6, g:7, h:8, i:9, j:10} 
 
 scoreboard objectives add player.Resistance dummy
 scoreboard objectives add player.Vulnerable dummy
@@ -310,10 +292,6 @@ scoreboard objectives add class dummy
 
 scoreboard objectives add time_not_taking_damage dummy
 scoreboard objectives add time_not_killing_entities dummy
-scoreboard objectives add timing_limited dummy
-scoreboard objectives add execute_active dummy
-scoreboard objectives add shared_active_cd dummy
-scoreboard objectives add absorption_shield_cd dummy
 
 scoreboard objectives add drop_trigger minecraft.custom:drop
 scoreboard objectives add hook_use_trigger minecraft.used:fishing_rod
@@ -323,8 +301,7 @@ function core:dungeon/__init__
 scoreboard objectives add map.version dummy
 scoreboard objectives add music_timing dummy
 scoreboard objectives add in_area dummy
-
-scoreboard objectives add operation.motion.delay dummy
+scoreboard objectives add in_boss dummy
 
 scoreboard objectives add map.difficulty dummy
 scoreboard players set $s_vir map.difficulty 2
@@ -440,6 +417,7 @@ scoreboard objectives add scythe.src.cd dummy
 scoreboard objectives add pot.holding.delay custom:play_time
 scoreboard objectives add weapon.holding.delay custom:play_time
 
+scoreboard objectives add charging_bow dummy
 #---end
 
 #-------operation.stats-------#
@@ -461,4 +439,5 @@ gamerule keep_inventory true
 gamerule show_death_messages false
 
 tellraw @a {text:"A new version of DATAPACK has been installed!",color:"#aedeff",bold:true,underlined:true}
-tellraw @a {text:"Current Version: 1.0.5 for 1.21.11\n",color:"#aedeff",bold:true,underlined:true}
+tellraw @a {text:"Current Version: 1.0.7 for MC 1.21.11\n",color:"#aedeff",bold:true,underlined:true}
+tellraw @a {text:"In the latest version, the following new functions have been installed:\n*Event Triggers\n*Damage Calculation & Apply\n*Damage Type Rework",color:"#aedeff",bold:true,underlined:true}

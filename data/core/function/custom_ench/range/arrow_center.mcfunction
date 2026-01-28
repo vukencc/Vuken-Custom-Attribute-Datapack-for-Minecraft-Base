@@ -1,4 +1,4 @@
-data merge entity @s {item:{id:potion,count:1,components:{potion_contents:{custom_effects:[{id:"saturation",amplifier:0,duration:999999,show_particles:0b,ambient:0b,show_icon:0b},{id:"night_vision",amplifier:0,duration:999999,show_particles:0b,ambient:0b,show_icon:0b},{id:"hunger",amplifier:0,duration:999999,show_particles:0b,ambient:0b,show_icon:0b},{id:"water_breathing",amplifier:0,duration:999999,show_particles:0b,ambient:0b,show_icon:0b}]}}},pickup:0b,data:{starlit_damage:0.0,UUID:[I;0,0,0,0]}}
+data merge entity @s {item:{id:potion,count:1,components:{potion_contents:{custom_effects:[{id:"saturation",amplifier:0,duration:999999,show_particles:0b,ambient:0b,show_icon:0b},{id:"night_vision",amplifier:0,duration:999999,show_particles:0b,ambient:0b,show_icon:0b},{id:"hunger",amplifier:0,duration:999999,show_particles:0b,ambient:0b,show_icon:0b},{id:"water_breathing",amplifier:0,duration:999999,show_particles:0b,ambient:0b,show_icon:0b}]}}},pickup:0b,data:{starlit_damage:0.0,UUID:[I;0,0,0,0],damage:0},damage:0}
 
 #arrow execute inter:
 execute store result score @s range_starlit run data get entity @p SelectedItem.components."minecraft:enchantments"."core:range/starlit" 3
@@ -27,4 +27,4 @@ execute if items entity @p weapon.mainhand *[enchantments~[{enchantments:"core:r
 #---------------------transform_effect_end----------------#
 
 #--------------modified_arrow_damage----------------------#
-execute store result entity @s damage double 0.000028 as @p run function core:damage/range/base
+execute store result entity @s data.damage double 0.0001 as @p run function core:damage/range/base

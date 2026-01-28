@@ -1,2 +1,2 @@
-execute if predicate {condition:"entity_properties",entity:"this",predicate:{movement:{y:0}}} unless block ~ ~-1 ~ #passable unless block ~0.3 ~-1 ~ #passable unless block ~-0.3 ~-1 ~ #passable unless block ~ ~-1 ~0.3 #passable unless block ~ ~-1 ~-0.3 #passable run tp @n[type=marker,tag=void_marker] ~ ~ ~
-execute if predicate {condition:"entity_properties",entity:"this",predicate:{location:{position:{y:{max:-64}}}}} run function core:data/void/return with entity @s
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{movement:{y:0}}} unless block ~ ~-1 ~ #passable unless block ~0.3 ~-1 ~ #passable unless block ~-0.3 ~-1 ~ #passable unless block ~ ~-1 ~0.3 #passable unless block ~ ~-1 ~-0.3 #passable run tp @n[type=marker,tag=void_marker] ~ ~ ~ ~4 ~4
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{location:{position:{y:{max:-64}}}}} run function core:data/void/set_tp_target

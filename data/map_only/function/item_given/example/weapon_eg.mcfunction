@@ -14,36 +14,36 @@ give @p feather[attribute_modifiers=[{id:"atk_dmg_off",type:"attack_damage",amou
 
 ###RARE ITEM
 
-give @p player_head[profile={properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQzYzIzMDM0Mjg2NjNmMGMyNmQwNmI5Mjk0YjUyZGQ2M2ZjYTU5NmMyZmE2ZjJjMWFlOTQ5MGQxYjdhYjllOCJ9fX0="}]},attribute_modifiers=[{amount:0.15,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:-2,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],lore=[[{translate:lore.item.rarity.rare,color:blue,italic:false,bold:true},{text:" "},{text:"☆☆☆",color:"#81ffcd",italic:false}],[{translate:lore.item.intro.wolf_dream.1,color:white,italic:false}],[{translate:lore.item.intro.wolf_dream.2,color:white,italic:false}]],custom_name=[{translate:lore.item.name.wolf_dream,color:"#6cffc2",italic:false,bold:true}],\
-custom_data={attribute_modifiers:[\
-[{amount:0.2,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:-2,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
-[{amount:0.2,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.2,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:-2,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
-[{amount:0.15,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:0,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
-[{amount:0.15,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:0,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
-[{amount:0.15,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:0,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
-],enchantments:[\
-{"projectile_protection":1},\
-{"projectile_protection":1,"core:defence/env_protection":1},\
-{},\
-{},\
-{}\
-],af_show:[\
-"lore.item.intro.wolf_dream.af_show.0",\
-"lore.item.intro.wolf_dream.af_show.1",\
-"lore.item.intro.wolf_dream.af_show.2",\
-"lore.item.intro.update.none",\
-"lore.item.intro.update.none"\
-\
-],pf_show:[\
-"lore.item.intro.wolf_dream.pf_show.0",\
-"lore.item.intro.wolf_dream.pf_show.1",\
-"lore.item.intro.update.none",\
-"lore.item.intro.update.none",\
-"lore.item.intro.update.none"\
-]\
-}]
+# give @p player_head[profile={properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQzYzIzMDM0Mjg2NjNmMGMyNmQwNmI5Mjk0YjUyZGQ2M2ZjYTU5NmMyZmE2ZjJjMWFlOTQ5MGQxYjdhYjllOCJ9fX0="}]},attribute_modifiers=[{amount:0.15,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:-2,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],lore=[[{translate:lore.item.rarity.rare,color:blue,italic:false,bold:true},{text:" [☆] ",color:"#a7a7a7",italic:false,bold:true},{text:"[☆] ",color:"#a7a7a7",italic:false,bold:true},{text:"[☆] ",color:"#a7a7a7",italic:false,bold:true}],[{translate:lore.item.intro.wolf_dream.1,color:white,italic:false}],[{translate:lore.item.intro.wolf_dream.2,color:white,italic:false}]],custom_name=[{translate:lore.item.name.wolf_dream,color:"#6cffc2",italic:false,bold:true}],\
+# custom_data={attribute_modifiers:[\
+# [{amount:0.2,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:-2,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
+# [{amount:0.2,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.2,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:-2,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
+# [{amount:0.15,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:0,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
+# [{amount:0.15,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:0,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
+# [{amount:0.15,id:atk_spd_head,operation:"add_multiplied_base",type:attack_speed,slot:"head"},{amount:0.15,id:spd_head,operation:"add_multiplied_base",type:movement_speed,slot:"head"},{amount:0,id:hp_head,operation:"add_value",slot:"head",type:"max_health"}],\
+# ],enchantments:[\
+# {"projectile_protection":1},\
+# {"projectile_protection":1,"core:defence/env_protection":1},\
+# {},\
+# {},\
+# {}\
+# ],af_show:[\
+# "lore.item.intro.wolf_dream.af_show.0",\
+# "lore.item.intro.wolf_dream.af_show.1",\
+# "lore.item.intro.wolf_dream.af_show.2",\
+# "lore.item.intro.update.none",\
+# "lore.item.intro.update.none"\
+# \
+# ],pf_show:[\
+# "lore.item.intro.wolf_dream.pf_show.0",\
+# "lore.item.intro.wolf_dream.pf_show.1",\
+# "lore.item.intro.update.none",\
+# "lore.item.intro.update.none",\
+# "lore.item.intro.update.none"\
+# ]\
+# }]
 
-give @p stone_sword[attribute_modifiers=[{amount:-2.4,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:3,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.05,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],enchantments={unbreaking:5},lore=[[{translate:lore.item.rarity.rare,color:blue,italic:false,bold:true},{text:" "},{text:"☆☆☆",color:"#81ffcd",italic:false}],[{translate:lore.item.intro.wind_longsword,color:white,italic:false}]],custom_name=[{translate:lore.item.name.wind_longsword,color:"#7878ff",italic:false,bold:true}],item_model="weapon/sword/1",\
+give @p stone_sword[attribute_modifiers=[{amount:-2.4,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:3,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.05,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],enchantments={unbreaking:5},lore=[[{translate:lore.item.rarity.rare,color:blue,italic:false,bold:true},{text:" [☆] ",color:"#a7a7a7",italic:false,bold:true},{text:"[☆] ",color:"#a7a7a7",italic:false,bold:true},{text:"[☆] ",color:"#a7a7a7",italic:false,bold:true}],[{translate:lore.item.intro.wind_longsword,color:white,italic:false}]],custom_name=[{translate:lore.item.name.wind_longsword,color:"#7878ff",italic:false,bold:true}],item_model="weapon/sword/1",\
 custom_data={s_trigger:1b,attribute_modifiers:[\
 [{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:4,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.05,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],\
 [{amount:-2.3,id:base_attack_speed,operation:"add_value",type:attack_speed,slot:"mainhand"},{amount:4,id:base_attack_damage,operation:"add_value",type:attack_damage,slot:"mainhand"},{amount:0.1,id:main_spd,operation:"add_multiplied_base",type:movement_speed,slot:"mainhand"}],\

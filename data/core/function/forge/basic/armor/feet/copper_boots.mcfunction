@@ -1,4 +1,4 @@
-item modify entity @s weapon.mainhand [{function:set_components,components:{attribute_modifiers:[{amount:1,id:"feet_armor",operation:"add_value",type:"armor",slot:"feet"}],lore:[[{translate:lore.item.rarity.common,color:gray,italic:false,bold:false},{text:" "},{text:"☆☆☆",color:"#81ffcd",italic:false}]],custom_name:[{translate:lore.item.name.copper_boots,color:"#a8ebcf",italic:false,bold:true}],\
+item modify entity @s weapon.mainhand [{function:set_components,components:{attribute_modifiers:[{amount:1,id:"feet_armor",operation:"add_value",type:"armor",slot:"feet"}],lore:[[{translate:lore.item.rarity.common,color:gray,italic:false,bold:false},{text:" [☆] ",color:"#a7a7a7",italic:false,bold:true},{text:"[☆] ",color:"#a7a7a7",italic:false,bold:true},{text:"[☆] ",color:"#a7a7a7",italic:false,bold:true}]],custom_name:[{translate:lore.item.name.copper_boots,color:"#a8ebcf",italic:false,bold:true}],\
 custom_data:{s_pas:1b,attribute_modifiers:[\
 [{amount:1,id:"feet_armor",operation:"add_value",type:"armor",slot:"feet"}],\
 [{amount:1,id:"feet_armor",operation:"add_value",type:"armor",slot:"feet"}],\

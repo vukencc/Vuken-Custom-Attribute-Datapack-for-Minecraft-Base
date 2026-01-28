@@ -46,23 +46,13 @@ scoreboard players operation @s life_drain_p1 += @s life_drain_p4
 scoreboard players operation @s life_drain_p1 += @s life_drain_p5
 scoreboard players operation @s life_drain_p1 += @s life_drain_p6
 
-scoreboard objectives add temp_hp dummy
-scoreboard players operation @s temp_hp = @s health
-scoreboard players operation @s temp_hp += @s life_drain_p1
-
-summon marker ~ ~ ~ {Tags:["temp_assistance"],data:{frenzy:0.0,energy:0.0,hasten:0.0,life_drain:0.0,temp_hp:0}}
+summon marker ~ ~ ~ {Tags:["temp_assistance"],data:{frenzy:0.0,energy:0.0,hasten:0.0,health:0.0,temp_hp:0}}
 execute store result entity @n[type=marker,tag=temp_assistance] data.frenzy float 0.01 run scoreboard players get @s frenzy_p1
 execute store result entity @n[type=marker,tag=temp_assistance] data.energy float 0.01 run scoreboard players get @s energy_p1
 execute store result entity @n[type=marker,tag=temp_assistance] data.hasten float 0.01 run scoreboard players get @s hasten_p1
-execute store result entity @n[type=marker,tag=temp_assistance] data.life_drain float 0.01 run scoreboard players get @s life_drain_p1
-scoreboard objectives add temp_max_health dummy
-execute store result score @s temp_max_health run attribute @s max_health get
-execute if score @s temp_hp > @s temp_max_health run scoreboard players operation @s temp_hp = @s temp_max_health
-scoreboard objectives remove temp_max_health
-execute store result entity @n[type=marker,tag=temp_assistance] data.temp_hp int 1 run scoreboard players get @s temp_hp
+execute store result entity @n[type=marker,tag=temp_assistance] data.health float 1 run scoreboard players get @s life_drain_p1
+
 function core:custom_ench/assistance/kill_apply with entity @n[type=marker,tag=temp_assistance] data
-function core:custom_ench/apply/regenerate/restore_hp with entity @n[type=marker,tag=temp_assistance] data
+function operation:stats/player_heal/single/init with entity @n[type=marker,tag=temp_assistance] data
 
 kill @n[type=marker,tag=temp_assistance]
-
-scoreboard objectives remove temp_hp

@@ -1,0 +1,1 @@
+$attribute @s max_health modifier add stats.player_heal.cut $(temp) add_multiplied_total

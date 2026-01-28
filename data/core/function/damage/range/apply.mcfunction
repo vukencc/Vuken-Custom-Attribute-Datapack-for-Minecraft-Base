@@ -1,0 +1,1 @@
+$damage @s $(BaseTaken) core:custom_ranged by @p[tag=tempApply]

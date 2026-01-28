@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "meleeKillEntity" : {
+            "trigger": "player_killed_entity",
+            "conditions": {
+                "killing_blow": {
+                    "tags": [{
+                        "expected": true,
+                        "id": "core:melee"
+                    }]
+                }
+            }
+        }
+    },
+    "requirements": [["meleeKillEntity"]],
+    "rewards": {
+        "function": "operation:event/player/melee_kill_entity/trigger_pre"
+    }
+}

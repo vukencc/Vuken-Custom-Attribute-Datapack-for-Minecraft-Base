@@ -6,7 +6,7 @@ execute if entity @s[tag=crit_access] run function core:trigger/passive/enemy_tr
 execute if score @p melee_crit matches 1.. if entity @s[tag=crit_access] at @s run function core:particle/ench/crit
 tag @s remove crit_access
 #normal attack trigger
-execute if score @p melee_current matches 1.. as @s at @p if entity @p[distance=..0.5,nbt={OnGround:1b}] run tag @s add current_access 
+execute if score @p melee_current matches 1.. as @s at @p if entity @p[distance=..0.5,predicate=!core:player/falling] run tag @s add current_access 
 $scoreboard players add @s[tag=current_access] enemy.Taken.Melee $(current)
 execute if score @p melee_current matches 1.. if entity @s[tag=current_access] run playsound entity.arrow.shoot hostile @p ~ ~ ~
 tag @s remove current_access

@@ -1,2 +1,1 @@
-execute as @e[type=!#bypass,nbt={HurtTime:10s}] on attacker if entity @s[tag=stdTemp1] as @n[type=arrow] run return run function core:custom_ench/range/arrow_as_center
-execute as @e[type=arrow] at @s on origin if entity @s[tag=stdTemp1] as @n run function core:custom_ench/range/arrow_as_center
+execute as @e[type=!#bypass,nbt={HurtTime:10s}] on attacker if entity @s[tag=stdTemp1] as @n[type=arrow] at @s run return run function core:custom_ench/range/arrow_as_center

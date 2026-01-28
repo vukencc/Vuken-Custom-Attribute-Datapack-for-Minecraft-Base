@@ -1,5 +1,4 @@
-execute if score @s repeat_25_timing matches 10 run function core:data/_low_tick_ with entity @s
-execute positioned as @s as @e[distance=0..,sort=nearest,limit=1,type=marker,tag=player_marker] rotated as @s run tp @s ~ ~ ~ ~4 ~
+execute if score @s repeat_25_timing matches 10 run function core:data/_low_tick_
 execute at @s run function core:data/void/_tick_
 #-------mana--------#
 scoreboard players add @s[scores={player.ManaBar=..3999}] player.ManaBar 10
@@ -35,8 +34,6 @@ execute if items entity @s weapon.mainhand #vanilla_armor[!custom_name] run func
     execute if score @s energy_timing matches 1 at @s run attribute @s movement_speed modifier remove energy
     execute if score @s hasten_timing matches 1.. at @s run scoreboard players remove @s hasten_timing 1
     execute if score @s hasten_timing matches 1 at @s run attribute @s attack_speed modifier remove hasten
-    execute if score @s to_clear_regenerate matches 1 run function core:custom_ench/apply/regenerate/health_reset
-    execute if score @s to_clear_regenerate matches 1.. run scoreboard players remove @s to_clear_regenerate 1
     execute if score @s repeat_110_timing > @s regeneration_p1 at @s run scoreboard players set @s repeat_110_timing 0
     scoreboard players add @s repeat_110_timing 1
     execute as @s[tag=reg_trans_access] at @s if score @s repeat_110_timing matches 10 run function core:custom_ench/assistance/regeneration
@@ -46,6 +43,7 @@ execute if items entity @s weapon.mainhand #vanilla_armor[!custom_name] run func
     scoreboard players add @s time_not_killing_entities 1
     scoreboard players add @s time_not_taking_damage 1
     function core:data/manabar
+    scoreboard players remove @s[scores={charging_bow=1..}] charging_bow 1
 #--------trigger--------#
     execute if score @s drop_trigger matches 1.. if score @s weapon.holding.delay matches ..0 if predicate operation:stats/sneaking unless items entity @s weapon.mainhand * at @s run function operation:trigger/sdrop
     execute if score @s drop_trigger matches 1.. if score @s weapon.holding.delay matches ..0 unless predicate operation:stats/sneaking unless items entity @s weapon.mainhand * at @s run function operation:trigger/drop

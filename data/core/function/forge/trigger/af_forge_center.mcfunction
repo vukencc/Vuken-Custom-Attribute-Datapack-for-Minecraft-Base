@@ -11,6 +11,6 @@ data modify entity @n[tag=af_Forge] interaction.timestamp set value 0
 function core:forge/trigger/return_forge_af
 #reload :
 execute if score @n[tag=af_Forge] marker matches 1.. run function core:forge/trigger/return_forge_af
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:paper",components:{"minecraft:custom_data":{ActiveSlot:1}}}}] if score @n[tag=af_Forge] marker_2 matches 1.. run function core:forge/trigger/give_forge_af
+execute if score @n[tag=af_Forge] marker_2 matches 1.. run function core:forge/trigger/give_forge_af
 
 execute if entity @e[tag=forge_show] run function core:forge/trigger/deal_cal

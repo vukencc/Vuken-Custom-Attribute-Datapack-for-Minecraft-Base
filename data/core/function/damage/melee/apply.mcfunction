@@ -1,0 +1,1 @@
+$damage @s $(BaseTaken) core:custom_melee by @p[tag=tempApply]

@@ -21,12 +21,12 @@
           "particle": {
             "type": "end_rod"
           },
-          "probability": 0.001
+          "probability": 0.0008
         },{
           "particle": {
             "type": "firework"
           },
-          "probability": 0.001
+          "probability": 0.0008
         }],
         "modifier": "override"
       },
@@ -34,10 +34,7 @@
         "argument": 1000000,
         "modifier": "add"
       },
-      "visual/sky_color":  16187355,
-      "visual/fog_color": 16187355,
-      "visual/water_fog_color": 14145535,
       "visual/moon_phase": "full_moon",
-      "visual/star_brightness": 1
+      "visual/star_brightness": 0.8
     }
 }

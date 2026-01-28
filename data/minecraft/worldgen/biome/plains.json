@@ -1,5 +1,9 @@
 {
   "attributes": {
+    "visual/cloud_height": {
+        "argument": 1000000,
+        "modifier": "add"
+    },
     "minecraft:visual/sky_color": "#78a7ff",
     "visual/moon_phase": "full_moon"
   },

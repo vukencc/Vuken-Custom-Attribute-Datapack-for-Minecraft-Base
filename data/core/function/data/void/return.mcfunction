@@ -1,6 +1,6 @@
 effect give @s slow_falling 1 0 true
 execute if block ~ ~-1 ~ air run setblock ~ ~-1 ~ tinted_glass
-$tp @s @n[type=marker,tag=void_marker,nbt={data:{OwnerUUID:$(UUID)}}]
+$tp @s @n[type=marker,tag=void_marker,nbt={data:{OwnerUUID:$(temp)}}]
 
 ###Punishment Effect:
 effect give @s wither 5 1 true

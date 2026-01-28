@@ -1,0 +1,2 @@
+$execute at @s unless entity @e[type=marker,nbt={data:{OwnerUUID:$(temp)}},tag=void_marker] run summon marker ~ ~ ~ {data:{OwnerUUID:$(temp)},Tags:["void_marker"]}
+execute at @s unless entity @e[type=marker,tag=void_marker,tag=player_marker] run tag @e[limit=1,type=marker,tag=void_marker] add player_marker

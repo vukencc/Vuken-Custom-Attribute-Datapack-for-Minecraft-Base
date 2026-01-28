@@ -1,9 +1,9 @@
 execute store result score @s stdTemp1 run data get entity @s SelectedItem.components."minecraft:attribute_modifiers".[{slot:"mainhand",type:"minecraft:water_movement_efficiency",operation:"add_multiplied_base"}].amount 100
-execute store result score @s stdTemp2 run data get entity @s equipment.offhand.components."minecraft:attribute_modifiers".[{slot:"offhand",type:"minecraft:water_movement_efficiency",operation:"add_multiplied_base"}].amount 100
-execute store result score @s stdTemp3 run data get entity @s equipment.head.components."minecraft:attribute_modifiers".[{slot:"head",type:"minecraft:water_movement_efficiency",operation:"add_multiplied_base"}].amount 100
-execute store result score @s stdTemp4 run data get entity @s equipment.chest.components."minecraft:attribute_modifiers".[{slot:"chest",type:"minecraft:water_movement_efficiency",operation:"add_multiplied_base"}].amount 100
-execute store result score @s stdTemp5 run data get entity @s equipment.legs.components."minecraft:attribute_modifiers".[{slot:"legs",type:"minecraft:water_movement_efficiency",operation:"add_multiplied_base"}].amount 100
-execute store result score @s stdTemp6 run data get entity @s equipment.feet.components."minecraft:attribute_modifiers".[{slot:"feet",type:"minecraft:water_movement_efficiency",operation:"add_multiplied_base"}].amount 100
+execute store result score @s stdTemp2 run data get entity @s equipment.offhand.components."minecraft:attribute_modifiers".[{slot:"offhand",type:"minecraft:water_movement_efficiency"}].amount 100
+execute store result score @s stdTemp3 run data get entity @s equipment.head.components."minecraft:attribute_modifiers".[{slot:"head",type:"minecraft:water_movement_efficiency"}].amount 100
+execute store result score @s stdTemp4 run data get entity @s equipment.chest.components."minecraft:attribute_modifiers".[{slot:"chest",type:"minecraft:water_movement_efficiency"}].amount 100
+execute store result score @s stdTemp5 run data get entity @s equipment.legs.components."minecraft:attribute_modifiers".[{slot:"legs",type:"minecraft:water_movement_efficiency"}].amount 100
+execute store result score @s stdTemp6 run data get entity @s equipment.feet.components."minecraft:attribute_modifiers".[{slot:"feet",type:"minecraft:water_movement_efficiency"}].amount 100
 scoreboard players operation @s stdTemp1 += @s stdTemp2
 scoreboard players operation @s stdTemp1 += @s stdTemp3
 scoreboard players operation @s stdTemp1 += @s stdTemp4
@@ -19,5 +19,9 @@ scoreboard players operation @s stdTemp1 *= @s stdTemp7
 execute store result score @s stdTemp8 run data get entity @s SelectedItem.components."minecraft:attribute_modifiers".[{slot:"mainhand",type:"minecraft:water_movement_efficiency",operation:"add_value"}].amount
 
 scoreboard players operation @s stdTemp1 *= @s stdTemp8
+execute if score @s charging_bow matches 21.. run scoreboard players set @s charging_bow 20
+execute if items entity @s weapon.mainhand crossbow run scoreboard players set @s charging_bow 20
+scoreboard players operation @s stdTemp1 *= @s charging_bow
+scoreboard players operation @s stdTemp1 /= $20 math.times
 
 return run scoreboard players get @s stdTemp1

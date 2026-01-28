@@ -51,3 +51,5 @@ scoreboard players remove @a[scores={range.src.cd=1..}] range.src.cd 1
 scoreboard players remove @a[scores={pot.src.cd=1..}] pot.src.cd 1
 scoreboard players remove @a[scores={wand.src.cd=1..}] wand.src.cd 1
 scoreboard players remove @a[scores={scythe.src.cd=1..}] scythe.src.cd 1
+
+execute as @e[scores={timing_limited=1..}] run function operation:stats/timing_limited/duration

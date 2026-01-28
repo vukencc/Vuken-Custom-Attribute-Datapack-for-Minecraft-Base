@@ -1,0 +1,35 @@
+{
+    "temperature": -20,
+    "downfall": 0.4,
+    "has_precipitation": true,
+    "effects": {
+      "grass_color": 3202352,
+      "water_color": 5102591,
+      "foliage_color": 3270480
+
+    },
+    "spawners": {
+    },
+    "spawn_costs": {
+    },
+    "carvers": [],
+    "features": [],
+    "temperature_modifier":"frozen",
+    "attributes": {
+      "visual/cloud_height": {
+        "argument": 1000000,
+        "modifier": "add"
+      },
+      "visual/sky_color":  12179967,
+      "visual/fog_color": 14284535,
+      "visual/water_fog_color": 16766151,
+      "visual/star_brightness": 0.6,
+      "visual/moon_phase": "waning_crescent",
+      "minecraft:visual/ambient_particles": [{
+        "particle": {
+          "type": "cherry_leaves"
+        },
+        "probability": 0.002
+      }]
+    }
+}

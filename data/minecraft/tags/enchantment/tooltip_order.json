@@ -9,6 +9,7 @@
     "minecraft:sharpness",
     "minecraft:smite",
     "minecraft:bane_of_arthropods",
+    "core:melee/ghost_hunter",
     "core:melee/slayer",
     "core:melee/bleed",
     "core:melee/combo",

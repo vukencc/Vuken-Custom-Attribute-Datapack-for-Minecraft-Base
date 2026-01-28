@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "magicKillEntity" : {
+            "trigger": "player_killed_entity",
+            "conditions": {
+                "killing_blow": {
+                    "tags": [{
+                        "expected": true,
+                        "id": "core:magic"
+                    }]
+                }
+            }
+        }
+    },
+    "requirements": [["magicKillEntity"]],
+    "rewards": {
+        "function": "operation:event/player/magic_kill_entity/trigger_pre"
+    }
+}

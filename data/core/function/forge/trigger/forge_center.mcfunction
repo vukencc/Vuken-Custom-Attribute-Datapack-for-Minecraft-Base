@@ -52,14 +52,14 @@ function core:forge/trigger/return_forge_af
 function core:forge/trigger/return_forge_pf
 function core:forge/trigger/return_forge_uf
 #reload :
-execute unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{ActiveSlot:1}}}}] if items entity @s weapon.mainhand #armor at @n[tag=Forge] run summon interaction ~0.7 ~ ~ {Tags:["af_Forge"],width:0.7}
-execute unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{PassiveSlot:1}}}}] if items entity @s weapon.mainhand #armor at @n[tag=Forge] run summon interaction ~-0.7 ~ ~ {Tags:["pf_Forge"],width:0.7}
-execute unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{UpgradeSlot:1}}}}] if items entity @s weapon.mainhand #armor at @n[tag=Forge] run summon interaction ~ ~1.1 ~ {Tags:["uf_Forge"],height:0.7}
+execute unless items entity @s weapon.mainhand *[custom_data~{ActiveSlot:1}] if items entity @s weapon.mainhand #armor at @n[tag=Forge] run summon interaction ~0.7 ~ ~ {Tags:["af_Forge"],width:0.7}
+execute unless items entity @s weapon.mainhand *[custom_data~{PassiveSlot:1}] if items entity @s weapon.mainhand #armor at @n[tag=Forge] run summon interaction ~-0.7 ~ ~ {Tags:["pf_Forge"],width:0.7}
+execute unless items entity @s weapon.mainhand *[custom_data~{UpgradeSlot:1}] if items entity @s weapon.mainhand #armor at @n[tag=Forge] run summon interaction ~ ~1.1 ~ {Tags:["uf_Forge"],height:0.7}
 
 execute if score @n[tag=Forge] marker matches 1.. run function core:forge/trigger/return_forge
 execute if score @n[tag=Forge] marker_2 matches 1.. run function core:forge/trigger/give_forge
 
-execute if entity @e[tag=forge_show] run function core:forge/trigger/deal_cal
+execute if entity @e[type=item_display,tag=forge_show] run function core:forge/trigger/deal_cal
 
 kill @n[tag=deal_Forge]
 execute if entity @e[tag=forge_show] at @n[tag=Forge] run summon interaction ~ ~-1 ~ {Tags:["deal_Forge"],width:1.35}

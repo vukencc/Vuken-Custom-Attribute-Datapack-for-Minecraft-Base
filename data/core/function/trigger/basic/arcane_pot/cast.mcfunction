@@ -13,4 +13,4 @@ function core:damage/magic/calculation
 scoreboard players operation @s stdTemp8 *= @s stdTemp1
 execute store result storage element damage double 0.00001 run scoreboard players get @s stdTemp8
 
-execute at @s anchored eyes positioned ^ ^ ^0.7 summon splash_potion run function core:trigger/basic/arcane_pot/set_attributes with storage element
+execute at @s anchored eyes positioned ^ ^ ^0.5 summon splash_potion run function core:trigger/basic/arcane_pot/set_attributes with storage element

@@ -1,4 +1,4 @@
-execute positioned ~ ~1 ~ rotated as @n[type=marker,tag=player_marker_center] run function map_only:boss/paranoia/skill/center/particle
+execute positioned ~ ~1 ~ rotated as @n[type=marker,tag=player_marker] run function map_only:boss/paranoia/skill/center/particle
 
 execute if score $s_vir boss_timing matches 120 at @s run function map_only:boss/paranoia/skill/s1/pre
 execute if score $s_vir boss_timing matches 120..140 if score $s_vir repeat_10_timing matches 3 run function map_only:boss/paranoia/skill/s1/pre_ensure

@@ -1,0 +1,1 @@
+$damage @n[type=!#bypass,nbt={HurtTime:10s}] $(damage) core:custom_ranged by @p[tag=stdTemp1]

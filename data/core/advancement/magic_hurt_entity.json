@@ -1,0 +1,19 @@
+{
+	"criteria":{
+		"magicHurtEntity":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions":{
+                "damage": {
+                    "type": {
+                        "tags": [{
+                            "expected": true,
+                            "id": "core:magic"
+                        }]
+                    }
+                }
+			}
+		}
+	},
+	"requirements": [["magicHurtEntity"]] ,
+	"rewards":{"function":"operation:event/player/magic_hurt_entity/trigger_pre"}
+}

@@ -1,0 +1,19 @@
+{
+	"criteria":{
+		"meleeHurtEntity":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions":{
+                "damage": {
+                    "type": {
+                        "tags": [{
+                            "expected": true,
+                            "id": "core:melee"
+                        }]
+                    }
+                }
+			}
+		}
+	},
+	"requirements": [["meleeHurtEntity"]] ,
+	"rewards":{"function":"operation:event/player/melee_hurt_entity/trigger_pre"}
+}

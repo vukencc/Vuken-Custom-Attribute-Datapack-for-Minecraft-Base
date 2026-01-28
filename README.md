@@ -3,7 +3,7 @@
 ## Introduction
 
 A datapack supports colorful minecraft vanilla maps. Updating.
-Support version 1.21.9 now.
+Support version 1.21.11 now.
 
 Including:
 
@@ -97,7 +97,7 @@ To comprise a custom data component to enable the upgrade system, you need to wr
 
 1. attribute_modifiers: This is a list of attribute modifiers that will be applied to the item when it is forged.
 Only the corresponding level of attribute will be applied to the item when you choose the level, this means that, you need to "stack" the attribute modifiers.
-2. af_show: This is a list of teanslate keys that will be displayed in the attribute upgrade display to describe how it is upgraded.
+2. af_show: This is a list of translate keys that will be displayed in the attribute upgrade display to describe how it is upgraded.
 Only the corresponding level of attribute difference should be written.
 3. enchantments: This is a list of enchantments that will be applied to the item when it is forged. ALL enchantments will be applied through the upgrade, e.g. :
 

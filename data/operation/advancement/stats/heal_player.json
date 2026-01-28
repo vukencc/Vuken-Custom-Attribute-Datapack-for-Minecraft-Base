@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "no_effect":{
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [{
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "effects": {
+                                "instant_health": {}
+                            }
+                        }
+                    }
+                }]
+            }
+        }
+    },
+    "requirements": [["no_effect"]],
+    "rewards": {
+        "function": "operation:stats/player_heal/single/remove_modifier"
+    }
+}

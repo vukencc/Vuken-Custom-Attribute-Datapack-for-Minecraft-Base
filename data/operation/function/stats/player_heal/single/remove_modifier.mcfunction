@@ -1,0 +1,1 @@
+attribute @s max_health modifier remove stats.player_heal.cut

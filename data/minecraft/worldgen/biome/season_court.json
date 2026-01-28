@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "visual/cloud_height": {
+        "argument": 1000000,
+        "modifier": "add"
+    },
+    "minecraft:visual/sky_color": "#cedfff",
+    "visual/moon_phase": "full_moon"
+  },
+  "carvers": [
+  ],
+  "downfall": 0.4,
+  "effects": {
+    "water_color": "#c3d7ff",
+    "grass_color": "#4eceae",
+    "dry_foliage_color": 5559481,
+    "foliage_color": "#4eceae"
+  },
+  "features": [
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {},
+  "temperature": 0.8
+}

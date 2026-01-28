@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "charging_crossbow": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": ["bow"]
+                }
+            }
+        }
+    },
+    "requirements": [["charging_crossbow"]],
+    "rewards": {
+        "function": "core:custom_ench/range/charging_bow"
+    }
+}

@@ -23,7 +23,7 @@
       "visual/sky_color":  12582911,
       "visual/fog_color": 12058111,
       "visual/water_fog_color": 12582906,
-      "visual/star_brightness": 1,
+      "visual/star_brightness": 0.8,
       "visual/moon_phase": "full_moon"
     }
 }

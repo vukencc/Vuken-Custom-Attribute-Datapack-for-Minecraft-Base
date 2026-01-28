@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "ArrowKillEntity" : {
+            "trigger": "player_killed_entity",
+            "conditions": {
+                "killing_blow": {
+                    "tags": [{
+                        "expected": true,
+                        "id": "core:ranged"
+                    }]
+                }
+            }
+        }
+    },
+    "requirements": [["ArrowKillEntity"]],
+    "rewards": {
+        "function": "operation:event/player/arrow_kill_entity/trigger_pre"
+    }
+}

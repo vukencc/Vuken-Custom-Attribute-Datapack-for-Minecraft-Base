@@ -11,6 +11,6 @@ data modify entity @n[tag=pf_Forge] interaction.timestamp set value 0
 function core:forge/trigger/return_forge_pf
 #reload :
 execute if score @n[tag=pf_Forge] marker matches 1.. run function core:forge/trigger/return_forge_pf
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:book",components:{"minecraft:custom_data":{PassiveSlot:1}}}}] if score @n[tag=pf_Forge] marker_2 matches 1.. run function core:forge/trigger/give_forge_pf
+execute if score @n[tag=pf_Forge] marker_2 matches 1.. run function core:forge/trigger/give_forge_pf
 
 execute if entity @e[tag=forge_show] run function core:forge/trigger/deal_cal

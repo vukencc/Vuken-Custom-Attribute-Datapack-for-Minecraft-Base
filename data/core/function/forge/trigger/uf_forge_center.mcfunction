@@ -11,6 +11,6 @@ data modify entity @n[tag=uf_Forge] interaction.timestamp set value 0
 function core:forge/trigger/return_forge_uf
 #reload :
 execute if score @n[tag=uf_Forge] marker matches 1.. run function core:forge/trigger/return_forge_uf
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:nether_star",components:{"minecraft:custom_data":{UpgradeSlot:1}}}}] if score @n[tag=uf_Forge] marker_2 matches 1.. run function core:forge/trigger/give_forge_uf
+execute if score @n[tag=uf_Forge] marker_2 matches 1.. run function core:forge/trigger/give_forge_uf
 
 execute if entity @e[tag=forge_show] run function core:forge/trigger/deal_cal
